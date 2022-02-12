@@ -1,0 +1,287 @@
+<configs>
+
+<!-- 
+These are the custom biome groups that enZombies use to spawn zombies to specific biomes. There are 5 biomes: Pine Forest, Desert, Snow, Burnt Forest, and Wasteland. Each of the biomes have two time-of-day sections: DAY and NIGHT. And within each day/night section, there are five zombie categories: countryside zombies [default], city zombies, downtown zombies, aggro animals, and game animals. City zombies have a slightly higher chance of spawning strong zombies. Downtown zombies have an even higher chance. 
+-->
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestAnimalsAggroDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestAnimalsGameDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestAnimalsAggroNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestAnimalsGameNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertAnimalsAggroDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertAnimalsGameDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertAnimalsAggroNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertAnimalsGameNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowAnimalsAggroDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowAnimalsGameDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowAnimalsAggroNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowAnimalsGameNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntAnimalsAggroDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntAnimalsGameDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntAnimalsAggroNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntAnimalsGameNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsAggroDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsGameDay']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsAggroNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+<!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsGameNight']">
+	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
+</append>
+
+
+</configs>
