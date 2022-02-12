@@ -1,0 +1,556 @@
+<configs>
+
+<!-- 
+These are the custom biome groups that enZombies use to spawn zombies to specific biomes. There are 5 biomes: Pine Forest, Desert, Snow, Burnt Forest, and Wasteland. Each of the biomes have two time-of-day sections: DAY and NIGHT. And within each day/night section, there are five zombie categories: countryside zombies [default], city zombies, downtown zombies, aggro animals, and game animals. City zombies have a slightly higher chance of spawning strong zombies. Downtown zombies have an even higher chance. 
+-->
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="zombieAnesthesia" prob="0.10"/>
+	<entity name="zombieAquaZed" prob="0.10"/>
+	<entity name="zombiePredator" prob="0.10"/>
+	<entity name="zombieSpectre" prob="0.50"/>
+	<entity name="zombieTranslucent" prob="0.10"/>
+	<entity name="zombieMoePuker" prob="0.10"/>
+	<entity name="zombieRunningMan" prob="0.10"/>
+	<entity name="zombieFatigue" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="zombieAnesthesia" prob="0.10"/>
+	<entity name="zombieAquaZed" prob="0.10"/>
+	<entity name="zombiePredator" prob="0.10"/>
+	<entity name="zombieSpectre" prob="0.50"/>
+	<entity name="zombieTranslucent" prob="0.10"/>
+	<entity name="zombieMoePuker" prob="0.10"/>
+	<entity name="zombieRunningMan" prob="0.10"/>
+	<entity name="zombieSpark" prob="0.10"/>
+	<entity name="zombieFatigue" prob="0.10"/>
+	
+	<entity name="zombieExploder" prob="0.10"/>
+	<entity name="zombieShocker" prob="0.10"/>
+	<entity name="zombieShockerF" prob="0.10"/>
+	<entity name="zombieRadRobot1" prob="0.10"/>
+	<entity name="zombieRadRobot" prob="0.10"/>
+	<entity name="zombieShadow" prob="0.10"/>
+	<entity name="zombieAtrocity" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="zombieExploder" prob="0.10"/>
+	<entity name="zombieShocker" prob="0.10"/>
+	<entity name="zombieShockerF" prob="0.10"/>
+	<entity name="zombieRadRobot1" prob="0.10"/>
+	<entity name="zombieRadRobot" prob="0.10"/>
+	<entity name="zombieShadow" prob="0.10"/>
+	<entity name="zombieAtrocity" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestAnimalsAggroDay']">
+	<entity name="animalAnaconda" prob="0.10"/>
+	<entity name="animalHybridPanther" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestAnimalsGameDay']">
+	<!-- <entity name="newGameAnimalHere" prob="0.10"/> -->
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="zombieAnesthesia" prob="0.18"/>
+	<entity name="zombieAquaZed" prob="0.18"/>
+	<entity name="zombiePredator" prob="0.18"/>
+	<entity name="zombieSpectre" prob="0.50"/>
+	<entity name="zombieTranslucent" prob="0.18"/>
+	<entity name="zombieMoePuker" prob="0.18"/>
+	<entity name="zombieRunningMan" prob="0.18"/>	
+	<entity name="zombieFatigue" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="zombieAnesthesia" prob="0.18"/>
+	<entity name="zombieAquaZed" prob="0.18"/>
+	<entity name="zombiePredator" prob="0.18"/>
+	<entity name="zombieSpectre" prob="0.50"/>
+	<entity name="zombieTranslucent" prob="0.18"/>
+	<entity name="zombieMoePuker" prob="0.18"/>
+	<entity name="zombieRunningMan" prob="0.18"/>
+	<entity name="zombieSpark" prob="0.18"/>
+	<entity name="zombieFatigue" prob="0.18"/>
+	
+	<entity name="zombieExploder" prob="0.18"/>
+	<entity name="zombieShocker" prob="0.18"/>
+	<entity name="zombieShockerF" prob="0.18"/>
+	<entity name="zombieRadRobot1" prob="0.18"/>
+	<entity name="zombieRadRobot" prob="0.18"/>
+	<entity name="zombieShadow" prob="0.18"/>
+	<entity name="zombieAtrocity" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="zombieExploder" prob="0.18"/>
+	<entity name="zombieShocker" prob="0.18"/>
+	<entity name="zombieShockerF" prob="0.18"/>
+	<entity name="zombieRadRobot1" prob="0.18"/>
+	<entity name="zombieRadRobot" prob="0.18"/>
+	<entity name="zombieShadow" prob="0.18"/>
+	<entity name="zombieAtrocity" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestAnimalsAggroNight']">
+	<entity name="animalAnaconda" prob="0.18"/>
+	<entity name="animalHybridPanther" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestAnimalsGameNight']">
+	<!-- <entity name="newGameAnimalHere" prob="0.10"/> -->
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="zombieIronMan" prob="0.10"/>
+	<entity name="zombieChroma" prob="0.10"/>
+	<entity name="zombieMiniMummy" prob="0.10"/>
+	<entity name="zombieMummy" prob="0.10"/>
+	<entity name="animalCopterCorpse" prob="0.10"/>
+	<entity name="zombieTranslucent" prob="0.10"/>
+	<entity name="zombieMoePuker" prob="0.10"/>
+	<entity name="zombieRunningMan" prob="0.10"/>
+	<entity name="zombieFatigue" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="zombieIronMan" prob="0.10"/>
+	<entity name="zombieChroma" prob="0.10"/>
+	<entity name="zombieMiniMummy" prob="0.10"/>
+	<entity name="zombieMummy" prob="0.10"/>
+	<entity name="animalCopterCorpse" prob="0.10"/>
+	<entity name="zombieTranslucent" prob="0.10"/>
+	<entity name="zombieMoePuker" prob="0.10"/>
+	<entity name="zombieRunningMan" prob="0.10"/>
+	<entity name="zombieSpark" prob="0.10"/>
+	<entity name="zombieFatigue" prob="0.10"/>
+	
+	<entity name="zombieExploder" prob="0.10"/>
+	<entity name="zombieShocker" prob="0.10"/>
+	<entity name="zombieShockerF" prob="0.10"/>
+	<entity name="zombieRadRobot1" prob="0.10"/>
+	<entity name="zombieRadRobot" prob="0.10"/>
+	<entity name="zombieShadow" prob="0.10"/>
+	<entity name="zombieAtrocity" prob="0.10"/>		
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="zombieExploder" prob="0.10"/>
+	<entity name="zombieShocker" prob="0.10"/>
+	<entity name="zombieShockerF" prob="0.10"/>
+	<entity name="zombieRadRobot1" prob="0.10"/>
+	<entity name="zombieRadRobot" prob="0.10"/>
+	<entity name="zombieShadow" prob="0.10"/>
+	<entity name="zombieAtrocity" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertAnimalsAggroDay']">
+	<entity name="animalHybridPanther" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertAnimalsGameDay']">
+	<!-- <entity name="newGameAnimalHere" prob="0.10"/> -->
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="zombieIronMan" prob="0.18"/>
+	<entity name="zombieChroma" prob="0.18"/>
+	<entity name="zombieMiniMummy" prob="0.18"/>
+	<entity name="zombieMummy" prob="0.18"/>
+	<entity name="animalCopterCorpse" prob="0.18"/>
+	<entity name="zombieTranslucent" prob="0.18"/>
+	<entity name="zombieMoePuker" prob="0.18"/>
+	<entity name="zombieRunningMan" prob="0.18"/>
+	<entity name="zombieFatigue" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="zombieIronMan" prob="0.18"/>
+	<entity name="zombieChroma" prob="0.18"/>
+	<entity name="zombieMiniMummy" prob="0.18"/>
+	<entity name="zombieMummy" prob="0.18"/>
+	<entity name="animalCopterCorpse" prob="0.18"/>
+	<entity name="zombieTranslucent" prob="0.18"/>
+	<entity name="zombieMoePuker" prob="0.18"/>
+	<entity name="zombieRunningMan" prob="0.18"/>
+	<entity name="zombieSpark" prob="0.18"/>
+	<entity name="zombieFatigue" prob="0.18"/>
+	
+	<entity name="zombieExploder" prob="0.18"/>
+	<entity name="zombieShocker" prob="0.18"/>
+	<entity name="zombieShockerF" prob="0.18"/>
+	<entity name="zombieRadRobot1" prob="0.18"/>
+	<entity name="zombieRadRobot" prob="0.18"/>
+	<entity name="zombieShadow" prob="0.18"/>
+	<entity name="zombieAtrocity" prob="0.18"/>	
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="zombieExploder" prob="0.18"/>
+	<entity name="zombieShocker" prob="0.18"/>
+	<entity name="zombieShockerF" prob="0.18"/>
+	<entity name="zombieRadRobot1" prob="0.18"/>
+	<entity name="zombieRadRobot" prob="0.18"/>
+	<entity name="zombieShadow" prob="0.18"/>
+	<entity name="zombieAtrocity" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertAnimalsAggroNight']">
+	<entity name="animalHybridPanther" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertAnimalsGameNight']">
+	<!-- <entity name="newGameAnimalHere" prob="0.10"/> -->
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="zombieFreezer" prob="0.10"/>
+	<entity name="zombieCandyGirl" prob="0.10"/>
+	<entity name="zombieFreeza" prob="0.10"/>
+	<entity name="zombieSpectre" prob="0.50"/>
+	<entity name="zombieTranslucent" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="zombieFreezer" prob="0.10"/>
+	<entity name="zombieCandyGirl" prob="0.10"/>
+	<entity name="zombieFreeza" prob="0.10"/>
+	<entity name="zombieSpectre" prob="0.50"/>
+	<entity name="zombieTranslucent" prob="0.10"/>
+	<entity name="zombieSpark" prob="0.10"/>
+	
+	<entity name="zombieExploder" prob="0.10"/>
+	<entity name="zombieShocker" prob="0.10"/>
+	<entity name="zombieShockerF" prob="0.10"/>
+	<entity name="zombieRadRobot1" prob="0.10"/>
+	<entity name="zombieRadRobot" prob="0.10"/>
+	<entity name="zombieShadow" prob="0.10"/>
+	<entity name="zombieAtrocity" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="zombieExploder" prob="0.10"/>
+	<entity name="zombieShocker" prob="0.10"/>
+	<entity name="zombieShockerF" prob="0.10"/>
+	<entity name="zombieRadRobot1" prob="0.10"/>
+	<entity name="zombieRadRobot" prob="0.10"/>
+	<entity name="zombieShadow" prob="0.10"/>
+	<entity name="zombieAtrocity" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowAnimalsAggroDay']">
+	<entity name="animalHybridPanther" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowAnimalsGameDay']">
+	<!-- <entity name="newGameAnimalHere" prob="0.10"/> -->
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="zombieFreezer" prob="0.18"/>
+	<entity name="zombieCandyGirl" prob="0.18"/>
+	<entity name="zombieFreeza" prob="0.15"/>
+	<entity name="zombieSpectre" prob="0.50"/>
+	<entity name="zombieTranslucent" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="zombieFreezer" prob="0.18"/>
+	<entity name="zombieCandyGirl" prob="0.18"/>
+	<entity name="zombieFreeza" prob="0.15"/>
+	<entity name="zombieSpectre" prob="1.0"/>
+	<entity name="zombieTranslucent" prob="0.18"/>
+	<entity name="zombieSpark" prob="0.18"/>
+	
+	<entity name="zombieExploder" prob="0.18"/>
+	<entity name="zombieShocker" prob="0.18"/>
+	<entity name="zombieShockerF" prob="0.18"/>
+	<entity name="zombieRadRobot1" prob="0.18"/>
+	<entity name="zombieRadRobot" prob="0.18"/>
+	<entity name="zombieShadow" prob="0.18"/>
+	<entity name="zombieAtrocity" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="zombieExploder" prob="0.18"/>
+	<entity name="zombieShocker" prob="0.18"/>
+	<entity name="zombieShockerF" prob="0.18"/>
+	<entity name="zombieRadRobot1" prob="0.18"/>
+	<entity name="zombieRadRobot" prob="0.18"/>
+	<entity name="zombieShadow" prob="0.18"/>
+	<entity name="zombieAtrocity" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowAnimalsAggroNight']">
+	<entity name="animalHybridPanther" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowAnimalsGameNight']">
+	<!-- <entity name="newGameAnimalHere" prob="0.10"/> -->
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="zombieBurningMan" prob="0.10"/>
+	<entity name="zombieFireElf" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="zombieBurningMan" prob="0.10"/>
+	<entity name="zombieFireElf" prob="0.10"/>
+	<entity name="zombieSpark" prob="0.10"/>
+	
+	<entity name="zombieExploder" prob="0.10"/>
+	<entity name="zombieShocker" prob="0.10"/>
+	<entity name="zombieShockerF" prob="0.10"/>
+	<entity name="zombieRadRobot1" prob="0.10"/>
+	<entity name="zombieRadRobot" prob="0.10"/>
+	<entity name="zombieShadow" prob="0.10"/>
+	<entity name="zombieAtrocity" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="zombieExploder" prob="0.10"/>
+	<entity name="zombieShocker" prob="0.10"/>
+	<entity name="zombieShockerF" prob="0.10"/>
+	<entity name="zombieRadRobot1" prob="0.10"/>
+	<entity name="zombieRadRobot" prob="0.10"/>
+	<entity name="zombieShadow" prob="0.10"/>
+	<entity name="zombieAtrocity" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntAnimalsAggroDay']">
+	<entity name="animalFireSnake" prob="0.10"/>
+	<entity name="animalFly" prob="0.50"/>
+</append>
+
+<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntAnimalsGameDay']">
+	<!-- <entity name="newGameAnimalHere" prob="0.10"/> -->
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="zombieBurningMan" prob="0.18"/>
+	<entity name="zombieFireElf" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="zombieBurningMan" prob="0.18"/>
+	<entity name="zombieFireElf" prob="0.18"/>
+	<entity name="zombieSpark" prob="0.18"/>
+	
+	<entity name="zombieExploder" prob="0.18"/>
+	<entity name="zombieShocker" prob="0.18"/>
+	<entity name="zombieShockerF" prob="0.18"/>
+	<entity name="zombieRadRobot1" prob="0.18"/>
+	<entity name="zombieRadRobot" prob="0.18"/>
+	<entity name="zombieShadow" prob="0.18"/>
+	<entity name="zombieAtrocity" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="zombieExploder" prob="0.18"/>
+	<entity name="zombieShocker" prob="0.18"/>
+	<entity name="zombieShockerF" prob="0.18"/>
+	<entity name="zombieRadRobot1" prob="0.18"/>
+	<entity name="zombieRadRobot" prob="0.18"/>
+	<entity name="zombieShadow" prob="0.18"/>
+	<entity name="zombieAtrocity" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntAnimalsAggroNight']">
+	<entity name="animalFireSnake" prob="0.18"/>
+	<entity name="animalFly" prob="0.60"/>
+</append>
+
+<!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntAnimalsGameNight']">
+	<!-- <entity name="newGameAnimalHere" prob="0.10"/> -->
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="zombieMini" prob="0.10"/>
+	<entity name="zombieSanguis" prob="0.10"/>
+	<entity name="zombieGunner" prob="0.10"/>
+	<entity name="zombieRPG" prob="0.10"/>
+	<entity name="animalCopterCorpse" prob="0.10"/>
+	<entity name="zombieSpectre" prob="0.50"/>
+	<entity name="zombieTranslucent" prob="0.10"/>
+	<entity name="zombieMPF" prob="0.10"/>
+	<entity name="zombieRunningMan" prob="0.10"/>
+	<entity name="zombieFatigue" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="zombieMini" prob="0.10"/>
+	<entity name="zombieSanguis" prob="0.10"/>
+	<entity name="zombieGunner" prob="0.10"/>
+	<entity name="zombieRPG" prob="0.10"/>
+	<entity name="animalCopterCorpse" prob="0.10"/>
+	<entity name="zombieSpectre" prob="0.50"/>
+	<entity name="zombieTranslucent" prob="0.10"/>
+	<entity name="zombieMPF" prob="0.10"/>
+	<entity name="zombieRunningMan" prob="0.10"/>
+	<entity name="zombieSpark" prob="0.10"/>
+	<entity name="zombieFatigue" prob="0.10"/>
+	
+	<entity name="zombieExploder" prob="0.10"/>
+	<entity name="zombieShocker" prob="0.10"/>
+	<entity name="zombieShockerF" prob="0.10"/>
+	<entity name="zombieRadRobot1" prob="0.10"/>
+	<entity name="zombieRadRobot" prob="0.10"/>
+	<entity name="zombieShadow" prob="0.10"/>
+	<entity name="zombieAtrocity" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="zombieExploder" prob="0.10"/>
+	<entity name="zombieShocker" prob="0.10"/>
+	<entity name="zombieShockerF" prob="0.10"/>
+	<entity name="zombieRadRobot1" prob="0.10"/>
+	<entity name="zombieRadRobot" prob="0.10"/>
+	<entity name="zombieShadow" prob="0.10"/>
+	<entity name="zombieAtrocity" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsAggroDay']">
+	<entity name="animalChickenDemon" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsGameDay']">
+	<!-- <entity name="newGameAnimalHere" prob="0.10"/> -->
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="zombieMini" prob="0.18"/>
+	<entity name="zombieSanguis" prob="0.18"/>
+	<entity name="zombieGunner" prob="0.18"/>
+	<entity name="zombieRPG" prob="0.18"/>
+	<entity name="animalCopterCorpse" prob="0.18"/>
+	<entity name="zombieSpectre" prob="0.50"/>
+	<entity name="zombieTranslucent" prob="0.18"/>
+	<entity name="zombieMPF" prob="0.18"/>
+	<entity name="zombieRunningMan" prob="0.18"/>
+	<entity name="zombieFatigue" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="zombieMini" prob="0.18"/>
+	<entity name="zombieSanguis" prob="0.18"/>
+	<entity name="zombieGunner" prob="0.18"/>
+	<entity name="zombieRPG" prob="0.18"/>
+	<entity name="animalCopterCorpse" prob="0.18"/>
+	<entity name="zombieSpectre" prob="0.50"/>
+	<entity name="zombieTranslucent" prob="0.18"/>
+	<entity name="zombieMPF" prob="0.18"/>
+	<entity name="zombieRunningMan" prob="0.18"/>
+	<entity name="zombieSpark" prob="0.18"/>
+	<entity name="zombieFatigue" prob="0.18"/>
+	
+	<entity name="zombieExploder" prob="0.18"/>
+	<entity name="zombieShocker" prob="0.18"/>
+	<entity name="zombieShockerF" prob="0.18"/>
+	<entity name="zombieRadRobot1" prob="0.18"/>
+	<entity name="zombieRadRobot" prob="0.18"/>
+	<entity name="zombieShadow" prob="0.18"/>
+	<entity name="zombieAtrocity" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="zombieExploder" prob="0.18"/>
+	<entity name="zombieShocker" prob="0.18"/>
+	<entity name="zombieShockerF" prob="0.18"/>
+	<entity name="zombieRadRobot1" prob="0.18"/>
+	<entity name="zombieRadRobot" prob="0.18"/>
+	<entity name="zombieShadow" prob="0.18"/>
+	<entity name="zombieAtrocity" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsAggroNight']">
+	<entity name="animalChickenDemon" prob="0.18"/>
+</append>
+
+<!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsGameNight']">
+	<!-- <entity name="newGameAnimalHere" prob="0.10"/> -->
+</append>
+
+</configs>
