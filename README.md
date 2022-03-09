@@ -11,8 +11,5 @@ You need to download the main mod from their own download page.
  Robeloto Custom Zombies - A20 
  https://community.7daystodie.com/topic/12229-robelotos-a20-modlets/
   
- Overhaul Subquake's Undead Legacy 
- https://community.7daystodie.com/topic/4085-subquakes-undead-legacy/  
- 
  Zulk Zombie
  https://www.bebelious.fr/download/7dtd/Zulk.zip
