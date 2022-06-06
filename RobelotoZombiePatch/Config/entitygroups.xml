@@ -18,6 +18,7 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieMoePuker" prob="0.10"/>
 	<entity name="zombieRunningMan" prob="0.10"/>
 	<entity name="zombieFatigue" prob="0.10"/>
+	<entity name="zombieFatPuker" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
@@ -31,11 +32,11 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieRunningMan" prob="0.10"/>
 	<entity name="zombieSpark" prob="0.10"/>
 	<entity name="zombieFatigue" prob="0.10"/>
+	<entity name="zombieFatPuker" prob="0.10"/>
 	
 	<entity name="zombieExploder" prob="0.10"/>
 	<entity name="zombieShocker" prob="0.10"/>
 	<entity name="zombieShockerF" prob="0.10"/>
-	<entity name="zombieRadRobot1" prob="0.10"/>
 	<entity name="zombieRadRobot" prob="0.10"/>
 	<entity name="zombieShadow" prob="0.10"/>
 	<entity name="zombieAtrocity" prob="0.10"/>
@@ -46,16 +47,17 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieExploder" prob="0.10"/>
 	<entity name="zombieShocker" prob="0.10"/>
 	<entity name="zombieShockerF" prob="0.10"/>
-	<entity name="zombieRadRobot1" prob="0.10"/>
 	<entity name="zombieRadRobot" prob="0.10"/>
 	<entity name="zombieShadow" prob="0.10"/>
 	<entity name="zombieAtrocity" prob="0.10"/>
+	<entity name="zombieFatPuker" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING HOSTILE ANIMALS -->
 <append xpath="/entitygroups/entitygroup[@name='PineforestAnimalsAggroDay']">
 	<entity name="animalAnaconda" prob="0.10"/>
 	<entity name="animalHybridPanther" prob="0.10"/>
+	<entity name="animalKubKuma" prob="0.50"/>
 </append>
 
 <!-- DAY SPAWNING GAME/FOOD ANIMALS -->
@@ -73,6 +75,7 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieMoePuker" prob="0.18"/>
 	<entity name="zombieRunningMan" prob="0.18"/>	
 	<entity name="zombieFatigue" prob="0.18"/>
+	<entity name="zombieFatPuker" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
@@ -86,11 +89,11 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieRunningMan" prob="0.18"/>
 	<entity name="zombieSpark" prob="0.18"/>
 	<entity name="zombieFatigue" prob="0.18"/>
+	<entity name="zombieFatPuker" prob="0.18"/>
 	
 	<entity name="zombieExploder" prob="0.18"/>
 	<entity name="zombieShocker" prob="0.18"/>
 	<entity name="zombieShockerF" prob="0.18"/>
-	<entity name="zombieRadRobot1" prob="0.18"/>
 	<entity name="zombieRadRobot" prob="0.18"/>
 	<entity name="zombieShadow" prob="0.18"/>
 	<entity name="zombieAtrocity" prob="0.18"/>
@@ -101,16 +104,17 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieExploder" prob="0.18"/>
 	<entity name="zombieShocker" prob="0.18"/>
 	<entity name="zombieShockerF" prob="0.18"/>
-	<entity name="zombieRadRobot1" prob="0.18"/>
 	<entity name="zombieRadRobot" prob="0.18"/>
 	<entity name="zombieShadow" prob="0.18"/>
 	<entity name="zombieAtrocity" prob="0.18"/>
+	<entity name="zombieFatPuker" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING HOSTILE ANIMALS -->
 <append xpath="/entitygroups/entitygroup[@name='PineforestAnimalsAggroNight']">
 	<entity name="animalAnaconda" prob="0.18"/>
 	<entity name="animalHybridPanther" prob="0.18"/>
+	<entity name="animalKubKuma" prob="0.60"/>
 </append>
 
 <!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
@@ -136,6 +140,7 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieMoePuker" prob="0.10"/>
 	<entity name="zombieRunningMan" prob="0.10"/>
 	<entity name="zombieFatigue" prob="0.10"/>
+	<entity name="animalGhastlyPhoenix" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
@@ -150,11 +155,11 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieRunningMan" prob="0.10"/>
 	<entity name="zombieSpark" prob="0.10"/>
 	<entity name="zombieFatigue" prob="0.10"/>
+	<entity name="animalGhastlyPhoenix" prob="0.10"/>
 	
 	<entity name="zombieExploder" prob="0.10"/>
 	<entity name="zombieShocker" prob="0.10"/>
 	<entity name="zombieShockerF" prob="0.10"/>
-	<entity name="zombieRadRobot1" prob="0.10"/>
 	<entity name="zombieRadRobot" prob="0.10"/>
 	<entity name="zombieShadow" prob="0.10"/>
 	<entity name="zombieAtrocity" prob="0.10"/>		
@@ -165,10 +170,10 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieExploder" prob="0.10"/>
 	<entity name="zombieShocker" prob="0.10"/>
 	<entity name="zombieShockerF" prob="0.10"/>
-	<entity name="zombieRadRobot1" prob="0.10"/>
 	<entity name="zombieRadRobot" prob="0.10"/>
 	<entity name="zombieShadow" prob="0.10"/>
 	<entity name="zombieAtrocity" prob="0.10"/>
+	<entity name="animalGhastlyPhoenix" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING HOSTILE ANIMALS -->
@@ -192,6 +197,7 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieMoePuker" prob="0.18"/>
 	<entity name="zombieRunningMan" prob="0.18"/>
 	<entity name="zombieFatigue" prob="0.18"/>
+	<entity name="animalGhastlyPhoenix" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
@@ -206,11 +212,11 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieRunningMan" prob="0.18"/>
 	<entity name="zombieSpark" prob="0.18"/>
 	<entity name="zombieFatigue" prob="0.18"/>
+	<entity name="animalGhastlyPhoenix" prob="0.18"/>
 	
 	<entity name="zombieExploder" prob="0.18"/>
 	<entity name="zombieShocker" prob="0.18"/>
 	<entity name="zombieShockerF" prob="0.18"/>
-	<entity name="zombieRadRobot1" prob="0.18"/>
 	<entity name="zombieRadRobot" prob="0.18"/>
 	<entity name="zombieShadow" prob="0.18"/>
 	<entity name="zombieAtrocity" prob="0.18"/>	
@@ -221,10 +227,10 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieExploder" prob="0.18"/>
 	<entity name="zombieShocker" prob="0.18"/>
 	<entity name="zombieShockerF" prob="0.18"/>
-	<entity name="zombieRadRobot1" prob="0.18"/>
 	<entity name="zombieRadRobot" prob="0.18"/>
 	<entity name="zombieShadow" prob="0.18"/>
 	<entity name="zombieAtrocity" prob="0.18"/>
+	<entity name="animalGhastlyPhoenix" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING HOSTILE ANIMALS -->
@@ -245,29 +251,38 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 
 <!-- DAY SPAWNING OUTSIDE WILDERNESS -->
 <append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
-	<entity name="zombieFreezer" prob="0.10"/>
 	<entity name="zombieCandyGirl" prob="0.10"/>
 	<entity name="zombieFreeza" prob="0.10"/>
 	<entity name="zombieSpectre" prob="0.50"/>
 	<entity name="zombieTranslucent" prob="0.10"/>
+	<entity name="zombieCold" prob="0.10"/>
+	<entity name="animalElectricFly" prob="0.10"/>
+	<entity name="animalThunderKuma" prob="0.10"/>
+	<entity name="zombiePale" prob="0.10"/>
+	<entity name="animalGhastlyPhoenix" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
 <append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
-	<entity name="zombieFreezer" prob="0.10"/>
 	<entity name="zombieCandyGirl" prob="0.10"/>
 	<entity name="zombieFreeza" prob="0.10"/>
 	<entity name="zombieSpectre" prob="0.50"/>
 	<entity name="zombieTranslucent" prob="0.10"/>
 	<entity name="zombieSpark" prob="0.10"/>
+	<entity name="zombieCold" prob="0.10"/>
+	<entity name="animalElectricFly" prob="0.10"/>
+	<entity name="animalThunderKuma" prob="0.10"/>
+	<entity name="zombiePale" prob="0.10"/>
+	<entity name="animalGhastlyPhoenix" prob="0.10"/>
 	
 	<entity name="zombieExploder" prob="0.10"/>
 	<entity name="zombieShocker" prob="0.10"/>
 	<entity name="zombieShockerF" prob="0.10"/>
-	<entity name="zombieRadRobot1" prob="0.10"/>
 	<entity name="zombieRadRobot" prob="0.10"/>
 	<entity name="zombieShadow" prob="0.10"/>
 	<entity name="zombieAtrocity" prob="0.10"/>
+	<entity name="animalFrostyBall" prob="0.10"/>
+	<entity name="animalDiamondPhoenix" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING DOWNTOWN -->
@@ -275,10 +290,13 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieExploder" prob="0.10"/>
 	<entity name="zombieShocker" prob="0.10"/>
 	<entity name="zombieShockerF" prob="0.10"/>
-	<entity name="zombieRadRobot1" prob="0.10"/>
 	<entity name="zombieRadRobot" prob="0.10"/>
 	<entity name="zombieShadow" prob="0.10"/>
 	<entity name="zombieAtrocity" prob="0.10"/>
+	<entity name="animalFrostyBall" prob="0.10"/>
+	<entity name="animalDiamondPhoenix" prob="0.10"/>
+	<entity name="zombiePale" prob="0.10"/>
+	<entity name="animalGhastlyPhoenix" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING HOSTILE ANIMALS -->
@@ -293,29 +311,38 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 
 <!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
 <append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
-	<entity name="zombieFreezer" prob="0.18"/>
 	<entity name="zombieCandyGirl" prob="0.18"/>
 	<entity name="zombieFreeza" prob="0.15"/>
 	<entity name="zombieSpectre" prob="0.50"/>
 	<entity name="zombieTranslucent" prob="0.18"/>
+	<entity name="zombieCold" prob="0.18"/>
+	<entity name="animalElectricFly" prob="0.18"/>
+	<entity name="animalThunderKuma" prob="0.18"/>
+	<entity name="zombiePale" prob="0.18"/>
+	<entity name="animalGhastlyPhoenix" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
 <append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
-	<entity name="zombieFreezer" prob="0.18"/>
 	<entity name="zombieCandyGirl" prob="0.18"/>
 	<entity name="zombieFreeza" prob="0.15"/>
 	<entity name="zombieSpectre" prob="1.0"/>
 	<entity name="zombieTranslucent" prob="0.18"/>
 	<entity name="zombieSpark" prob="0.18"/>
+	<entity name="zombieCold" prob="0.18"/>
+	<entity name="animalElectricFly" prob="0.18"/>
+	<entity name="animalThunderKuma" prob="0.10"/>
+	<entity name="zombiePale" prob="0.18"/>
+	<entity name="animalGhastlyPhoenix" prob="0.18"/>
 	
 	<entity name="zombieExploder" prob="0.18"/>
 	<entity name="zombieShocker" prob="0.18"/>
 	<entity name="zombieShockerF" prob="0.18"/>
-	<entity name="zombieRadRobot1" prob="0.18"/>
 	<entity name="zombieRadRobot" prob="0.18"/>
 	<entity name="zombieShadow" prob="0.18"/>
 	<entity name="zombieAtrocity" prob="0.18"/>
+	<entity name="animalFrostyBall" prob="0.18"/>
+	<entity name="animalDiamondPhoenix" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING DOWNTOWN -->
@@ -323,10 +350,13 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieExploder" prob="0.18"/>
 	<entity name="zombieShocker" prob="0.18"/>
 	<entity name="zombieShockerF" prob="0.18"/>
-	<entity name="zombieRadRobot1" prob="0.18"/>
 	<entity name="zombieRadRobot" prob="0.18"/>
 	<entity name="zombieShadow" prob="0.18"/>
 	<entity name="zombieAtrocity" prob="0.18"/>
+	<entity name="animalFrostyBall" prob="0.18"/>
+	<entity name="animalDiamondPhoenix" prob="0.18"/>
+	<entity name="zombiePale" prob="0.18"/>
+	<entity name="animalGhastlyPhoenix" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING HOSTILE ANIMALS -->
@@ -349,21 +379,27 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 <append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
 	<entity name="zombieBurningMan" prob="0.10"/>
 	<entity name="zombieFireElf" prob="0.10"/>
+	<entity name="zombieBlazingMan" prob="0.10"/>
+	<entity name="zombieTheFlyingPlague" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
 <append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
 	<entity name="zombieBurningMan" prob="0.10"/>
 	<entity name="zombieFireElf" prob="0.10"/>
+	<entity name="zombieBlazingMan" prob="0.10"/>
 	<entity name="zombieSpark" prob="0.10"/>
+	<entity name="zombieTheFlyingPlague" prob="0.10"/>
 	
 	<entity name="zombieExploder" prob="0.10"/>
 	<entity name="zombieShocker" prob="0.10"/>
 	<entity name="zombieShockerF" prob="0.10"/>
-	<entity name="zombieRadRobot1" prob="0.10"/>
 	<entity name="zombieRadRobot" prob="0.10"/>
 	<entity name="zombieShadow" prob="0.10"/>
 	<entity name="zombieAtrocity" prob="0.10"/>
+	<entity name="animalBurningPhoenix" prob="0.10"/>
+	<entity name="zombieFireBoss" prob="0.10"/>
+	<entity name="animalHellKuma" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING DOWNTOWN -->
@@ -371,16 +407,21 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieExploder" prob="0.10"/>
 	<entity name="zombieShocker" prob="0.10"/>
 	<entity name="zombieShockerF" prob="0.10"/>
-	<entity name="zombieRadRobot1" prob="0.10"/>
 	<entity name="zombieRadRobot" prob="0.10"/>
 	<entity name="zombieShadow" prob="0.10"/>
 	<entity name="zombieAtrocity" prob="0.10"/>
+	<entity name="animalBurningPhoenix" prob="0.10"/>
+	<entity name="zombieFireBoss" prob="0.10"/>
+	<entity name="animalHellKuma" prob="0.10"/>
+	<entity name="zombieTheFlyingPlague" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING HOSTILE ANIMALS -->
 <append xpath="/entitygroups/entitygroup[@name='BurntAnimalsAggroDay']">
 	<entity name="animalFireSnake" prob="0.10"/>
 	<entity name="animalFly" prob="0.50"/>
+	<entity name="animalFireFly" prob="0.50"/>
+	<entity name="animalChickenFire" prob="0.50"/>
 </append>
 
 <!-- DAY SPAWNING GAME/FOOD ANIMALS -->
@@ -392,21 +433,27 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 <append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
 	<entity name="zombieBurningMan" prob="0.18"/>
 	<entity name="zombieFireElf" prob="0.18"/>
+	<entity name="zombieBlazingMan" prob="0.18"/>
+	<entity name="zombieTheFlyingPlague" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
 <append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
 	<entity name="zombieBurningMan" prob="0.18"/>
 	<entity name="zombieFireElf" prob="0.18"/>
+	<entity name="zombieBlazingMan" prob="0.18"/>
 	<entity name="zombieSpark" prob="0.18"/>
+	<entity name="zombieTheFlyingPlague" prob="0.18"/>
 	
 	<entity name="zombieExploder" prob="0.18"/>
 	<entity name="zombieShocker" prob="0.18"/>
 	<entity name="zombieShockerF" prob="0.18"/>
-	<entity name="zombieRadRobot1" prob="0.18"/>
 	<entity name="zombieRadRobot" prob="0.18"/>
 	<entity name="zombieShadow" prob="0.18"/>
 	<entity name="zombieAtrocity" prob="0.18"/>
+	<entity name="animalBurningPhoenix" prob="0.18"/>
+	<entity name="zombieFireBoss" prob="0.18"/>
+	<entity name="animalHellKuma" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING DOWNTOWN -->
@@ -414,16 +461,21 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieExploder" prob="0.18"/>
 	<entity name="zombieShocker" prob="0.18"/>
 	<entity name="zombieShockerF" prob="0.18"/>
-	<entity name="zombieRadRobot1" prob="0.18"/>
 	<entity name="zombieRadRobot" prob="0.18"/>
 	<entity name="zombieShadow" prob="0.18"/>
 	<entity name="zombieAtrocity" prob="0.18"/>
+	<entity name="animalBurningPhoenix" prob="0.18"/>
+	<entity name="zombieFireBoss" prob="0.18"/>
+	<entity name="animalHellKuma" prob="0.18"/>
+	<entity name="zombieTheFlyingPlague" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING HOSTILE ANIMALS -->
 <append xpath="/entitygroups/entitygroup[@name='BurntAnimalsAggroNight']">
 	<entity name="animalFireSnake" prob="0.18"/>
 	<entity name="animalFly" prob="0.60"/>
+	<entity name="animalFireFly" prob="0.60"/>
+	<entity name="animalChickenFire" prob="0.60"/>
 </append>
 
 <!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
@@ -446,9 +498,10 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="animalCopterCorpse" prob="0.10"/>
 	<entity name="zombieSpectre" prob="0.50"/>
 	<entity name="zombieTranslucent" prob="0.10"/>
-	<entity name="zombieMPF" prob="0.10"/>
 	<entity name="zombieRunningMan" prob="0.10"/>
 	<entity name="zombieFatigue" prob="0.10"/>
+	<entity name="animalElectricFly" prob="0.10"/>
+	<entity name="zombieTheFlyingPlague" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
@@ -460,18 +513,20 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="animalCopterCorpse" prob="0.10"/>
 	<entity name="zombieSpectre" prob="0.50"/>
 	<entity name="zombieTranslucent" prob="0.10"/>
-	<entity name="zombieMPF" prob="0.10"/>
 	<entity name="zombieRunningMan" prob="0.10"/>
 	<entity name="zombieSpark" prob="0.10"/>
 	<entity name="zombieFatigue" prob="0.10"/>
+	<entity name="animalElectricFly" prob="0.10"/>
+	<entity name="zombieTheFlyingPlague" prob="0.10"/>
 	
 	<entity name="zombieExploder" prob="0.10"/>
 	<entity name="zombieShocker" prob="0.10"/>
 	<entity name="zombieShockerF" prob="0.10"/>
-	<entity name="zombieRadRobot1" prob="0.10"/>
 	<entity name="zombieRadRobot" prob="0.10"/>
 	<entity name="zombieShadow" prob="0.10"/>
 	<entity name="zombieAtrocity" prob="0.10"/>
+	<entity name="animalDiamondPhoenix" prob="0.10"/>
+	<entity name="animalThunderKuma" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING DOWNTOWN -->
@@ -479,20 +534,18 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieExploder" prob="0.10"/>
 	<entity name="zombieShocker" prob="0.10"/>
 	<entity name="zombieShockerF" prob="0.10"/>
-	<entity name="zombieRadRobot1" prob="0.10"/>
 	<entity name="zombieRadRobot" prob="0.10"/>
 	<entity name="zombieShadow" prob="0.10"/>
 	<entity name="zombieAtrocity" prob="0.10"/>
+	<entity name="animalDiamondPhoenix" prob="0.10"/>
+	<entity name="animalThunderKuma" prob="0.10"/>
+	<entity name="zombieTheFlyingPlague" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING HOSTILE ANIMALS -->
 <append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsAggroDay']">
 	<entity name="animalChickenDemon" prob="0.10"/>
-</append>
-
-<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
-<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsGameDay']">
-	<!-- <entity name="newGameAnimalHere" prob="0.10"/> -->
+	<entity name="animalKaboomPhoenix" prob="0.15"/>
 </append>
 
 <!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
@@ -504,9 +557,10 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="animalCopterCorpse" prob="0.18"/>
 	<entity name="zombieSpectre" prob="0.50"/>
 	<entity name="zombieTranslucent" prob="0.18"/>
-	<entity name="zombieMPF" prob="0.18"/>
 	<entity name="zombieRunningMan" prob="0.18"/>
 	<entity name="zombieFatigue" prob="0.18"/>
+	<entity name="animalElectricFly" prob="0.18"/>
+	<entity name="zombieTheFlyingPlague" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
@@ -518,18 +572,20 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="animalCopterCorpse" prob="0.18"/>
 	<entity name="zombieSpectre" prob="0.50"/>
 	<entity name="zombieTranslucent" prob="0.18"/>
-	<entity name="zombieMPF" prob="0.18"/>
 	<entity name="zombieRunningMan" prob="0.18"/>
 	<entity name="zombieSpark" prob="0.18"/>
 	<entity name="zombieFatigue" prob="0.18"/>
+	<entity name="animalElectricFly" prob="0.18"/>
+	<entity name="zombieTheFlyingPlague" prob="0.18"/>
 	
 	<entity name="zombieExploder" prob="0.18"/>
 	<entity name="zombieShocker" prob="0.18"/>
 	<entity name="zombieShockerF" prob="0.18"/>
-	<entity name="zombieRadRobot1" prob="0.18"/>
 	<entity name="zombieRadRobot" prob="0.18"/>
 	<entity name="zombieShadow" prob="0.18"/>
 	<entity name="zombieAtrocity" prob="0.18"/>
+	<entity name="animalDiamondPhoenix" prob="0.18"/>
+	<entity name="animalThunderKuma" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING DOWNTOWN -->
@@ -537,20 +593,18 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieExploder" prob="0.18"/>
 	<entity name="zombieShocker" prob="0.18"/>
 	<entity name="zombieShockerF" prob="0.18"/>
-	<entity name="zombieRadRobot1" prob="0.18"/>
 	<entity name="zombieRadRobot" prob="0.18"/>
 	<entity name="zombieShadow" prob="0.18"/>
 	<entity name="zombieAtrocity" prob="0.18"/>
+	<entity name="animalDiamondPhoenix" prob="0.18"/>
+	<entity name="animalThunderKuma" prob="0.18"/>
+	<entity name="zombieTheFlyingPlague" prob="0.18"/>
 </append>
 
 <!-- NIGHT SPAWNING HOSTILE ANIMALS -->
 <append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsAggroNight']">
 	<entity name="animalChickenDemon" prob="0.18"/>
-</append>
-
-<!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
-<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsGameNight']">
-	<!-- <entity name="newGameAnimalHere" prob="0.10"/> -->
+	<entity name="animalKaboomPhoenix" prob="0.20"/>
 </append>
 
 </configs>

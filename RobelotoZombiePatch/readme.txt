@@ -1,4 +1,4 @@
-Robeloto Zombie Patch for enZombies v1.0
+Robeloto Zombie Patch for enZombies v1.1
 https://community.7daystodie.com/topic/12229-robelotos-a20-modlets/
 
 This patch does two things:
@@ -7,6 +7,11 @@ This patch does two things:
 
 2) Provides the option to enable zombie body harvesting for the Robeloto zombies. Go to the entityclassses.xml file to enable this.
 
+
+Version 1.1:
+- updated to match new robeloto zombies and zombie tweaks the were added on Feb 22 2022
+- updated zombie body harvest for latest robeloto zombies from Feb 22 2022
+- removed reference to wasteland game animal spawning
 
 Version 1.0:
 - removed full Robeloto Add-on and decided to use a simpler patch design

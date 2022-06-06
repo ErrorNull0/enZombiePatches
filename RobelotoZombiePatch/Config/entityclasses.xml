@@ -4,7 +4,7 @@
 By default, body harvesting for the Robeloto zombies are disabled. To TURN ON body harvesting, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is below, and the 2nd one is at the end of this file. Again, delete both lines.
 -->
 
-<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* 
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) *********
 
 <append xpath="/entity_classes/entity_class[@name='zombieAnesthesia']">
 	<property name="DeadBodyHitPoints" value="280"/>
@@ -59,6 +59,15 @@ By default, body harvesting for the Robeloto zombies are disabled. To TURN ON bo
 	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
 </append>
 
+<append xpath="/entity_classes/entity_class[@name='zombieCold']">
+	<property name="DeadBodyHitPoints" value="290"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="resourceYuccaFibers"	count="10"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="foodRottingFlesh"		count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"			count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceSnowBall"		count="25"	tag="butcherHarvest"/>
+</append>
+
 <append xpath="/entity_classes/entity_class[@name='zombieExploder']">
 	<property name="DeadBodyHitPoints" value="475"/>
 	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
@@ -66,6 +75,16 @@ By default, body harvesting for the Robeloto zombies are disabled. To TURN ON bo
 	<drop event="Harvest" name="resourceRockSmall"	count="24" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourceBone"		count="2" />
 	<drop event="Destroy" name="thrownDynamite"		count="2" />
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieFatPuker']">
+	<property name="DeadBodyHitPoints" value="380"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="1,10"/>
 </append>
 
 <append xpath="/entity_classes/entity_class[@name='zombieFatigue']">
@@ -92,16 +111,22 @@ By default, body harvesting for the Robeloto zombies are disabled. To TURN ON bo
 	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
 </append>
 
-<append xpath="/entity_classes/entity_class[@name='zombieFreezer']">
-	<property name="DeadBodyHitPoints" value="440"/>
+<append xpath="/entity_classes/entity_class[@name='zombieTheFlyingPlague']">
+	<property name="DeadBodyHitPoints" value="330"/>
 	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest"	name="resourceYuccaFibers"	count="14"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceAnimalFat"	count="1"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="foodRottingFlesh"		count="2"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceBone"			count="3"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceSnowBall"		count="20"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
 </append>
 
+<append xpath="/entity_classes/entity_class[@name='zombieTheFlyingPlague']">
+	<property name="DeadBodyHitPoints" value="180"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRottingFlesh"				count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"					count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder"	count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="meleeWpnSpearT3SteelSpearParts"	count="2"	tag="butcherHarvest"/>
+</append>
+	
 <append xpath="/entity_classes/entity_class[@name='zombieFreeza']">
 	<property name="DeadBodyHitPoints" value="350"/>
 	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
@@ -125,9 +150,8 @@ By default, body harvesting for the Robeloto zombies are disabled. To TURN ON bo
 <append xpath="/entity_classes/entity_class[@name='zombieGiantMutated']">
 	<property name="DeadBodyHitPoints" value="680"/>
 	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="resourceCloth" 		count="8" 	tag="butcherHarvest"/> 
 	<drop event="Harvest" name="foodRottingFlesh" 	count="14" 	tag="butcherHarvest"/> 
-	<drop event="Harvest" name="resourceAnimalFat" 	count="2" 	tag="butcherHarvest"/> 
+	<drop event="Harvest" name="resourceAnimalFat" 	count="1" 	tag="butcherHarvest"/> 
 	<drop event="Harvest" name="resourceBone"		count="6"	tag="butcherHarvest"/>
 	<drop event="Destroy" name="oldCash" 			count="20,30"/>
 </append>
@@ -170,16 +194,6 @@ By default, body harvesting for the Robeloto zombies are disabled. To TURN ON bo
 	<drop event="Destroy" name="oldCash" 			count="1,10"/>
 </append>
 
-<append xpath="/entity_classes/entity_class[@name='zombieMPF']">
-	<property name="DeadBodyHitPoints" value="320"/>
-	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="resourceCloth"		count="3" tag="butcherHarvest"/>
-	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceAnimalFat"	count="2" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
-	<drop event="Destroy" name="oldCash" 			count="1,10"/>
-</append>
-
 <append xpath="/entity_classes/entity_class[@name='zombieMiniMummy']">
 	<property name="DeadBodyHitPoints" value="250"/>
 	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
@@ -196,6 +210,14 @@ By default, body harvesting for the Robeloto zombies are disabled. To TURN ON bo
 	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
 </append>
 
+<append xpath="/entity_classes/entity_class[@name='zombiePale']">
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="foodRottingFlesh"		count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"			count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceSnowBall"		count="5"	tag="butcherHarvest"/>
+</append>
+
 <append xpath="/entity_classes/entity_class[@name='zombiePredator']">
 	<property name="DeadBodyHitPoints" value="320"/>
 	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
@@ -204,17 +226,6 @@ By default, body harvesting for the Robeloto zombies are disabled. To TURN ON bo
 	<drop event="Harvest" name="foodRottingFlesh"		count="3" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
 	<drop event="Destroy" name="resourceElectricParts" 	count="2"/>
-</append>
-
-<append xpath="/entity_classes/entity_class[@name='zombieRadRobot1']">
-	<property name="DeadBodyHitPoints" value="290"/>
-	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="resourceScrapPolymers"		count="8" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts"		count="4" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceMechanicalParts"	count="3" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron"			count="18" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceForgedSteel"		count="2" tag="butcherHarvest"/>
-	<drop event="Destroy" name="carBattery" 				count="1"/>
 </append>
 
 <append xpath="/entity_classes/entity_class[@name='zombieRadRobot']">
@@ -301,46 +312,12 @@ By default, body harvesting for the Robeloto zombies are disabled. To TURN ON bo
 	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
 </append>
 
-<append xpath="/entity_classes/entity_class[@name='animalAnaconda']">
-	<property name="DeadBodyHitPoints" value="600"/>
-	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat"		count="70" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceLeather"	count="14" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceAnimalFat"	count="3" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceBone"		count="10" tag="butcherHarvest"/>
-</append>
-
-<append xpath="/entity_classes/entity_class[@name='animalBurningPhoenix']">
+<append xpath="/entity_classes/entity_class[@name='animalElectricFly']">
 	<property name="TimeStayAfterDeath" value="4"/>
 	<property name="DeadBodyHitPoints" value="1"/>
 </append>
 
-<append xpath="/entity_classes/entity_class[@name='animalChickenDemon']">
-	<property name="DeadBodyHitPoints" value="400"/>
-	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="resourceFeather"	count="50"	tag="butcherHarvest"/>
-	<drop event="Harvest" name="foodRawMeat"		count="55"	tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceAnimalFat"	count="2"	tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceBone"		count="5"	tag="butcherHarvest"/>
-	<drop event="Destroy"  name="foodEgg" 			count="2,6"/>
-</append>
-
-<append xpath="/entity_classes/entity_class[@name='animalCopterCorpse']">
-	<property name="TimeStayAfterDeath" value="6"/>
-	<property name="DeadBodyHitPoints" value="1"/>
-</append>
-
-<append xpath="/entity_classes/entity_class[@name='animalDiamondPhoenix']">
-	<property name="DeadBodyHitPoints" value="440"/>
-	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="resourceFeather"	count="64"	tag="butcherHarvest"/>
-	<drop event="Harvest" name="foodRottingFlesh"	count="14"	tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron"	count="25"	tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceForgedIron"	count="2" 	tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceBone"		count="6"	tag="butcherHarvest"/>
-</append>
-
-<append xpath="/entity_classes/entity_class[@name='animalFireSnake']">
+<append xpath="/entity_classes/entity_class[@name='animalFireFly']">
 	<property name="TimeStayAfterDeath" value="4"/>
 	<property name="DeadBodyHitPoints" value="1"/>
 </append>
@@ -350,15 +327,6 @@ By default, body harvesting for the Robeloto zombies are disabled. To TURN ON bo
 	<property name="DeadBodyHitPoints" value="1"/>
 </append>
 
-<append xpath="/entity_classes/entity_class[@name='animalHybridPanther']">
-	<property name="DeadBodyHitPoints" value="360"/>
-	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat"		count="15"	tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceLeather"	count="2"	tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron"	count="20"	tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceAnimalFat"	count="1"	tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceBone"		count="8"	tag="butcherHarvest"/>
-</append>
 
 
 ********* DELETE THIS ENTIRE LINE!! ********* -->
