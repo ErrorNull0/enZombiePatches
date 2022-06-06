@@ -4,7 +4,7 @@
 By default, body harvesting for the Snufkin zombies are disabled. To TURN ON body harvesting, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is below, and the 2nd one is at the end of this file. Again, delete both lines.
 -->
 
-<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* 
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) *********
 
 <append xpath="/entity_classes/entity_class[@name='ZombieArchon']">
 	<property name="DeadBodyHitPoints" value="300"/>
