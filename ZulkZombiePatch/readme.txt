@@ -13,6 +13,7 @@ https://www.bebelious.fr/download/7dtd/Zulk.zip
 
 Version 1.1:
 - removed reference to wasteland game animals for spawning
+- updated zulk 'sizescale' property to correct feet positioning to touch the ground
 
 Version 1.0:
 - removed unneeded custom spawn groups to allow original Zulk mod control over them
