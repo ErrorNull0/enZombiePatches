@@ -253,11 +253,6 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
 </append>
 
-<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
-<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsGameDay']">
-	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
-</append>
-
 <!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
 <append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
 	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
@@ -275,11 +270,6 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 
 <!-- NIGHT SPAWNING HOSTILE ANIMALS -->
 <append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsAggroNight']">
-	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
-</append>
-
-<!-- NIGHT SPAWNING GAME/FOOD ANIMALS -->
-<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsGameNight']">
 	<entity name="Zulk" prob="0.65"/><entity name="ZulkFeral" prob="0.04"/><entity name="ZulkRadiated" prob="0.00"/>
 </append>
 
