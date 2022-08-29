@@ -1,0 +1,443 @@
+<ErrorNull>
+
+<!--
+By default, body harvesting for the NPCMod entity "Harley" is disabled. To TURN ON body harvesting for her, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is directly below (on line 8), and the 2nd one is after the first block of code (on line 300). Again, delete both lines.
+-->
+
+
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* -->
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyEmptyHand']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyClub']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyKnife']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyBat']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="8" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyMachete']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyAxe']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleySpear']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron"		count="3" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyPipePistol']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron"		count="30" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyPipeRifle']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron"		count="30" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyPipeMG']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron"		count="40" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyPipeShotgun']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron"		count="40" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleySMG']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron"		count="40" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyM60']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyPistol']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"				count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron"			count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 					count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyAK47']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"				count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron"			count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"			count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 					count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyTRifle']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyHRifle']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"					count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"					count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron"				count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunRifleT1HuntingRifleParts"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 						count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleySRifle']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"					count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"					count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunRifleT1HuntingRifleParts"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 						count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyPShotgun']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"					count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"					count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"			count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunShotgunT1DoubleBarrelParts"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 						count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyAShotgun']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"					count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"					count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunShotgunT1DoubleBarrelParts"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 						count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyLBow']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"					count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"					count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"					count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunBowT1WoodenBowParts"			count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 						count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyXBow']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"					count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"				count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"					count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"					count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunBowT1WoodenBowParts"			count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 						count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyRocketL']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"						count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"							count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"						count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"							count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"					count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunExplosivesT3RocketLauncherParts"		count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 								count="5,15"/>
+</append>
+
+
+<!-- ********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+
+
+<!-- DO NOT DELETE ANYTHING BELOW -->
+
+
+<!-- add 'enZombie' tag to all enZombies to prevent NPCMod random walktypes behavior -->
+<append xpath="/entity_classes/entity_class[contains(@name,'enBiker')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enBurnt')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enBusiness')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enDesert')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enElemental')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enFarmer')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enFootball')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enForest')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enHazmat')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enJogger')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enLabCreature')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enLabFemale')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enLumberjack')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enPatient')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enPunk')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSchool')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enScreamer')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSnow')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSoldier')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enStealth')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enStripper')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSwat')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enUtility')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enWasteland')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enWildling')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enLab196')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enNurse')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSpider')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enScientist')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enFinal')]/property[@name='Tags']/@value">,enZombie</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khz')]/property[@name='Tags']/@value">,enZombie</append>
+
+<!-- prevent NPCMod 'ZombieWalkChange' buff from applying random walktypes to zombies with 'enZommbie' tag -->
+<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='RNDWalkStart']/triggered_effect[@buff='ZombieWalkChange']">
+	<requirement name="!EntityTagCompare" tags="enZombie"/>
+</append>
+
+<!-- add sex tags to enZombies in order to work with NPCMod sound/audio behaviors -->
+<append xpath="/entity_classes/entity_class[contains(@name,'enBiker')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enBurntFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enBurntGiant')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enBurntGoblin')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enBurntMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enBusinessman')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enBusinesswoman')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enDesertCowboy')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enDesertCowgirl')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enDesertFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enDesertGiant')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enDesertGoblin')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enDesertMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enDesertMiner')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enDesertOldtimer')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enDesertSpider')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enElemental')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enFarmerFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enFarmerMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enFootballMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enForestFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enForestGiant')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enForestGoblin')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enForestHikerFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enForestHikerMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enForestMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enForestMaleCamo')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enForestSpider')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enHazmatFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enHazmatMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enJoggerFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enLabCreatureFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enLabCreatureMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enLabFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enLumberjack')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enPatientFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enPatientMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enPunkFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enPunkMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSchoolFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSchoolMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enScreamer')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSnowFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSnowGiant')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSnowGoblin')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSnowMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSnowMaleCamo')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSnowSanta')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSnowSantaHelper')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSnowSpider')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSoldierFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSoldierMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enStealthMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enStripper')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSwatMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enUtilityFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enUtilityMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enWastelandFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enWastelandGiant')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enWastelandGoblin')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enWastelandMale')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enWastelandSpider')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enWildlingFemale')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enLab196')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enNurse')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSoldier196')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSpider196')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSpiderTom')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enScientistBoss1')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enForestBoss')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enDesertBoss')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enSnowBoss')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enBurntBoss')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enWastelandBoss')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'enFinalBoss')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzAiden')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzChang')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzCharlotte')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzClint')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzEmma')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzGabrielle')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzGrace')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzHank')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzHelen')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzJack')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzJeff')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzMaria')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzMiguel')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzRayah')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzRichie')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzRoxy')]/property[@name='Tags']/@value">,female</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzVince')]/property[@name='Tags']/@value">,male</append>
+<append xpath="/entity_classes/entity_class[contains(@name,'khzWillie')]/property[@name='Tags']/@value">,male</append>
+
+	
+</ErrorNull>

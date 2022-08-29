@@ -1,0 +1,226 @@
+<ErrorNull>
+
+<!-- 
+These are a subset of the custom biome groups that enZombies use to spawn entities to specific biomes. It appears the NPCMod MechPack designates its entities to spawn in all biome groups. To provide a bit more immersion/realism, I have customized the mechs to spawn in all biomes except for burnt, since machines and electronics mix well with flames. I have also limited the mechs to only spwn within the commercial/industrial and downtown areas. This is because it's in these areas that I feel expsensive high tech robots would be deployed - along side busy cities, skyscrapers and industry, and not out in the wilderness outskirts of town.
+-->
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="NPCMechDrone" prob=".1" />
+	<entity name="NPCMechRustyDrone" prob=".1" />
+	<entity name="NPCMechRobot" prob=".1" />
+	<entity name="NPCMechRobotArmy" prob=".1" />		
+	<entity name="NPCMechSphereI" prob=".1" />
+	<entity name="NPCMechSphereII" prob=".1" />
+	<entity name="NPCMechBee" prob=".1" />
+	<entity name="NPCMechGunBot" prob=".1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="NPCMechDrone" prob=".12" />
+	<entity name="NPCMechRustyDrone" prob=".12" />
+	<entity name="NPCMechRobot" prob=".12" />
+	<entity name="NPCMechRobotArmy" prob=".12" />		
+	<entity name="NPCMechSphereI" prob=".12" />
+	<entity name="NPCMechSphereII" prob=".12" />
+	<entity name="NPCMechBee" prob=".12" />
+	<entity name="NPCMechGunBot" prob=".12" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="NPCMechDrone" prob=".3" />
+	<entity name="NPCMechRustyDrone" prob=".3" />
+	<entity name="NPCMechRobot" prob=".3" />
+	<entity name="NPCMechRobotArmy" prob=".3" />		
+	<entity name="NPCMechSphereI" prob=".3" />
+	<entity name="NPCMechSphereII" prob=".3" />
+	<entity name="NPCMechBee" prob=".3" />
+	<entity name="NPCMechGunBot" prob=".3" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="NPCMechDrone" prob=".33" />
+	<entity name="NPCMechRustyDrone" prob=".33" />
+	<entity name="NPCMechRobot" prob=".33" />
+	<entity name="NPCMechRobotArmy" prob=".33" />		
+	<entity name="NPCMechSphereI" prob=".33" />
+	<entity name="NPCMechSphereII" prob=".33" />
+	<entity name="NPCMechBee" prob=".33" />
+	<entity name="NPCMechGunBot" prob=".33" />
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="NPCMechDrone" prob=".1" />
+	<entity name="NPCMechRustyDrone" prob=".1" />
+	<entity name="NPCMechRobot" prob=".1" />
+	<entity name="NPCMechRobotArmy" prob=".1" />		
+	<entity name="NPCMechSphereI" prob=".1" />
+	<entity name="NPCMechSphereII" prob=".1" />
+	<entity name="NPCMechBee" prob=".1" />
+	<entity name="NPCMechGunBot" prob=".1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="NPCMechDrone" prob=".12" />
+	<entity name="NPCMechRustyDrone" prob=".12" />
+	<entity name="NPCMechRobot" prob=".12" />
+	<entity name="NPCMechRobotArmy" prob=".12" />		
+	<entity name="NPCMechSphereI" prob=".12" />
+	<entity name="NPCMechSphereII" prob=".12" />
+	<entity name="NPCMechBee" prob=".12" />
+	<entity name="NPCMechGunBot" prob=".12" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="NPCMechDrone" prob=".3" />
+	<entity name="NPCMechRustyDrone" prob=".3" />
+	<entity name="NPCMechRobot" prob=".3" />
+	<entity name="NPCMechRobotArmy" prob=".3" />		
+	<entity name="NPCMechSphereI" prob=".3" />
+	<entity name="NPCMechSphereII" prob=".3" />
+	<entity name="NPCMechBee" prob=".3" />
+	<entity name="NPCMechGunBot" prob=".3" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="NPCMechDrone" prob=".33" />
+	<entity name="NPCMechRustyDrone" prob=".33" />
+	<entity name="NPCMechRobot" prob=".33" />
+	<entity name="NPCMechRobotArmy" prob=".33" />		
+	<entity name="NPCMechSphereI" prob=".33" />
+	<entity name="NPCMechSphereII" prob=".33" />
+	<entity name="NPCMechBee" prob=".33" />
+	<entity name="NPCMechGunBot" prob=".33" />
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="NPCMechDrone" prob=".1" />
+	<entity name="NPCMechRustyDrone" prob=".1" />
+	<entity name="NPCMechRobot" prob=".1" />
+	<entity name="NPCMechRobotArmy" prob=".1" />		
+	<entity name="NPCMechSphereI" prob=".1" />
+	<entity name="NPCMechSphereII" prob=".1" />
+	<entity name="NPCMechBee" prob=".1" />
+	<entity name="NPCMechGunBot" prob=".1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="NPCMechDrone" prob=".12" />
+	<entity name="NPCMechRustyDrone" prob=".12" />
+	<entity name="NPCMechRobot" prob=".12" />
+	<entity name="NPCMechRobotArmy" prob=".12" />		
+	<entity name="NPCMechSphereI" prob=".12" />
+	<entity name="NPCMechSphereII" prob=".12" />
+	<entity name="NPCMechBee" prob=".12" />
+	<entity name="NPCMechGunBot" prob=".12" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="NPCMechDrone" prob=".3" />
+	<entity name="NPCMechRustyDrone" prob=".3" />
+	<entity name="NPCMechRobot" prob=".3" />
+	<entity name="NPCMechRobotArmy" prob=".3" />		
+	<entity name="NPCMechSphereI" prob=".3" />
+	<entity name="NPCMechSphereII" prob=".3" />
+	<entity name="NPCMechBee" prob=".3" />
+	<entity name="NPCMechGunBot" prob=".3" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="NPCMechDrone" prob=".33" />
+	<entity name="NPCMechRustyDrone" prob=".33" />
+	<entity name="NPCMechRobot" prob=".33" />
+	<entity name="NPCMechRobotArmy" prob=".33" />		
+	<entity name="NPCMechSphereI" prob=".33" />
+	<entity name="NPCMechSphereII" prob=".33" />
+	<entity name="NPCMechBee" prob=".33" />
+	<entity name="NPCMechGunBot" prob=".33" />
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="NPCMechDrone" prob=".1" />
+	<entity name="NPCMechRustyDrone" prob=".1" />
+	<entity name="NPCMechRobot" prob=".1" />
+	<entity name="NPCMechRobotArmy" prob=".1" />		
+	<entity name="NPCMechSphereI" prob=".1" />
+	<entity name="NPCMechSphereII" prob=".1" />
+	<entity name="NPCMechBee" prob=".1" />
+	<entity name="NPCMechGunBot" prob=".1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="NPCMechDrone" prob=".12" />
+	<entity name="NPCMechRustyDrone" prob=".12" />
+	<entity name="NPCMechRobot" prob=".12" />
+	<entity name="NPCMechRobotArmy" prob=".12" />		
+	<entity name="NPCMechSphereI" prob=".12" />
+	<entity name="NPCMechSphereII" prob=".12" />
+	<entity name="NPCMechBee" prob=".12" />
+	<entity name="NPCMechGunBot" prob=".12" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="NPCMechDrone" prob=".3" />
+	<entity name="NPCMechRustyDrone" prob=".3" />
+	<entity name="NPCMechRobot" prob=".3" />
+	<entity name="NPCMechRobotArmy" prob=".3" />		
+	<entity name="NPCMechSphereI" prob=".3" />
+	<entity name="NPCMechSphereII" prob=".3" />
+	<entity name="NPCMechBee" prob=".3" />
+	<entity name="NPCMechGunBot" prob=".3" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="NPCMechDrone" prob=".33" />
+	<entity name="NPCMechRustyDrone" prob=".33" />
+	<entity name="NPCMechRobot" prob=".33" />
+	<entity name="NPCMechRobotArmy" prob=".33" />		
+	<entity name="NPCMechSphereI" prob=".33" />
+	<entity name="NPCMechSphereII" prob=".33" />
+	<entity name="NPCMechBee" prob=".33" />
+	<entity name="NPCMechGunBot" prob=".33" />
+</append>
+
+
+
+</ErrorNull>

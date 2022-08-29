@@ -1,0 +1,9 @@
+<ErrorNull>
+
+<!-- All other spiders extend from this one -->
+<append xpath="/entity_classes/entity_class[@name='animalSpider01']">
+	<property name="TimeStayAfterDeath" value="300"/>
+	<property name="DeadBodyHitPoints" value="200"/>
+</append>
+
+</ErrorNull>

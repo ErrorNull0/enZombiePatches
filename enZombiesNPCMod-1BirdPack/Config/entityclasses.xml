@@ -1,0 +1,12 @@
+<ErrorNull>
+
+<!-- The time it takes before dead bodies despawn. Default value is 30 seconds. Increased to 100 to allow players time to harvest. -->
+<append xpath="/entity_classes/entity_class[@name='animalRobin']"><property name="TimeStayAfterDeath" value="300"/></append>
+<append xpath="/entity_classes/entity_class[@name='animalCrow']"><property name="TimeStayAfterDeath" value="300"/></append>
+<append xpath="/entity_classes/entity_class[@name='animalBat']"><property name="TimeStayAfterDeath" value="300"/></append>
+<append xpath="/entity_classes/entity_class[@name='animalBats']"><property name="TimeStayAfterDeath" value="300"/></append>
+<append xpath="/entity_classes/entity_class[@name='animalEagle']"><property name="TimeStayAfterDeath" value="300"/></append>
+<append xpath="/entity_classes/entity_class[@name='animalAlcatraz']"><property name="TimeStayAfterDeath" value="300"/></append>
+<append xpath="/entity_classes/entity_class[@name='animalPenguin']"><property name="TimeStayAfterDeath" value="300"/></append>
+
+</ErrorNull>

@@ -1,0 +1,73 @@
+<ErrorNull>
+
+<!-- 
+These are a subset of the custom biome groups that enZombies use to spawn entities to specific biomes. This subset deals with the animal spawns and attempt to match up with the NPCMod BirdPack spawning group intentions.
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestAnimalsGameDay']">
+	<entity name="animalRobin" prob="5"/>
+	<entity name="animalEagle" prob="5"/>
+	<entity name="animalAlcatraz" prob="5"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertAnimalsAggroDay']">
+	<entity name="animalCrow" prob="5"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING GAME/FOOD ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowAnimalsGameDay']">
+	<entity name="animalEagle" prob="5" />
+	<entity name="animalPenguin" prob="5" />
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntAnimalsAggroDay']">
+	<entity name="animalCrow" prob="3" />
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsAggroDay']">
+	<entity name="animalCrow" prob="3" />
+	<entity name="animalBat" prob="2"/>
+	<entity name="animalBats" prob="2"/>
+</append>
+
+<!-- NIGHT SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsAggroNight']">
+	<entity name="animalBat" prob="5"/>
+	<entity name="animalBats" prob="5"/>
+</append>
+
+
+</ErrorNull>

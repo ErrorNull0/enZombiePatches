@@ -1,0 +1,6 @@
+<ErrorNull>
+
+<!-- The time it takes before despawning. Default value is 30 seconds. Increased to 100 to allow players time to harvest. -->
+<set xpath="/entity_classes/entity_class[contains(@name,'NPCMech')]/property[@name='TimeStayAfterDeath']/@value">100</set>
+
+</ErrorNull>
