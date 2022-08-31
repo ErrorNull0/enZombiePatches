@@ -1,0 +1,336 @@
+<ErrorNull>
+
+<!-- 
+Each of the Raiderz are assigned a specific biome based on their clothing style. And, their weapon also determines if they spawn in the wilderness, city or downtown. Downtown spawns raiderz with stronger weapons, and the wilderness spawn raiders with weaker melee weapons.
+
+BIOME		RAIDER			REASON
+Forest 		Merc, Beatz		Mercs like to hide in forests, Beatz casual full outfit still works within forest
+Desert 		Merc			Tand top / sport bra cooling in desert
+Snow 		Pest, Beatz		Pest hoody and fully body clothing, Beatz full body outfit works with cold climate
+Burnt 		Slugger, Pest	Gas masks and full body protective outfits protects from smoke and flames
+Wasteland 	Slugger, Pest	Gas masks and full body protective outfits protects from radiation, vomit, etc
+
+Moto spawns in all biomes, but only within the downtown area, where there are abundant roads and pavement for his motorcycle
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="RaiderMercClub" prob="0.1" />
+	<entity name="RaiderMercKnife" prob="0.1" />
+	<entity name="RaiderMercMachete" prob="0.1" />
+	<entity name="RaiderBeatzClub" prob="0.1" />
+	<entity name="RaiderBeatzBat" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="RaiderMotoBat" prob="0.1" />
+	<entity name="RaiderMotoAxe" prob="0.1" />
+	<entity name="RaiderMercDPistol" prob="0.1" />
+	<entity name="RaiderBeatzDPistol" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="RaiderMotoDPistol" prob="0.1" />
+	<entity name="RaiderMotoTRifle" prob="0.1" />
+	<entity name="RaiderMotoAK47" prob="0.1" />
+	<entity name="RaiderMercTRifle" prob="0.1" />
+	<entity name="RaiderMercAK47" prob="0.1" />
+	<entity name="RaiderBeatzSMG" prob="0.1" />
+	<entity name="RaiderBeatzSMG" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="RaiderMercClub" prob="0.03" />
+	<entity name="RaiderMercKnife" prob="0.03" />
+	<entity name="RaiderMercMachete" prob="0.03" />
+	<entity name="RaiderBeatzClub" prob="0.03" />
+	<entity name="RaiderBeatzBat" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="RaiderMotoBat" prob="0.03" />
+	<entity name="RaiderMotoAxe" prob="0.03" />
+	<entity name="RaiderMercDPistol" prob="0.03" />
+	<entity name="RaiderBeatzDPistol" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="RaiderMotoDPistol" prob="0.03" />
+	<entity name="RaiderMotoTRifle" prob="0.03" />
+	<entity name="RaiderMotoAK47" prob="0.03" />
+	<entity name="RaiderMercTRifle" prob="0.03" />
+	<entity name="RaiderMercAK47" prob="0.03" />
+	<entity name="RaiderBeatzSMG" prob="0.03" />
+	<entity name="RaiderBeatzSMG" prob="0.03" />
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="RaiderMercClub" prob="0.1" />
+	<entity name="RaiderMercKnife" prob="0.1" />
+	<entity name="RaiderMercMachete" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="RaiderMotoBat" prob="0.1" />
+	<entity name="RaiderMotoAxe" prob="0.1" />
+	<entity name="RaiderMercDPistol" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="RaiderMotoDPistol" prob="0.1" />
+	<entity name="RaiderMotoTRifle" prob="0.1" />
+	<entity name="RaiderMotoAK47" prob="0.1" />
+	<entity name="RaiderMercTRifle" prob="0.1" />
+	<entity name="RaiderMercAK47" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="RaiderMercClub" prob="0.03" />
+	<entity name="RaiderMercKnife" prob="0.03" />
+	<entity name="RaiderMercMachete" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="RaiderMotoBat" prob="0.03" />
+	<entity name="RaiderMotoAxe" prob="0.03" />
+	<entity name="RaiderMercDPistol" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="RaiderMotoDPistol" prob="0.03" />
+	<entity name="RaiderMotoTRifle" prob="0.03" />
+	<entity name="RaiderMotoAK47" prob="0.03" />
+	<entity name="RaiderMercTRifle" prob="0.03" />
+	<entity name="RaiderMercAK47" prob="0.03" />
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="RaiderBeatzClub" prob="0.1" />
+	<entity name="RaiderBeatzBat" prob="0.1" />
+	<entity name="RaiderPestClub" prob="0.1" />
+	<entity name="RaiderPestBat" prob="0.1" />
+	<entity name="RaiderPestKnife" prob="0.1" />
+	<entity name="RaiderPestMachete" prob="0.1" />
+	<entity name="RaiderPestAxe" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="RaiderMotoBat" prob="0.1" />
+	<entity name="RaiderMotoAxe" prob="0.1" />
+	<entity name="RaiderBeatzDPistol" prob="0.1" />
+	<entity name="RaiderPestDPistol" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="RaiderMotoDPistol" prob="0.1" />
+	<entity name="RaiderMotoTRifle" prob="0.1" />
+	<entity name="RaiderMotoAK47" prob="0.1" />
+	<entity name="RaiderBeatzSMG" prob="0.1" />
+	<entity name="RaiderBeatzAK47" prob="0.1" />
+	<entity name="RaiderPestPipeMG" prob="0.1" />
+	<entity name="RaiderPestSMG" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="RaiderBeatzClub" prob="0.03" />
+	<entity name="RaiderBeatzBat" prob="0.03" />
+	<entity name="RaiderPestClub" prob="0.03" />
+	<entity name="RaiderPestBat" prob="0.03" />
+	<entity name="RaiderPestKnife" prob="0.03" />
+	<entity name="RaiderPestMachete" prob="0.03" />
+	<entity name="RaiderPestAxe" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="RaiderMotoBat" prob="0.03" />
+	<entity name="RaiderMotoAxe" prob="0.03" />
+	<entity name="RaiderBeatzDPistol" prob="0.03" />
+	<entity name="RaiderPestDPistol" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="RaiderMotoDPistol" prob="0.03" />
+	<entity name="RaiderMotoTRifle" prob="0.03" />
+	<entity name="RaiderMotoAK47" prob="0.03" />
+	<entity name="RaiderBeatzSMG" prob="0.03" />
+	<entity name="RaiderBeatzAK47" prob="0.03" />
+	<entity name="RaiderPestPipeMG" prob="0.03" />
+	<entity name="RaiderPestSMG" prob="0.03" />
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="RaiderSluggerBat" prob="0.1" />
+	<entity name="RaiderSluggerAxe" prob="0.1" />
+	<entity name="RaiderPestClub" prob="0.1" />
+	<entity name="RaiderPestBat" prob="0.1" />
+	<entity name="RaiderPestKnife" prob="0.1" />
+	<entity name="RaiderPestMachete" prob="0.1" />
+	<entity name="RaiderPestAxe" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="RaiderMotoBat" prob="0.1" />
+	<entity name="RaiderMotoAxe" prob="0.1" />
+	<entity name="RaiderSluggerBat" prob="0.1" />
+	<entity name="RaiderSluggerAxe" prob="0.1" />
+	<entity name="RaiderPestDPistol" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="RaiderMotoDPistol" prob="0.1" />
+	<entity name="RaiderMotoTRifle" prob="0.1" />
+	<entity name="RaiderMotoAK47" prob="0.1" />
+	<entity name="RaiderSluggerAK47" prob="0.1" />
+	<entity name="RaiderSluggerM60" prob="0.1" />
+	<entity name="RaiderSluggerRocketL" prob="0.1" />
+	<entity name="RaiderPestPipeMG" prob="0.1" />
+	<entity name="RaiderPestSMG" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="RaiderSluggerBat" prob="0.03" />
+	<entity name="RaiderSluggerAxe" prob="0.03" />
+	<entity name="RaiderPestClub" prob="0.03" />
+	<entity name="RaiderPestBat" prob="0.03" />
+	<entity name="RaiderPestKnife" prob="0.03" />
+	<entity name="RaiderPestMachete" prob="0.03" />
+	<entity name="RaiderPestAxe" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="RaiderMotoBat" prob="0.03" />
+	<entity name="RaiderMotoAxe" prob="0.03" />
+	<entity name="RaiderSluggerBat" prob="0.03" />
+	<entity name="RaiderSluggerAxe" prob="0.03" />
+	<entity name="RaiderPestDPistol" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="RaiderMotoDPistol" prob="0.03" />
+	<entity name="RaiderMotoTRifle" prob="0.03" />
+	<entity name="RaiderMotoAK47" prob="0.03" />
+	<entity name="RaiderSluggerAK47" prob="0.03" />
+	<entity name="RaiderSluggerM60" prob="0.03" />
+	<entity name="RaiderSluggerRocketL" prob="0.03" />
+	<entity name="RaiderPestPipeMG" prob="0.03" />
+	<entity name="RaiderPestSMG" prob="0.03" />
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="RaiderSluggerBat" prob="0.1" />
+	<entity name="RaiderSluggerAxe" prob="0.1" />
+	<entity name="RaiderPestClub" prob="0.1" />
+	<entity name="RaiderPestBat" prob="0.1" />
+	<entity name="RaiderPestKnife" prob="0.1" />
+	<entity name="RaiderPestMachete" prob="0.1" />
+	<entity name="RaiderPestAxe" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="RaiderMotoBat" prob="0.1" />
+	<entity name="RaiderMotoAxe" prob="0.1" />
+	<entity name="RaiderSluggerBat" prob="0.1" />
+	<entity name="RaiderSluggerAxe" prob="0.1" />
+	<entity name="RaiderPestDPistol" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="RaiderMotoDPistol" prob="0.1" />
+	<entity name="RaiderMotoTRifle" prob="0.1" />
+	<entity name="RaiderMotoAK47" prob="0.1" />
+	<entity name="RaiderSluggerAK47" prob="0.1" />
+	<entity name="RaiderSluggerM60" prob="0.1" />
+	<entity name="RaiderSluggerRocketL" prob="0.1" />
+	<entity name="RaiderPestPipeMG" prob="0.1" />
+	<entity name="RaiderPestSMG" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="RaiderSluggerBat" prob="0.03" />
+	<entity name="RaiderSluggerAxe" prob="0.03" />
+	<entity name="RaiderPestClub" prob="0.03" />
+	<entity name="RaiderPestBat" prob="0.03" />
+	<entity name="RaiderPestKnife" prob="0.03" />
+	<entity name="RaiderPestMachete" prob="0.03" />
+	<entity name="RaiderPestAxe" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="RaiderMotoBat" prob="0.03" />
+	<entity name="RaiderMotoAxe" prob="0.03" />
+	<entity name="RaiderSluggerBat" prob="0.03" />
+	<entity name="RaiderSluggerAxe" prob="0.03" />
+	<entity name="RaiderPestDPistol" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="RaiderMotoDPistol" prob="0.03" />
+	<entity name="RaiderMotoTRifle" prob="0.03" />
+	<entity name="RaiderMotoAK47" prob="0.03" />
+	<entity name="RaiderSluggerAK47" prob="0.03" />
+	<entity name="RaiderSluggerM60" prob="0.03" />
+	<entity name="RaiderSluggerRocketL" prob="0.03" />
+	<entity name="RaiderPestPipeMG" prob="0.03" />
+	<entity name="RaiderPestSMG" prob="0.03" />
+</append>
+
+
+</ErrorNull>

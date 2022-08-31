@@ -1,0 +1,255 @@
+<ErrorNull>
+
+<!--
+By default, body harvesting for the Raider Gurlz are disabled. To TURN ON body harvesting for them, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is directly below (on line 8), and the 2nd one is after the first block of code (on line 245). Again, delete both lines.
+-->
+
+
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) *********
+
+<append xpath="/entity_classes/entity_class[contains(@name,'RaiderGypsy')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGypsyClub']">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGypsyBat']">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGypsyKnife']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyMachete']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGypsyAxe']">
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGypsyDPistol']">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGypsyTRifle']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGypsySMG']">
+	<drop event="Harvest" name="resourceForgedSteel"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'RaiderBetty')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderBettyClub']">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderBettyBat']">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderBettyKnife']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyMachete']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderBettyAxe']">
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderBettyDPistol']">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderBettyTRifle']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderBettySMG']">
+	<drop event="Harvest" name="resourceForgedSteel"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'RaiderHedy')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderHedyClub']">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderHedyBat']">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderHedyKnife']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyMachete']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderHedyAxe']">
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderHedyDPistol']">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderHedyTRifle']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderHedySMG']">
+	<drop event="Harvest" name="resourceForgedSteel"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'RaiderGina')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGinaClub']">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGinaBat']">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGinaKnife']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyMachete']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGinaAxe']">
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGinaDPistol']">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGinaTRifle']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderGinaSMG']">
+	<drop event="Harvest" name="resourceForgedSteel"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'RaiderJayne')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"			count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderJayneClub']">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderJayneBat']">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderJayneKnife']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='npcHarleyMachete']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderJayneAxe']">
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderJayneDPistol']">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderJayneTRifle']">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='RaiderJayneSMG']">
+	<drop event="Harvest" name="resourceForgedSteel"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+
+
+
+********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+
+
+<!-- DO NOT DELETE ANYTHING BELOW -->
+
+
+
+</ErrorNull>
