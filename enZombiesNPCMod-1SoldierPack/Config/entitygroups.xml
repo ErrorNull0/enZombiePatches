@@ -1,0 +1,572 @@
+<ErrorNull>
+
+<!-- 
+Each of the Soldiers are assigned a specific biome based on their clothing style. And, their weapon also determines if they spawn in the wilderness, city or downtown. Downtown spawns Soldiers with stronger weapons, and the wilderness spawn soldiers with weaker melee weapons.
+
+BIOME		RAIDER							REASON
+Forest 		soldier3, soldier4				no gas masks to enjoy the nice weather
+Desert 		soldier3, soldier4				no gas masks to stay cooler in hot climate
+Snow 		soldier1, soldier2				gas masks protects from the cold climate
+Burnt 		soldier1, soldier2				gas masks protects from smoke and flames
+Wasteland 	soldier1, soldier2, officer		gas masks protects from radiation, vomit, etc
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="survivorSoldier3Club" prob="0.1" />
+	<entity name="survivorSoldier3Bat" prob="0.1" />
+	<entity name="survivorSoldier3Knife" prob="0.1" />
+	<entity name="survivorSoldier4Club" prob="0.1" />
+	<entity name="survivorSoldier4Bat" prob="0.1" />
+	<entity name="survivorSoldier4Knife" prob="0.1" />
+	<entity name="npcSoldier3Club" prob="0.1" />
+	<entity name="npcSoldier3Bat" prob="0.1" />
+	<entity name="npcSoldier3Knife" prob="0.1" />
+	<entity name="npcSoldier4Club" prob="0.1" />
+	<entity name="npcSoldier4Bat" prob="0.1" />
+	<entity name="npcSoldier4Knife" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="survivorSoldier3Machete" prob="0.1" />
+	<entity name="survivorSoldier3DPistol" prob="0.1" />
+	<entity name="survivorSoldier3AK47" prob="0.1" />
+	<entity name="survivorSoldier4Machete" prob="0.1" />
+	<entity name="survivorSoldier4DPistol" prob="0.1" />
+	<entity name="survivorSoldier4AK47" prob="0.1" />
+	<entity name="npcSoldier3Machete" prob="0.1" />
+	<entity name="npcSoldier3DPistol" prob="0.1" />
+	<entity name="npcSoldier3AK47" prob="0.1" />
+	<entity name="npcSoldier4Machete" prob="0.1" />
+	<entity name="npcSoldier4DPistol" prob="0.1" />
+	<entity name="npcSoldier4AK47" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="survivorSoldier3TRifle" prob="0.1" />
+	<entity name="survivorSoldier3SMG" prob="0.1" />
+	<entity name="survivorSoldier3M60" prob="0.1" />
+	<entity name="survivorSoldier4TRifle" prob="0.1" />
+	<entity name="survivorSoldier4SMG" prob="0.1" />
+	<entity name="survivorSoldier4M60" prob="0.1" />
+	<entity name="npcSoldier3TRifle" prob="0.1" />
+	<entity name="npcSoldier3SMG" prob="0.1" />
+	<entity name="npcSoldier3M60" prob="0.1" />
+	<entity name="npcSoldier4TRifle" prob="0.1" />
+	<entity name="npcSoldier4SMG" prob="0.1" />
+	<entity name="npcSoldier4M60" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="survivorSoldier3Club" prob="0.03" />
+	<entity name="survivorSoldier3Bat" prob="0.03" />
+	<entity name="survivorSoldier3Knife" prob="0.03" />
+	<entity name="survivorSoldier4Club" prob="0.03" />
+	<entity name="survivorSoldier4Bat" prob="0.03" />
+	<entity name="survivorSoldier4Knife" prob="0.03" />
+	<entity name="npcSoldier3Club" prob="0.03" />
+	<entity name="npcSoldier3Bat" prob="0.03" />
+	<entity name="npcSoldier3Knife" prob="0.03" />
+	<entity name="npcSoldier4Club" prob="0.03" />
+	<entity name="npcSoldier4Bat" prob="0.03" />
+	<entity name="npcSoldier4Knife" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="survivorSoldier3Machete" prob="0.03" />
+	<entity name="survivorSoldier3DPistol" prob="0.03" />
+	<entity name="survivorSoldier3AK47" prob="0.03" />
+	<entity name="survivorSoldier4Machete" prob="0.03" />
+	<entity name="survivorSoldier4DPistol" prob="0.03" />
+	<entity name="survivorSoldier4AK47" prob="0.03" />
+	<entity name="npcSoldier3Machete" prob="0.03" />
+	<entity name="npcSoldier3DPistol" prob="0.03" />
+	<entity name="npcSoldier3AK47" prob="0.03" />
+	<entity name="npcSoldier4Machete" prob="0.03" />
+	<entity name="npcSoldier4DPistol" prob="0.03" />
+	<entity name="npcSoldier4AK47" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="survivorSoldier3TRifle" prob="0.03" />
+	<entity name="survivorSoldier3SMG" prob="0.03" />
+	<entity name="survivorSoldier3M60" prob="0.03" />
+	<entity name="survivorSoldier4TRifle" prob="0.03" />
+	<entity name="survivorSoldier4SMG" prob="0.03" />
+	<entity name="survivorSoldier4M60" prob="0.03" />
+	<entity name="npcSoldier3TRifle" prob="0.03" />
+	<entity name="npcSoldier3SMG" prob="0.03" />
+	<entity name="npcSoldier3M60" prob="0.03" />
+	<entity name="npcSoldier4TRifle" prob="0.03" />
+	<entity name="npcSoldier4SMG" prob="0.03" />
+	<entity name="npcSoldier4M60" prob="0.03" />
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="survivorSoldier3Club" prob="0.1" />
+	<entity name="survivorSoldier3Bat" prob="0.1" />
+	<entity name="survivorSoldier3Knife" prob="0.1" />
+	<entity name="survivorSoldier4Club" prob="0.1" />
+	<entity name="survivorSoldier4Bat" prob="0.1" />
+	<entity name="survivorSoldier4Knife" prob="0.1" />
+	<entity name="npcSoldier3Club" prob="0.1" />
+	<entity name="npcSoldier3Bat" prob="0.1" />
+	<entity name="npcSoldier3Knife" prob="0.1" />
+	<entity name="npcSoldier4Club" prob="0.1" />
+	<entity name="npcSoldier4Bat" prob="0.1" />
+	<entity name="npcSoldier4Knife" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="survivorSoldier3Machete" prob="0.1" />
+	<entity name="survivorSoldier3DPistol" prob="0.1" />
+	<entity name="survivorSoldier3AK47" prob="0.1" />
+	<entity name="survivorSoldier4Machete" prob="0.1" />
+	<entity name="survivorSoldier4DPistol" prob="0.1" />
+	<entity name="survivorSoldier4AK47" prob="0.1" />
+	<entity name="npcSoldier3Machete" prob="0.1" />
+	<entity name="npcSoldier3DPistol" prob="0.1" />
+	<entity name="npcSoldier3AK47" prob="0.1" />
+	<entity name="npcSoldier4Machete" prob="0.1" />
+	<entity name="npcSoldier4DPistol" prob="0.1" />
+	<entity name="npcSoldier4AK47" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="survivorSoldier3TRifle" prob="0.1" />
+	<entity name="survivorSoldier3SMG" prob="0.1" />
+	<entity name="survivorSoldier3M60" prob="0.1" />
+	<entity name="survivorSoldier4TRifle" prob="0.1" />
+	<entity name="survivorSoldier4SMG" prob="0.1" />
+	<entity name="survivorSoldier4M60" prob="0.1" />
+	<entity name="npcSoldier3TRifle" prob="0.1" />
+	<entity name="npcSoldier3SMG" prob="0.1" />
+	<entity name="npcSoldier3M60" prob="0.1" />
+	<entity name="npcSoldier4TRifle" prob="0.1" />
+	<entity name="npcSoldier4SMG" prob="0.1" />
+	<entity name="npcSoldier4M60" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="survivorSoldier3Club" prob="0.03" />
+	<entity name="survivorSoldier3Bat" prob="0.03" />
+	<entity name="survivorSoldier3Knife" prob="0.03" />
+	<entity name="survivorSoldier4Club" prob="0.03" />
+	<entity name="survivorSoldier4Bat" prob="0.03" />
+	<entity name="survivorSoldier4Knife" prob="0.03" />
+	<entity name="npcSoldier3Club" prob="0.03" />
+	<entity name="npcSoldier3Bat" prob="0.03" />
+	<entity name="npcSoldier3Knife" prob="0.03" />
+	<entity name="npcSoldier4Club" prob="0.03" />
+	<entity name="npcSoldier4Bat" prob="0.03" />
+	<entity name="npcSoldier4Knife" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="survivorSoldier3Machete" prob="0.03" />
+	<entity name="survivorSoldier3DPistol" prob="0.03" />
+	<entity name="survivorSoldier3AK47" prob="0.03" />
+	<entity name="survivorSoldier4Machete" prob="0.03" />
+	<entity name="survivorSoldier4DPistol" prob="0.03" />
+	<entity name="survivorSoldier4AK47" prob="0.03" />
+	<entity name="npcSoldier3Machete" prob="0.03" />
+	<entity name="npcSoldier3DPistol" prob="0.03" />
+	<entity name="npcSoldier3AK47" prob="0.03" />
+	<entity name="npcSoldier4Machete" prob="0.03" />
+	<entity name="npcSoldier4DPistol" prob="0.03" />
+	<entity name="npcSoldier4AK47" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="survivorSoldier3TRifle" prob="0.03" />
+	<entity name="survivorSoldier3SMG" prob="0.03" />
+	<entity name="survivorSoldier3M60" prob="0.03" />
+	<entity name="survivorSoldier4TRifle" prob="0.03" />
+	<entity name="survivorSoldier4SMG" prob="0.03" />
+	<entity name="survivorSoldier4M60" prob="0.03" />
+	<entity name="npcSoldier3TRifle" prob="0.03" />
+	<entity name="npcSoldier3SMG" prob="0.03" />
+	<entity name="npcSoldier3M60" prob="0.03" />
+	<entity name="npcSoldier4TRifle" prob="0.03" />
+	<entity name="npcSoldier4SMG" prob="0.03" />
+	<entity name="npcSoldier4M60" prob="0.03" />
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="survivorSoldier1Club" prob="0.1" />
+	<entity name="survivorSoldier1Bat" prob="0.1" />
+	<entity name="survivorSoldier1Knife" prob="0.1" />
+	<entity name="survivorSoldier2Club" prob="0.1" />
+	<entity name="survivorSoldier2Bat" prob="0.1" />
+	<entity name="survivorSoldier2Knife" prob="0.1" />
+	<entity name="npcSoldier1Club" prob="0.1" />
+	<entity name="npcSoldier1Bat" prob="0.1" />
+	<entity name="npcSoldier1Knife" prob="0.1" />
+	<entity name="npcSoldier2Club" prob="0.1" />
+	<entity name="npcSoldier2Bat" prob="0.1" />
+	<entity name="npcSoldier2Knife" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="survivorSoldier1Machete" prob="0.1" />
+	<entity name="survivorSoldier1DPistol" prob="0.1" />
+	<entity name="survivorSoldier1AK47" prob="0.1" />
+	<entity name="survivorSoldier2Machete" prob="0.1" />
+	<entity name="survivorSoldier2DPistol" prob="0.1" />
+	<entity name="survivorSoldier2AK47" prob="0.1" />
+	<entity name="npcSoldier1Machete" prob="0.1" />
+	<entity name="npcSoldier1DPistol" prob="0.1" />
+	<entity name="npcSoldier1AK47" prob="0.1" />
+	<entity name="npcSoldier2Machete" prob="0.1" />
+	<entity name="npcSoldier2DPistol" prob="0.1" />
+	<entity name="npcSoldier2AK47" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="survivorSoldier1TRifle" prob="0.1" />
+	<entity name="survivorSoldier1SMG" prob="0.1" />
+	<entity name="survivorSoldier1M60" prob="0.1" />
+	<entity name="survivorSoldier2TRifle" prob="0.1" />
+	<entity name="survivorSoldier2SMG" prob="0.1" />
+	<entity name="survivorSoldier2M60" prob="0.1" />
+	<entity name="survivorSoldier1RocketL" prob="0.1" />
+	<entity name="npcSoldier1TRifle" prob="0.1" />
+	<entity name="npcSoldier1SMG" prob="0.1" />
+	<entity name="npcSoldier1M60" prob="0.1" />
+	<entity name="npcSoldier2TRifle" prob="0.1" />
+	<entity name="npcSoldier2SMG" prob="0.1" />
+	<entity name="npcSoldier2M60" prob="0.1" />
+	<entity name="npcSoldier1RocketL" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="survivorSoldier1Club" prob="0.03" />
+	<entity name="survivorSoldier1Bat" prob="0.03" />
+	<entity name="survivorSoldier1Knife" prob="0.03" />
+	<entity name="survivorSoldier2Club" prob="0.03" />
+	<entity name="survivorSoldier2Bat" prob="0.03" />
+	<entity name="survivorSoldier2Knife" prob="0.03" />
+	<entity name="npcSoldier1Club" prob="0.03" />
+	<entity name="npcSoldier1Bat" prob="0.03" />
+	<entity name="npcSoldier1Knife" prob="0.03" />
+	<entity name="npcSoldier2Club" prob="0.03" />
+	<entity name="npcSoldier2Bat" prob="0.03" />
+	<entity name="npcSoldier2Knife" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="survivorSoldier1Machete" prob="0.03" />
+	<entity name="survivorSoldier1DPistol" prob="0.03" />
+	<entity name="survivorSoldier1AK47" prob="0.03" />
+	<entity name="survivorSoldier2Machete" prob="0.03" />
+	<entity name="survivorSoldier2DPistol" prob="0.03" />
+	<entity name="survivorSoldier2AK47" prob="0.03" />
+	<entity name="npcSoldier1Machete" prob="0.03" />
+	<entity name="npcSoldier1DPistol" prob="0.03" />
+	<entity name="npcSoldier1AK47" prob="0.03" />
+	<entity name="npcSoldier2Machete" prob="0.03" />
+	<entity name="npcSoldier2DPistol" prob="0.03" />
+	<entity name="npcSoldier2AK47" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="survivorSoldier1TRifle" prob="0.03" />
+	<entity name="survivorSoldier1SMG" prob="0.03" />
+	<entity name="survivorSoldier1M60" prob="0.03" />
+	<entity name="survivorSoldier2TRifle" prob="0.03" />
+	<entity name="survivorSoldier2SMG" prob="0.03" />
+	<entity name="survivorSoldier2M60" prob="0.03" />
+	<entity name="survivorSoldier1RocketL" prob="0.03" />
+	<entity name="npcSoldier1TRifle" prob="0.03" />
+	<entity name="npcSoldier1SMG" prob="0.03" />
+	<entity name="npcSoldier1M60" prob="0.03" />
+	<entity name="npcSoldier2TRifle" prob="0.03" />
+	<entity name="npcSoldier2SMG" prob="0.03" />
+	<entity name="npcSoldier2M60" prob="0.03" />
+	<entity name="npcSoldier1RocketL" prob="0.03" />
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="survivorSoldier1Club" prob="0.1" />
+	<entity name="survivorSoldier1Bat" prob="0.1" />
+	<entity name="survivorSoldier1Knife" prob="0.1" />
+	<entity name="survivorSoldier2Club" prob="0.1" />
+	<entity name="survivorSoldier2Bat" prob="0.1" />
+	<entity name="survivorSoldier2Knife" prob="0.1" />
+	<entity name="npcSoldier1Club" prob="0.1" />
+	<entity name="npcSoldier1Bat" prob="0.1" />
+	<entity name="npcSoldier1Knife" prob="0.1" />
+	<entity name="npcSoldier2Club" prob="0.1" />
+	<entity name="npcSoldier2Bat" prob="0.1" />
+	<entity name="npcSoldier2Knife" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="survivorSoldier1Machete" prob="0.1" />
+	<entity name="survivorSoldier1DPistol" prob="0.1" />
+	<entity name="survivorSoldier1AK47" prob="0.1" />
+	<entity name="survivorSoldier2Machete" prob="0.1" />
+	<entity name="survivorSoldier2DPistol" prob="0.1" />
+	<entity name="survivorSoldier2AK47" prob="0.1" />
+	<entity name="npcSoldier1Machete" prob="0.1" />
+	<entity name="npcSoldier1DPistol" prob="0.1" />
+	<entity name="npcSoldier1AK47" prob="0.1" />
+	<entity name="npcSoldier2Machete" prob="0.1" />
+	<entity name="npcSoldier2DPistol" prob="0.1" />
+	<entity name="npcSoldier2AK47" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="survivorSoldier1TRifle" prob="0.1" />
+	<entity name="survivorSoldier1SMG" prob="0.1" />
+	<entity name="survivorSoldier1M60" prob="0.1" />
+	<entity name="survivorSoldier2TRifle" prob="0.1" />
+	<entity name="survivorSoldier2SMG" prob="0.1" />
+	<entity name="survivorSoldier2M60" prob="0.1" />
+	<entity name="survivorSoldier1RocketL" prob="0.1" />
+	<entity name="npcSoldier1TRifle" prob="0.1" />
+	<entity name="npcSoldier1SMG" prob="0.1" />
+	<entity name="npcSoldier1M60" prob="0.1" />
+	<entity name="npcSoldier2TRifle" prob="0.1" />
+	<entity name="npcSoldier2SMG" prob="0.1" />
+	<entity name="npcSoldier2M60" prob="0.1" />
+	<entity name="npcSoldier1RocketL" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="survivorSoldier1Club" prob="0.03" />
+	<entity name="survivorSoldier1Bat" prob="0.03" />
+	<entity name="survivorSoldier1Knife" prob="0.03" />
+	<entity name="survivorSoldier2Club" prob="0.03" />
+	<entity name="survivorSoldier2Bat" prob="0.03" />
+	<entity name="survivorSoldier2Knife" prob="0.03" />
+	<entity name="npcSoldier1Club" prob="0.03" />
+	<entity name="npcSoldier1Bat" prob="0.03" />
+	<entity name="npcSoldier1Knife" prob="0.03" />
+	<entity name="npcSoldier2Club" prob="0.03" />
+	<entity name="npcSoldier2Bat" prob="0.03" />
+	<entity name="npcSoldier2Knife" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="survivorSoldier1Machete" prob="0.03" />
+	<entity name="survivorSoldier1DPistol" prob="0.03" />
+	<entity name="survivorSoldier1AK47" prob="0.03" />
+	<entity name="survivorSoldier2Machete" prob="0.03" />
+	<entity name="survivorSoldier2DPistol" prob="0.03" />
+	<entity name="survivorSoldier2AK47" prob="0.03" />
+	<entity name="npcSoldier1Machete" prob="0.03" />
+	<entity name="npcSoldier1DPistol" prob="0.03" />
+	<entity name="npcSoldier1AK47" prob="0.03" />
+	<entity name="npcSoldier2Machete" prob="0.03" />
+	<entity name="npcSoldier2DPistol" prob="0.03" />
+	<entity name="npcSoldier2AK47" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="survivorSoldier1TRifle" prob="0.03" />
+	<entity name="survivorSoldier1SMG" prob="0.03" />
+	<entity name="survivorSoldier1M60" prob="0.03" />
+	<entity name="survivorSoldier2TRifle" prob="0.03" />
+	<entity name="survivorSoldier2SMG" prob="0.03" />
+	<entity name="survivorSoldier2M60" prob="0.03" />
+	<entity name="survivorSoldier1RocketL" prob="0.03" />
+	<entity name="npcSoldier1TRifle" prob="0.03" />
+	<entity name="npcSoldier1SMG" prob="0.03" />
+	<entity name="npcSoldier1M60" prob="0.03" />
+	<entity name="npcSoldier2TRifle" prob="0.03" />
+	<entity name="npcSoldier2SMG" prob="0.03" />
+	<entity name="npcSoldier2M60" prob="0.03" />
+	<entity name="npcSoldier1RocketL" prob="0.03" />
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="survivorSoldier1Club" prob="0.1" />
+	<entity name="survivorSoldier1Bat" prob="0.1" />
+	<entity name="survivorSoldier1Knife" prob="0.1" />
+	<entity name="survivorSoldier2Club" prob="0.1" />
+	<entity name="survivorSoldier2Bat" prob="0.1" />
+	<entity name="survivorSoldier2Knife" prob="0.1" />
+	<entity name="survivorOfficerClub" prob="0.1" />
+	<entity name="survivorOfficerBat" prob="0.1" />
+	<entity name="survivorOfficerKnife" prob="0.1" />
+	<entity name="npcSoldier1Club" prob="0.1" />
+	<entity name="npcSoldier1Bat" prob="0.1" />
+	<entity name="npcSoldier1Knife" prob="0.1" />
+	<entity name="npcSoldier2Club" prob="0.1" />
+	<entity name="npcSoldier2Bat" prob="0.1" />
+	<entity name="npcSoldier2Knife" prob="0.1" />
+	<entity name="npcOfficerClub" prob="0.1" />
+	<entity name="npcOfficerBat" prob="0.1" />
+	<entity name="npcOfficerKnife" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="survivorSoldier1Machete" prob="0.1" />
+	<entity name="survivorSoldier1DPistol" prob="0.1" />
+	<entity name="survivorSoldier1AK47" prob="0.1" />
+	<entity name="survivorSoldier2Machete" prob="0.1" />
+	<entity name="survivorSoldier2DPistol" prob="0.1" />
+	<entity name="survivorSoldier2AK47" prob="0.1" />
+	<entity name="survivorOfficerMachete" prob="0.1" />
+	<entity name="survivorOfficerDPistol" prob="0.1" />
+	<entity name="survivorOfficerAK47" prob="0.1" />
+	<entity name="npcSoldier1Machete" prob="0.1" />
+	<entity name="npcSoldier1DPistol" prob="0.1" />
+	<entity name="npcSoldier1AK47" prob="0.1" />
+	<entity name="npcSoldier2Machete" prob="0.1" />
+	<entity name="npcSoldier2DPistol" prob="0.1" />
+	<entity name="npcSoldier2AK47" prob="0.1" />
+	<entity name="npcOfficerMachete" prob="0.1" />
+	<entity name="npcOfficerDPistol" prob="0.1" />
+	<entity name="npcOfficerAK47" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="survivorSoldier1TRifle" prob="0.1" />
+	<entity name="survivorSoldier1SMG" prob="0.1" />
+	<entity name="survivorSoldier1M60" prob="0.1" />
+	<entity name="survivorSoldier2TRifle" prob="0.1" />
+	<entity name="survivorSoldier2SMG" prob="0.1" />
+	<entity name="survivorSoldier2M60" prob="0.1" />
+	<entity name="survivorSoldier1RocketL" prob="0.1" />
+	<entity name="survivorOfficerTRifle" prob="0.1" />
+	<entity name="survivorOfficerSMG" prob="0.1" />
+	<entity name="survivorOfficerM60" prob="0.1" />
+	<entity name="npcSoldier1TRifle" prob="0.1" />
+	<entity name="npcSoldier1SMG" prob="0.1" />
+	<entity name="npcSoldier1M60" prob="0.1" />
+	<entity name="npcSoldier2TRifle" prob="0.1" />
+	<entity name="npcSoldier2SMG" prob="0.1" />
+	<entity name="npcSoldier2M60" prob="0.1" />
+	<entity name="npcSoldier1RocketL" prob="0.1" />
+	<entity name="npcOfficerTRifle" prob="0.1" />
+	<entity name="npcOfficerSMG" prob="0.1" />
+	<entity name="npcOfficerM60" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="survivorSoldier1Club" prob="0.03" />
+	<entity name="survivorSoldier1Bat" prob="0.03" />
+	<entity name="survivorSoldier1Knife" prob="0.03" />
+	<entity name="survivorSoldier2Club" prob="0.03" />
+	<entity name="survivorSoldier2Bat" prob="0.03" />
+	<entity name="survivorSoldier2Knife" prob="0.03" />
+	<entity name="survivorOfficerClub" prob="0.03" />
+	<entity name="survivorOfficerBat" prob="0.03" />
+	<entity name="survivorOfficerKnife" prob="0.03" />
+	<entity name="npcSoldier1Club" prob="0.03" />
+	<entity name="npcSoldier1Bat" prob="0.03" />
+	<entity name="npcSoldier1Knife" prob="0.03" />
+	<entity name="npcSoldier2Club" prob="0.03" />
+	<entity name="npcSoldier2Bat" prob="0.03" />
+	<entity name="npcSoldier2Knife" prob="0.03" />
+	<entity name="npcOfficerClub" prob="0.03" />
+	<entity name="npcOfficerBat" prob="0.03" />
+	<entity name="npcOfficerKnife" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="survivorSoldier1Machete" prob="0.03" />
+	<entity name="survivorSoldier1DPistol" prob="0.03" />
+	<entity name="survivorSoldier1AK47" prob="0.03" />
+	<entity name="survivorSoldier2Machete" prob="0.03" />
+	<entity name="survivorSoldier2DPistol" prob="0.03" />
+	<entity name="survivorSoldier2AK47" prob="0.03" />
+	<entity name="survivorOfficerMachete" prob="0.03" />
+	<entity name="survivorOfficerDPistol" prob="0.03" />
+	<entity name="survivorOfficerAK47" prob="0.03" />
+	<entity name="npcSoldier1Machete" prob="0.03" />
+	<entity name="npcSoldier1DPistol" prob="0.03" />
+	<entity name="npcSoldier1AK47" prob="0.03" />
+	<entity name="npcSoldier2Machete" prob="0.03" />
+	<entity name="npcSoldier2DPistol" prob="0.03" />
+	<entity name="npcSoldier2AK47" prob="0.03" />
+	<entity name="npcOfficerMachete" prob="0.03" />
+	<entity name="npcOfficerDPistol" prob="0.03" />
+	<entity name="npcOfficerAK47" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="survivorSoldier1TRifle" prob="0.03" />
+	<entity name="survivorSoldier1SMG" prob="0.03" />
+	<entity name="survivorSoldier1M60" prob="0.03" />
+	<entity name="survivorSoldier2TRifle" prob="0.03" />
+	<entity name="survivorSoldier2SMG" prob="0.03" />
+	<entity name="survivorSoldier2M60" prob="0.03" />
+	<entity name="survivorSoldier1RocketL" prob="0.03" />
+	<entity name="survivorOfficerTRifle" prob="0.03" />
+	<entity name="survivorOfficerSMG" prob="0.03" />
+	<entity name="survivorOfficerM60" prob="0.03" />
+	<entity name="npcSoldier1TRifle" prob="0.03" />
+	<entity name="npcSoldier1SMG" prob="0.03" />
+	<entity name="npcSoldier1M60" prob="0.03" />
+	<entity name="npcSoldier2TRifle" prob="0.03" />
+	<entity name="npcSoldier2SMG" prob="0.03" />
+	<entity name="npcSoldier2M60" prob="0.03" />
+	<entity name="npcSoldier1RocketL" prob="0.03" />
+	<entity name="npcOfficerTRifle" prob="0.03" />
+	<entity name="npcOfficerSMG" prob="0.03" />
+	<entity name="npcOfficerM60" prob="0.03" />
+</append>
+
+
+</ErrorNull>

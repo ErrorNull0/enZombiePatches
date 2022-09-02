@@ -1,0 +1,324 @@
+<ErrorNull>
+
+<!--
+By default, body harvesting for the vault dwellerz are disabled. To TURN ON body harvesting, delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is directly below (on line 8), and the 2nd one is after the first block of code (on line 315). Again, delete both lines.
+-->
+
+
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) *********
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentFemale') or contains(@name,'VaultDoctor')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentFemaleClub')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentFemaleKnife')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentFemaleAxe')]">
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentFemalePistol')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentFemalePipeMG')]">
+	<drop event="Harvest" name="resourceWood"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe"		count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultDoctorBat')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultDoctorClub')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultDoctorKnife')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultDoctorPistol')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentMale') or contains(@name,'VaultBoss')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentMaleClub')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentMaleBat')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentMaleKnife')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentMaleAxe')]">
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentMalePistol')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultResidentMalePipeMG')]">
+	<drop event="Harvest" name="resourceWood"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe"		count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultBossClub')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultBossKnife')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultBossPistol')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultSecurityFemale')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceScrapIron"	count="20"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="5"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="6"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" 	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2"	tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="15,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultSecurityFemaleClub')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultSecurityFemaleBat')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultSecurityFemaleAxe')]">
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultSecurityFemalePistol')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultSecurityFemaleSMG')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultSecurityMale')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceScrapIron"	count="20"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="5"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="6"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2"	tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="15,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultSecurityMaleClub')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultSecurityMaleBat')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultSecurityMaleAxe')]">
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultSecurityMalePistol')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'VaultSecurityMaleSMG')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ReconFemale')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="armorMilitarySetParts"	count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceMilitaryFiber"	count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"		count="1" 	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2"	tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="15,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ReconFemaleClub')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ReconFemaleAK47')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"			count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ReconFemaleTRifle')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ReconFemaleM60')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ReconFemaleRocketL')]">
+	<drop event="Harvest" name="resourceForgedSteel"					count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunExplosivesT3RocketLauncherParts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ReconMale')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="armorMilitarySetParts"	count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceMilitaryFiber"	count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2"	tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="15,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ReconMaleClub')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ReconMaleAK47')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"			count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ReconMaleTRifle')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ReconMaleM60')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ReconMaleRocketL')]">
+	<drop event="Harvest" name="resourceForgedSteel"					count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunExplosivesT3RocketLauncherParts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ArmyPowerArmorFemale')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceForgedSteel"	count="8"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="armorMilitarySetParts"	count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceMilitaryFiber"	count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"		count="1" 	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2"	tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="15,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ArmyPowerArmorFemaleAK47')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"			count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ArmyPowerArmorFemaleM60')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ArmyPowerArmorFemaleRocketL')]">
+	<drop event="Harvest" name="resourceForgedSteel"					count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunExplosivesT3RocketLauncherParts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ArmyPowerArmorMale')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceForgedSteel"	count="4"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="armorMilitarySetParts"	count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceMilitaryFiber"	count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2"	tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="15,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ArmyPowerArmorMaleAK47')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"			count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ArmyPowerArmorMaleM60')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'ArmyPowerArmorMaleRocketL')]">
+	<drop event="Harvest" name="resourceForgedSteel"					count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunExplosivesT3RocketLauncherParts"		count="1" tag="butcherHarvest"/>
+</append>
+
+
+
+
+********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+
+
+<!-- DO NOT DELETE ANYTHING BELOW -->
+
+
+</ErrorNull>

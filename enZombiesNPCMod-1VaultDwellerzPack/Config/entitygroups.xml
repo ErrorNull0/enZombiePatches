@@ -1,0 +1,1037 @@
+<ErrorNull>
+
+<!-- 
+Each of the Vault Dwellerz spawn in all biomes equally. However, they are assigned specific areas in the biome based on their weapon type. The wilderness spawns Vault Dwellerz with weaker melee like clubs, bats, knives, etc. The city spawns dwellerz with some melee but also some ranged pipe weapons and pistols. The downtown area spawns dwellerz with strong weapons like AK47, M60, rocketlauncher, etc.
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="npcVaultResidentFemaleClub" prob="0.1" />
+	<entity name="npcVaultResidentFemaleKnife" prob="0.1" />
+	<entity name="npcVaultResidentMaleClub" prob="0.1" />
+	<entity name="npcVaultResidentMaleBat" prob="0.1" />
+	<entity name="npcVaultBossClub" prob="0.1" />
+	<entity name="npcVaultDoctorBat" prob="0.1" />
+	<entity name="npcVaultDoctorClub" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleClub" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleBat" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleAxe" prob="0.1" />
+	<entity name="npcVaultSecurityMaleClub" prob="0.1" />
+	<entity name="npcVaultSecurityMaleBat" prob="0.1" />
+	<entity name="npcVaultSecurityMaleAxe" prob="0.1" />
+	<entity name="npcReconFemaleClub" prob="0.1" />
+	<entity name="npcReconMaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleKnife" prob="0.1" />
+	<entity name="survivorVaultResidentMaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentMaleBat" prob="0.1" />
+	<entity name="survivorVaultBossClub" prob="0.1" />
+	<entity name="survivorVaultDoctorBat" prob="0.1" />
+	<entity name="survivorVaultDoctorClub" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleClub" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleBat" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleAxe" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleClub" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleBat" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleAxe" prob="0.1" />
+	<entity name="survivorReconFemaleClub" prob="0.1" />
+	<entity name="survivorReconMaleClub" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="npcVaultResidentFemaleAxe" prob="0.1" />
+	<entity name="npcVaultResidentFemalePistol" prob="0.1" />
+	<entity name="npcVaultResidentMaleKnife" prob="0.1" />
+	<entity name="npcVaultResidentMaleAxe" prob="0.1" />
+	<entity name="npcVaultResidentMalePistol" prob="0.1" />
+	<entity name="npcVaultBossKnife" prob="0.1" />
+	<entity name="npcVaultDoctorKnife" prob="0.1" />
+	<entity name="npcVaultBossPistol" prob="0.1" />
+	<entity name="npcVaultDoctorPistol" prob="0.1" />
+	<entity name="npcVaultSecurityFemalePistol" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleSMG" prob="0.1" />
+	<entity name="npcVaultSecurityMalePistol" prob="0.1" />
+	<entity name="npcVaultSecurityMaleSMG" prob="0.1" />
+	<entity name="npcReconFemaleAK47" prob="0.1" />
+	<entity name="npcReconMaleAK47" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleAxe" prob="0.1" />
+	<entity name="survivorVaultResidentFemalePistol" prob="0.1" />
+	<entity name="survivorVaultResidentMaleKnife" prob="0.1" />
+	<entity name="survivorVaultResidentMaleAxe" prob="0.1" />
+	<entity name="survivorVaultResidentMalePistol" prob="0.1" />
+	<entity name="survivorVaultBossKnife" prob="0.1" />
+	<entity name="survivorVaultDoctorKnife" prob="0.1" />
+	<entity name="survivorVaultBossPistol" prob="0.1" />
+	<entity name="survivorVaultDoctorPistol" prob="0.1" />
+	<entity name="survivorVaultSecurityFemalePistol" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleSMG" prob="0.1" />
+	<entity name="survivorVaultSecurityMalePistol" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleSMG" prob="0.1" />
+	<entity name="survivorReconFemaleAK47" prob="0.1" />
+	<entity name="survivorReconMaleAK47" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="npcVaultResidentFemalePipeMG" prob="0.1" />
+	<entity name="npcVaultResidentMalePipeMG" prob="0.1" />
+	<entity name="npcReconFemaleTRifle" prob="0.1" />
+	<entity name="npcReconFemaleM60" prob="0.1" />
+	<entity name="npcReconFemaleRocketL" prob="0.025" />
+	<entity name="npcReconMaleTRifle" prob="0.1" />
+	<entity name="npcReconMaleM60" prob="0.1" />
+	<entity name="npcReconMaleRocketL" prob="0.025" />
+	<entity name="npcArmyPowerArmorFemaleAK47" prob="0.1" />
+	<entity name="npcArmyPowerArmorFemaleM60" prob="0.1" />
+	<entity name="npcArmyPowerArmorFemaleRocketL" prob="0.025" />
+	<entity name="npcArmyPowerArmorMaleAK47" prob="0.1" />
+	<entity name="npcArmyPowerArmorMaleM60" prob="0.1" />
+	<entity name="npcArmyPowerArmorMaleRocketL" prob="0.025" />
+	<entity name="survivorVaultResidentFemalePipeMG" prob="0.1" />
+	<entity name="survivorVaultResidentMalePipeMG" prob="0.1" />
+	<entity name="survivorReconFemaleTRifle" prob="0.1" />
+	<entity name="survivorReconFemaleM60" prob="0.1" />
+	<entity name="survivorReconFemaleRocketL" prob="0.025" />
+	<entity name="survivorReconMaleTRifle" prob="0.1" />
+	<entity name="survivorReconMaleM60" prob="0.1" />
+	<entity name="survivorReconMaleRocketL" prob="0.025" />
+	<entity name="survivorArmyPowerArmorFemaleAK47" prob="0.1" />
+	<entity name="survivorArmyPowerArmorFemaleM60" prob="0.1" />
+	<entity name="survivorArmyPowerArmorFemaleRocketL" prob="0.025" />
+	<entity name="survivorArmyPowerArmorMaleAK47" prob="0.1" />
+	<entity name="survivorArmyPowerArmorMaleM60" prob="0.1" />
+	<entity name="survivorArmyPowerArmorMaleRocketL" prob="0.025" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="npcVaultResidentFemaleClub" prob="0.03" />
+	<entity name="npcVaultResidentFemaleKnife" prob="0.03" />
+	<entity name="npcVaultResidentMaleClub" prob="0.03" />
+	<entity name="npcVaultResidentMaleBat" prob="0.03" />
+	<entity name="npcVaultBossClub" prob="0.03" />
+	<entity name="npcVaultDoctorBat" prob="0.03" />
+	<entity name="npcVaultDoctorClub" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleClub" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleBat" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleAxe" prob="0.03" />
+	<entity name="npcVaultSecurityMaleClub" prob="0.03" />
+	<entity name="npcVaultSecurityMaleBat" prob="0.03" />
+	<entity name="npcVaultSecurityMaleAxe" prob="0.03" />
+	<entity name="npcReconFemaleClub" prob="0.03" />
+	<entity name="npcReconMaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleKnife" prob="0.03" />
+	<entity name="survivorVaultResidentMaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentMaleBat" prob="0.03" />
+	<entity name="survivorVaultBossClub" prob="0.03" />
+	<entity name="survivorVaultDoctorBat" prob="0.03" />
+	<entity name="survivorVaultDoctorClub" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleClub" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleBat" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleAxe" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleClub" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleBat" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleAxe" prob="0.03" />
+	<entity name="survivorReconFemaleClub" prob="0.03" />
+	<entity name="survivorReconMaleClub" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="npcVaultResidentFemaleAxe" prob="0.03" />
+	<entity name="npcVaultResidentFemalePistol" prob="0.03" />
+	<entity name="npcVaultResidentMaleKnife" prob="0.03" />
+	<entity name="npcVaultResidentMaleAxe" prob="0.03" />
+	<entity name="npcVaultResidentMalePistol" prob="0.03" />
+	<entity name="npcVaultBossKnife" prob="0.03" />
+	<entity name="npcVaultDoctorKnife" prob="0.03" />
+	<entity name="npcVaultBossPistol" prob="0.03" />
+	<entity name="npcVaultDoctorPistol" prob="0.03" />
+	<entity name="npcVaultSecurityFemalePistol" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleSMG" prob="0.03" />
+	<entity name="npcVaultSecurityMalePistol" prob="0.03" />
+	<entity name="npcVaultSecurityMaleSMG" prob="0.03" />
+	<entity name="npcReconFemaleAK47" prob="0.03" />
+	<entity name="npcReconMaleAK47" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleAxe" prob="0.03" />
+	<entity name="survivorVaultResidentFemalePistol" prob="0.03" />
+	<entity name="survivorVaultResidentMaleKnife" prob="0.03" />
+	<entity name="survivorVaultResidentMaleAxe" prob="0.03" />
+	<entity name="survivorVaultResidentMalePistol" prob="0.03" />
+	<entity name="survivorVaultBossKnife" prob="0.03" />
+	<entity name="survivorVaultDoctorKnife" prob="0.03" />
+	<entity name="survivorVaultBossPistol" prob="0.03" />
+	<entity name="survivorVaultDoctorPistol" prob="0.03" />
+	<entity name="survivorVaultSecurityFemalePistol" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleSMG" prob="0.03" />
+	<entity name="survivorVaultSecurityMalePistol" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleSMG" prob="0.03" />
+	<entity name="survivorReconFemaleAK47" prob="0.03" />
+	<entity name="survivorReconMaleAK47" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="npcVaultResidentFemalePipeMG" prob="0.03" />
+	<entity name="npcVaultResidentMalePipeMG" prob="0.03" />
+	<entity name="npcReconFemaleTRifle" prob="0.03" />
+	<entity name="npcReconFemaleM60" prob="0.03" />
+	<entity name="npcReconFemaleRocketL" prob="0.007" />
+	<entity name="npcReconMaleTRifle" prob="0.03" />
+	<entity name="npcReconMaleM60" prob="0.03" />
+	<entity name="npcReconMaleRocketL" prob="0.007" />
+	<entity name="npcArmyPowerArmorFemaleAK47" prob="0.03" />
+	<entity name="npcArmyPowerArmorFemaleM60" prob="0.03" />
+	<entity name="npcArmyPowerArmorFemaleRocketL" prob="0.007" />
+	<entity name="npcArmyPowerArmorMaleAK47" prob="0.03" />
+	<entity name="npcArmyPowerArmorMaleM60" prob="0.03" />
+	<entity name="npcArmyPowerArmorMaleRocketL" prob="0.007" />
+	<entity name="survivorVaultResidentFemalePipeMG" prob="0.03" />
+	<entity name="survivorVaultResidentMalePipeMG" prob="0.03" />
+	<entity name="survivorReconFemaleTRifle" prob="0.03" />
+	<entity name="survivorReconFemaleM60" prob="0.03" />
+	<entity name="survivorReconFemaleRocketL" prob="0.007" />
+	<entity name="survivorReconMaleTRifle" prob="0.03" />
+	<entity name="survivorReconMaleM60" prob="0.03" />
+	<entity name="survivorReconMaleRocketL" prob="0.007" />
+	<entity name="survivorArmyPowerArmorFemaleAK47" prob="0.03" />
+	<entity name="survivorArmyPowerArmorFemaleM60" prob="0.03" />
+	<entity name="survivorArmyPowerArmorFemaleRocketL" prob="0.007" />
+	<entity name="survivorArmyPowerArmorMaleAK47" prob="0.03" />
+	<entity name="survivorArmyPowerArmorMaleM60" prob="0.03" />
+	<entity name="survivorArmyPowerArmorMaleRocketL" prob="0.007" />
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="npcVaultResidentFemaleClub" prob="0.1" />
+	<entity name="npcVaultResidentFemaleKnife" prob="0.1" />
+	<entity name="npcVaultResidentMaleClub" prob="0.1" />
+	<entity name="npcVaultResidentMaleBat" prob="0.1" />
+	<entity name="npcVaultBossClub" prob="0.1" />
+	<entity name="npcVaultDoctorBat" prob="0.1" />
+	<entity name="npcVaultDoctorClub" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleClub" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleBat" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleAxe" prob="0.1" />
+	<entity name="npcVaultSecurityMaleClub" prob="0.1" />
+	<entity name="npcVaultSecurityMaleBat" prob="0.1" />
+	<entity name="npcVaultSecurityMaleAxe" prob="0.1" />
+	<entity name="npcReconFemaleClub" prob="0.1" />
+	<entity name="npcReconMaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleKnife" prob="0.1" />
+	<entity name="survivorVaultResidentMaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentMaleBat" prob="0.1" />
+	<entity name="survivorVaultBossClub" prob="0.1" />
+	<entity name="survivorVaultDoctorBat" prob="0.1" />
+	<entity name="survivorVaultDoctorClub" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleClub" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleBat" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleAxe" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleClub" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleBat" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleAxe" prob="0.1" />
+	<entity name="survivorReconFemaleClub" prob="0.1" />
+	<entity name="survivorReconMaleClub" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="npcVaultResidentFemaleAxe" prob="0.1" />
+	<entity name="npcVaultResidentFemalePistol" prob="0.1" />
+	<entity name="npcVaultResidentMaleKnife" prob="0.1" />
+	<entity name="npcVaultResidentMaleAxe" prob="0.1" />
+	<entity name="npcVaultResidentMalePistol" prob="0.1" />
+	<entity name="npcVaultBossKnife" prob="0.1" />
+	<entity name="npcVaultDoctorKnife" prob="0.1" />
+	<entity name="npcVaultBossPistol" prob="0.1" />
+	<entity name="npcVaultDoctorPistol" prob="0.1" />
+	<entity name="npcVaultSecurityFemalePistol" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleSMG" prob="0.1" />
+	<entity name="npcVaultSecurityMalePistol" prob="0.1" />
+	<entity name="npcVaultSecurityMaleSMG" prob="0.1" />
+	<entity name="npcReconFemaleAK47" prob="0.1" />
+	<entity name="npcReconMaleAK47" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleAxe" prob="0.1" />
+	<entity name="survivorVaultResidentFemalePistol" prob="0.1" />
+	<entity name="survivorVaultResidentMaleKnife" prob="0.1" />
+	<entity name="survivorVaultResidentMaleAxe" prob="0.1" />
+	<entity name="survivorVaultResidentMalePistol" prob="0.1" />
+	<entity name="survivorVaultBossKnife" prob="0.1" />
+	<entity name="survivorVaultDoctorKnife" prob="0.1" />
+	<entity name="survivorVaultBossPistol" prob="0.1" />
+	<entity name="survivorVaultDoctorPistol" prob="0.1" />
+	<entity name="survivorVaultSecurityFemalePistol" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleSMG" prob="0.1" />
+	<entity name="survivorVaultSecurityMalePistol" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleSMG" prob="0.1" />
+	<entity name="survivorReconFemaleAK47" prob="0.1" />
+	<entity name="survivorReconMaleAK47" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="npcVaultResidentFemalePipeMG" prob="0.1" />
+	<entity name="npcVaultResidentMalePipeMG" prob="0.1" />
+	<entity name="npcReconFemaleTRifle" prob="0.1" />
+	<entity name="npcReconFemaleM60" prob="0.1" />
+	<entity name="npcReconFemaleRocketL" prob="0.025" />
+	<entity name="npcReconMaleTRifle" prob="0.1" />
+	<entity name="npcReconMaleM60" prob="0.1" />
+	<entity name="npcReconMaleRocketL" prob="0.025" />
+	<entity name="npcArmyPowerArmorFemaleAK47" prob="0.1" />
+	<entity name="npcArmyPowerArmorFemaleM60" prob="0.1" />
+	<entity name="npcArmyPowerArmorFemaleRocketL" prob="0.025" />
+	<entity name="npcArmyPowerArmorMaleAK47" prob="0.1" />
+	<entity name="npcArmyPowerArmorMaleM60" prob="0.1" />
+	<entity name="npcArmyPowerArmorMaleRocketL" prob="0.025" />
+	<entity name="survivorVaultResidentFemalePipeMG" prob="0.1" />
+	<entity name="survivorVaultResidentMalePipeMG" prob="0.1" />
+	<entity name="survivorReconFemaleTRifle" prob="0.1" />
+	<entity name="survivorReconFemaleM60" prob="0.1" />
+	<entity name="survivorReconFemaleRocketL" prob="0.025" />
+	<entity name="survivorReconMaleTRifle" prob="0.1" />
+	<entity name="survivorReconMaleM60" prob="0.1" />
+	<entity name="survivorReconMaleRocketL" prob="0.025" />
+	<entity name="survivorArmyPowerArmorFemaleAK47" prob="0.1" />
+	<entity name="survivorArmyPowerArmorFemaleM60" prob="0.1" />
+	<entity name="survivorArmyPowerArmorFemaleRocketL" prob="0.025" />
+	<entity name="survivorArmyPowerArmorMaleAK47" prob="0.1" />
+	<entity name="survivorArmyPowerArmorMaleM60" prob="0.1" />
+	<entity name="survivorArmyPowerArmorMaleRocketL" prob="0.025" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="npcVaultResidentFemaleClub" prob="0.03" />
+	<entity name="npcVaultResidentFemaleKnife" prob="0.03" />
+	<entity name="npcVaultResidentMaleClub" prob="0.03" />
+	<entity name="npcVaultResidentMaleBat" prob="0.03" />
+	<entity name="npcVaultBossClub" prob="0.03" />
+	<entity name="npcVaultDoctorBat" prob="0.03" />
+	<entity name="npcVaultDoctorClub" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleClub" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleBat" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleAxe" prob="0.03" />
+	<entity name="npcVaultSecurityMaleClub" prob="0.03" />
+	<entity name="npcVaultSecurityMaleBat" prob="0.03" />
+	<entity name="npcVaultSecurityMaleAxe" prob="0.03" />
+	<entity name="npcReconFemaleClub" prob="0.03" />
+	<entity name="npcReconMaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleKnife" prob="0.03" />
+	<entity name="survivorVaultResidentMaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentMaleBat" prob="0.03" />
+	<entity name="survivorVaultBossClub" prob="0.03" />
+	<entity name="survivorVaultDoctorBat" prob="0.03" />
+	<entity name="survivorVaultDoctorClub" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleClub" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleBat" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleAxe" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleClub" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleBat" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleAxe" prob="0.03" />
+	<entity name="survivorReconFemaleClub" prob="0.03" />
+	<entity name="survivorReconMaleClub" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="npcVaultResidentFemaleAxe" prob="0.03" />
+	<entity name="npcVaultResidentFemalePistol" prob="0.03" />
+	<entity name="npcVaultResidentMaleKnife" prob="0.03" />
+	<entity name="npcVaultResidentMaleAxe" prob="0.03" />
+	<entity name="npcVaultResidentMalePistol" prob="0.03" />
+	<entity name="npcVaultBossKnife" prob="0.03" />
+	<entity name="npcVaultDoctorKnife" prob="0.03" />
+	<entity name="npcVaultBossPistol" prob="0.03" />
+	<entity name="npcVaultDoctorPistol" prob="0.03" />
+	<entity name="npcVaultSecurityFemalePistol" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleSMG" prob="0.03" />
+	<entity name="npcVaultSecurityMalePistol" prob="0.03" />
+	<entity name="npcVaultSecurityMaleSMG" prob="0.03" />
+	<entity name="npcReconFemaleAK47" prob="0.03" />
+	<entity name="npcReconMaleAK47" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleAxe" prob="0.03" />
+	<entity name="survivorVaultResidentFemalePistol" prob="0.03" />
+	<entity name="survivorVaultResidentMaleKnife" prob="0.03" />
+	<entity name="survivorVaultResidentMaleAxe" prob="0.03" />
+	<entity name="survivorVaultResidentMalePistol" prob="0.03" />
+	<entity name="survivorVaultBossKnife" prob="0.03" />
+	<entity name="survivorVaultDoctorKnife" prob="0.03" />
+	<entity name="survivorVaultBossPistol" prob="0.03" />
+	<entity name="survivorVaultDoctorPistol" prob="0.03" />
+	<entity name="survivorVaultSecurityFemalePistol" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleSMG" prob="0.03" />
+	<entity name="survivorVaultSecurityMalePistol" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleSMG" prob="0.03" />
+	<entity name="survivorReconFemaleAK47" prob="0.03" />
+	<entity name="survivorReconMaleAK47" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="npcVaultResidentFemalePipeMG" prob="0.03" />
+	<entity name="npcVaultResidentMalePipeMG" prob="0.03" />
+	<entity name="npcReconFemaleTRifle" prob="0.03" />
+	<entity name="npcReconFemaleM60" prob="0.03" />
+	<entity name="npcReconFemaleRocketL" prob="0.007" />
+	<entity name="npcReconMaleTRifle" prob="0.03" />
+	<entity name="npcReconMaleM60" prob="0.03" />
+	<entity name="npcReconMaleRocketL" prob="0.007" />
+	<entity name="npcArmyPowerArmorFemaleAK47" prob="0.03" />
+	<entity name="npcArmyPowerArmorFemaleM60" prob="0.03" />
+	<entity name="npcArmyPowerArmorFemaleRocketL" prob="0.007" />
+	<entity name="npcArmyPowerArmorMaleAK47" prob="0.03" />
+	<entity name="npcArmyPowerArmorMaleM60" prob="0.03" />
+	<entity name="npcArmyPowerArmorMaleRocketL" prob="0.007" />
+	<entity name="survivorVaultResidentFemalePipeMG" prob="0.03" />
+	<entity name="survivorVaultResidentMalePipeMG" prob="0.03" />
+	<entity name="survivorReconFemaleTRifle" prob="0.03" />
+	<entity name="survivorReconFemaleM60" prob="0.03" />
+	<entity name="survivorReconFemaleRocketL" prob="0.007" />
+	<entity name="survivorReconMaleTRifle" prob="0.03" />
+	<entity name="survivorReconMaleM60" prob="0.03" />
+	<entity name="survivorReconMaleRocketL" prob="0.007" />
+	<entity name="survivorArmyPowerArmorFemaleAK47" prob="0.03" />
+	<entity name="survivorArmyPowerArmorFemaleM60" prob="0.03" />
+	<entity name="survivorArmyPowerArmorFemaleRocketL" prob="0.007" />
+	<entity name="survivorArmyPowerArmorMaleAK47" prob="0.03" />
+	<entity name="survivorArmyPowerArmorMaleM60" prob="0.03" />
+	<entity name="survivorArmyPowerArmorMaleRocketL" prob="0.007" />
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="npcVaultResidentFemaleClub" prob="0.1" />
+	<entity name="npcVaultResidentFemaleKnife" prob="0.1" />
+	<entity name="npcVaultResidentMaleClub" prob="0.1" />
+	<entity name="npcVaultResidentMaleBat" prob="0.1" />
+	<entity name="npcVaultBossClub" prob="0.1" />
+	<entity name="npcVaultDoctorBat" prob="0.1" />
+	<entity name="npcVaultDoctorClub" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleClub" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleBat" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleAxe" prob="0.1" />
+	<entity name="npcVaultSecurityMaleClub" prob="0.1" />
+	<entity name="npcVaultSecurityMaleBat" prob="0.1" />
+	<entity name="npcVaultSecurityMaleAxe" prob="0.1" />
+	<entity name="npcReconFemaleClub" prob="0.1" />
+	<entity name="npcReconMaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleKnife" prob="0.1" />
+	<entity name="survivorVaultResidentMaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentMaleBat" prob="0.1" />
+	<entity name="survivorVaultBossClub" prob="0.1" />
+	<entity name="survivorVaultDoctorBat" prob="0.1" />
+	<entity name="survivorVaultDoctorClub" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleClub" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleBat" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleAxe" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleClub" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleBat" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleAxe" prob="0.1" />
+	<entity name="survivorReconFemaleClub" prob="0.1" />
+	<entity name="survivorReconMaleClub" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="npcVaultResidentFemaleAxe" prob="0.1" />
+	<entity name="npcVaultResidentFemalePistol" prob="0.1" />
+	<entity name="npcVaultResidentMaleKnife" prob="0.1" />
+	<entity name="npcVaultResidentMaleAxe" prob="0.1" />
+	<entity name="npcVaultResidentMalePistol" prob="0.1" />
+	<entity name="npcVaultBossKnife" prob="0.1" />
+	<entity name="npcVaultDoctorKnife" prob="0.1" />
+	<entity name="npcVaultBossPistol" prob="0.1" />
+	<entity name="npcVaultDoctorPistol" prob="0.1" />
+	<entity name="npcVaultSecurityFemalePistol" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleSMG" prob="0.1" />
+	<entity name="npcVaultSecurityMalePistol" prob="0.1" />
+	<entity name="npcVaultSecurityMaleSMG" prob="0.1" />
+	<entity name="npcReconFemaleAK47" prob="0.1" />
+	<entity name="npcReconMaleAK47" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleAxe" prob="0.1" />
+	<entity name="survivorVaultResidentFemalePistol" prob="0.1" />
+	<entity name="survivorVaultResidentMaleKnife" prob="0.1" />
+	<entity name="survivorVaultResidentMaleAxe" prob="0.1" />
+	<entity name="survivorVaultResidentMalePistol" prob="0.1" />
+	<entity name="survivorVaultBossKnife" prob="0.1" />
+	<entity name="survivorVaultDoctorKnife" prob="0.1" />
+	<entity name="survivorVaultBossPistol" prob="0.1" />
+	<entity name="survivorVaultDoctorPistol" prob="0.1" />
+	<entity name="survivorVaultSecurityFemalePistol" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleSMG" prob="0.1" />
+	<entity name="survivorVaultSecurityMalePistol" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleSMG" prob="0.1" />
+	<entity name="survivorReconFemaleAK47" prob="0.1" />
+	<entity name="survivorReconMaleAK47" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="npcVaultResidentFemalePipeMG" prob="0.1" />
+	<entity name="npcVaultResidentMalePipeMG" prob="0.1" />
+	<entity name="npcReconFemaleTRifle" prob="0.1" />
+	<entity name="npcReconFemaleM60" prob="0.1" />
+	<entity name="npcReconFemaleRocketL" prob="0.025" />
+	<entity name="npcReconMaleTRifle" prob="0.1" />
+	<entity name="npcReconMaleM60" prob="0.1" />
+	<entity name="npcReconMaleRocketL" prob="0.025" />
+	<entity name="npcArmyPowerArmorFemaleAK47" prob="0.1" />
+	<entity name="npcArmyPowerArmorFemaleM60" prob="0.1" />
+	<entity name="npcArmyPowerArmorFemaleRocketL" prob="0.025" />
+	<entity name="npcArmyPowerArmorMaleAK47" prob="0.1" />
+	<entity name="npcArmyPowerArmorMaleM60" prob="0.1" />
+	<entity name="npcArmyPowerArmorMaleRocketL" prob="0.025" />
+	<entity name="survivorVaultResidentFemalePipeMG" prob="0.1" />
+	<entity name="survivorVaultResidentMalePipeMG" prob="0.1" />
+	<entity name="survivorReconFemaleTRifle" prob="0.1" />
+	<entity name="survivorReconFemaleM60" prob="0.1" />
+	<entity name="survivorReconFemaleRocketL" prob="0.025" />
+	<entity name="survivorReconMaleTRifle" prob="0.1" />
+	<entity name="survivorReconMaleM60" prob="0.1" />
+	<entity name="survivorReconMaleRocketL" prob="0.025" />
+	<entity name="survivorArmyPowerArmorFemaleAK47" prob="0.1" />
+	<entity name="survivorArmyPowerArmorFemaleM60" prob="0.1" />
+	<entity name="survivorArmyPowerArmorFemaleRocketL" prob="0.025" />
+	<entity name="survivorArmyPowerArmorMaleAK47" prob="0.1" />
+	<entity name="survivorArmyPowerArmorMaleM60" prob="0.1" />
+	<entity name="survivorArmyPowerArmorMaleRocketL" prob="0.025" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="npcVaultResidentFemaleClub" prob="0.03" />
+	<entity name="npcVaultResidentFemaleKnife" prob="0.03" />
+	<entity name="npcVaultResidentMaleClub" prob="0.03" />
+	<entity name="npcVaultResidentMaleBat" prob="0.03" />
+	<entity name="npcVaultBossClub" prob="0.03" />
+	<entity name="npcVaultDoctorBat" prob="0.03" />
+	<entity name="npcVaultDoctorClub" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleClub" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleBat" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleAxe" prob="0.03" />
+	<entity name="npcVaultSecurityMaleClub" prob="0.03" />
+	<entity name="npcVaultSecurityMaleBat" prob="0.03" />
+	<entity name="npcVaultSecurityMaleAxe" prob="0.03" />
+	<entity name="npcReconFemaleClub" prob="0.03" />
+	<entity name="npcReconMaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleKnife" prob="0.03" />
+	<entity name="survivorVaultResidentMaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentMaleBat" prob="0.03" />
+	<entity name="survivorVaultBossClub" prob="0.03" />
+	<entity name="survivorVaultDoctorBat" prob="0.03" />
+	<entity name="survivorVaultDoctorClub" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleClub" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleBat" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleAxe" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleClub" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleBat" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleAxe" prob="0.03" />
+	<entity name="survivorReconFemaleClub" prob="0.03" />
+	<entity name="survivorReconMaleClub" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="npcVaultResidentFemaleAxe" prob="0.03" />
+	<entity name="npcVaultResidentFemalePistol" prob="0.03" />
+	<entity name="npcVaultResidentMaleKnife" prob="0.03" />
+	<entity name="npcVaultResidentMaleAxe" prob="0.03" />
+	<entity name="npcVaultResidentMalePistol" prob="0.03" />
+	<entity name="npcVaultBossKnife" prob="0.03" />
+	<entity name="npcVaultDoctorKnife" prob="0.03" />
+	<entity name="npcVaultBossPistol" prob="0.03" />
+	<entity name="npcVaultDoctorPistol" prob="0.03" />
+	<entity name="npcVaultSecurityFemalePistol" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleSMG" prob="0.03" />
+	<entity name="npcVaultSecurityMalePistol" prob="0.03" />
+	<entity name="npcVaultSecurityMaleSMG" prob="0.03" />
+	<entity name="npcReconFemaleAK47" prob="0.03" />
+	<entity name="npcReconMaleAK47" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleAxe" prob="0.03" />
+	<entity name="survivorVaultResidentFemalePistol" prob="0.03" />
+	<entity name="survivorVaultResidentMaleKnife" prob="0.03" />
+	<entity name="survivorVaultResidentMaleAxe" prob="0.03" />
+	<entity name="survivorVaultResidentMalePistol" prob="0.03" />
+	<entity name="survivorVaultBossKnife" prob="0.03" />
+	<entity name="survivorVaultDoctorKnife" prob="0.03" />
+	<entity name="survivorVaultBossPistol" prob="0.03" />
+	<entity name="survivorVaultDoctorPistol" prob="0.03" />
+	<entity name="survivorVaultSecurityFemalePistol" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleSMG" prob="0.03" />
+	<entity name="survivorVaultSecurityMalePistol" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleSMG" prob="0.03" />
+	<entity name="survivorReconFemaleAK47" prob="0.03" />
+	<entity name="survivorReconMaleAK47" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="npcVaultResidentFemalePipeMG" prob="0.03" />
+	<entity name="npcVaultResidentMalePipeMG" prob="0.03" />
+	<entity name="npcReconFemaleTRifle" prob="0.03" />
+	<entity name="npcReconFemaleM60" prob="0.03" />
+	<entity name="npcReconFemaleRocketL" prob="0.007" />
+	<entity name="npcReconMaleTRifle" prob="0.03" />
+	<entity name="npcReconMaleM60" prob="0.03" />
+	<entity name="npcReconMaleRocketL" prob="0.007" />
+	<entity name="npcArmyPowerArmorFemaleAK47" prob="0.03" />
+	<entity name="npcArmyPowerArmorFemaleM60" prob="0.03" />
+	<entity name="npcArmyPowerArmorFemaleRocketL" prob="0.007" />
+	<entity name="npcArmyPowerArmorMaleAK47" prob="0.03" />
+	<entity name="npcArmyPowerArmorMaleM60" prob="0.03" />
+	<entity name="npcArmyPowerArmorMaleRocketL" prob="0.007" />
+	<entity name="survivorVaultResidentFemalePipeMG" prob="0.03" />
+	<entity name="survivorVaultResidentMalePipeMG" prob="0.03" />
+	<entity name="survivorReconFemaleTRifle" prob="0.03" />
+	<entity name="survivorReconFemaleM60" prob="0.03" />
+	<entity name="survivorReconFemaleRocketL" prob="0.007" />
+	<entity name="survivorReconMaleTRifle" prob="0.03" />
+	<entity name="survivorReconMaleM60" prob="0.03" />
+	<entity name="survivorReconMaleRocketL" prob="0.007" />
+	<entity name="survivorArmyPowerArmorFemaleAK47" prob="0.03" />
+	<entity name="survivorArmyPowerArmorFemaleM60" prob="0.03" />
+	<entity name="survivorArmyPowerArmorFemaleRocketL" prob="0.007" />
+	<entity name="survivorArmyPowerArmorMaleAK47" prob="0.03" />
+	<entity name="survivorArmyPowerArmorMaleM60" prob="0.03" />
+	<entity name="survivorArmyPowerArmorMaleRocketL" prob="0.007" />
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="npcVaultResidentFemaleClub" prob="0.1" />
+	<entity name="npcVaultResidentFemaleKnife" prob="0.1" />
+	<entity name="npcVaultResidentMaleClub" prob="0.1" />
+	<entity name="npcVaultResidentMaleBat" prob="0.1" />
+	<entity name="npcVaultBossClub" prob="0.1" />
+	<entity name="npcVaultDoctorBat" prob="0.1" />
+	<entity name="npcVaultDoctorClub" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleClub" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleBat" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleAxe" prob="0.1" />
+	<entity name="npcVaultSecurityMaleClub" prob="0.1" />
+	<entity name="npcVaultSecurityMaleBat" prob="0.1" />
+	<entity name="npcVaultSecurityMaleAxe" prob="0.1" />
+	<entity name="npcReconFemaleClub" prob="0.1" />
+	<entity name="npcReconMaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleKnife" prob="0.1" />
+	<entity name="survivorVaultResidentMaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentMaleBat" prob="0.1" />
+	<entity name="survivorVaultBossClub" prob="0.1" />
+	<entity name="survivorVaultDoctorBat" prob="0.1" />
+	<entity name="survivorVaultDoctorClub" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleClub" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleBat" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleAxe" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleClub" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleBat" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleAxe" prob="0.1" />
+	<entity name="survivorReconFemaleClub" prob="0.1" />
+	<entity name="survivorReconMaleClub" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="npcVaultResidentFemaleAxe" prob="0.1" />
+	<entity name="npcVaultResidentFemalePistol" prob="0.1" />
+	<entity name="npcVaultResidentMaleKnife" prob="0.1" />
+	<entity name="npcVaultResidentMaleAxe" prob="0.1" />
+	<entity name="npcVaultResidentMalePistol" prob="0.1" />
+	<entity name="npcVaultBossKnife" prob="0.1" />
+	<entity name="npcVaultDoctorKnife" prob="0.1" />
+	<entity name="npcVaultBossPistol" prob="0.1" />
+	<entity name="npcVaultDoctorPistol" prob="0.1" />
+	<entity name="npcVaultSecurityFemalePistol" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleSMG" prob="0.1" />
+	<entity name="npcVaultSecurityMalePistol" prob="0.1" />
+	<entity name="npcVaultSecurityMaleSMG" prob="0.1" />
+	<entity name="npcReconFemaleAK47" prob="0.1" />
+	<entity name="npcReconMaleAK47" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleAxe" prob="0.1" />
+	<entity name="survivorVaultResidentFemalePistol" prob="0.1" />
+	<entity name="survivorVaultResidentMaleKnife" prob="0.1" />
+	<entity name="survivorVaultResidentMaleAxe" prob="0.1" />
+	<entity name="survivorVaultResidentMalePistol" prob="0.1" />
+	<entity name="survivorVaultBossKnife" prob="0.1" />
+	<entity name="survivorVaultDoctorKnife" prob="0.1" />
+	<entity name="survivorVaultBossPistol" prob="0.1" />
+	<entity name="survivorVaultDoctorPistol" prob="0.1" />
+	<entity name="survivorVaultSecurityFemalePistol" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleSMG" prob="0.1" />
+	<entity name="survivorVaultSecurityMalePistol" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleSMG" prob="0.1" />
+	<entity name="survivorReconFemaleAK47" prob="0.1" />
+	<entity name="survivorReconMaleAK47" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="npcVaultResidentFemalePipeMG" prob="0.1" />
+	<entity name="npcVaultResidentMalePipeMG" prob="0.1" />
+	<entity name="npcReconFemaleTRifle" prob="0.1" />
+	<entity name="npcReconFemaleM60" prob="0.1" />
+	<entity name="npcReconFemaleRocketL" prob="0.025" />
+	<entity name="npcReconMaleTRifle" prob="0.1" />
+	<entity name="npcReconMaleM60" prob="0.1" />
+	<entity name="npcReconMaleRocketL" prob="0.025" />
+	<entity name="npcArmyPowerArmorFemaleAK47" prob="0.1" />
+	<entity name="npcArmyPowerArmorFemaleM60" prob="0.1" />
+	<entity name="npcArmyPowerArmorFemaleRocketL" prob="0.025" />
+	<entity name="npcArmyPowerArmorMaleAK47" prob="0.1" />
+	<entity name="npcArmyPowerArmorMaleM60" prob="0.1" />
+	<entity name="npcArmyPowerArmorMaleRocketL" prob="0.025" />
+	<entity name="survivorVaultResidentFemalePipeMG" prob="0.1" />
+	<entity name="survivorVaultResidentMalePipeMG" prob="0.1" />
+	<entity name="survivorReconFemaleTRifle" prob="0.1" />
+	<entity name="survivorReconFemaleM60" prob="0.1" />
+	<entity name="survivorReconFemaleRocketL" prob="0.025" />
+	<entity name="survivorReconMaleTRifle" prob="0.1" />
+	<entity name="survivorReconMaleM60" prob="0.1" />
+	<entity name="survivorReconMaleRocketL" prob="0.025" />
+	<entity name="survivorArmyPowerArmorFemaleAK47" prob="0.1" />
+	<entity name="survivorArmyPowerArmorFemaleM60" prob="0.1" />
+	<entity name="survivorArmyPowerArmorFemaleRocketL" prob="0.025" />
+	<entity name="survivorArmyPowerArmorMaleAK47" prob="0.1" />
+	<entity name="survivorArmyPowerArmorMaleM60" prob="0.1" />
+	<entity name="survivorArmyPowerArmorMaleRocketL" prob="0.025" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="npcVaultResidentFemaleClub" prob="0.03" />
+	<entity name="npcVaultResidentFemaleKnife" prob="0.03" />
+	<entity name="npcVaultResidentMaleClub" prob="0.03" />
+	<entity name="npcVaultResidentMaleBat" prob="0.03" />
+	<entity name="npcVaultBossClub" prob="0.03" />
+	<entity name="npcVaultDoctorBat" prob="0.03" />
+	<entity name="npcVaultDoctorClub" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleClub" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleBat" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleAxe" prob="0.03" />
+	<entity name="npcVaultSecurityMaleClub" prob="0.03" />
+	<entity name="npcVaultSecurityMaleBat" prob="0.03" />
+	<entity name="npcVaultSecurityMaleAxe" prob="0.03" />
+	<entity name="npcReconFemaleClub" prob="0.03" />
+	<entity name="npcReconMaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleKnife" prob="0.03" />
+	<entity name="survivorVaultResidentMaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentMaleBat" prob="0.03" />
+	<entity name="survivorVaultBossClub" prob="0.03" />
+	<entity name="survivorVaultDoctorBat" prob="0.03" />
+	<entity name="survivorVaultDoctorClub" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleClub" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleBat" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleAxe" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleClub" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleBat" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleAxe" prob="0.03" />
+	<entity name="survivorReconFemaleClub" prob="0.03" />
+	<entity name="survivorReconMaleClub" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="npcVaultResidentFemaleAxe" prob="0.03" />
+	<entity name="npcVaultResidentFemalePistol" prob="0.03" />
+	<entity name="npcVaultResidentMaleKnife" prob="0.03" />
+	<entity name="npcVaultResidentMaleAxe" prob="0.03" />
+	<entity name="npcVaultResidentMalePistol" prob="0.03" />
+	<entity name="npcVaultBossKnife" prob="0.03" />
+	<entity name="npcVaultDoctorKnife" prob="0.03" />
+	<entity name="npcVaultBossPistol" prob="0.03" />
+	<entity name="npcVaultDoctorPistol" prob="0.03" />
+	<entity name="npcVaultSecurityFemalePistol" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleSMG" prob="0.03" />
+	<entity name="npcVaultSecurityMalePistol" prob="0.03" />
+	<entity name="npcVaultSecurityMaleSMG" prob="0.03" />
+	<entity name="npcReconFemaleAK47" prob="0.03" />
+	<entity name="npcReconMaleAK47" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleAxe" prob="0.03" />
+	<entity name="survivorVaultResidentFemalePistol" prob="0.03" />
+	<entity name="survivorVaultResidentMaleKnife" prob="0.03" />
+	<entity name="survivorVaultResidentMaleAxe" prob="0.03" />
+	<entity name="survivorVaultResidentMalePistol" prob="0.03" />
+	<entity name="survivorVaultBossKnife" prob="0.03" />
+	<entity name="survivorVaultDoctorKnife" prob="0.03" />
+	<entity name="survivorVaultBossPistol" prob="0.03" />
+	<entity name="survivorVaultDoctorPistol" prob="0.03" />
+	<entity name="survivorVaultSecurityFemalePistol" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleSMG" prob="0.03" />
+	<entity name="survivorVaultSecurityMalePistol" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleSMG" prob="0.03" />
+	<entity name="survivorReconFemaleAK47" prob="0.03" />
+	<entity name="survivorReconMaleAK47" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="npcVaultResidentFemalePipeMG" prob="0.03" />
+	<entity name="npcVaultResidentMalePipeMG" prob="0.03" />
+	<entity name="npcReconFemaleTRifle" prob="0.03" />
+	<entity name="npcReconFemaleM60" prob="0.03" />
+	<entity name="npcReconFemaleRocketL" prob="0.007" />
+	<entity name="npcReconMaleTRifle" prob="0.03" />
+	<entity name="npcReconMaleM60" prob="0.03" />
+	<entity name="npcReconMaleRocketL" prob="0.007" />
+	<entity name="npcArmyPowerArmorFemaleAK47" prob="0.03" />
+	<entity name="npcArmyPowerArmorFemaleM60" prob="0.03" />
+	<entity name="npcArmyPowerArmorFemaleRocketL" prob="0.007" />
+	<entity name="npcArmyPowerArmorMaleAK47" prob="0.03" />
+	<entity name="npcArmyPowerArmorMaleM60" prob="0.03" />
+	<entity name="npcArmyPowerArmorMaleRocketL" prob="0.007" />
+	<entity name="survivorVaultResidentFemalePipeMG" prob="0.03" />
+	<entity name="survivorVaultResidentMalePipeMG" prob="0.03" />
+	<entity name="survivorReconFemaleTRifle" prob="0.03" />
+	<entity name="survivorReconFemaleM60" prob="0.03" />
+	<entity name="survivorReconFemaleRocketL" prob="0.007" />
+	<entity name="survivorReconMaleTRifle" prob="0.03" />
+	<entity name="survivorReconMaleM60" prob="0.03" />
+	<entity name="survivorReconMaleRocketL" prob="0.007" />
+	<entity name="survivorArmyPowerArmorFemaleAK47" prob="0.03" />
+	<entity name="survivorArmyPowerArmorFemaleM60" prob="0.03" />
+	<entity name="survivorArmyPowerArmorFemaleRocketL" prob="0.007" />
+	<entity name="survivorArmyPowerArmorMaleAK47" prob="0.03" />
+	<entity name="survivorArmyPowerArmorMaleM60" prob="0.03" />
+	<entity name="survivorArmyPowerArmorMaleRocketL" prob="0.007" />
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="npcVaultResidentFemaleClub" prob="0.1" />
+	<entity name="npcVaultResidentFemaleKnife" prob="0.1" />
+	<entity name="npcVaultResidentMaleClub" prob="0.1" />
+	<entity name="npcVaultResidentMaleBat" prob="0.1" />
+	<entity name="npcVaultBossClub" prob="0.1" />
+	<entity name="npcVaultDoctorBat" prob="0.1" />
+	<entity name="npcVaultDoctorClub" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleClub" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleBat" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleAxe" prob="0.1" />
+	<entity name="npcVaultSecurityMaleClub" prob="0.1" />
+	<entity name="npcVaultSecurityMaleBat" prob="0.1" />
+	<entity name="npcVaultSecurityMaleAxe" prob="0.1" />
+	<entity name="npcReconFemaleClub" prob="0.1" />
+	<entity name="npcReconMaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleKnife" prob="0.1" />
+	<entity name="survivorVaultResidentMaleClub" prob="0.1" />
+	<entity name="survivorVaultResidentMaleBat" prob="0.1" />
+	<entity name="survivorVaultBossClub" prob="0.1" />
+	<entity name="survivorVaultDoctorBat" prob="0.1" />
+	<entity name="survivorVaultDoctorClub" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleClub" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleBat" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleAxe" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleClub" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleBat" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleAxe" prob="0.1" />
+	<entity name="survivorReconFemaleClub" prob="0.1" />
+	<entity name="survivorReconMaleClub" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="npcVaultResidentFemaleAxe" prob="0.1" />
+	<entity name="npcVaultResidentFemalePistol" prob="0.1" />
+	<entity name="npcVaultResidentMaleKnife" prob="0.1" />
+	<entity name="npcVaultResidentMaleAxe" prob="0.1" />
+	<entity name="npcVaultResidentMalePistol" prob="0.1" />
+	<entity name="npcVaultBossKnife" prob="0.1" />
+	<entity name="npcVaultDoctorKnife" prob="0.1" />
+	<entity name="npcVaultBossPistol" prob="0.1" />
+	<entity name="npcVaultDoctorPistol" prob="0.1" />
+	<entity name="npcVaultSecurityFemalePistol" prob="0.1" />
+	<entity name="npcVaultSecurityFemaleSMG" prob="0.1" />
+	<entity name="npcVaultSecurityMalePistol" prob="0.1" />
+	<entity name="npcVaultSecurityMaleSMG" prob="0.1" />
+	<entity name="npcReconFemaleAK47" prob="0.1" />
+	<entity name="npcReconMaleAK47" prob="0.1" />
+	<entity name="survivorVaultResidentFemaleAxe" prob="0.1" />
+	<entity name="survivorVaultResidentFemalePistol" prob="0.1" />
+	<entity name="survivorVaultResidentMaleKnife" prob="0.1" />
+	<entity name="survivorVaultResidentMaleAxe" prob="0.1" />
+	<entity name="survivorVaultResidentMalePistol" prob="0.1" />
+	<entity name="survivorVaultBossKnife" prob="0.1" />
+	<entity name="survivorVaultDoctorKnife" prob="0.1" />
+	<entity name="survivorVaultBossPistol" prob="0.1" />
+	<entity name="survivorVaultDoctorPistol" prob="0.1" />
+	<entity name="survivorVaultSecurityFemalePistol" prob="0.1" />
+	<entity name="survivorVaultSecurityFemaleSMG" prob="0.1" />
+	<entity name="survivorVaultSecurityMalePistol" prob="0.1" />
+	<entity name="survivorVaultSecurityMaleSMG" prob="0.1" />
+	<entity name="survivorReconFemaleAK47" prob="0.1" />
+	<entity name="survivorReconMaleAK47" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="npcVaultResidentFemalePipeMG" prob="0.1" />
+	<entity name="npcVaultResidentMalePipeMG" prob="0.1" />
+	<entity name="npcReconFemaleTRifle" prob="0.1" />
+	<entity name="npcReconFemaleM60" prob="0.1" />
+	<entity name="npcReconFemaleRocketL" prob="0.025" />
+	<entity name="npcReconMaleTRifle" prob="0.1" />
+	<entity name="npcReconMaleM60" prob="0.1" />
+	<entity name="npcReconMaleRocketL" prob="0.025" />
+	<entity name="npcArmyPowerArmorFemaleAK47" prob="0.1" />
+	<entity name="npcArmyPowerArmorFemaleM60" prob="0.1" />
+	<entity name="npcArmyPowerArmorFemaleRocketL" prob="0.025" />
+	<entity name="npcArmyPowerArmorMaleAK47" prob="0.1" />
+	<entity name="npcArmyPowerArmorMaleM60" prob="0.1" />
+	<entity name="npcArmyPowerArmorMaleRocketL" prob="0.025" />
+	<entity name="survivorVaultResidentFemalePipeMG" prob="0.1" />
+	<entity name="survivorVaultResidentMalePipeMG" prob="0.1" />
+	<entity name="survivorReconFemaleTRifle" prob="0.1" />
+	<entity name="survivorReconFemaleM60" prob="0.1" />
+	<entity name="survivorReconFemaleRocketL" prob="0.025" />
+	<entity name="survivorReconMaleTRifle" prob="0.1" />
+	<entity name="survivorReconMaleM60" prob="0.1" />
+	<entity name="survivorReconMaleRocketL" prob="0.025" />
+	<entity name="survivorArmyPowerArmorFemaleAK47" prob="0.1" />
+	<entity name="survivorArmyPowerArmorFemaleM60" prob="0.1" />
+	<entity name="survivorArmyPowerArmorFemaleRocketL" prob="0.025" />
+	<entity name="survivorArmyPowerArmorMaleAK47" prob="0.1" />
+	<entity name="survivorArmyPowerArmorMaleM60" prob="0.1" />
+	<entity name="survivorArmyPowerArmorMaleRocketL" prob="0.025" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="npcVaultResidentFemaleClub" prob="0.03" />
+	<entity name="npcVaultResidentFemaleKnife" prob="0.03" />
+	<entity name="npcVaultResidentMaleClub" prob="0.03" />
+	<entity name="npcVaultResidentMaleBat" prob="0.03" />
+	<entity name="npcVaultBossClub" prob="0.03" />
+	<entity name="npcVaultDoctorBat" prob="0.03" />
+	<entity name="npcVaultDoctorClub" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleClub" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleBat" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleAxe" prob="0.03" />
+	<entity name="npcVaultSecurityMaleClub" prob="0.03" />
+	<entity name="npcVaultSecurityMaleBat" prob="0.03" />
+	<entity name="npcVaultSecurityMaleAxe" prob="0.03" />
+	<entity name="npcReconFemaleClub" prob="0.03" />
+	<entity name="npcReconMaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleKnife" prob="0.03" />
+	<entity name="survivorVaultResidentMaleClub" prob="0.03" />
+	<entity name="survivorVaultResidentMaleBat" prob="0.03" />
+	<entity name="survivorVaultBossClub" prob="0.03" />
+	<entity name="survivorVaultDoctorBat" prob="0.03" />
+	<entity name="survivorVaultDoctorClub" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleClub" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleBat" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleAxe" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleClub" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleBat" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleAxe" prob="0.03" />
+	<entity name="survivorReconFemaleClub" prob="0.03" />
+	<entity name="survivorReconMaleClub" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="npcVaultResidentFemaleAxe" prob="0.03" />
+	<entity name="npcVaultResidentFemalePistol" prob="0.03" />
+	<entity name="npcVaultResidentMaleKnife" prob="0.03" />
+	<entity name="npcVaultResidentMaleAxe" prob="0.03" />
+	<entity name="npcVaultResidentMalePistol" prob="0.03" />
+	<entity name="npcVaultBossKnife" prob="0.03" />
+	<entity name="npcVaultDoctorKnife" prob="0.03" />
+	<entity name="npcVaultBossPistol" prob="0.03" />
+	<entity name="npcVaultDoctorPistol" prob="0.03" />
+	<entity name="npcVaultSecurityFemalePistol" prob="0.03" />
+	<entity name="npcVaultSecurityFemaleSMG" prob="0.03" />
+	<entity name="npcVaultSecurityMalePistol" prob="0.03" />
+	<entity name="npcVaultSecurityMaleSMG" prob="0.03" />
+	<entity name="npcReconFemaleAK47" prob="0.03" />
+	<entity name="npcReconMaleAK47" prob="0.03" />
+	<entity name="survivorVaultResidentFemaleAxe" prob="0.03" />
+	<entity name="survivorVaultResidentFemalePistol" prob="0.03" />
+	<entity name="survivorVaultResidentMaleKnife" prob="0.03" />
+	<entity name="survivorVaultResidentMaleAxe" prob="0.03" />
+	<entity name="survivorVaultResidentMalePistol" prob="0.03" />
+	<entity name="survivorVaultBossKnife" prob="0.03" />
+	<entity name="survivorVaultDoctorKnife" prob="0.03" />
+	<entity name="survivorVaultBossPistol" prob="0.03" />
+	<entity name="survivorVaultDoctorPistol" prob="0.03" />
+	<entity name="survivorVaultSecurityFemalePistol" prob="0.03" />
+	<entity name="survivorVaultSecurityFemaleSMG" prob="0.03" />
+	<entity name="survivorVaultSecurityMalePistol" prob="0.03" />
+	<entity name="survivorVaultSecurityMaleSMG" prob="0.03" />
+	<entity name="survivorReconFemaleAK47" prob="0.03" />
+	<entity name="survivorReconMaleAK47" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="npcVaultResidentFemalePipeMG" prob="0.03" />
+	<entity name="npcVaultResidentMalePipeMG" prob="0.03" />
+	<entity name="npcReconFemaleTRifle" prob="0.03" />
+	<entity name="npcReconFemaleM60" prob="0.03" />
+	<entity name="npcReconFemaleRocketL" prob="0.007" />
+	<entity name="npcReconMaleTRifle" prob="0.03" />
+	<entity name="npcReconMaleM60" prob="0.03" />
+	<entity name="npcReconMaleRocketL" prob="0.007" />
+	<entity name="npcArmyPowerArmorFemaleAK47" prob="0.03" />
+	<entity name="npcArmyPowerArmorFemaleM60" prob="0.03" />
+	<entity name="npcArmyPowerArmorFemaleRocketL" prob="0.007" />
+	<entity name="npcArmyPowerArmorMaleAK47" prob="0.03" />
+	<entity name="npcArmyPowerArmorMaleM60" prob="0.03" />
+	<entity name="npcArmyPowerArmorMaleRocketL" prob="0.007" />
+	<entity name="survivorVaultResidentFemalePipeMG" prob="0.03" />
+	<entity name="survivorVaultResidentMalePipeMG" prob="0.03" />
+	<entity name="survivorReconFemaleTRifle" prob="0.03" />
+	<entity name="survivorReconFemaleM60" prob="0.03" />
+	<entity name="survivorReconFemaleRocketL" prob="0.007" />
+	<entity name="survivorReconMaleTRifle" prob="0.03" />
+	<entity name="survivorReconMaleM60" prob="0.03" />
+	<entity name="survivorReconMaleRocketL" prob="0.007" />
+	<entity name="survivorArmyPowerArmorFemaleAK47" prob="0.03" />
+	<entity name="survivorArmyPowerArmorFemaleM60" prob="0.03" />
+	<entity name="survivorArmyPowerArmorFemaleRocketL" prob="0.007" />
+	<entity name="survivorArmyPowerArmorMaleAK47" prob="0.03" />
+	<entity name="survivorArmyPowerArmorMaleM60" prob="0.03" />
+	<entity name="survivorArmyPowerArmorMaleRocketL" prob="0.007" />
+</append>
+
+
+</ErrorNull>
