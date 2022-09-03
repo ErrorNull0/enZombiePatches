@@ -16,3 +16,12 @@ https://www.bebelious.fr/download/7dtd/Zulk.zip
 
 NPCMod
 https://community.7daystodie.com/topic/26974-npcmod-a-community-project/
+
+Banshee Queen
+https://7daystodiemods.com/banshee-queen/
+
+Diamond Giant Raid Boss
+https://7daystodiemods.com/diamond-raidboss/
+
+MickkPewPew
+https://7daystodiemods.com/mickkpewpews-server-side-zeds-20-5/
