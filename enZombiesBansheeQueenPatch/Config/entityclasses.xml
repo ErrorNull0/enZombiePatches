@@ -1,0 +1,28 @@
+<configs>
+
+<!--
+By default, body harvesting for the Banshee Queen zombie is disabled. To TURN ON body harvesting, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is below, and the 2nd one is at the end of this file. Again, delete both lines.
+-->
+
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) *********
+
+<append xpath="/entity_classes/entity_class[@name='zombieBansheeQueen']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="400"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="6" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="3" tag="butcherHarvest"/>
+</append>
+
+********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+
+
+<!-- DO NOT DELETE ANYTHING BELOW -->
+	
+	
+</configs>
