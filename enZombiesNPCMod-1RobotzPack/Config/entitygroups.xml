@@ -1,0 +1,83 @@
+<ErrorNull>
+
+<!--
+The AssaultMech will only spawn in the dense downtown areas of each biome. The mech is OP so the spawn prob is set low at 5%.
+-->
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="AssaultMech" prob=".05" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="AssaultMech" prob=".05" />
+</append>
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="AssaultMech" prob=".05" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="AssaultMech" prob=".05" />
+</append>
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="AssaultMech" prob=".05" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="AssaultMech" prob=".05" />
+</append>
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="AssaultMech" prob=".05" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="AssaultMech" prob=".05" />
+</append>
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="AssaultMech" prob=".05" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="AssaultMech" prob=".05" />
+</append>
+
+
+
+</ErrorNull>

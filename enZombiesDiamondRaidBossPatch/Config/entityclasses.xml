@@ -4,7 +4,7 @@
 By default, body harvesting for the Diamond Raid Boss is disabled. To TURN ON body harvesting, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is below, and the 2nd one is at the end of this file. Again, delete both lines.
 -->
 
-<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) *********
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* 
 
 <append xpath="/entity_classes/entity_class[@name='Diamond Giant']">
 	<property name="TimeStayAfterDeath" value="100"/>
@@ -17,7 +17,7 @@ By default, body harvesting for the Diamond Raid Boss is disabled. To TURN ON bo
 	<drop event="Destroy" name="oldCash" 			count="30,50"/>
 </append>
 
-********* DELETE THIS ENTIRE LINE!! ********* -->
+ ********* DELETE THIS ENTIRE LINE!! ********* -->
 
 
 

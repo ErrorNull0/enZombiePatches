@@ -1,0 +1,267 @@
+<ErrorNull>
+
+<!-- 
+Each of the four PitFighterz spawn in all biomes except for snow. The snow biome do not spawn FireBoxer or MMA because they are lightly clothed. It's cold by the snow! Also, at nights all four PitFighterz have a smaller chance to spawn, because they are tired and sleeping..
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.10"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="MMABanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.10"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="MMABanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.10"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="MMABanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.03"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="MMABanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.03"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="MMABanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.03"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="MMABanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.10"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="MMABanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.10"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="MMABanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.10"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="MMABanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.03"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="MMABanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.03"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="MMABanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.03"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="MMABanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.10"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="MMABanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.10"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="MMABanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.10"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="MMABanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.03"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="MMABanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.03"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="MMABanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.03"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="MMABanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.10"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="MMABanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.10"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="MMABanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.10"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.10"/>
+	<entity name="MMABanditEmptyHand" prob="0.10"/>
+	<entity name="KarateBanditEmptyHand" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.03"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="MMABanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.03"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="MMABanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="FireBoxerBanditEmptyHand" prob="0.03"/>
+	<entity name="GoldilocksBanditEmptyHand" prob="0.03"/>
+	<entity name="MMABanditEmptyHand" prob="0.03"/>
+	<entity name="KarateBanditEmptyHand" prob="0.03"/>
+</append>
+
+
+
+</ErrorNull>

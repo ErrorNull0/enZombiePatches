@@ -1,0 +1,232 @@
+<ErrorNull>
+
+<!-- 
+Each of the Raiderz are assigned a specific biome based on their clothing style. And, their weapon also determines if they spawn in the wilderness, city or downtown. Downtown spawns raiderz with stronger weapons, and the wilderness spawn raiders with weaker melee weapons.
+
+BIOME		ENTITY			
+Forest 		Parasite, SwatCaptainZombie, BloatedParasite		
+Desert 		BloatedParasite			
+Snow 		Parasite, SwatCaptainZombie
+Burnt 		SwatZombie, ExperimentZ
+Wasteland 	BloatedParasite, ExperimentZ, SwatZombie
+
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="SwatCaptainZombie" prob="0.10"/>
+	<entity name="Parasite" prob="0.10"/>
+	<entity name="BloatedParasite" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="SwatCaptainZombie" prob="0.10"/>
+	<entity name="Parasite" prob="0.10"/>
+	<entity name="BloatedParasite" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="SwatCaptainZombie" prob="0.10"/>
+	<entity name="Parasite" prob="0.10"/><entity name="ParasiteFeral" prob="0.10"/>
+	<entity name="BloatedParasite" prob="0.10"/><entity name="BloatedParasiteFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="SwatCaptainZombie" prob="0.10"/>
+	<entity name="Parasite" prob="0.10"/><entity name="ParasiteFeral" prob="0.05"/>
+	<entity name="BloatedParasite" prob="0.10"/><entity name="BloatedParasiteFeral" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="SwatCaptainZombie" prob="0.10"/>
+	<entity name="Parasite" prob="0.10"/><entity name="ParasiteFeral" prob="0.10"/>
+	<entity name="BloatedParasite" prob="0.10"/><entity name="BloatedParasiteFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="SwatCaptainZombie" prob="0.10"/>
+	<entity name="Parasite" prob="0.10"/><entity name="ParasiteFeral" prob="0.10"/>
+	<entity name="BloatedParasite" prob="0.10"/><entity name="BloatedParasiteFeral" prob="0.10"/>
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="BloatedParasite" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="BloatedParasite" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="BloatedParasite" prob="0.10"/><entity name="BloatedParasiteFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="BloatedParasite" prob="0.10"/><entity name="BloatedParasiteFeral" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="BloatedParasite" prob="0.10"/><entity name="BloatedParasiteFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="BloatedParasite" prob="0.10"/><entity name="BloatedParasiteFeral" prob="0.10"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="SwatCaptainZombie" prob="0.10"/>
+	<entity name="Parasite" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="SwatCaptainZombie" prob="0.10"/>
+	<entity name="Parasite" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="SwatCaptainZombie" prob="0.10"/>
+	<entity name="Parasite" prob="0.10"/><entity name="ParasiteFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="SwatCaptainZombie" prob="0.10"/>
+	<entity name="Parasite" prob="0.10"/><entity name="ParasiteFeral" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="SwatCaptainZombie" prob="0.10"/>
+	<entity name="Parasite" prob="0.10"/><entity name="ParasiteFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="SwatCaptainZombie" prob="0.10"/>
+	<entity name="Parasite" prob="0.10"/><entity name="ParasiteFeral" prob="0.10"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="SwatZombie" prob="0.10"/>
+	<entity name="ExperimentZ" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="SwatZombie" prob="0.10"/>
+	<entity name="ExperimentZ" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="SwatZombie" prob="0.10"/>
+	<entity name="ExperimentZ" prob="0.10"/><entity name="ExperimentZFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="SwatZombie" prob="0.10"/>
+	<entity name="ExperimentZ" prob="0.10"/><entity name="ExperimentZFeral" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="SwatZombie" prob="0.10"/>
+	<entity name="ExperimentZ" prob="0.10"/><entity name="ExperimentZFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="SwatZombie" prob="0.10"/>
+	<entity name="ExperimentZ" prob="0.10"/><entity name="ExperimentZFeral" prob="0.10"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="SwatZombie" prob="0.10"/>
+	<entity name="ExperimentZ" prob="0.10"/>
+	<entity name="BloatedParasite" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="SwatZombie" prob="0.10"/>
+	<entity name="ExperimentZ" prob="0.10"/>
+	<entity name="BloatedParasite" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="SwatZombie" prob="0.10"/>
+	<entity name="ExperimentZ" prob="0.10"/><entity name="ExperimentZFeral" prob="0.10"/>
+	<entity name="BloatedParasite" prob="0.10"/><entity name="BloatedParasiteFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="SwatZombie" prob="0.10"/>
+	<entity name="ExperimentZ" prob="0.10"/><entity name="ExperimentZFeral" prob="0.05"/>
+	<entity name="BloatedParasite" prob="0.10"/><entity name="BloatedParasiteFeral" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="SwatZombie" prob="0.10"/>
+	<entity name="ExperimentZ" prob="0.10"/><entity name="ExperimentZFeral" prob="0.10"/>
+	<entity name="BloatedParasite" prob="0.10"/><entity name="BloatedParasiteFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="SwatZombie" prob="0.10"/>
+	<entity name="ExperimentZ" prob="0.10"/><entity name="ExperimentZFeral" prob="0.10"/>
+	<entity name="BloatedParasite" prob="0.10"/><entity name="BloatedParasiteFeral" prob="0.10"/>
+</append>
+
+
+</ErrorNull>

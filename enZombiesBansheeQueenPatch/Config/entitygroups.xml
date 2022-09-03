@@ -108,4 +108,12 @@ In following with the main Banshee Queen mod, this zombie spawns only at night. 
 </append>
 
 
+
+
+<!-- Inserts all Mickkpewpew entities into Bloodmoon horde - whenever the vanilla Demolition zombie would spawn -->
+<insertAfter xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieDemolition']">
+	<entity name="zombieBansheeQueen" prob="0.33"/>
+</insertAfter>
+
+
 </configs>

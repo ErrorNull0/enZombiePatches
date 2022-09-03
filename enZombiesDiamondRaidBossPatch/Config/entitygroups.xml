@@ -40,4 +40,17 @@ In following with the Diamond RaidBoss mod design, the Diamond Giant spawns only
 </append>
 
 
+
+
+<!-- Inserts Diamond Giant into the Scout screamer hordes - whenever the vanilla zombieFatCopRadiated would spawn -->
+<insertAfter xpath="/entitygroups/entitygroup[contains(@name,'scoutHordeStage')]/entity[@name='zombieFatCopRadiated']">
+	<entity name="Diamond Giant" prob="0.33"/>
+</insertAfter>
+
+<!-- Inserts all Mickkpewpew entities into Bloodmoon horde - whenever the vanilla Demolition zombie would spawn -->
+<insertAfter xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieDemolition']">
+	<entity name="Diamond Giant" prob="0.33"/>
+</insertAfter>
+
+
 </configs>
