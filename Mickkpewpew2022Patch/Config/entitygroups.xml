@@ -1,0 +1,237 @@
+<configs>
+
+<!-- 
+In MickkPewPew mod originally has all entities spawn in the Wasteland. In merging with the custom biome groups that enZombies uses below, the MickkPewPew entities will spawn in the following biomes, which better matches their looks. 
+
+BIOME		ENTITY					
+forest		zombieLumberjackBossSnow
+desert		zombieSpiderRadiatedBoss
+snow		zombieLumberjackBossSnow
+burnt		animalZombieDogBoss, zombieBurntFeralBoss, PyromaniacBoss, Lucifer
+wasteland	WraithRB, zombieMutatedRadiatedBoss, animalZombieVultureRadiatedBossSnow, animalZombieVultureRadiatedBoss, animalMountainLionBossSnow, animalDireWolfBossSnow, BalorTheMalevolentWorldBoss
+
+BalorTheMalevolentWorldBoss has low spawn probability for automatic spawn due to its OP stats. The main intention is for the server admin to manually spawn during battle events.
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="zombieLumberjackBossSnow" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="zombieLumberjackBossSnow" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="zombieLumberjackBossSnow" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="zombieLumberjackBossSnow" prob="0.05"/>
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="zombieSpiderRadiatedBoss" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="zombieSpiderRadiatedBoss" prob="0.07"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="zombieSpiderRadiatedBoss" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="zombieSpiderRadiatedBoss" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="zombieSpiderRadiatedBoss" prob="0.07"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="zombieSpiderRadiatedBoss" prob="0.05"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="zombieLumberjackBossSnow" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="zombieLumberjackBossSnow" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="zombieLumberjackBossSnow" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="zombieLumberjackBossSnow" prob="0.05"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="zombieBurntFeralBoss" prob="0.08"/>
+	<entity name="animalZombieDogBoss" prob="0.08"/>
+	<entity name="Lucifer" prob="0.08"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="zombieBurntFeralBoss" prob="0.05"/>
+	<entity name="animalZombieDogBoss" prob="0.05"/>
+	<entity name="Lucifer" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="PyromaniacBoss" prob="0.1"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="zombieBurntFeralBoss" prob="0.08"/>
+	<entity name="animalZombieDogBoss" prob="0.08"/>
+	<entity name="Lucifer" prob="0.08"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="zombieBurntFeralBoss" prob="0.05"/>
+	<entity name="animalZombieDogBoss" prob="0.05"/>
+	<entity name="Lucifer" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="PyromaniacBoss" prob="0.1"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="zombieMutatedRadiatedBoss" prob="0.08"/>
+	<entity name="WraithRB" prob="0.08"/>
+	<entity name="BalorTheMalevolentWorldBoss" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="zombieMutatedRadiatedBoss" prob="0.10"/>
+	<entity name="WraithRB" prob="0.10"/>
+	<entity name="BalorTheMalevolentWorldBoss" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="zombieMutatedRadiatedBoss" prob="0.12"/>
+	<entity name="WraithRB" prob="0.12"/>
+</append>
+
+<!-- DAY SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsAggroDay']">
+	<entity name="animalZombieVultureRadiatedBossSnow" prob="0.08"/>
+	<entity name="animalZombieVultureRadiatedBoss" prob="0.08"/>
+	<entity name="animalMountainLionBossSnow" prob="0.08"/>
+	<entity name="animalDireWolfBossSnow" prob="0.08"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="zombieMutatedRadiatedBoss" prob="0.10"/>
+	<entity name="WraithRB" prob="0.10"/>
+	<entity name="BalorTheMalevolentWorldBoss" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="zombieMutatedRadiatedBoss" prob="0.12"/>
+	<entity name="WraithRB" prob="0.12"/>
+	<entity name="BalorTheMalevolentWorldBoss" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="zombieMutatedRadiatedBoss" prob="0.14"/>
+	<entity name="WraithRB" prob="0.14"/>
+</append>
+
+<!-- NIGHT SPAWNING HOSTILE ANIMALS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandAnimalsAggroNight']">
+	<entity name="animalZombieVultureRadiatedBossSnow" prob="0.12"/>
+	<entity name="animalZombieVultureRadiatedBoss" prob="0.12"/>
+	<entity name="animalMountainLionBossSnow" prob="0.12"/>
+	<entity name="animalDireWolfBossSnow" prob="0.12"/>
+</append>
+
+
+<!-- Inserts all Mickkpewpew entities into the Scout screamer hordes - whenever the vanilla zombieFatCopRadiated would spawn -->
+<insertAfter xpath="/entitygroups/entitygroup[contains(@name,'scoutHordeStage')]/entity[@name='zombieFatCopRadiated']">
+	<entity name="zombieMutatedRadiatedBoss" prob="0.20"/>
+	<entity name="zombieSpiderRadiatedBoss" prob="0.20"/>
+	<entity name="zombieBurntFeralBoss" prob="0.20"/>
+	<entity name="animalZombieVultureRadiatedBoss" prob="0.20"/>
+	<entity name="animalZombieVultureRadiatedBossSnow" prob="0.20"/>
+	<entity name="zombieLumberjackBossSnow" prob="0.20"/>
+	<entity name="WraithRB" prob="0.20"/>
+	<entity name="Lucifer" prob="0.20"/>
+	<entity name="PyromaniacBoss" prob="0.20"/>
+</insertAfter>
+
+<!-- Inserts all Mickkpewpew entities into Bloodmoon horde - whenever the vanilla Demolition zombie would spawn -->
+<insertAfter xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieDemolition']">
+	<entity name="zombieMutatedRadiatedBoss" prob="0.30"/>
+	<entity name="zombieSpiderRadiatedBoss" prob="0.30"/>
+	<entity name="zombieBurntFeralBoss" prob="0.30"/>
+	<entity name="animalZombieVultureRadiatedBoss" prob="0.30"/>
+	<entity name="animalZombieVultureRadiatedBossSnow" prob="0.30"/>
+	<entity name="zombieLumberjackBossSnow" prob="0.30"/>
+	<entity name="WraithRB" prob="0.30"/>
+	<entity name="Lucifer" prob="0.30"/>
+	<entity name="PyromaniacBoss" prob="0.30"/>
+</insertAfter>
+
+</configs>
