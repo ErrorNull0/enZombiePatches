@@ -14,9 +14,6 @@ https://community.7daystodie.com/topic/12229-robelotos-a20-modlets/
 Zulk Zombie
 https://www.bebelious.fr/download/7dtd/Zulk.zip
 
-NPCMod
-https://community.7daystodie.com/topic/26974-npcmod-a-community-project/
-
 Banshee Queen
 https://7daystodiemods.com/banshee-queen/
 
@@ -25,3 +22,6 @@ https://7daystodiemods.com/diamond-raidboss/
 
 MickkPewPew
 https://7daystodiemods.com/mickkpewpews-server-side-zeds-20-5/
+
+NPCMod
+https://community.7daystodie.com/topic/26974-npcmod-a-community-project/
