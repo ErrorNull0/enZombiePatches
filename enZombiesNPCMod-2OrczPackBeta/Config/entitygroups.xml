@@ -1,0 +1,171 @@
+<ErrorNull>
+
+<!-- 
+Each of the Orcz are assigned a specific biome based on their clothing style. They spawn mostly in the wilderness and a small chance in the city, but not in downtown areas.
+
+BIOME		ENTITY			
+Forest 		OrcShaman, OrcSlavemaster, OrcMatron, OrcSlaveBald, OrcSlaveBeard
+Desert 		OrcBerzerker, OrcUruk, OrcSlaveBald, OrcSlaveBeard
+Snow 		(none)
+Burnt 		OrcBerzerker, OrcUruk, OrcSlaveBald, OrcSlaveBeard
+Wasteland 	OrcBerzerker, OrcUruk, OrcSlaveBald, OrcSlaveBeard
+
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="OrcShaman" prob="0.15"/>
+	<entity name="OrcSlavemaster" prob="0.15"/>
+	<entity name="OrcMatron" prob="0.15"/>
+	<entity name="OrcSlaveBald" prob="0.15"/>
+	<entity name="OrcSlaveBeard" prob="0.15"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="OrcShaman" prob="0.05"/>
+	<entity name="OrcSlavemaster" prob="0.05"/>
+	<entity name="OrcMatron" prob="0.05"/>
+	<entity name="OrcSlaveBald" prob="0.05"/>
+	<entity name="OrcSlaveBeard" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="OrcShaman" prob="0.15"/>
+	<entity name="OrcSlavemaster" prob="0.15"/>
+	<entity name="OrcMatron" prob="0.15"/>
+	<entity name="OrcSlaveBald" prob="0.15"/>
+	<entity name="OrcSlaveBeard" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="OrcShaman" prob="0.05"/>
+	<entity name="OrcSlavemaster" prob="0.05"/>
+	<entity name="OrcMatron" prob="0.05"/>
+	<entity name="OrcSlaveBald" prob="0.05"/>
+	<entity name="OrcSlaveBeard" prob="0.05"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="OrcBerzerker" prob="0.15"/>
+	<entity name="OrcUruk" prob="0.15"/>
+	<entity name="OrcSlaveBald" prob="0.15"/>
+	<entity name="OrcSlaveBeard" prob="0.15"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="OrcBerzerker" prob="0.05"/>
+	<entity name="OrcUruk" prob="0.05"/>
+	<entity name="OrcSlaveBald" prob="0.05"/>
+	<entity name="OrcSlaveBeard" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="OrcBerzerker" prob="0.15"/>
+	<entity name="OrcUruk" prob="0.15"/>
+	<entity name="OrcSlaveBald" prob="0.15"/>
+	<entity name="OrcSlaveBeard" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="OrcBerzerker" prob="0.05"/>
+	<entity name="OrcUruk" prob="0.05"/>
+	<entity name="OrcSlaveBald" prob="0.05"/>
+	<entity name="OrcSlaveBeard" prob="0.05"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="OrcBerzerker" prob="0.15"/>
+	<entity name="OrcUruk" prob="0.15"/>
+	<entity name="OrcSlaveBald" prob="0.15"/>
+	<entity name="OrcSlaveBeard" prob="0.15"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="OrcBerzerker" prob="0.05"/>
+	<entity name="OrcUruk" prob="0.05"/>
+	<entity name="OrcSlaveBald" prob="0.05"/>
+	<entity name="OrcSlaveBeard" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="OrcBerzerker" prob="0.15"/>
+	<entity name="OrcUruk" prob="0.15"/>
+	<entity name="OrcSlaveBald" prob="0.15"/>
+	<entity name="OrcSlaveBeard" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="OrcBerzerker" prob="0.05"/>
+	<entity name="OrcUruk" prob="0.05"/>
+	<entity name="OrcSlaveBald" prob="0.05"/>
+	<entity name="OrcSlaveBeard" prob="0.05"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="OrcBerzerker" prob="0.15"/>
+	<entity name="OrcUruk" prob="0.15"/>
+	<entity name="OrcSlaveBald" prob="0.15"/>
+	<entity name="OrcSlaveBeard" prob="0.15"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="OrcBerzerker" prob="0.05"/>
+	<entity name="OrcUruk" prob="0.05"/>
+	<entity name="OrcSlaveBald" prob="0.05"/>
+	<entity name="OrcSlaveBeard" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="OrcBerzerker" prob="0.15"/>
+	<entity name="OrcUruk" prob="0.15"/>
+	<entity name="OrcSlaveBald" prob="0.15"/>
+	<entity name="OrcSlaveBeard" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="OrcBerzerker" prob="0.05"/>
+	<entity name="OrcUruk" prob="0.05"/>
+	<entity name="OrcSlaveBald" prob="0.05"/>
+	<entity name="OrcSlaveBeard" prob="0.05"/>
+</append>
+
+
+</ErrorNull>

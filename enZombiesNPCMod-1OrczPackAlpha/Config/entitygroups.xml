@@ -1,0 +1,178 @@
+<ErrorNull>
+
+<!-- 
+Each of the Orcz are assigned a specific biome based on their clothing style. They spawn mostly in the wilderness and a small chance in the city, but not in downtown areas.
+
+BIOME		ENTITY			
+Forest 		OrcGurl, OrcRaider
+Desert 		OrcRaider, OrcArcher, OrcCrossbowman
+Snow 		OrcBandit, OrcRaider
+Burnt 		OrcRaider, OrcArcher, OrcCrossbowman
+Wasteland 	OrcRaider, OrcArcher, OrcCrossbowman
+
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="OrcGurl" prob="0.15"/>
+	<entity name="OrcRaider" prob="0.15"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="OrcGurl" prob="0.05"/>
+	<entity name="OrcRaider" prob="0.05"/>
+</append>
+
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="OrcGurl" prob="0.15"/>
+	<entity name="OrcRaider" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="OrcGurl" prob="0.05"/>
+	<entity name="OrcRaider" prob="0.05"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="OrcRaider" prob="0.15"/>
+	<entity name="OrcArcher" prob="0.15"/>
+	<entity name="OrcCrossbowman" prob="0.15"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="OrcRaider" prob="0.05"/>
+	<entity name="OrcArcher" prob="0.05"/>
+	<entity name="OrcCrossbowman" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="OrcRaider" prob="0.15"/>
+	<entity name="OrcArcher" prob="0.15"/>
+	<entity name="OrcCrossbowman" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="OrcRaider" prob="0.05"/>
+	<entity name="OrcArcher" prob="0.05"/>
+	<entity name="OrcCrossbowman" prob="0.05"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="OrcGurl" prob="0.15"/>
+	<entity name="OrcRaider" prob="0.15"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="OrcGurl" prob="0.05"/>
+	<entity name="OrcRaider" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="OrcGurl" prob="0.15"/>
+	<entity name="OrcRaider" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="OrcGurl" prob="0.05"/>
+	<entity name="OrcRaider" prob="0.05"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="OrcRaider" prob="0.15"/>
+	<entity name="OrcArcher" prob="0.15"/>
+	<entity name="OrcCrossbowman" prob="0.15"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="OrcRaider" prob="0.05"/>
+	<entity name="OrcArcher" prob="0.05"/>
+	<entity name="OrcCrossbowman" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="OrcRaider" prob="0.15"/>
+	<entity name="OrcArcher" prob="0.15"/>
+	<entity name="OrcCrossbowman" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="OrcRaider" prob="0.05"/>
+	<entity name="OrcArcher" prob="0.05"/>
+	<entity name="OrcCrossbowman" prob="0.05"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="OrcRaider" prob="0.15"/>
+	<entity name="OrcArcher" prob="0.15"/>
+	<entity name="OrcCrossbowman" prob="0.15"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="OrcRaider" prob="0.05"/>
+	<entity name="OrcArcher" prob="0.05"/>
+	<entity name="OrcCrossbowman" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="OrcRaider" prob="0.15"/>
+	<entity name="OrcArcher" prob="0.15"/>
+	<entity name="OrcCrossbowman" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="OrcRaider" prob="0.05"/>
+	<entity name="OrcArcher" prob="0.05"/>
+	<entity name="OrcCrossbowman" prob="0.05"/>
+</append>
+
+
+</ErrorNull>

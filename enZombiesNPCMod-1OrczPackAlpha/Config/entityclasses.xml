@@ -1,0 +1,90 @@
+<ErrorNull>
+
+<!--
+By default, body harvesting for the Orcz entities are disabled. To TURN ON body harvesting for them, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is directly below (on line 8), and the 2nd one is after the first block of code (on line 80). Again, delete both lines.
+-->
+
+
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* 
+
+<append xpath="/entity_classes/entity_class[@name='OrcGurl']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"			count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="casinoCoin" 			count="10,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='OrcBandit']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="320"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"			count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="casinoCoin" 			count="15,30"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='OrcRaider']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="320"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"			count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron"		count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="casinoCoin" 			count="15,30"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='OrcArcher']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="270"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron"		count="10" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunBowT1WoodenBowParts"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="casinoCoin" 			count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='OrcCrossbowman']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="270"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron"		count="10" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunBowT1WoodenBowParts"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="casinoCoin" 			count="5,15"/>
+</append>
+
+
+
+
+
+ ********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+
+
+<!-- DO NOT DELETE ANYTHING BELOW -->
+
+
+
+</ErrorNull>

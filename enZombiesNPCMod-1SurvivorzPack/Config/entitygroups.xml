@@ -1,0 +1,190 @@
+<ErrorNull>
+
+<!-- 
+Each of the Survivorz are assigned a specific biome based on their clothing style:
+
+BIOME		ENTITY			
+Forest 		npcCosplayerBow, npcWrestlerEmptyHand
+Desert 		npcMrFriendlyM60
+Snow 		(too cold for these survivorz)
+Burnt 		npcAirForceTRifle, npcTattooGurlTRifle, npcMrFriendlyM60
+Wasteland 	npcAirForceTRifle, npcTattooGurlTRifle, npcMrFriendlyM60
+
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="npcCosplayerBow" prob="0.10"/>
+	<entity name="npcWrestlerEmptyHand" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="npcCosplayerBow" prob="0.10"/>
+	<entity name="npcWrestlerEmptyHand" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="npcCosplayerBow" prob="0.10"/>
+	<entity name="npcWrestlerEmptyHand" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="npcCosplayerBow" prob="0.03"/>
+	<entity name="npcWrestlerEmptyHand" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="npcCosplayerBow" prob="0.03"/>
+	<entity name="npcWrestlerEmptyHand" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="npcCosplayerBow" prob="0.03"/>
+	<entity name="npcWrestlerEmptyHand" prob="0.03"/>
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="npcMrFriendlyM60" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="npcMrFriendlyM60" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="npcMrFriendlyM60" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="npcMrFriendlyM60" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="npcMrFriendlyM60" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="npcMrFriendlyM60" prob="0.03"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="npcAirForceTRifle" prob="0.10"/>
+	<entity name="npcTattooGurlTRifle" prob="0.10"/>
+	<entity name="npcMrFriendlyM60" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="npcAirForceTRifle" prob="0.10"/>
+	<entity name="npcTattooGurlTRifle" prob="0.10"/>
+	<entity name="npcMrFriendlyM60" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="npcAirForceTRifle" prob="0.10"/>
+	<entity name="npcTattooGurlTRifle" prob="0.10"/>
+	<entity name="npcMrFriendlyM60" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="npcAirForceTRifle" prob="0.03"/>
+	<entity name="npcTattooGurlTRifle" prob="0.03"/>
+	<entity name="npcMrFriendlyM60" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="npcAirForceTRifle" prob="0.03"/>
+	<entity name="npcTattooGurlTRifle" prob="0.03"/>
+	<entity name="npcMrFriendlyM60" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="npcAirForceTRifle" prob="0.03"/>
+	<entity name="npcTattooGurlTRifle" prob="0.03"/>
+	<entity name="npcMrFriendlyM60" prob="0.03"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="npcAirForceTRifle" prob="0.10"/>
+	<entity name="npcTattooGurlTRifle" prob="0.10"/>
+	<entity name="npcMrFriendlyM60" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="npcAirForceTRifle" prob="0.10"/>
+	<entity name="npcTattooGurlTRifle" prob="0.10"/>
+	<entity name="npcMrFriendlyM60" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="npcAirForceTRifle" prob="0.10"/>
+	<entity name="npcTattooGurlTRifle" prob="0.10"/>
+	<entity name="npcMrFriendlyM60" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="npcAirForceTRifle" prob="0.03"/>
+	<entity name="npcTattooGurlTRifle" prob="0.03"/>
+	<entity name="npcMrFriendlyM60" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="npcAirForceTRifle" prob="0.03"/>
+	<entity name="npcTattooGurlTRifle" prob="0.03"/>
+	<entity name="npcMrFriendlyM60" prob="0.03"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="npcAirForceTRifle" prob="0.03"/>
+	<entity name="npcTattooGurlTRifle" prob="0.03"/>
+	<entity name="npcMrFriendlyM60" prob="0.03"/>
+</append>
+
+
+</ErrorNull>
