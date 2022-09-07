@@ -67,6 +67,7 @@ By default, body harvesting for the Orcz entities are disabled. To TURN ON body 
 	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
 	<drop event="Harvest" name="gunBowT1WoodenBowParts"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="ammoCrossbowBoltIron"	count="3" tag="butcherHarvest"/>
 	<drop event="Destroy" name="casinoCoin" 			count="10,15"/>
 </append>
 
