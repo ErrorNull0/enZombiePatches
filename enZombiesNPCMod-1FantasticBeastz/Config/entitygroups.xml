@@ -1,0 +1,305 @@
+<ErrorNull>
+
+<!-- 
+Each of the Fantastic Beastz spawn in biomes based on their look/design below. The GiantBat only spawns at night.
+
+BIOME
+Forest		AcidBreathingDragon, FireBreathingDragon, GiantBat, Griffon, Harpy, Pegasus
+Desert		AcidBreathingDragon, FireBreathingDragon, GiantBat, Gargoyle, Harpy, Manticore
+Snow		Griffon, Harpy, Pegasus
+Burnt		AcidBreathingDragon, FireBreathingDragon, GiantBat, Gargoyle, 
+Wasteland	AcidBreathingDragon, FireBreathingDragon, GiantBat, Gargoyle, Manticore
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="AcidBreathingDragon" prob="0.10"/>
+	<entity name="FireBreathingDragon" prob="0.10"/>
+	<entity name="Griffon" prob="0.10"/>
+	<entity name="Harpy" prob="0.10"/>
+	<entity name="Pegasus" prob="0.10"/>
+	
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="AcidBreathingDragon" prob="0.10"/>
+	<entity name="FireBreathingDragon" prob="0.10"/>
+	<entity name="Griffon" prob="0.10"/>
+	<entity name="Harpy" prob="0.10"/>
+	<entity name="Pegasus" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="AcidBreathingDragon" prob="0.10"/>
+	<entity name="FireBreathingDragon" prob="0.10"/>
+	<entity name="Griffon" prob="0.10"/>
+	<entity name="Harpy" prob="0.10"/>
+	<entity name="Pegasus" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="AcidBreathingDragon" prob="0.05"/>
+	<entity name="FireBreathingDragon" prob="0.05"/>
+	<entity name="Griffon" prob="0.05"/>
+	<entity name="Harpy" prob="0.05"/>
+	<entity name="Pegasus" prob="0.05"/>
+	<entity name="GiantBat" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="AcidBreathingDragon" prob="0.05"/>
+	<entity name="FireBreathingDragon" prob="0.05"/>
+	<entity name="Griffon" prob="0.05"/>
+	<entity name="Harpy" prob="0.05"/>
+	<entity name="Pegasus" prob="0.05"/>
+	<entity name="GiantBat" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="AcidBreathingDragon" prob="0.05"/>
+	<entity name="FireBreathingDragon" prob="0.05"/>
+	<entity name="Griffon" prob="0.05"/>
+	<entity name="Harpy" prob="0.05"/>
+	<entity name="Pegasus" prob="0.05"/>
+	<entity name="GiantBat" prob="0.15"/>
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="AcidBreathingDragon" prob="0.10"/>
+	<entity name="FireBreathingDragon" prob="0.10"/>
+	<entity name="Griffon" prob="0.10"/>
+	<entity name="Harpy" prob="0.10"/>
+	<entity name="Manticore" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="AcidBreathingDragon" prob="0.10"/>
+	<entity name="FireBreathingDragon" prob="0.10"/>
+	<entity name="Griffon" prob="0.10"/>
+	<entity name="Harpy" prob="0.10"/>
+	<entity name="Manticore" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="AcidBreathingDragon" prob="0.10"/>
+	<entity name="FireBreathingDragon" prob="0.10"/>
+	<entity name="Griffon" prob="0.10"/>
+	<entity name="Harpy" prob="0.10"/>
+	<entity name="Manticore" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="AcidBreathingDragon" prob="0.05"/>
+	<entity name="FireBreathingDragon" prob="0.05"/>
+	<entity name="Griffon" prob="0.05"/>
+	<entity name="Harpy" prob="0.05"/>
+	<entity name="Manticore" prob="0.05"/>
+	<entity name="GiantBat" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="AcidBreathingDragon" prob="0.05"/>
+	<entity name="FireBreathingDragon" prob="0.05"/>
+	<entity name="Griffon" prob="0.05"/>
+	<entity name="Harpy" prob="0.05"/>
+	<entity name="Manticore" prob="0.05"/>
+	<entity name="GiantBat" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="AcidBreathingDragon" prob="0.05"/>
+	<entity name="FireBreathingDragon" prob="0.05"/>
+	<entity name="Griffon" prob="0.05"/>
+	<entity name="Harpy" prob="0.05"/>
+	<entity name="Manticore" prob="0.05"/>
+	<entity name="GiantBat" prob="0.15"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="Griffon" prob="0.10"/>
+	<entity name="Harpy" prob="0.10"/>
+	<entity name="Pegasus" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="Griffon" prob="0.10"/>
+	<entity name="Harpy" prob="0.10"/>
+	<entity name="Pegasus" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="Griffon" prob="0.10"/>
+	<entity name="Harpy" prob="0.10"/>
+	<entity name="Pegasus" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="Griffon" prob="0.05"/>
+	<entity name="Harpy" prob="0.05"/>
+	<entity name="Pegasus" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="Griffon" prob="0.05"/>
+	<entity name="Harpy" prob="0.05"/>
+	<entity name="Pegasus" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="Griffon" prob="0.05"/>
+	<entity name="Harpy" prob="0.05"/>
+	<entity name="Pegasus" prob="0.05"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="AcidBreathingDragon" prob="0.10"/>
+	<entity name="FireBreathingDragon" prob="0.10"/>
+	<entity name="Griffon" prob="0.10"/>
+	<entity name="Harpy" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="AcidBreathingDragon" prob="0.10"/>
+	<entity name="FireBreathingDragon" prob="0.10"/>
+	<entity name="Griffon" prob="0.10"/>
+	<entity name="Harpy" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="AcidBreathingDragon" prob="0.10"/>
+	<entity name="FireBreathingDragon" prob="0.10"/>
+	<entity name="Griffon" prob="0.10"/>
+	<entity name="Harpy" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="AcidBreathingDragon" prob="0.05"/>
+	<entity name="FireBreathingDragon" prob="0.05"/>
+	<entity name="Griffon" prob="0.05"/>
+	<entity name="Harpy" prob="0.05"/>
+	<entity name="GiantBat" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="AcidBreathingDragon" prob="0.05"/>
+	<entity name="FireBreathingDragon" prob="0.05"/>
+	<entity name="Griffon" prob="0.05"/>
+	<entity name="Harpy" prob="0.05"/>
+	<entity name="GiantBat" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="AcidBreathingDragon" prob="0.05"/>
+	<entity name="FireBreathingDragon" prob="0.05"/>
+	<entity name="Griffon" prob="0.05"/>
+	<entity name="Harpy" prob="0.05"/>
+	<entity name="GiantBat" prob="0.15"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="AcidBreathingDragon" prob="0.10"/>
+	<entity name="FireBreathingDragon" prob="0.10"/>
+	<entity name="Gargoyle" prob="0.10"/>
+	<entity name="Manticore" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="AcidBreathingDragon" prob="0.10"/>
+	<entity name="FireBreathingDragon" prob="0.10"/>
+	<entity name="Gargoyle" prob="0.10"/>
+	<entity name="Manticore" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="AcidBreathingDragon" prob="0.10"/>
+	<entity name="FireBreathingDragon" prob="0.10"/>
+	<entity name="Gargoyle" prob="0.10"/>
+	<entity name="Manticore" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="AcidBreathingDragon" prob="0.05"/>
+	<entity name="FireBreathingDragon" prob="0.05"/>
+	<entity name="Gargoyle" prob="0.05"/>
+	<entity name="Manticore" prob="0.05"/>
+	<entity name="GiantBat" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="AcidBreathingDragon" prob="0.05"/>
+	<entity name="FireBreathingDragon" prob="0.05"/>
+	<entity name="Gargoyle" prob="0.05"/>
+	<entity name="Manticore" prob="0.05"/>
+	<entity name="GiantBat" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="AcidBreathingDragon" prob="0.05"/>
+	<entity name="FireBreathingDragon" prob="0.05"/>
+	<entity name="Gargoyle" prob="0.05"/>
+	<entity name="Manticore" prob="0.05"/>
+	<entity name="GiantBat" prob="0.15"/>
+</append>
+
+
+
+</ErrorNull>

@@ -1,0 +1,105 @@
+<ErrorNull>
+
+<!--
+By default, body harvesting for the YeOldeUndeadPack entities are disabled. To TURN ON body harvesting for them, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is directly below (on line 8), and the 2nd one is near the end of this file (on line 95). Again, delete both lines.
+-->
+
+
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* 
+
+<append xpath="/entity_classes/entity_class[contains(@name,'MedievalZombie')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'HelmetZombie') or contains(@name,'ArmorZombie')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'AxeZombie')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"		count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="casinoCoin" 		count="5,10"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'MaceZombie')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="casinoCoin" 		count="5,10"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'SwordZombie')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="casinoCoin" 		count="5,10"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'Skeleton')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="180"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceBone"		count="4" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'SkeletonAxe')]">
+	<drop event="Harvest" name="resourceBone"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'SkeletonMonk')]">
+	<drop event="Harvest" name="resourceCloth"		count="4" tag="butcherHarvest"/>
+	<drop event="Destroy" name="casinoCoin" 		count="5,10"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'DeathKnight')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="240"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel"	count="6" tag="butcherHarvest"/>
+	<drop event="Destroy" name="casinoCoin" 			count="20,40"/>
+</append>
+
+ ********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+
+
+<!-- DO NOT DELETE ANYTHING BELOW -->
+
+
+
+</ErrorNull>

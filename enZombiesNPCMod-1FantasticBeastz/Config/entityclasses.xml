@@ -1,0 +1,100 @@
+<ErrorNull>
+
+<!--
+By default, body harvesting for the Fantastic Beastz entities are disabled. To TURN ON body harvesting for them, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is directly below (on line 8), and the 2nd one is near the end of this file (on line 90). Again, delete both lines.
+-->
+
+
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) *********
+
+<remove xpath="/entity_classes/entity_class[@name='AcidBreathingDragon']/drop" />
+<append xpath="/entity_classes/entity_class[@name='AcidBreathingDragon']">
+	<property name="TimeStayAfterDeath" value="300"/>
+	<property name="DeadBodyHitPoints" value="130"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="resourceLeather"		count="16"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceAnimalFat"	count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="foodRawMeat"			count="50"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"			count="18"	tag="butcherHarvest"/>
+</append>
+
+<remove xpath="/entity_classes/entity_class[@name='FireBreathingDragon']/drop" />
+<append xpath="/entity_classes/entity_class[@name='FireBreathingDragon']">
+	<property name="TimeStayAfterDeath" value="300"/>
+	<property name="DeadBodyHitPoints" value="130"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="resourceLeather"		count="16"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceAnimalFat"	count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="foodRawMeat"			count="50"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"			count="18"	tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='GiantBat']">
+	<property name="TimeStayAfterDeath" value="300"/>
+	<property name="DeadBodyHitPoints" value="400"/>
+	<drop event="Harvest" name="foodRawMeat" 		count="5" tag="butcherHarvest"/> 
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='Gargoyle']">
+	<property name="TimeStayAfterDeath" value="300"/>
+	<property name="DeadBodyHitPoints" value="420"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceRockSmall"	count="10" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRawMeat" 		count="10" tag="butcherHarvest"/> 
+	<drop event="Harvest" name="resourceBone" 		count="6" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='Griffon']">
+	<property name="TimeStayAfterDeath" value="300"/>
+	<property name="DeadBodyHitPoints" value="500"/>
+	<drop event="Harvest" name="resourceFeather"	count="35" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRawMeat" 		count="12" tag="butcherHarvest"/> 
+</append>
+
+<remove xpath="/entity_classes/entity_class[@name='Harpy']/drop[@name='resourceLeather']" />
+<append xpath="/entity_classes/entity_class[@name='Harpy']">
+	<property name="TimeStayAfterDeath" value="300"/>
+	<property name="DeadBodyHitPoints" value="340"/>
+	<drop event="Harvest" name="resourceFeather"	count="30" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRawMeat" 		count="5" tag="butcherHarvest"/> 
+</append>
+
+<remove xpath="/entity_classes/entity_class[@name='Manticore']/drop" />
+<append xpath="/entity_classes/entity_class[@name='Manticore']">
+	<property name="TimeStayAfterDeath" value="300"/>
+	<property name="DeadBodyHitPoints" value="550"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="resourceLeather"		count="11"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceAnimalFat"	count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="foodRawMeat"			count="30"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"			count="13"	tag="butcherHarvest"/>
+</append>
+
+<remove xpath="/entity_classes/entity_class[@name='Pegasus']/drop" />
+<append xpath="/entity_classes/entity_class[@name='Pegasus']">
+	<property name="TimeStayAfterDeath" value="300"/>
+	<property name="DeadBodyHitPoints" value="400"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="resourceLeather"		count="10" tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceAnimalFat"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest"	name="foodRawMeat"			count="25" tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"			count="17" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceFeather"		count="20" tag="butcherHarvest"/>
+</append>
+
+
+
+
+
+ ********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+
+
+<!-- DO NOT DELETE ANYTHING BELOW -->
+
+
+
+</ErrorNull>

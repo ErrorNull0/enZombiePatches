@@ -1,0 +1,394 @@
+<ErrorNull>
+
+<!-- 
+Each of the YeOldeUndead entities spawn in biomes based on their look/design below. Ferals have higher spawn prob during the night.
+
+BIOME
+Forest		MedievalZombie, HelmetZombie, ArmorZombie, AxeZombie, MaceZombie, SwordZombie, SkeletonMonk
+Desert		MedievalZombie, HelmetZombie, ArmorZombie, AxeZombie, MaceZombie, SwordZombie, Skeleton, SkeletonAxe
+Snow		Skeleton, SkeletonAxe, SkeletonMonk
+Burnt		MedievalZombie, HelmetZombie, ArmorZombie, AxeZombie, MaceZombie, SwordZombie, Skeleton, SkeletonAxe, SkeletonMonk, DeathKnight
+Wasteland	MedievalZombie, HelmetZombie, ArmorZombie, AxeZombie, MaceZombie, SwordZombie, Skeleton, SkeletonAxe, SkeletonMonk, DeathKnight
+
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="MedievalZombie" prob="0.10"/>
+	<entity name="HelmetZombie" prob="0.10"/>
+	<entity name="ArmorZombie" prob="0.10"/>
+	<entity name="AxeZombie" prob="0.10"/>
+	<entity name="MaceZombie" prob="0.10"/>
+	<entity name="SwordZombie" prob="0.10"/>
+	<entity name="SkeletonMonk" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="MedievalZombie" prob="0.10"/><entity name="MedievalZombieFeral" prob="0.04"/>
+	<entity name="HelmetZombie" prob="0.10"/><entity name="HelmetZombieFeral" prob="0.04"/>
+	<entity name="ArmorZombie" prob="0.10"/><entity name="ArmorZombieFeral" prob="0.04"/>
+	<entity name="AxeZombie" prob="0.10"/><entity name="AxeZombieFeral" prob="0.04"/>
+	<entity name="MaceZombie" prob="0.10"/><entity name="MaceZombieFeral" prob="0.04"/>
+	<entity name="SwordZombie" prob="0.10"/><entity name="SwordZombieFeral" prob="0.04"/>
+	<entity name="SkeletonMonk" prob="0.10"/><entity name="SkeletonMonkFeral" prob="0.04"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="MedievalZombie" prob="0.10"/><entity name="MedievalZombieFeral" prob="0.10"/>
+	<entity name="HelmetZombie" prob="0.10"/><entity name="HelmetZombieFeral" prob="0.10"/>
+	<entity name="ArmorZombie" prob="0.10"/><entity name="ArmorZombieFeral" prob="0.10"/>
+	<entity name="AxeZombie" prob="0.10"/><entity name="AxeZombieFeral" prob="0.10"/>
+	<entity name="MaceZombie" prob="0.10"/><entity name="MaceZombieFeral" prob="0.10"/>
+	<entity name="SwordZombie" prob="0.10"/><entity name="SwordZombieFeral" prob="0.10"/>
+	<entity name="SkeletonMonk" prob="0.10"/><entity name="SkeletonMonkFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="MedievalZombie" prob="0.04"/><entity name="MedievalZombieFeral" prob="0.10"/>
+	<entity name="HelmetZombie" prob="0.04"/><entity name="HelmetZombieFeral" prob="0.10"/>
+	<entity name="ArmorZombie" prob="0.04"/><entity name="ArmorZombieFeral" prob="0.10"/>
+	<entity name="AxeZombie" prob="0.04"/><entity name="AxeZombieFeral" prob="0.10"/>
+	<entity name="MaceZombie" prob="0.04"/><entity name="MaceZombieFeral" prob="0.10"/>
+	<entity name="SwordZombie" prob="0.04"/><entity name="SwordZombieFeral" prob="0.10"/>
+	<entity name="SkeletonMonk" prob="0.04"/><entity name="SkeletonMonkFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="MedievalZombieFeral" prob="0.10"/>
+	<entity name="HelmetZombieFeral" prob="0.10"/>
+	<entity name="ArmorZombieFeral" prob="0.10"/>
+	<entity name="AxeZombieFeral" prob="0.10"/>
+	<entity name="MaceZombieFeral" prob="0.10"/>
+	<entity name="SwordZombieFeral" prob="0.10"/>
+	<entity name="SkeletonMonkFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="MedievalZombieFeral" prob="0.15"/>
+	<entity name="HelmetZombieFeral" prob="0.15"/>
+	<entity name="ArmorZombieFeral" prob="0.15"/>
+	<entity name="AxeZombieFeral" prob="0.15"/>
+	<entity name="MaceZombieFeral" prob="0.15"/>
+	<entity name="SwordZombieFeral" prob="0.15"/>
+	<entity name="SkeletonMonkFeral" prob="0.15"/>
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="MedievalZombie" prob="0.10"/>
+	<entity name="HelmetZombie" prob="0.10"/>
+	<entity name="ArmorZombie" prob="0.10"/>
+	<entity name="AxeZombie" prob="0.10"/>
+	<entity name="MaceZombie" prob="0.10"/>
+	<entity name="SwordZombie" prob="0.10"/>
+	<entity name="Skeleton" prob="0.10"/>
+	<entity name="SkeletonAxe" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="MedievalZombie" prob="0.10"/><entity name="MedievalZombieFeral" prob="0.04"/>
+	<entity name="HelmetZombie" prob="0.10"/><entity name="HelmetZombieFeral" prob="0.04"/>
+	<entity name="ArmorZombie" prob="0.10"/><entity name="ArmorZombieFeral" prob="0.04"/>
+	<entity name="AxeZombie" prob="0.10"/><entity name="AxeZombieFeral" prob="0.04"/>
+	<entity name="MaceZombie" prob="0.10"/><entity name="MaceZombieFeral" prob="0.04"/>
+	<entity name="SwordZombie" prob="0.10"/><entity name="SwordZombieFeral" prob="0.04"/>
+	<entity name="Skeleton" prob="0.10"/><entity name="SkeletonFeral" prob="0.04"/>
+	<entity name="SkeletonAxe" prob="0.10"/><entity name="SkeletonAxeFeral" prob="0.04"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="MedievalZombie" prob="0.10"/><entity name="MedievalZombieFeral" prob="0.10"/>
+	<entity name="HelmetZombie" prob="0.10"/><entity name="HelmetZombieFeral" prob="0.10"/>
+	<entity name="ArmorZombie" prob="0.10"/><entity name="ArmorZombieFeral" prob="0.10"/>
+	<entity name="AxeZombie" prob="0.10"/><entity name="AxeZombieFeral" prob="0.10"/>
+	<entity name="MaceZombie" prob="0.10"/><entity name="MaceZombieFeral" prob="0.10"/>
+	<entity name="SwordZombie" prob="0.10"/><entity name="SwordZombieFeral" prob="0.10"/>
+	<entity name="Skeleton" prob="0.10"/><entity name="SkeletonFeral" prob="0.10"/>
+	<entity name="SkeletonAxe" prob="0.10"/><entity name="SkeletonAxeFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="MedievalZombie" prob="0.04"/><entity name="MedievalZombieFeral" prob="0.10"/>
+	<entity name="HelmetZombie" prob="0.04"/><entity name="HelmetZombieFeral" prob="0.10"/>
+	<entity name="ArmorZombie" prob="0.04"/><entity name="ArmorZombieFeral" prob="0.10"/>
+	<entity name="AxeZombie" prob="0.04"/><entity name="AxeZombieFeral" prob="0.10"/>
+	<entity name="MaceZombie" prob="0.04"/><entity name="MaceZombieFeral" prob="0.10"/>
+	<entity name="SwordZombie" prob="0.04"/><entity name="SwordZombieFeral" prob="0.10"/>
+	<entity name="Skeleton" prob="0.04"/><entity name="SkeletonFeral" prob="0.10"/>
+	<entity name="SkeletonAxe" prob="0.04"/><entity name="SkeletonAxeFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="MedievalZombieFeral" prob="0.10"/>
+	<entity name="HelmetZombieFeral" prob="0.10"/>
+	<entity name="ArmorZombieFeral" prob="0.10"/>
+	<entity name="AxeZombieFeral" prob="0.10"/>
+	<entity name="MaceZombieFeral" prob="0.10"/>
+	<entity name="SwordZombieFeral" prob="0.10"/>
+	<entity name="SkeletonFeral" prob="0.10"/>
+	<entity name="SkeletonAxeFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="MedievalZombieFeral" prob="0.15"/>
+	<entity name="HelmetZombieFeral" prob="0.15"/>
+	<entity name="ArmorZombieFeral" prob="0.15"/>
+	<entity name="AxeZombieFeral" prob="0.15"/>
+	<entity name="MaceZombieFeral" prob="0.15"/>
+	<entity name="SwordZombieFeral" prob="0.15"/>
+	<entity name="SkeletonFeral" prob="0.15"/>
+	<entity name="SkeletonAxeFeral" prob="0.15"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="Skeleton" prob="0.10"/>
+	<entity name="SkeletonAxe" prob="0.10"/>
+	<entity name="SkeletonMonk" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="Skeleton" prob="0.10"/><entity name="SkeletonFeral" prob="0.04"/>
+	<entity name="SkeletonAxe" prob="0.10"/><entity name="SkeletonAxeFeral" prob="0.04"/>
+	<entity name="SkeletonMonk" prob="0.10"/><entity name="SkeletonMonkFeral" prob="0.04"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="Skeleton" prob="0.10"/><entity name="SkeletonFeral" prob="0.10"/>
+	<entity name="SkeletonAxe" prob="0.10"/><entity name="SkeletonAxeFeral" prob="0.10"/>
+	<entity name="SkeletonMonk" prob="0.10"/><entity name="SkeletonMonkFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="Skeleton" prob="0.04"/><entity name="SkeletonFeral" prob="0.10"/>
+	<entity name="SkeletonAxe" prob="0.04"/><entity name="SkeletonAxeFeral" prob="0.10"/>
+	<entity name="SkeletonMonk" prob="0.04"/><entity name="SkeletonMonkFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="SkeletonFeral" prob="0.10"/>
+	<entity name="SkeletonAxeFeral" prob="0.10"/>
+	<entity name="SkeletonMonkFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="SkeletonFeral" prob="0.15"/>
+	<entity name="SkeletonAxeFeral" prob="0.15"/>
+	<entity name="SkeletonMonkFeral" prob="0.15"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="MedievalZombie" prob="0.10"/>
+	<entity name="HelmetZombie" prob="0.10"/>
+	<entity name="ArmorZombie" prob="0.10"/>
+	<entity name="AxeZombie" prob="0.10"/>
+	<entity name="MaceZombie" prob="0.10"/>
+	<entity name="SwordZombie" prob="0.10"/>
+	<entity name="Skeleton" prob="0.10"/>
+	<entity name="SkeletonAxe" prob="0.10"/>
+	<entity name="SkeletonMonk" prob="0.10"/>
+	<entity name="DeathKnight" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="MedievalZombie" prob="0.10"/><entity name="MedievalZombieFeral" prob="0.04"/>
+	<entity name="HelmetZombie" prob="0.10"/><entity name="HelmetZombieFeral" prob="0.04"/>
+	<entity name="ArmorZombie" prob="0.10"/><entity name="ArmorZombieFeral" prob="0.04"/>
+	<entity name="AxeZombie" prob="0.10"/><entity name="AxeZombieFeral" prob="0.04"/>
+	<entity name="MaceZombie" prob="0.10"/><entity name="MaceZombieFeral" prob="0.04"/>
+	<entity name="SwordZombie" prob="0.10"/><entity name="SwordZombieFeral" prob="0.04"/>
+	<entity name="Skeleton" prob="0.10"/><entity name="SkeletonFeral" prob="0.04"/>
+	<entity name="SkeletonAxe" prob="0.10"/><entity name="SkeletonAxeFeral" prob="0.04"/>
+	<entity name="SkeletonMonk" prob="0.10"/><entity name="SkeletonMonkFeral" prob="0.04"/>
+	<entity name="DeathKnight" prob="0.10"/><entity name="DeathKnightFeral" prob="0.04"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="MedievalZombie" prob="0.10"/><entity name="MedievalZombieFeral" prob="0.10"/>
+	<entity name="HelmetZombie" prob="0.10"/><entity name="HelmetZombieFeral" prob="0.10"/>
+	<entity name="ArmorZombie" prob="0.10"/><entity name="ArmorZombieFeral" prob="0.10"/>
+	<entity name="AxeZombie" prob="0.10"/><entity name="AxeZombieFeral" prob="0.10"/>
+	<entity name="MaceZombie" prob="0.10"/><entity name="MaceZombieFeral" prob="0.10"/>
+	<entity name="SwordZombie" prob="0.10"/><entity name="SwordZombieFeral" prob="0.10"/>
+	<entity name="Skeleton" prob="0.10"/><entity name="SkeletonFeral" prob="0.10"/>
+	<entity name="SkeletonAxe" prob="0.10"/><entity name="SkeletonAxeFeral" prob="0.10"/>
+	<entity name="SkeletonMonk" prob="0.10"/><entity name="SkeletonMonkFeral" prob="0.10"/>
+	<entity name="DeathKnight" prob="0.10"/><entity name="DeathKnightFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="MedievalZombie" prob="0.04"/><entity name="MedievalZombieFeral" prob="0.10"/>
+	<entity name="HelmetZombie" prob="0.04"/><entity name="HelmetZombieFeral" prob="0.10"/>
+	<entity name="ArmorZombie" prob="0.04"/><entity name="ArmorZombieFeral" prob="0.10"/>
+	<entity name="AxeZombie" prob="0.04"/><entity name="AxeZombieFeral" prob="0.10"/>
+	<entity name="MaceZombie" prob="0.04"/><entity name="MaceZombieFeral" prob="0.10"/>
+	<entity name="SwordZombie" prob="0.04"/><entity name="SwordZombieFeral" prob="0.10"/>
+	<entity name="Skeleton" prob="0.04"/><entity name="SkeletonFeral" prob="0.10"/>
+	<entity name="SkeletonAxe" prob="0.04"/><entity name="SkeletonAxeFeral" prob="0.10"/>
+	<entity name="SkeletonMonk" prob="0.04"/><entity name="SkeletonMonkFeral" prob="0.10"/>
+	<entity name="DeathKnight" prob="0.04"/><entity name="DeathKnightFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="MedievalZombieFeral" prob="0.10"/>
+	<entity name="HelmetZombieFeral" prob="0.10"/>
+	<entity name="ArmorZombieFeral" prob="0.10"/>
+	<entity name="AxeZombieFeral" prob="0.10"/>
+	<entity name="MaceZombieFeral" prob="0.10"/>
+	<entity name="SwordZombieFeral" prob="0.10"/>
+	<entity name="SkeletonFeral" prob="0.10"/>
+	<entity name="SkeletonAxeFeral" prob="0.10"/>
+	<entity name="SkeletonMonkFeral" prob="0.10"/>
+	<entity name="DeathKnightFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="MedievalZombieFeral" prob="0.15"/>
+	<entity name="HelmetZombieFeral" prob="0.15"/>
+	<entity name="ArmorZombieFeral" prob="0.15"/>
+	<entity name="AxeZombieFeral" prob="0.15"/>
+	<entity name="MaceZombieFeral" prob="0.15"/>
+	<entity name="SwordZombieFeral" prob="0.15"/>
+	<entity name="SkeletonFeral" prob="0.15"/>
+	<entity name="SkeletonAxeFeral" prob="0.15"/>
+	<entity name="SkeletonMonkFeral" prob="0.15"/>
+	<entity name="DeathKnightFeral" prob="0.15"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="MedievalZombie" prob="0.10"/>
+	<entity name="HelmetZombie" prob="0.10"/>
+	<entity name="ArmorZombie" prob="0.10"/>
+	<entity name="AxeZombie" prob="0.10"/>
+	<entity name="MaceZombie" prob="0.10"/>
+	<entity name="SwordZombie" prob="0.10"/>
+	<entity name="Skeleton" prob="0.10"/>
+	<entity name="SkeletonAxe" prob="0.10"/>
+	<entity name="SkeletonMonk" prob="0.10"/>
+	<entity name="DeathKnight" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="MedievalZombie" prob="0.10"/><entity name="MedievalZombieFeral" prob="0.04"/>
+	<entity name="HelmetZombie" prob="0.10"/><entity name="HelmetZombieFeral" prob="0.04"/>
+	<entity name="ArmorZombie" prob="0.10"/><entity name="ArmorZombieFeral" prob="0.04"/>
+	<entity name="AxeZombie" prob="0.10"/><entity name="AxeZombieFeral" prob="0.04"/>
+	<entity name="MaceZombie" prob="0.10"/><entity name="MaceZombieFeral" prob="0.04"/>
+	<entity name="SwordZombie" prob="0.10"/><entity name="SwordZombieFeral" prob="0.04"/>
+	<entity name="Skeleton" prob="0.10"/><entity name="SkeletonFeral" prob="0.04"/>
+	<entity name="SkeletonAxe" prob="0.10"/><entity name="SkeletonAxeFeral" prob="0.04"/>
+	<entity name="SkeletonMonk" prob="0.10"/><entity name="SkeletonMonkFeral" prob="0.04"/>
+	<entity name="DeathKnight" prob="0.10"/><entity name="DeathKnightFeral" prob="0.04"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="MedievalZombie" prob="0.10"/><entity name="MedievalZombieFeral" prob="0.10"/>
+	<entity name="HelmetZombie" prob="0.10"/><entity name="HelmetZombieFeral" prob="0.10"/>
+	<entity name="ArmorZombie" prob="0.10"/><entity name="ArmorZombieFeral" prob="0.10"/>
+	<entity name="AxeZombie" prob="0.10"/><entity name="AxeZombieFeral" prob="0.10"/>
+	<entity name="MaceZombie" prob="0.10"/><entity name="MaceZombieFeral" prob="0.10"/>
+	<entity name="SwordZombie" prob="0.10"/><entity name="SwordZombieFeral" prob="0.10"/>
+	<entity name="Skeleton" prob="0.10"/><entity name="SkeletonFeral" prob="0.10"/>
+	<entity name="SkeletonAxe" prob="0.10"/><entity name="SkeletonAxeFeral" prob="0.10"/>
+	<entity name="SkeletonMonk" prob="0.10"/><entity name="SkeletonMonkFeral" prob="0.10"/>
+	<entity name="DeathKnight" prob="0.10"/><entity name="DeathKnightFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="MedievalZombie" prob="0.04"/><entity name="MedievalZombieFeral" prob="0.10"/>
+	<entity name="HelmetZombie" prob="0.04"/><entity name="HelmetZombieFeral" prob="0.10"/>
+	<entity name="ArmorZombie" prob="0.04"/><entity name="ArmorZombieFeral" prob="0.10"/>
+	<entity name="AxeZombie" prob="0.04"/><entity name="AxeZombieFeral" prob="0.10"/>
+	<entity name="MaceZombie" prob="0.04"/><entity name="MaceZombieFeral" prob="0.10"/>
+	<entity name="SwordZombie" prob="0.04"/><entity name="SwordZombieFeral" prob="0.10"/>
+	<entity name="Skeleton" prob="0.04"/><entity name="SkeletonFeral" prob="0.10"/>
+	<entity name="SkeletonAxe" prob="0.04"/><entity name="SkeletonAxeFeral" prob="0.10"/>
+	<entity name="SkeletonMonk" prob="0.04"/><entity name="SkeletonMonkFeral" prob="0.10"/>
+	<entity name="DeathKnight" prob="0.04"/><entity name="DeathKnightFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="MedievalZombieFeral" prob="0.10"/>
+	<entity name="HelmetZombieFeral" prob="0.10"/>
+	<entity name="ArmorZombieFeral" prob="0.10"/>
+	<entity name="AxeZombieFeral" prob="0.10"/>
+	<entity name="MaceZombieFeral" prob="0.10"/>
+	<entity name="SwordZombieFeral" prob="0.10"/>
+	<entity name="SkeletonFeral" prob="0.10"/>
+	<entity name="SkeletonAxeFeral" prob="0.10"/>
+	<entity name="SkeletonMonkFeral" prob="0.10"/>
+	<entity name="DeathKnightFeral" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="MedievalZombieFeral" prob="0.15"/>
+	<entity name="HelmetZombieFeral" prob="0.15"/>
+	<entity name="ArmorZombieFeral" prob="0.15"/>
+	<entity name="AxeZombieFeral" prob="0.15"/>
+	<entity name="MaceZombieFeral" prob="0.15"/>
+	<entity name="SwordZombieFeral" prob="0.15"/>
+	<entity name="SkeletonFeral" prob="0.15"/>
+	<entity name="SkeletonAxeFeral" prob="0.15"/>
+	<entity name="SkeletonMonkFeral" prob="0.15"/>
+	<entity name="DeathKnightFeral" prob="0.15"/>
+</append>
+
+
+</ErrorNull>
