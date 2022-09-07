@@ -1,0 +1,371 @@
+<ErrorNull>
+
+<!-- 
+Each of the Goblinz spawn in all biomes except for snow. During the night, the goblinz are sleeping so their spawn prob is lower. These NPCs also spawn in all biome areas (wilderness/city/downtown), but the shaman, chief, and females have higher spawn prob in the city and downtown areas.
+
+The current spawn prob of "0.10" is intended for players using these Goblinz in combination with all other zombies from other mods. If you plan to use these goblinz as primary enemies (example like within a medieval themed world), then spawn prob of "1.0" might be more appropriate.
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="GoblinClub" prob="0.10"/>
+	<entity name="GoblinSpear" prob="0.10"/>
+	<entity name="GoblinKnife" prob="0.10"/>
+	<entity name="GoblinArcher" prob="0.10"/>
+	<entity name="GoblinCrossbowman" prob="0.10"/>
+	<entity name="GoblinGurl" prob="0.05"/>
+	<entity name="GoblinCook" prob="0.05"/>
+	<entity name="GoblinBaker" prob="0.05"/>
+	<entity name="GoblinShaman" prob="0.05"/>
+	<entity name="GoblinChief" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="GoblinClub" prob="0.10"/>
+	<entity name="GoblinSpear" prob="0.10"/>
+	<entity name="GoblinKnife" prob="0.10"/>
+	<entity name="GoblinArcher" prob="0.10"/>
+	<entity name="GoblinCrossbowman" prob="0.10"/>
+	<entity name="GoblinGurl" prob="0.10"/>
+	<entity name="GoblinCook" prob="0.10"/>
+	<entity name="GoblinBaker" prob="0.10"/>
+	<entity name="GoblinShaman" prob="0.05"/>
+	<entity name="GoblinChief" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="GoblinClub" prob="0.10"/>
+	<entity name="GoblinSpear" prob="0.10"/>
+	<entity name="GoblinKnife" prob="0.10"/>
+	<entity name="GoblinArcher" prob="0.10"/>
+	<entity name="GoblinCrossbowman" prob="0.10"/>
+	<entity name="GoblinGurl" prob="0.10"/>
+	<entity name="GoblinCook" prob="0.10"/>
+	<entity name="GoblinBaker" prob="0.10"/>
+	<entity name="GoblinShaman" prob="0.10"/>
+	<entity name="GoblinChief" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="GoblinClub" prob="0.03"/>
+	<entity name="GoblinSpear" prob="0.03"/>
+	<entity name="GoblinKnife" prob="0.03"/>
+	<entity name="GoblinArcher" prob="0.03"/>
+	<entity name="GoblinCrossbowman" prob="0.03"/>
+	<entity name="GoblinGurl" prob="0.01"/>
+	<entity name="GoblinCook" prob="0.01"/>
+	<entity name="GoblinBaker" prob="0.01"/>
+	<entity name="GoblinShaman" prob="0.01"/>
+	<entity name="GoblinChief" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="GoblinClub" prob="0.03"/>
+	<entity name="GoblinSpear" prob="0.03"/>
+	<entity name="GoblinKnife" prob="0.03"/>
+	<entity name="GoblinArcher" prob="0.03"/>
+	<entity name="GoblinCrossbowman" prob="0.03"/>
+	<entity name="GoblinGurl" prob="0.03"/>
+	<entity name="GoblinCook" prob="0.03"/>
+	<entity name="GoblinBaker" prob="0.03"/>
+	<entity name="GoblinShaman" prob="0.01"/>
+	<entity name="GoblinChief" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="GoblinClub" prob="0.03"/>
+	<entity name="GoblinSpear" prob="0.03"/>
+	<entity name="GoblinKnife" prob="0.03"/>
+	<entity name="GoblinArcher" prob="0.03"/>
+	<entity name="GoblinCrossbowman" prob="0.03"/>
+	<entity name="GoblinGurl" prob="0.03"/>
+	<entity name="GoblinCook" prob="0.03"/>
+	<entity name="GoblinBaker" prob="0.03"/>
+	<entity name="GoblinShaman" prob="0.03"/>
+	<entity name="GoblinChief" prob="0.03"/>
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="GoblinClub" prob="0.10"/>
+	<entity name="GoblinSpear" prob="0.10"/>
+	<entity name="GoblinKnife" prob="0.10"/>
+	<entity name="GoblinArcher" prob="0.10"/>
+	<entity name="GoblinCrossbowman" prob="0.10"/>
+	<entity name="GoblinGurl" prob="0.05"/>
+	<entity name="GoblinCook" prob="0.05"/>
+	<entity name="GoblinBaker" prob="0.05"/>
+	<entity name="GoblinShaman" prob="0.05"/>
+	<entity name="GoblinChief" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="GoblinClub" prob="0.10"/>
+	<entity name="GoblinSpear" prob="0.10"/>
+	<entity name="GoblinKnife" prob="0.10"/>
+	<entity name="GoblinArcher" prob="0.10"/>
+	<entity name="GoblinCrossbowman" prob="0.10"/>
+	<entity name="GoblinGurl" prob="0.10"/>
+	<entity name="GoblinCook" prob="0.10"/>
+	<entity name="GoblinBaker" prob="0.10"/>
+	<entity name="GoblinShaman" prob="0.05"/>
+	<entity name="GoblinChief" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="GoblinClub" prob="0.10"/>
+	<entity name="GoblinSpear" prob="0.10"/>
+	<entity name="GoblinKnife" prob="0.10"/>
+	<entity name="GoblinArcher" prob="0.10"/>
+	<entity name="GoblinCrossbowman" prob="0.10"/>
+	<entity name="GoblinGurl" prob="0.10"/>
+	<entity name="GoblinCook" prob="0.10"/>
+	<entity name="GoblinBaker" prob="0.10"/>
+	<entity name="GoblinShaman" prob="0.10"/>
+	<entity name="GoblinChief" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="GoblinClub" prob="0.03"/>
+	<entity name="GoblinSpear" prob="0.03"/>
+	<entity name="GoblinKnife" prob="0.03"/>
+	<entity name="GoblinArcher" prob="0.03"/>
+	<entity name="GoblinCrossbowman" prob="0.03"/>
+	<entity name="GoblinGurl" prob="0.01"/>
+	<entity name="GoblinCook" prob="0.01"/>
+	<entity name="GoblinBaker" prob="0.01"/>
+	<entity name="GoblinShaman" prob="0.01"/>
+	<entity name="GoblinChief" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="GoblinClub" prob="0.03"/>
+	<entity name="GoblinSpear" prob="0.03"/>
+	<entity name="GoblinKnife" prob="0.03"/>
+	<entity name="GoblinArcher" prob="0.03"/>
+	<entity name="GoblinCrossbowman" prob="0.03"/>
+	<entity name="GoblinGurl" prob="0.03"/>
+	<entity name="GoblinCook" prob="0.03"/>
+	<entity name="GoblinBaker" prob="0.03"/>
+	<entity name="GoblinShaman" prob="0.01"/>
+	<entity name="GoblinChief" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="GoblinClub" prob="0.03"/>
+	<entity name="GoblinSpear" prob="0.03"/>
+	<entity name="GoblinKnife" prob="0.03"/>
+	<entity name="GoblinArcher" prob="0.03"/>
+	<entity name="GoblinCrossbowman" prob="0.03"/>
+	<entity name="GoblinGurl" prob="0.03"/>
+	<entity name="GoblinCook" prob="0.03"/>
+	<entity name="GoblinBaker" prob="0.03"/>
+	<entity name="GoblinShaman" prob="0.03"/>
+	<entity name="GoblinChief" prob="0.03"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="GoblinClub" prob="0.10"/>
+	<entity name="GoblinSpear" prob="0.10"/>
+	<entity name="GoblinKnife" prob="0.10"/>
+	<entity name="GoblinArcher" prob="0.10"/>
+	<entity name="GoblinCrossbowman" prob="0.10"/>
+	<entity name="GoblinGurl" prob="0.05"/>
+	<entity name="GoblinCook" prob="0.05"/>
+	<entity name="GoblinBaker" prob="0.05"/>
+	<entity name="GoblinShaman" prob="0.05"/>
+	<entity name="GoblinChief" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="GoblinClub" prob="0.10"/>
+	<entity name="GoblinSpear" prob="0.10"/>
+	<entity name="GoblinKnife" prob="0.10"/>
+	<entity name="GoblinArcher" prob="0.10"/>
+	<entity name="GoblinCrossbowman" prob="0.10"/>
+	<entity name="GoblinGurl" prob="0.10"/>
+	<entity name="GoblinCook" prob="0.10"/>
+	<entity name="GoblinBaker" prob="0.10"/>
+	<entity name="GoblinShaman" prob="0.05"/>
+	<entity name="GoblinChief" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="GoblinClub" prob="0.10"/>
+	<entity name="GoblinSpear" prob="0.10"/>
+	<entity name="GoblinKnife" prob="0.10"/>
+	<entity name="GoblinArcher" prob="0.10"/>
+	<entity name="GoblinCrossbowman" prob="0.10"/>
+	<entity name="GoblinGurl" prob="0.10"/>
+	<entity name="GoblinCook" prob="0.10"/>
+	<entity name="GoblinBaker" prob="0.10"/>
+	<entity name="GoblinShaman" prob="0.10"/>
+	<entity name="GoblinChief" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="GoblinClub" prob="0.03"/>
+	<entity name="GoblinSpear" prob="0.03"/>
+	<entity name="GoblinKnife" prob="0.03"/>
+	<entity name="GoblinArcher" prob="0.03"/>
+	<entity name="GoblinCrossbowman" prob="0.03"/>
+	<entity name="GoblinGurl" prob="0.01"/>
+	<entity name="GoblinCook" prob="0.01"/>
+	<entity name="GoblinBaker" prob="0.01"/>
+	<entity name="GoblinShaman" prob="0.01"/>
+	<entity name="GoblinChief" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="GoblinClub" prob="0.03"/>
+	<entity name="GoblinSpear" prob="0.03"/>
+	<entity name="GoblinKnife" prob="0.03"/>
+	<entity name="GoblinArcher" prob="0.03"/>
+	<entity name="GoblinCrossbowman" prob="0.03"/>
+	<entity name="GoblinGurl" prob="0.03"/>
+	<entity name="GoblinCook" prob="0.03"/>
+	<entity name="GoblinBaker" prob="0.03"/>
+	<entity name="GoblinShaman" prob="0.01"/>
+	<entity name="GoblinChief" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="GoblinClub" prob="0.03"/>
+	<entity name="GoblinSpear" prob="0.03"/>
+	<entity name="GoblinKnife" prob="0.03"/>
+	<entity name="GoblinArcher" prob="0.03"/>
+	<entity name="GoblinCrossbowman" prob="0.03"/>
+	<entity name="GoblinGurl" prob="0.03"/>
+	<entity name="GoblinCook" prob="0.03"/>
+	<entity name="GoblinBaker" prob="0.03"/>
+	<entity name="GoblinShaman" prob="0.03"/>
+	<entity name="GoblinChief" prob="0.03"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="GoblinClub" prob="0.10"/>
+	<entity name="GoblinSpear" prob="0.10"/>
+	<entity name="GoblinKnife" prob="0.10"/>
+	<entity name="GoblinArcher" prob="0.10"/>
+	<entity name="GoblinCrossbowman" prob="0.10"/>
+	<entity name="GoblinGurl" prob="0.05"/>
+	<entity name="GoblinCook" prob="0.05"/>
+	<entity name="GoblinBaker" prob="0.05"/>
+	<entity name="GoblinShaman" prob="0.05"/>
+	<entity name="GoblinChief" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="GoblinClub" prob="0.10"/>
+	<entity name="GoblinSpear" prob="0.10"/>
+	<entity name="GoblinKnife" prob="0.10"/>
+	<entity name="GoblinArcher" prob="0.10"/>
+	<entity name="GoblinCrossbowman" prob="0.10"/>
+	<entity name="GoblinGurl" prob="0.10"/>
+	<entity name="GoblinCook" prob="0.10"/>
+	<entity name="GoblinBaker" prob="0.10"/>
+	<entity name="GoblinShaman" prob="0.05"/>
+	<entity name="GoblinChief" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="GoblinClub" prob="0.10"/>
+	<entity name="GoblinSpear" prob="0.10"/>
+	<entity name="GoblinKnife" prob="0.10"/>
+	<entity name="GoblinArcher" prob="0.10"/>
+	<entity name="GoblinCrossbowman" prob="0.10"/>
+	<entity name="GoblinGurl" prob="0.10"/>
+	<entity name="GoblinCook" prob="0.10"/>
+	<entity name="GoblinBaker" prob="0.10"/>
+	<entity name="GoblinShaman" prob="0.10"/>
+	<entity name="GoblinChief" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="GoblinClub" prob="0.03"/>
+	<entity name="GoblinSpear" prob="0.03"/>
+	<entity name="GoblinKnife" prob="0.03"/>
+	<entity name="GoblinArcher" prob="0.03"/>
+	<entity name="GoblinCrossbowman" prob="0.03"/>
+	<entity name="GoblinGurl" prob="0.01"/>
+	<entity name="GoblinCook" prob="0.01"/>
+	<entity name="GoblinBaker" prob="0.01"/>
+	<entity name="GoblinShaman" prob="0.01"/>
+	<entity name="GoblinChief" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="GoblinClub" prob="0.03"/>
+	<entity name="GoblinSpear" prob="0.03"/>
+	<entity name="GoblinKnife" prob="0.03"/>
+	<entity name="GoblinArcher" prob="0.03"/>
+	<entity name="GoblinCrossbowman" prob="0.03"/>
+	<entity name="GoblinGurl" prob="0.03"/>
+	<entity name="GoblinCook" prob="0.03"/>
+	<entity name="GoblinBaker" prob="0.03"/>
+	<entity name="GoblinShaman" prob="0.01"/>
+	<entity name="GoblinChief" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="GoblinClub" prob="0.03"/>
+	<entity name="GoblinSpear" prob="0.03"/>
+	<entity name="GoblinKnife" prob="0.03"/>
+	<entity name="GoblinArcher" prob="0.03"/>
+	<entity name="GoblinCrossbowman" prob="0.03"/>
+	<entity name="GoblinGurl" prob="0.03"/>
+	<entity name="GoblinCook" prob="0.03"/>
+	<entity name="GoblinBaker" prob="0.03"/>
+	<entity name="GoblinShaman" prob="0.03"/>
+	<entity name="GoblinChief" prob="0.03"/>
+</append>
+
+
+
+</ErrorNull>

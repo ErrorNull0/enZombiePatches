@@ -1,0 +1,1271 @@
+<ErrorNull>
+
+<!-- 
+Each of the Knightz and Peasantz spawn in all biomes equally. During the night, civilians and nobles are sleeping so their spawn prob is lower, except for soldiers/guards. All of these NPCs also spawn in all biome areas (wilderness/city/downtown), but the soldiers/knights have higher spawn prob in the city and downtown areas.
+
+The current spawn prob of "0.10" is intended for players using these Knightz and Peasantz NPCs in combination with all other zombies from other mods. If you plan to use these Knightz and Peasantz as the sole/primary NPCs (example like within a medieval themed world), then spawn prob of "1.0" might be more appropriate.
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.05"/><entity name="KingsKnight1SwordS" prob="0.05"/>
+	<entity name="KingsKnight2Sword" prob="0.05"/><entity name="KingsKnight2SwordS" prob="0.05"/>
+	<entity name="KingsKnight3Sword" prob="0.05"/><entity name="KingsKnight3SwordS" prob="0.05"/>
+	<entity name="KingsKnight1LBow" prob="0.05"/><entity name="KingsKnight1LBowS" prob="0.05"/>
+	<entity name="KingsKnight2LBow" prob="0.05"/><entity name="KingsKnight2LBowS" prob="0.05"/>
+	<entity name="KingsKnight1XBow" prob="0.05"/><entity name="KingsKnight1XBowS" prob="0.05"/>
+	<entity name="KingsKnight2XBow" prob="0.05"/><entity name="KingsKnight2XBowS" prob="0.05"/>
+	<entity name="KingsChampion" prob="0.05"/><entity name="KingsChampionS" prob="0.05"/>
+	<entity name="KingsAxeman" prob="0.05"/><entity name="KingsAxemanS" prob="0.05"/>
+	<entity name="KingsHalberdier" prob="0.05"/><entity name="KingsHalberdierS" prob="0.05"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.02"/><entity name="TheKingS" prob="0.02"/>
+	<entity name="TheQueen" prob="0.02"/><entity name="TheQueenS" prob="0.02"/>
+	<entity name="MedievalTFP" prob="0.02"/><entity name="MedievalTFPS" prob="0.02"/>
+	<entity name="GreenWitch" prob="0.02"/><entity name="GreenWitchS" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.10"/><entity name="KingsKnight1SwordS" prob="0.10"/>
+	<entity name="KingsKnight2Sword" prob="0.10"/><entity name="KingsKnight2SwordS" prob="0.10"/>
+	<entity name="KingsKnight3Sword" prob="0.10"/><entity name="KingsKnight3SwordS" prob="0.10"/>
+	<entity name="KingsKnight1LBow" prob="0.10"/><entity name="KingsKnight1LBowS" prob="0.10"/>
+	<entity name="KingsKnight2LBow" prob="0.10"/><entity name="KingsKnight2LBowS" prob="0.10"/>
+	<entity name="KingsKnight1XBow" prob="0.10"/><entity name="KingsKnight1XBowS" prob="0.10"/>
+	<entity name="KingsKnight2XBow" prob="0.10"/><entity name="KingsKnight2XBowS" prob="0.10"/>
+	<entity name="KingsChampion" prob="0.10"/><entity name="KingsChampionS" prob="0.10"/>
+	<entity name="KingsAxeman" prob="0.10"/><entity name="KingsAxemanS" prob="0.10"/>
+	<entity name="KingsHalberdier" prob="0.10"/><entity name="KingsHalberdierS" prob="0.10"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.02"/><entity name="TheKingS" prob="0.02"/>
+	<entity name="TheQueen" prob="0.02"/><entity name="TheQueenS" prob="0.02"/>
+	<entity name="MedievalTFP" prob="0.02"/><entity name="MedievalTFPS" prob="0.02"/>
+	<entity name="GreenWitch" prob="0.02"/><entity name="GreenWitchS" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.15"/><entity name="KingsKnight1SwordS" prob="0.15"/>
+	<entity name="KingsKnight2Sword" prob="0.15"/><entity name="KingsKnight2SwordS" prob="0.15"/>
+	<entity name="KingsKnight3Sword" prob="0.15"/><entity name="KingsKnight3SwordS" prob="0.15"/>
+	<entity name="KingsKnight1LBow" prob="0.15"/><entity name="KingsKnight1LBowS" prob="0.15"/>
+	<entity name="KingsKnight2LBow" prob="0.15"/><entity name="KingsKnight2LBowS" prob="0.15"/>
+	<entity name="KingsKnight1XBow" prob="0.15"/><entity name="KingsKnight1XBowS" prob="0.15"/>
+	<entity name="KingsKnight2XBow" prob="0.15"/><entity name="KingsKnight2XBowS" prob="0.15"/>
+	<entity name="KingsChampion" prob="0.15"/><entity name="KingsChampionS" prob="0.15"/>
+	<entity name="KingsAxeman" prob="0.15"/><entity name="KingsAxemanS" prob="0.15"/>
+	<entity name="KingsHalberdier" prob="0.15"/><entity name="KingsHalberdierS" prob="0.15"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.06"/><entity name="TheKingS" prob="0.06"/>
+	<entity name="TheQueen" prob="0.06"/><entity name="TheQueenS" prob="0.06"/>
+	<entity name="MedievalTFP" prob="0.06"/><entity name="MedievalTFPS" prob="0.06"/>
+	<entity name="GreenWitch" prob="0.06"/><entity name="GreenWitchS" prob="0.06"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.05"/><entity name="KingsKnight1SwordS" prob="0.05"/>
+	<entity name="KingsKnight2Sword" prob="0.05"/><entity name="KingsKnight2SwordS" prob="0.05"/>
+	<entity name="KingsKnight3Sword" prob="0.05"/><entity name="KingsKnight3SwordS" prob="0.05"/>
+	<entity name="KingsKnight1LBow" prob="0.05"/><entity name="KingsKnight1LBowS" prob="0.05"/>
+	<entity name="KingsKnight2LBow" prob="0.05"/><entity name="KingsKnight2LBowS" prob="0.05"/>
+	<entity name="KingsKnight1XBow" prob="0.05"/><entity name="KingsKnight1XBowS" prob="0.05"/>
+	<entity name="KingsKnight2XBow" prob="0.05"/><entity name="KingsKnight2XBowS" prob="0.05"/>
+	<entity name="KingsChampion" prob="0.05"/><entity name="KingsChampionS" prob="0.05"/>
+	<entity name="KingsAxeman" prob="0.05"/><entity name="KingsAxemanS" prob="0.05"/>
+	<entity name="KingsHalberdier" prob="0.05"/><entity name="KingsHalberdierS" prob="0.05"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.01"/><entity name="TheKingS" prob="0.01"/>
+	<entity name="TheQueen" prob="0.01"/><entity name="TheQueenS" prob="0.01"/>
+	<entity name="MedievalTFP" prob="0.01"/><entity name="MedievalTFPS" prob="0.01"/>
+	<entity name="GreenWitch" prob="0.01"/><entity name="GreenWitchS" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.10"/><entity name="KingsKnight1SwordS" prob="0.10"/>
+	<entity name="KingsKnight2Sword" prob="0.10"/><entity name="KingsKnight2SwordS" prob="0.10"/>
+	<entity name="KingsKnight3Sword" prob="0.10"/><entity name="KingsKnight3SwordS" prob="0.10"/>
+	<entity name="KingsKnight1LBow" prob="0.10"/><entity name="KingsKnight1LBowS" prob="0.10"/>
+	<entity name="KingsKnight2LBow" prob="0.10"/><entity name="KingsKnight2LBowS" prob="0.10"/>
+	<entity name="KingsKnight1XBow" prob="0.10"/><entity name="KingsKnight1XBowS" prob="0.10"/>
+	<entity name="KingsKnight2XBow" prob="0.10"/><entity name="KingsKnight2XBowS" prob="0.10"/>
+	<entity name="KingsChampion" prob="0.10"/><entity name="KingsChampionS" prob="0.10"/>
+	<entity name="KingsAxeman" prob="0.10"/><entity name="KingsAxemanS" prob="0.10"/>
+	<entity name="KingsHalberdier" prob="0.10"/><entity name="KingsHalberdierS" prob="0.10"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.01"/><entity name="TheKingS" prob="0.01"/>
+	<entity name="TheQueen" prob="0.01"/><entity name="TheQueenS" prob="0.01"/>
+	<entity name="MedievalTFP" prob="0.01"/><entity name="MedievalTFPS" prob="0.01"/>
+	<entity name="GreenWitch" prob="0.01"/><entity name="GreenWitchS" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.15"/><entity name="KingsKnight1SwordS" prob="0.15"/>
+	<entity name="KingsKnight2Sword" prob="0.15"/><entity name="KingsKnight2SwordS" prob="0.15"/>
+	<entity name="KingsKnight3Sword" prob="0.15"/><entity name="KingsKnight3SwordS" prob="0.15"/>
+	<entity name="KingsKnight1LBow" prob="0.15"/><entity name="KingsKnight1LBowS" prob="0.15"/>
+	<entity name="KingsKnight2LBow" prob="0.15"/><entity name="KingsKnight2LBowS" prob="0.15"/>
+	<entity name="KingsKnight1XBow" prob="0.15"/><entity name="KingsKnight1XBowS" prob="0.15"/>
+	<entity name="KingsKnight2XBow" prob="0.15"/><entity name="KingsKnight2XBowS" prob="0.15"/>
+	<entity name="KingsChampion" prob="0.15"/><entity name="KingsChampionS" prob="0.15"/>
+	<entity name="KingsAxeman" prob="0.15"/><entity name="KingsAxemanS" prob="0.15"/>
+	<entity name="KingsHalberdier" prob="0.15"/><entity name="KingsHalberdierS" prob="0.15"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.03"/><entity name="TheKingS" prob="0.03"/>
+	<entity name="TheQueen" prob="0.03"/><entity name="TheQueenS" prob="0.03"/>
+	<entity name="MedievalTFP" prob="0.03"/><entity name="MedievalTFPS" prob="0.03"/>
+	<entity name="GreenWitch" prob="0.03"/><entity name="GreenWitchS" prob="0.03"/>
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.05"/><entity name="KingsKnight1SwordS" prob="0.05"/>
+	<entity name="KingsKnight2Sword" prob="0.05"/><entity name="KingsKnight2SwordS" prob="0.05"/>
+	<entity name="KingsKnight3Sword" prob="0.05"/><entity name="KingsKnight3SwordS" prob="0.05"/>
+	<entity name="KingsKnight1LBow" prob="0.05"/><entity name="KingsKnight1LBowS" prob="0.05"/>
+	<entity name="KingsKnight2LBow" prob="0.05"/><entity name="KingsKnight2LBowS" prob="0.05"/>
+	<entity name="KingsKnight1XBow" prob="0.05"/><entity name="KingsKnight1XBowS" prob="0.05"/>
+	<entity name="KingsKnight2XBow" prob="0.05"/><entity name="KingsKnight2XBowS" prob="0.05"/>
+	<entity name="KingsChampion" prob="0.05"/><entity name="KingsChampionS" prob="0.05"/>
+	<entity name="KingsAxeman" prob="0.05"/><entity name="KingsAxemanS" prob="0.05"/>
+	<entity name="KingsHalberdier" prob="0.05"/><entity name="KingsHalberdierS" prob="0.05"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.02"/><entity name="TheKingS" prob="0.02"/>
+	<entity name="TheQueen" prob="0.02"/><entity name="TheQueenS" prob="0.02"/>
+	<entity name="MedievalTFP" prob="0.02"/><entity name="MedievalTFPS" prob="0.02"/>
+	<entity name="GreenWitch" prob="0.02"/><entity name="GreenWitchS" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.10"/><entity name="KingsKnight1SwordS" prob="0.10"/>
+	<entity name="KingsKnight2Sword" prob="0.10"/><entity name="KingsKnight2SwordS" prob="0.10"/>
+	<entity name="KingsKnight3Sword" prob="0.10"/><entity name="KingsKnight3SwordS" prob="0.10"/>
+	<entity name="KingsKnight1LBow" prob="0.10"/><entity name="KingsKnight1LBowS" prob="0.10"/>
+	<entity name="KingsKnight2LBow" prob="0.10"/><entity name="KingsKnight2LBowS" prob="0.10"/>
+	<entity name="KingsKnight1XBow" prob="0.10"/><entity name="KingsKnight1XBowS" prob="0.10"/>
+	<entity name="KingsKnight2XBow" prob="0.10"/><entity name="KingsKnight2XBowS" prob="0.10"/>
+	<entity name="KingsChampion" prob="0.10"/><entity name="KingsChampionS" prob="0.10"/>
+	<entity name="KingsAxeman" prob="0.10"/><entity name="KingsAxemanS" prob="0.10"/>
+	<entity name="KingsHalberdier" prob="0.10"/><entity name="KingsHalberdierS" prob="0.10"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.02"/><entity name="TheKingS" prob="0.02"/>
+	<entity name="TheQueen" prob="0.02"/><entity name="TheQueenS" prob="0.02"/>
+	<entity name="MedievalTFP" prob="0.02"/><entity name="MedievalTFPS" prob="0.02"/>
+	<entity name="GreenWitch" prob="0.02"/><entity name="GreenWitchS" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.15"/><entity name="KingsKnight1SwordS" prob="0.15"/>
+	<entity name="KingsKnight2Sword" prob="0.15"/><entity name="KingsKnight2SwordS" prob="0.15"/>
+	<entity name="KingsKnight3Sword" prob="0.15"/><entity name="KingsKnight3SwordS" prob="0.15"/>
+	<entity name="KingsKnight1LBow" prob="0.15"/><entity name="KingsKnight1LBowS" prob="0.15"/>
+	<entity name="KingsKnight2LBow" prob="0.15"/><entity name="KingsKnight2LBowS" prob="0.15"/>
+	<entity name="KingsKnight1XBow" prob="0.15"/><entity name="KingsKnight1XBowS" prob="0.15"/>
+	<entity name="KingsKnight2XBow" prob="0.15"/><entity name="KingsKnight2XBowS" prob="0.15"/>
+	<entity name="KingsChampion" prob="0.15"/><entity name="KingsChampionS" prob="0.15"/>
+	<entity name="KingsAxeman" prob="0.15"/><entity name="KingsAxemanS" prob="0.15"/>
+	<entity name="KingsHalberdier" prob="0.15"/><entity name="KingsHalberdierS" prob="0.15"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.06"/><entity name="TheKingS" prob="0.06"/>
+	<entity name="TheQueen" prob="0.06"/><entity name="TheQueenS" prob="0.06"/>
+	<entity name="MedievalTFP" prob="0.06"/><entity name="MedievalTFPS" prob="0.06"/>
+	<entity name="GreenWitch" prob="0.06"/><entity name="GreenWitchS" prob="0.06"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.05"/><entity name="KingsKnight1SwordS" prob="0.05"/>
+	<entity name="KingsKnight2Sword" prob="0.05"/><entity name="KingsKnight2SwordS" prob="0.05"/>
+	<entity name="KingsKnight3Sword" prob="0.05"/><entity name="KingsKnight3SwordS" prob="0.05"/>
+	<entity name="KingsKnight1LBow" prob="0.05"/><entity name="KingsKnight1LBowS" prob="0.05"/>
+	<entity name="KingsKnight2LBow" prob="0.05"/><entity name="KingsKnight2LBowS" prob="0.05"/>
+	<entity name="KingsKnight1XBow" prob="0.05"/><entity name="KingsKnight1XBowS" prob="0.05"/>
+	<entity name="KingsKnight2XBow" prob="0.05"/><entity name="KingsKnight2XBowS" prob="0.05"/>
+	<entity name="KingsChampion" prob="0.05"/><entity name="KingsChampionS" prob="0.05"/>
+	<entity name="KingsAxeman" prob="0.05"/><entity name="KingsAxemanS" prob="0.05"/>
+	<entity name="KingsHalberdier" prob="0.05"/><entity name="KingsHalberdierS" prob="0.05"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.01"/><entity name="TheKingS" prob="0.01"/>
+	<entity name="TheQueen" prob="0.01"/><entity name="TheQueenS" prob="0.01"/>
+	<entity name="MedievalTFP" prob="0.01"/><entity name="MedievalTFPS" prob="0.01"/>
+	<entity name="GreenWitch" prob="0.01"/><entity name="GreenWitchS" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.10"/><entity name="KingsKnight1SwordS" prob="0.10"/>
+	<entity name="KingsKnight2Sword" prob="0.10"/><entity name="KingsKnight2SwordS" prob="0.10"/>
+	<entity name="KingsKnight3Sword" prob="0.10"/><entity name="KingsKnight3SwordS" prob="0.10"/>
+	<entity name="KingsKnight1LBow" prob="0.10"/><entity name="KingsKnight1LBowS" prob="0.10"/>
+	<entity name="KingsKnight2LBow" prob="0.10"/><entity name="KingsKnight2LBowS" prob="0.10"/>
+	<entity name="KingsKnight1XBow" prob="0.10"/><entity name="KingsKnight1XBowS" prob="0.10"/>
+	<entity name="KingsKnight2XBow" prob="0.10"/><entity name="KingsKnight2XBowS" prob="0.10"/>
+	<entity name="KingsChampion" prob="0.10"/><entity name="KingsChampionS" prob="0.10"/>
+	<entity name="KingsAxeman" prob="0.10"/><entity name="KingsAxemanS" prob="0.10"/>
+	<entity name="KingsHalberdier" prob="0.10"/><entity name="KingsHalberdierS" prob="0.10"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.01"/><entity name="TheKingS" prob="0.01"/>
+	<entity name="TheQueen" prob="0.01"/><entity name="TheQueenS" prob="0.01"/>
+	<entity name="MedievalTFP" prob="0.01"/><entity name="MedievalTFPS" prob="0.01"/>
+	<entity name="GreenWitch" prob="0.01"/><entity name="GreenWitchS" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.15"/><entity name="KingsKnight1SwordS" prob="0.15"/>
+	<entity name="KingsKnight2Sword" prob="0.15"/><entity name="KingsKnight2SwordS" prob="0.15"/>
+	<entity name="KingsKnight3Sword" prob="0.15"/><entity name="KingsKnight3SwordS" prob="0.15"/>
+	<entity name="KingsKnight1LBow" prob="0.15"/><entity name="KingsKnight1LBowS" prob="0.15"/>
+	<entity name="KingsKnight2LBow" prob="0.15"/><entity name="KingsKnight2LBowS" prob="0.15"/>
+	<entity name="KingsKnight1XBow" prob="0.15"/><entity name="KingsKnight1XBowS" prob="0.15"/>
+	<entity name="KingsKnight2XBow" prob="0.15"/><entity name="KingsKnight2XBowS" prob="0.15"/>
+	<entity name="KingsChampion" prob="0.15"/><entity name="KingsChampionS" prob="0.15"/>
+	<entity name="KingsAxeman" prob="0.15"/><entity name="KingsAxemanS" prob="0.15"/>
+	<entity name="KingsHalberdier" prob="0.15"/><entity name="KingsHalberdierS" prob="0.15"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.03"/><entity name="TheKingS" prob="0.03"/>
+	<entity name="TheQueen" prob="0.03"/><entity name="TheQueenS" prob="0.03"/>
+	<entity name="MedievalTFP" prob="0.03"/><entity name="MedievalTFPS" prob="0.03"/>
+	<entity name="GreenWitch" prob="0.03"/><entity name="GreenWitchS" prob="0.03"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.05"/><entity name="KingsKnight1SwordS" prob="0.05"/>
+	<entity name="KingsKnight2Sword" prob="0.05"/><entity name="KingsKnight2SwordS" prob="0.05"/>
+	<entity name="KingsKnight3Sword" prob="0.05"/><entity name="KingsKnight3SwordS" prob="0.05"/>
+	<entity name="KingsKnight1LBow" prob="0.05"/><entity name="KingsKnight1LBowS" prob="0.05"/>
+	<entity name="KingsKnight2LBow" prob="0.05"/><entity name="KingsKnight2LBowS" prob="0.05"/>
+	<entity name="KingsKnight1XBow" prob="0.05"/><entity name="KingsKnight1XBowS" prob="0.05"/>
+	<entity name="KingsKnight2XBow" prob="0.05"/><entity name="KingsKnight2XBowS" prob="0.05"/>
+	<entity name="KingsChampion" prob="0.05"/><entity name="KingsChampionS" prob="0.05"/>
+	<entity name="KingsAxeman" prob="0.05"/><entity name="KingsAxemanS" prob="0.05"/>
+	<entity name="KingsHalberdier" prob="0.05"/><entity name="KingsHalberdierS" prob="0.05"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.02"/><entity name="TheKingS" prob="0.02"/>
+	<entity name="TheQueen" prob="0.02"/><entity name="TheQueenS" prob="0.02"/>
+	<entity name="MedievalTFP" prob="0.02"/><entity name="MedievalTFPS" prob="0.02"/>
+	<entity name="GreenWitch" prob="0.02"/><entity name="GreenWitchS" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.10"/><entity name="KingsKnight1SwordS" prob="0.10"/>
+	<entity name="KingsKnight2Sword" prob="0.10"/><entity name="KingsKnight2SwordS" prob="0.10"/>
+	<entity name="KingsKnight3Sword" prob="0.10"/><entity name="KingsKnight3SwordS" prob="0.10"/>
+	<entity name="KingsKnight1LBow" prob="0.10"/><entity name="KingsKnight1LBowS" prob="0.10"/>
+	<entity name="KingsKnight2LBow" prob="0.10"/><entity name="KingsKnight2LBowS" prob="0.10"/>
+	<entity name="KingsKnight1XBow" prob="0.10"/><entity name="KingsKnight1XBowS" prob="0.10"/>
+	<entity name="KingsKnight2XBow" prob="0.10"/><entity name="KingsKnight2XBowS" prob="0.10"/>
+	<entity name="KingsChampion" prob="0.10"/><entity name="KingsChampionS" prob="0.10"/>
+	<entity name="KingsAxeman" prob="0.10"/><entity name="KingsAxemanS" prob="0.10"/>
+	<entity name="KingsHalberdier" prob="0.10"/><entity name="KingsHalberdierS" prob="0.10"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.02"/><entity name="TheKingS" prob="0.02"/>
+	<entity name="TheQueen" prob="0.02"/><entity name="TheQueenS" prob="0.02"/>
+	<entity name="MedievalTFP" prob="0.02"/><entity name="MedievalTFPS" prob="0.02"/>
+	<entity name="GreenWitch" prob="0.02"/><entity name="GreenWitchS" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.15"/><entity name="KingsKnight1SwordS" prob="0.15"/>
+	<entity name="KingsKnight2Sword" prob="0.15"/><entity name="KingsKnight2SwordS" prob="0.15"/>
+	<entity name="KingsKnight3Sword" prob="0.15"/><entity name="KingsKnight3SwordS" prob="0.15"/>
+	<entity name="KingsKnight1LBow" prob="0.15"/><entity name="KingsKnight1LBowS" prob="0.15"/>
+	<entity name="KingsKnight2LBow" prob="0.15"/><entity name="KingsKnight2LBowS" prob="0.15"/>
+	<entity name="KingsKnight1XBow" prob="0.15"/><entity name="KingsKnight1XBowS" prob="0.15"/>
+	<entity name="KingsKnight2XBow" prob="0.15"/><entity name="KingsKnight2XBowS" prob="0.15"/>
+	<entity name="KingsChampion" prob="0.15"/><entity name="KingsChampionS" prob="0.15"/>
+	<entity name="KingsAxeman" prob="0.15"/><entity name="KingsAxemanS" prob="0.15"/>
+	<entity name="KingsHalberdier" prob="0.15"/><entity name="KingsHalberdierS" prob="0.15"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.06"/><entity name="TheKingS" prob="0.06"/>
+	<entity name="TheQueen" prob="0.06"/><entity name="TheQueenS" prob="0.06"/>
+	<entity name="MedievalTFP" prob="0.06"/><entity name="MedievalTFPS" prob="0.06"/>
+	<entity name="GreenWitch" prob="0.06"/><entity name="GreenWitchS" prob="0.06"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.05"/><entity name="KingsKnight1SwordS" prob="0.05"/>
+	<entity name="KingsKnight2Sword" prob="0.05"/><entity name="KingsKnight2SwordS" prob="0.05"/>
+	<entity name="KingsKnight3Sword" prob="0.05"/><entity name="KingsKnight3SwordS" prob="0.05"/>
+	<entity name="KingsKnight1LBow" prob="0.05"/><entity name="KingsKnight1LBowS" prob="0.05"/>
+	<entity name="KingsKnight2LBow" prob="0.05"/><entity name="KingsKnight2LBowS" prob="0.05"/>
+	<entity name="KingsKnight1XBow" prob="0.05"/><entity name="KingsKnight1XBowS" prob="0.05"/>
+	<entity name="KingsKnight2XBow" prob="0.05"/><entity name="KingsKnight2XBowS" prob="0.05"/>
+	<entity name="KingsChampion" prob="0.05"/><entity name="KingsChampionS" prob="0.05"/>
+	<entity name="KingsAxeman" prob="0.05"/><entity name="KingsAxemanS" prob="0.05"/>
+	<entity name="KingsHalberdier" prob="0.05"/><entity name="KingsHalberdierS" prob="0.05"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.01"/><entity name="TheKingS" prob="0.01"/>
+	<entity name="TheQueen" prob="0.01"/><entity name="TheQueenS" prob="0.01"/>
+	<entity name="MedievalTFP" prob="0.01"/><entity name="MedievalTFPS" prob="0.01"/>
+	<entity name="GreenWitch" prob="0.01"/><entity name="GreenWitchS" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.10"/><entity name="KingsKnight1SwordS" prob="0.10"/>
+	<entity name="KingsKnight2Sword" prob="0.10"/><entity name="KingsKnight2SwordS" prob="0.10"/>
+	<entity name="KingsKnight3Sword" prob="0.10"/><entity name="KingsKnight3SwordS" prob="0.10"/>
+	<entity name="KingsKnight1LBow" prob="0.10"/><entity name="KingsKnight1LBowS" prob="0.10"/>
+	<entity name="KingsKnight2LBow" prob="0.10"/><entity name="KingsKnight2LBowS" prob="0.10"/>
+	<entity name="KingsKnight1XBow" prob="0.10"/><entity name="KingsKnight1XBowS" prob="0.10"/>
+	<entity name="KingsKnight2XBow" prob="0.10"/><entity name="KingsKnight2XBowS" prob="0.10"/>
+	<entity name="KingsChampion" prob="0.10"/><entity name="KingsChampionS" prob="0.10"/>
+	<entity name="KingsAxeman" prob="0.10"/><entity name="KingsAxemanS" prob="0.10"/>
+	<entity name="KingsHalberdier" prob="0.10"/><entity name="KingsHalberdierS" prob="0.10"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.01"/><entity name="TheKingS" prob="0.01"/>
+	<entity name="TheQueen" prob="0.01"/><entity name="TheQueenS" prob="0.01"/>
+	<entity name="MedievalTFP" prob="0.01"/><entity name="MedievalTFPS" prob="0.01"/>
+	<entity name="GreenWitch" prob="0.01"/><entity name="GreenWitchS" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.15"/><entity name="KingsKnight1SwordS" prob="0.15"/>
+	<entity name="KingsKnight2Sword" prob="0.15"/><entity name="KingsKnight2SwordS" prob="0.15"/>
+	<entity name="KingsKnight3Sword" prob="0.15"/><entity name="KingsKnight3SwordS" prob="0.15"/>
+	<entity name="KingsKnight1LBow" prob="0.15"/><entity name="KingsKnight1LBowS" prob="0.15"/>
+	<entity name="KingsKnight2LBow" prob="0.15"/><entity name="KingsKnight2LBowS" prob="0.15"/>
+	<entity name="KingsKnight1XBow" prob="0.15"/><entity name="KingsKnight1XBowS" prob="0.15"/>
+	<entity name="KingsKnight2XBow" prob="0.15"/><entity name="KingsKnight2XBowS" prob="0.15"/>
+	<entity name="KingsChampion" prob="0.15"/><entity name="KingsChampionS" prob="0.15"/>
+	<entity name="KingsAxeman" prob="0.15"/><entity name="KingsAxemanS" prob="0.15"/>
+	<entity name="KingsHalberdier" prob="0.15"/><entity name="KingsHalberdierS" prob="0.15"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.03"/><entity name="TheKingS" prob="0.03"/>
+	<entity name="TheQueen" prob="0.03"/><entity name="TheQueenS" prob="0.03"/>
+	<entity name="MedievalTFP" prob="0.03"/><entity name="MedievalTFPS" prob="0.03"/>
+	<entity name="GreenWitch" prob="0.03"/><entity name="GreenWitchS" prob="0.03"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.05"/><entity name="KingsKnight1SwordS" prob="0.05"/>
+	<entity name="KingsKnight2Sword" prob="0.05"/><entity name="KingsKnight2SwordS" prob="0.05"/>
+	<entity name="KingsKnight3Sword" prob="0.05"/><entity name="KingsKnight3SwordS" prob="0.05"/>
+	<entity name="KingsKnight1LBow" prob="0.05"/><entity name="KingsKnight1LBowS" prob="0.05"/>
+	<entity name="KingsKnight2LBow" prob="0.05"/><entity name="KingsKnight2LBowS" prob="0.05"/>
+	<entity name="KingsKnight1XBow" prob="0.05"/><entity name="KingsKnight1XBowS" prob="0.05"/>
+	<entity name="KingsKnight2XBow" prob="0.05"/><entity name="KingsKnight2XBowS" prob="0.05"/>
+	<entity name="KingsChampion" prob="0.05"/><entity name="KingsChampionS" prob="0.05"/>
+	<entity name="KingsAxeman" prob="0.05"/><entity name="KingsAxemanS" prob="0.05"/>
+	<entity name="KingsHalberdier" prob="0.05"/><entity name="KingsHalberdierS" prob="0.05"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.02"/><entity name="TheKingS" prob="0.02"/>
+	<entity name="TheQueen" prob="0.02"/><entity name="TheQueenS" prob="0.02"/>
+	<entity name="MedievalTFP" prob="0.02"/><entity name="MedievalTFPS" prob="0.02"/>
+	<entity name="GreenWitch" prob="0.02"/><entity name="GreenWitchS" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.10"/><entity name="KingsKnight1SwordS" prob="0.10"/>
+	<entity name="KingsKnight2Sword" prob="0.10"/><entity name="KingsKnight2SwordS" prob="0.10"/>
+	<entity name="KingsKnight3Sword" prob="0.10"/><entity name="KingsKnight3SwordS" prob="0.10"/>
+	<entity name="KingsKnight1LBow" prob="0.10"/><entity name="KingsKnight1LBowS" prob="0.10"/>
+	<entity name="KingsKnight2LBow" prob="0.10"/><entity name="KingsKnight2LBowS" prob="0.10"/>
+	<entity name="KingsKnight1XBow" prob="0.10"/><entity name="KingsKnight1XBowS" prob="0.10"/>
+	<entity name="KingsKnight2XBow" prob="0.10"/><entity name="KingsKnight2XBowS" prob="0.10"/>
+	<entity name="KingsChampion" prob="0.10"/><entity name="KingsChampionS" prob="0.10"/>
+	<entity name="KingsAxeman" prob="0.10"/><entity name="KingsAxemanS" prob="0.10"/>
+	<entity name="KingsHalberdier" prob="0.10"/><entity name="KingsHalberdierS" prob="0.10"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.02"/><entity name="TheKingS" prob="0.02"/>
+	<entity name="TheQueen" prob="0.02"/><entity name="TheQueenS" prob="0.02"/>
+	<entity name="MedievalTFP" prob="0.02"/><entity name="MedievalTFPS" prob="0.02"/>
+	<entity name="GreenWitch" prob="0.02"/><entity name="GreenWitchS" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.15"/><entity name="KingsKnight1SwordS" prob="0.15"/>
+	<entity name="KingsKnight2Sword" prob="0.15"/><entity name="KingsKnight2SwordS" prob="0.15"/>
+	<entity name="KingsKnight3Sword" prob="0.15"/><entity name="KingsKnight3SwordS" prob="0.15"/>
+	<entity name="KingsKnight1LBow" prob="0.15"/><entity name="KingsKnight1LBowS" prob="0.15"/>
+	<entity name="KingsKnight2LBow" prob="0.15"/><entity name="KingsKnight2LBowS" prob="0.15"/>
+	<entity name="KingsKnight1XBow" prob="0.15"/><entity name="KingsKnight1XBowS" prob="0.15"/>
+	<entity name="KingsKnight2XBow" prob="0.15"/><entity name="KingsKnight2XBowS" prob="0.15"/>
+	<entity name="KingsChampion" prob="0.15"/><entity name="KingsChampionS" prob="0.15"/>
+	<entity name="KingsAxeman" prob="0.15"/><entity name="KingsAxemanS" prob="0.15"/>
+	<entity name="KingsHalberdier" prob="0.15"/><entity name="KingsHalberdierS" prob="0.15"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.06"/><entity name="TheKingS" prob="0.06"/>
+	<entity name="TheQueen" prob="0.06"/><entity name="TheQueenS" prob="0.06"/>
+	<entity name="MedievalTFP" prob="0.06"/><entity name="MedievalTFPS" prob="0.06"/>
+	<entity name="GreenWitch" prob="0.06"/><entity name="GreenWitchS" prob="0.06"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.05"/><entity name="KingsKnight1SwordS" prob="0.05"/>
+	<entity name="KingsKnight2Sword" prob="0.05"/><entity name="KingsKnight2SwordS" prob="0.05"/>
+	<entity name="KingsKnight3Sword" prob="0.05"/><entity name="KingsKnight3SwordS" prob="0.05"/>
+	<entity name="KingsKnight1LBow" prob="0.05"/><entity name="KingsKnight1LBowS" prob="0.05"/>
+	<entity name="KingsKnight2LBow" prob="0.05"/><entity name="KingsKnight2LBowS" prob="0.05"/>
+	<entity name="KingsKnight1XBow" prob="0.05"/><entity name="KingsKnight1XBowS" prob="0.05"/>
+	<entity name="KingsKnight2XBow" prob="0.05"/><entity name="KingsKnight2XBowS" prob="0.05"/>
+	<entity name="KingsChampion" prob="0.05"/><entity name="KingsChampionS" prob="0.05"/>
+	<entity name="KingsAxeman" prob="0.05"/><entity name="KingsAxemanS" prob="0.05"/>
+	<entity name="KingsHalberdier" prob="0.05"/><entity name="KingsHalberdierS" prob="0.05"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.01"/><entity name="TheKingS" prob="0.01"/>
+	<entity name="TheQueen" prob="0.01"/><entity name="TheQueenS" prob="0.01"/>
+	<entity name="MedievalTFP" prob="0.01"/><entity name="MedievalTFPS" prob="0.01"/>
+	<entity name="GreenWitch" prob="0.01"/><entity name="GreenWitchS" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.10"/><entity name="KingsKnight1SwordS" prob="0.10"/>
+	<entity name="KingsKnight2Sword" prob="0.10"/><entity name="KingsKnight2SwordS" prob="0.10"/>
+	<entity name="KingsKnight3Sword" prob="0.10"/><entity name="KingsKnight3SwordS" prob="0.10"/>
+	<entity name="KingsKnight1LBow" prob="0.10"/><entity name="KingsKnight1LBowS" prob="0.10"/>
+	<entity name="KingsKnight2LBow" prob="0.10"/><entity name="KingsKnight2LBowS" prob="0.10"/>
+	<entity name="KingsKnight1XBow" prob="0.10"/><entity name="KingsKnight1XBowS" prob="0.10"/>
+	<entity name="KingsKnight2XBow" prob="0.10"/><entity name="KingsKnight2XBowS" prob="0.10"/>
+	<entity name="KingsChampion" prob="0.10"/><entity name="KingsChampionS" prob="0.10"/>
+	<entity name="KingsAxeman" prob="0.10"/><entity name="KingsAxemanS" prob="0.10"/>
+	<entity name="KingsHalberdier" prob="0.10"/><entity name="KingsHalberdierS" prob="0.10"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.01"/><entity name="TheKingS" prob="0.01"/>
+	<entity name="TheQueen" prob="0.01"/><entity name="TheQueenS" prob="0.01"/>
+	<entity name="MedievalTFP" prob="0.01"/><entity name="MedievalTFPS" prob="0.01"/>
+	<entity name="GreenWitch" prob="0.01"/><entity name="GreenWitchS" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.15"/><entity name="KingsKnight1SwordS" prob="0.15"/>
+	<entity name="KingsKnight2Sword" prob="0.15"/><entity name="KingsKnight2SwordS" prob="0.15"/>
+	<entity name="KingsKnight3Sword" prob="0.15"/><entity name="KingsKnight3SwordS" prob="0.15"/>
+	<entity name="KingsKnight1LBow" prob="0.15"/><entity name="KingsKnight1LBowS" prob="0.15"/>
+	<entity name="KingsKnight2LBow" prob="0.15"/><entity name="KingsKnight2LBowS" prob="0.15"/>
+	<entity name="KingsKnight1XBow" prob="0.15"/><entity name="KingsKnight1XBowS" prob="0.15"/>
+	<entity name="KingsKnight2XBow" prob="0.15"/><entity name="KingsKnight2XBowS" prob="0.15"/>
+	<entity name="KingsChampion" prob="0.15"/><entity name="KingsChampionS" prob="0.15"/>
+	<entity name="KingsAxeman" prob="0.15"/><entity name="KingsAxemanS" prob="0.15"/>
+	<entity name="KingsHalberdier" prob="0.15"/><entity name="KingsHalberdierS" prob="0.15"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.03"/><entity name="TheKingS" prob="0.03"/>
+	<entity name="TheQueen" prob="0.03"/><entity name="TheQueenS" prob="0.03"/>
+	<entity name="MedievalTFP" prob="0.03"/><entity name="MedievalTFPS" prob="0.03"/>
+	<entity name="GreenWitch" prob="0.03"/><entity name="GreenWitchS" prob="0.03"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.05"/><entity name="KingsKnight1SwordS" prob="0.05"/>
+	<entity name="KingsKnight2Sword" prob="0.05"/><entity name="KingsKnight2SwordS" prob="0.05"/>
+	<entity name="KingsKnight3Sword" prob="0.05"/><entity name="KingsKnight3SwordS" prob="0.05"/>
+	<entity name="KingsKnight1LBow" prob="0.05"/><entity name="KingsKnight1LBowS" prob="0.05"/>
+	<entity name="KingsKnight2LBow" prob="0.05"/><entity name="KingsKnight2LBowS" prob="0.05"/>
+	<entity name="KingsKnight1XBow" prob="0.05"/><entity name="KingsKnight1XBowS" prob="0.05"/>
+	<entity name="KingsKnight2XBow" prob="0.05"/><entity name="KingsKnight2XBowS" prob="0.05"/>
+	<entity name="KingsChampion" prob="0.05"/><entity name="KingsChampionS" prob="0.05"/>
+	<entity name="KingsAxeman" prob="0.05"/><entity name="KingsAxemanS" prob="0.05"/>
+	<entity name="KingsHalberdier" prob="0.05"/><entity name="KingsHalberdierS" prob="0.05"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.02"/><entity name="TheKingS" prob="0.02"/>
+	<entity name="TheQueen" prob="0.02"/><entity name="TheQueenS" prob="0.02"/>
+	<entity name="MedievalTFP" prob="0.02"/><entity name="MedievalTFPS" prob="0.02"/>
+	<entity name="GreenWitch" prob="0.02"/><entity name="GreenWitchS" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.10"/><entity name="KingsKnight1SwordS" prob="0.10"/>
+	<entity name="KingsKnight2Sword" prob="0.10"/><entity name="KingsKnight2SwordS" prob="0.10"/>
+	<entity name="KingsKnight3Sword" prob="0.10"/><entity name="KingsKnight3SwordS" prob="0.10"/>
+	<entity name="KingsKnight1LBow" prob="0.10"/><entity name="KingsKnight1LBowS" prob="0.10"/>
+	<entity name="KingsKnight2LBow" prob="0.10"/><entity name="KingsKnight2LBowS" prob="0.10"/>
+	<entity name="KingsKnight1XBow" prob="0.10"/><entity name="KingsKnight1XBowS" prob="0.10"/>
+	<entity name="KingsKnight2XBow" prob="0.10"/><entity name="KingsKnight2XBowS" prob="0.10"/>
+	<entity name="KingsChampion" prob="0.10"/><entity name="KingsChampionS" prob="0.10"/>
+	<entity name="KingsAxeman" prob="0.10"/><entity name="KingsAxemanS" prob="0.10"/>
+	<entity name="KingsHalberdier" prob="0.10"/><entity name="KingsHalberdierS" prob="0.10"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.02"/><entity name="TheKingS" prob="0.02"/>
+	<entity name="TheQueen" prob="0.02"/><entity name="TheQueenS" prob="0.02"/>
+	<entity name="MedievalTFP" prob="0.02"/><entity name="MedievalTFPS" prob="0.02"/>
+	<entity name="GreenWitch" prob="0.02"/><entity name="GreenWitchS" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.10"/><entity name="AbbotS" prob="0.10"/>
+	<entity name="Friar" prob="0.10"/><entity name="FriarS" prob="0.10"/>
+	<entity name="Monk" prob="0.10"/><entity name="MonkS" prob="0.10"/>
+	<entity name="MalePeasant1" prob="0.10"/><entity name="MalePeasant1S" prob="0.10"/>
+	<entity name="MalePeasant2" prob="0.10"/><entity name="MalePeasant2S" prob="0.10"/>
+	<entity name="Barmaid" prob="0.10"/><entity name="BarmaidS" prob="0.10"/>
+	<entity name="ServingWench" prob="0.10"/><entity name="ServingWenchS" prob="0.10"/>
+	<entity name="PeasantGirl1" prob="0.10"/><entity name="PeasantGirl1S" prob="0.10"/>
+	<entity name="PeasantGirl2" prob="0.10"/><entity name="PeasantGirl2S" prob="0.10"/>
+	<entity name="PeasantGirl3" prob="0.10"/><entity name="PeasantGirl3S" prob="0.10"/>
+	<entity name="PeasantGirl4" prob="0.10"/><entity name="PeasantGirl4S" prob="0.10"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.15"/><entity name="KingsKnight1SwordS" prob="0.15"/>
+	<entity name="KingsKnight2Sword" prob="0.15"/><entity name="KingsKnight2SwordS" prob="0.15"/>
+	<entity name="KingsKnight3Sword" prob="0.15"/><entity name="KingsKnight3SwordS" prob="0.15"/>
+	<entity name="KingsKnight1LBow" prob="0.15"/><entity name="KingsKnight1LBowS" prob="0.15"/>
+	<entity name="KingsKnight2LBow" prob="0.15"/><entity name="KingsKnight2LBowS" prob="0.15"/>
+	<entity name="KingsKnight1XBow" prob="0.15"/><entity name="KingsKnight1XBowS" prob="0.15"/>
+	<entity name="KingsKnight2XBow" prob="0.15"/><entity name="KingsKnight2XBowS" prob="0.15"/>
+	<entity name="KingsChampion" prob="0.15"/><entity name="KingsChampionS" prob="0.15"/>
+	<entity name="KingsAxeman" prob="0.15"/><entity name="KingsAxemanS" prob="0.15"/>
+	<entity name="KingsHalberdier" prob="0.15"/><entity name="KingsHalberdierS" prob="0.15"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.06"/><entity name="TheKingS" prob="0.06"/>
+	<entity name="TheQueen" prob="0.06"/><entity name="TheQueenS" prob="0.06"/>
+	<entity name="MedievalTFP" prob="0.06"/><entity name="MedievalTFPS" prob="0.06"/>
+	<entity name="GreenWitch" prob="0.06"/><entity name="GreenWitchS" prob="0.06"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.05"/><entity name="KingsKnight1SwordS" prob="0.05"/>
+	<entity name="KingsKnight2Sword" prob="0.05"/><entity name="KingsKnight2SwordS" prob="0.05"/>
+	<entity name="KingsKnight3Sword" prob="0.05"/><entity name="KingsKnight3SwordS" prob="0.05"/>
+	<entity name="KingsKnight1LBow" prob="0.05"/><entity name="KingsKnight1LBowS" prob="0.05"/>
+	<entity name="KingsKnight2LBow" prob="0.05"/><entity name="KingsKnight2LBowS" prob="0.05"/>
+	<entity name="KingsKnight1XBow" prob="0.05"/><entity name="KingsKnight1XBowS" prob="0.05"/>
+	<entity name="KingsKnight2XBow" prob="0.05"/><entity name="KingsKnight2XBowS" prob="0.05"/>
+	<entity name="KingsChampion" prob="0.05"/><entity name="KingsChampionS" prob="0.05"/>
+	<entity name="KingsAxeman" prob="0.05"/><entity name="KingsAxemanS" prob="0.05"/>
+	<entity name="KingsHalberdier" prob="0.05"/><entity name="KingsHalberdierS" prob="0.05"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.01"/><entity name="TheKingS" prob="0.01"/>
+	<entity name="TheQueen" prob="0.01"/><entity name="TheQueenS" prob="0.01"/>
+	<entity name="MedievalTFP" prob="0.01"/><entity name="MedievalTFPS" prob="0.01"/>
+	<entity name="GreenWitch" prob="0.01"/><entity name="GreenWitchS" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.10"/><entity name="KingsKnight1SwordS" prob="0.10"/>
+	<entity name="KingsKnight2Sword" prob="0.10"/><entity name="KingsKnight2SwordS" prob="0.10"/>
+	<entity name="KingsKnight3Sword" prob="0.10"/><entity name="KingsKnight3SwordS" prob="0.10"/>
+	<entity name="KingsKnight1LBow" prob="0.10"/><entity name="KingsKnight1LBowS" prob="0.10"/>
+	<entity name="KingsKnight2LBow" prob="0.10"/><entity name="KingsKnight2LBowS" prob="0.10"/>
+	<entity name="KingsKnight1XBow" prob="0.10"/><entity name="KingsKnight1XBowS" prob="0.10"/>
+	<entity name="KingsKnight2XBow" prob="0.10"/><entity name="KingsKnight2XBowS" prob="0.10"/>
+	<entity name="KingsChampion" prob="0.10"/><entity name="KingsChampionS" prob="0.10"/>
+	<entity name="KingsAxeman" prob="0.10"/><entity name="KingsAxemanS" prob="0.10"/>
+	<entity name="KingsHalberdier" prob="0.10"/><entity name="KingsHalberdierS" prob="0.10"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.01"/><entity name="TheKingS" prob="0.01"/>
+	<entity name="TheQueen" prob="0.01"/><entity name="TheQueenS" prob="0.01"/>
+	<entity name="MedievalTFP" prob="0.01"/><entity name="MedievalTFPS" prob="0.01"/>
+	<entity name="GreenWitch" prob="0.01"/><entity name="GreenWitchS" prob="0.01"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<!-- civilians -->
+	<entity name="Abbot" prob="0.03"/><entity name="AbbotS" prob="0.03"/>
+	<entity name="Friar" prob="0.03"/><entity name="FriarS" prob="0.03"/>
+	<entity name="Monk" prob="0.03"/><entity name="MonkS" prob="0.03"/>
+	<entity name="MalePeasant1" prob="0.03"/><entity name="MalePeasant1S" prob="0.03"/>
+	<entity name="MalePeasant2" prob="0.03"/><entity name="MalePeasant2S" prob="0.03"/>
+	<entity name="Barmaid" prob="0.03"/><entity name="BarmaidS" prob="0.03"/>
+	<entity name="ServingWench" prob="0.03"/><entity name="ServingWenchS" prob="0.03"/>
+	<entity name="PeasantGirl1" prob="0.03"/><entity name="PeasantGirl1S" prob="0.03"/>
+	<entity name="PeasantGirl2" prob="0.03"/><entity name="PeasantGirl2S" prob="0.03"/>
+	<entity name="PeasantGirl3" prob="0.03"/><entity name="PeasantGirl3S" prob="0.03"/>
+	<entity name="PeasantGirl4" prob="0.03"/><entity name="PeasantGirl4S" prob="0.03"/>
+	
+	<!-- fighters -->
+	<entity name="FemaleCrusader" prob="0.10"/><entity name="FemaleCrusaderS" prob="0.10"/>
+	<entity name="Templar" prob="0.10"/><entity name="TemplarS" prob="0.10"/>
+	<entity name="TemplarCrossbowman" prob="0.10"/><entity name="TemplarCrossbowmanS" prob="0.10"/>
+	<entity name="TemplarBowman" prob="0.10"/><entity name="TemplarBowmanS" prob="0.10"/>
+	<entity name="ChaosMarauder" prob="0.10"/>
+	
+	<!-- royal guards -->
+	<entity name="KingsKnight1Sword" prob="0.15"/><entity name="KingsKnight1SwordS" prob="0.15"/>
+	<entity name="KingsKnight2Sword" prob="0.15"/><entity name="KingsKnight2SwordS" prob="0.15"/>
+	<entity name="KingsKnight3Sword" prob="0.15"/><entity name="KingsKnight3SwordS" prob="0.15"/>
+	<entity name="KingsKnight1LBow" prob="0.15"/><entity name="KingsKnight1LBowS" prob="0.15"/>
+	<entity name="KingsKnight2LBow" prob="0.15"/><entity name="KingsKnight2LBowS" prob="0.15"/>
+	<entity name="KingsKnight1XBow" prob="0.15"/><entity name="KingsKnight1XBowS" prob="0.15"/>
+	<entity name="KingsKnight2XBow" prob="0.15"/><entity name="KingsKnight2XBowS" prob="0.15"/>
+	<entity name="KingsChampion" prob="0.15"/><entity name="KingsChampionS" prob="0.15"/>
+	<entity name="KingsAxeman" prob="0.15"/><entity name="KingsAxemanS" prob="0.15"/>
+	<entity name="KingsHalberdier" prob="0.15"/><entity name="KingsHalberdierS" prob="0.15"/>
+	
+	<!-- nobles -->
+	<entity name="TheKing" prob="0.03"/><entity name="TheKingS" prob="0.03"/>
+	<entity name="TheQueen" prob="0.03"/><entity name="TheQueenS" prob="0.03"/>
+	<entity name="MedievalTFP" prob="0.03"/><entity name="MedievalTFPS" prob="0.03"/>
+	<entity name="GreenWitch" prob="0.03"/><entity name="GreenWitchS" prob="0.03"/>
+</append>
+
+
+
+</ErrorNull>
