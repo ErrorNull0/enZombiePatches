@@ -47,6 +47,7 @@ By default, body harvesting for the SurvivorzPack entities are disabled. To TURN
 	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
 	<drop event="Harvest" name="gunBowT1WoodenBowParts"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="ammoArrowIron"			count="3" tag="butcherHarvest"/>
 	<drop event="Destroy" name="resourceScrapIron" 		count="25,50"/>
 </append>
 
