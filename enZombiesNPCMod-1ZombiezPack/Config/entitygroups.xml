@@ -1,7 +1,7 @@
 <ErrorNull>
 
 <!-- 
-Each of the Raiderz are assigned a specific biome based on their clothing style. And, their weapon also determines if they spawn in the wilderness, city or downtown. Downtown spawns raiderz with stronger weapons, and the wilderness spawn raiders with weaker melee weapons.
+Each of the Zombiez are assigned a specific biome based on their look / clothing style.
 
 BIOME		ENTITY			
 Forest 		Parasite, SwatCaptainZombie, BloatedParasite		
