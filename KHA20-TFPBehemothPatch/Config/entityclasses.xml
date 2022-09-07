@@ -12,7 +12,7 @@ By default, body harvesting for the KHA20-TFP Behemoth is disabled. To TURN ON b
 	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh"	count="22" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourceAnimalFat"	count="2" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceBone"		count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="10" tag="butcherHarvest"/>
 </append>
 
 
