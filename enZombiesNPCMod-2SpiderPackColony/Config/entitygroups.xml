@@ -1,0 +1,238 @@
+<ErrorNull>
+
+<!-- 
+The SpiderPack Colony entities spawn in the following biomes below. They spawn mostly at night and in the wilderness area, while spawning less in the city. They do not spawn in the downtown areas.
+
+BIOME		
+Forest		spider02, spider03
+Desert		spider01, spider02
+Snow		spider03
+Burnt		spider02
+Wasteland	spider01
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="animalSpider02Feral" prob="1.0"/>
+	<entity name="animalSpider02Radiated" prob="1.0"/>
+	<entity name="animalSpider02Mini" prob="1.0"/>
+	<entity name="animalSpider02Queen" prob="1.0"/>
+	<entity name="animalSpider03Feral" prob="1.0"/>
+	<entity name="animalSpider03Radiated" prob="1.0"/>
+	<entity name="animalSpider03Mini" prob="1.0"/>
+	<entity name="animalSpider03Queen" prob="1.0"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="animalSpider02Feral" prob="1.5"/>
+	<entity name="animalSpider02Radiated" prob="1.5"/>
+	<entity name="animalSpider02Mini" prob="1.5"/>
+	<entity name="animalSpider02Queen" prob="1.5"/>
+	<entity name="animalSpider03Feral" prob="1.5"/>
+	<entity name="animalSpider03Radiated" prob="1.5"/>
+	<entity name="animalSpider03Mini" prob="1.5"/>
+	<entity name="animalSpider03Queen" prob="1.5"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="animalSpider02Feral" prob="0.5"/>
+	<entity name="animalSpider02Radiated" prob="0.5"/>
+	<entity name="animalSpider02Mini" prob="0.5"/>
+	<entity name="animalSpider02Queen" prob="0.5"/>
+	<entity name="animalSpider03Feral" prob="0.5"/>
+	<entity name="animalSpider03Radiated" prob="0.5"/>
+	<entity name="animalSpider03Mini" prob="0.5"/>
+	<entity name="animalSpider03Queen" prob="0.5"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="animalSpider02Feral" prob="1.0"/>
+	<entity name="animalSpider02Radiated" prob="1.0"/>
+	<entity name="animalSpider02Mini" prob="1.0"/>
+	<entity name="animalSpider02Queen" prob="1.0"/>
+	<entity name="animalSpider03Feral" prob="1.0"/>
+	<entity name="animalSpider03Radiated" prob="1.0"/>
+	<entity name="animalSpider03Mini" prob="1.0"/>
+	<entity name="animalSpider03Queen" prob="1.0"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="animalSpider01Feral" prob="1.0"/>
+	<entity name="animalSpider01Radiated" prob="1.0"/>
+	<entity name="animalSpider01Mini" prob="1.0"/>
+	<entity name="animalSpider01Queen" prob="1.0"/>
+	<entity name="animalSpider02Feral" prob="1.0"/>
+	<entity name="animalSpider02Radiated" prob="1.0"/>
+	<entity name="animalSpider02Mini" prob="1.0"/>
+	<entity name="animalSpider02Queen" prob="1.0"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="animalSpider01Feral" prob="1.5"/>
+	<entity name="animalSpider01Radiated" prob="1.5"/>
+	<entity name="animalSpider01Mini" prob="1.5"/>
+	<entity name="animalSpider01Queen" prob="1.5"/>
+	<entity name="animalSpider02Feral" prob="1.5"/>
+	<entity name="animalSpider02Radiated" prob="1.5"/>
+	<entity name="animalSpider02Mini" prob="1.5"/>
+	<entity name="animalSpider02Queen" prob="1.5"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="animalSpider01Feral" prob="0.5"/>
+	<entity name="animalSpider01Radiated" prob="0.5"/>
+	<entity name="animalSpider01Mini" prob="0.5"/>
+	<entity name="animalSpider01Queen" prob="0.5"/>
+	<entity name="animalSpider02Feral" prob="0.5"/>
+	<entity name="animalSpider02Radiated" prob="0.5"/>
+	<entity name="animalSpider02Mini" prob="0.5"/>
+	<entity name="animalSpider02Queen" prob="0.5"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="animalSpider01Feral" prob="1.0"/>
+	<entity name="animalSpider01Radiated" prob="1.0"/>
+	<entity name="animalSpider01Mini" prob="1.0"/>
+	<entity name="animalSpider01Queen" prob="1.0"/>
+	<entity name="animalSpider02Feral" prob="1.0"/>
+	<entity name="animalSpider02Radiated" prob="1.0"/>
+	<entity name="animalSpider02Mini" prob="1.0"/>
+	<entity name="animalSpider02Queen" prob="1.0"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="animalSpider03Feral" prob="1.0"/>
+	<entity name="animalSpider03Radiated" prob="1.0"/>
+	<entity name="animalSpider03Mini" prob="1.0"/>
+	<entity name="animalSpider03Queen" prob="1.0"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="animalSpider03Feral" prob="1.5"/>
+	<entity name="animalSpider03Radiated" prob="1.5"/>
+	<entity name="animalSpider03Mini" prob="1.5"/>
+	<entity name="animalSpider03Queen" prob="1.5"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="animalSpider03Feral" prob="0.5"/>
+	<entity name="animalSpider03Radiated" prob="0.5"/>
+	<entity name="animalSpider03Mini" prob="0.5"/>
+	<entity name="animalSpider03Queen" prob="0.5"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="animalSpider03Feral" prob="1.0"/>
+	<entity name="animalSpider03Radiated" prob="1.0"/>
+	<entity name="animalSpider03Mini" prob="1.0"/>
+	<entity name="animalSpider03Queen" prob="1.0"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="animalSpider02Feral" prob="1.0"/>
+	<entity name="animalSpider02Radiated" prob="1.0"/>
+	<entity name="animalSpider02Mini" prob="1.0"/>
+	<entity name="animalSpider02Queen" prob="1.0"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="animalSpider02Feral" prob="1.5"/>
+	<entity name="animalSpider02Radiated" prob="1.5"/>
+	<entity name="animalSpider02Mini" prob="1.5"/>
+	<entity name="animalSpider02Queen" prob="1.5"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="animalSpider02Feral" prob="0.5"/>
+	<entity name="animalSpider02Radiated" prob="0.5"/>
+	<entity name="animalSpider02Mini" prob="0.5"/>
+	<entity name="animalSpider02Queen" prob="0.5"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="animalSpider02Feral" prob="1.0"/>
+	<entity name="animalSpider02Radiated" prob="1.0"/>
+	<entity name="animalSpider02Mini" prob="1.0"/>
+	<entity name="animalSpider02Queen" prob="1.0"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="animalSpider01Feral" prob="1.0"/>
+	<entity name="animalSpider01Radiated" prob="1.0"/>
+	<entity name="animalSpider01Mini" prob="1.0"/>
+	<entity name="animalSpider01Queen" prob="1.0"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="animalSpider01Feral" prob="1.5"/>
+	<entity name="animalSpider01Radiated" prob="1.5"/>
+	<entity name="animalSpider01Mini" prob="1.5"/>
+	<entity name="animalSpider01Queen" prob="1.5"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="animalSpider01Feral" prob="0.5"/>
+	<entity name="animalSpider01Radiated" prob="0.5"/>
+	<entity name="animalSpider01Mini" prob="0.5"/>
+	<entity name="animalSpider01Queen" prob="0.5"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="animalSpider01Feral" prob="1.0"/>
+	<entity name="animalSpider01Radiated" prob="1.0"/>
+	<entity name="animalSpider01Mini" prob="1.0"/>
+	<entity name="animalSpider01Queen" prob="1.0"/>
+</append>
+
+
+
+
+</ErrorNull>

@@ -1,0 +1,254 @@
+<ErrorNull>
+
+<!-- 
+Each of the friendly raider gurlz are assigned a specific biome based on their clothing style. And, their weapon also determines if they spawn in the wilderness, city or downtown. Downtown spawns raiders with stronger weapons, and the wilderness spawn raiders with weaker melee weapons.
+
+BIOME		RAIDER		REASON
+Forest 		Gypsy		Has a green shirt, and green is foresty
+Desert 		Betty		Wears least clothing, cooler for hot desert climate
+Snow 		Hedy		Wears leather and jacket, warmer for cold weather
+Burnt 		Gina		Wears a red dress, and red is kindof flamey
+Wasteland 	Jayne		The only raider gurl remaining :)
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="npcRaiderGypsyClub" prob="0.1" />
+	<entity name="npcRaiderGypsyBat" prob="0.1" />
+	<entity name="npcRaiderGypsyKnife" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="npcRaiderGypsyMachete" prob="0.1" />
+	<entity name="npcRaiderGypsyAxe" prob="0.1" />
+	<entity name="npcRaiderGypsyDPistol" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="npcRaiderGypsyDPistol" prob="0.1" />
+	<entity name="npcRaiderGypsyTRifle" prob="0.1" />
+	<entity name="npcRaiderGypsySMG" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="npcRaiderGypsyClub" prob="0.03" />
+	<entity name="npcRaiderGypsyBat" prob="0.03" />
+	<entity name="npcRaiderGypsyKnife" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="npcRaiderGypsyMachete" prob="0.03" />
+	<entity name="npcRaiderGypsyAxe" prob="0.03" />
+	<entity name="npcRaiderGypsyDPistol" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="npcRaiderGypsyDPistol" prob="0.03" />
+	<entity name="npcRaiderGypsyTRifle" prob="0.03" />
+	<entity name="npcRaiderGypsySMG" prob="0.03" />
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="npcRaiderBettyClub" prob="0.1" />
+	<entity name="npcRaiderBettyBat" prob="0.1" />
+	<entity name="npcRaiderBettyKnife" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="npcRaiderBettyMachete" prob="0.1" />
+	<entity name="npcRaiderBettyAxe" prob="0.1" />
+	<entity name="npcRaiderBettyDPistol" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="npcRaiderBettyDPistol" prob="0.1" />
+	<entity name="npcRaiderBettyTRifle" prob="0.1" />
+	<entity name="npcRaiderBettySMG" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="npcRaiderBettyClub" prob="0.03" />
+	<entity name="npcRaiderBettyBat" prob="0.03" />
+	<entity name="npcRaiderBettyKnife" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="npcRaiderBettyMachete" prob="0.03" />
+	<entity name="npcRaiderBettyAxe" prob="0.03" />
+	<entity name="npcRaiderBettyDPistol" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="npcRaiderBettyDPistol" prob="0.03" />
+	<entity name="npcRaiderBettyTRifle" prob="0.03" />
+	<entity name="npcRaiderBettySMG" prob="0.03" />
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="npcRaiderHedyClub" prob="0.1" />
+	<entity name="npcRaiderHedyBat" prob="0.1" />
+	<entity name="npcRaiderHedyKnife" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="npcRaiderHedyMachete" prob="0.1" />
+	<entity name="npcRaiderHedyAxe" prob="0.1" />
+	<entity name="npcRaiderHedyDPistol" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="npcRaiderHedyDPistol" prob="0.1" />
+	<entity name="npcRaiderHedyTRifle" prob="0.1" />
+	<entity name="npcRaiderHedySMG" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="npcRaiderHedyClub" prob="0.03" />
+	<entity name="npcRaiderHedyBat" prob="0.03" />
+	<entity name="npcRaiderHedyKnife" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="npcRaiderHedyMachete" prob="0.03" />
+	<entity name="npcRaiderHedyAxe" prob="0.03" />
+	<entity name="npcRaiderHedyDPistol" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="npcRaiderHedyDPistol" prob="0.03" />
+	<entity name="npcRaiderHedyTRifle" prob="0.03" />
+	<entity name="npcRaiderHedySMG" prob="0.03" />
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="npcRaiderGinaClub" prob="0.1" />
+	<entity name="npcRaiderGinaBat" prob="0.1" />
+	<entity name="npcRaiderGinaKnife" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="npcRaiderGinaMachete" prob="0.1" />
+	<entity name="npcRaiderGinaAxe" prob="0.1" />
+	<entity name="npcRaiderGinaDPistol" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="npcRaiderGinaDPistol" prob="0.1" />
+	<entity name="npcRaiderGinaTRifle" prob="0.1" />
+	<entity name="npcRaiderGinaSMG" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="npcRaiderGinaClub" prob="0.03" />
+	<entity name="npcRaiderGinaBat" prob="0.03" />
+	<entity name="npcRaiderGinaKnife" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="npcRaiderGinaMachete" prob="0.03" />
+	<entity name="npcRaiderGinaAxe" prob="0.03" />
+	<entity name="npcRaiderGinaDPistol" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="npcRaiderGinaDPistol" prob="0.03" />
+	<entity name="npcRaiderGinaTRifle" prob="0.03" />
+	<entity name="npcRaiderGinaSMG" prob="0.03" />
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="npcRaiderGypsyClub" prob="0.1" />
+	<entity name="npcRaiderGypsyBat" prob="0.1" />
+	<entity name="npcRaiderGypsyKnife" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="npcRaiderGypsyMachete" prob="0.1" />
+	<entity name="npcRaiderGypsyAxe" prob="0.1" />
+	<entity name="npcRaiderGypsyDPistol" prob="0.1" />
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="npcRaiderGypsyDPistol" prob="0.1" />
+	<entity name="npcRaiderGypsyTRifle" prob="0.1" />
+	<entity name="npcRaiderGypsySMG" prob="0.1" />
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="npcRaiderGypsyClub" prob="0.03" />
+	<entity name="npcRaiderGypsyBat" prob="0.03" />
+	<entity name="npcRaiderGypsyKnife" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="npcRaiderGypsyMachete" prob="0.03" />
+	<entity name="npcRaiderGypsyAxe" prob="0.03" />
+	<entity name="npcRaiderGypsyDPistol" prob="0.03" />
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="npcRaiderGypsyDPistol" prob="0.03" />
+	<entity name="npcRaiderGypsyTRifle" prob="0.03" />
+	<entity name="npcRaiderGypsySMG" prob="0.03" />
+</append>
+
+
+</ErrorNull>
