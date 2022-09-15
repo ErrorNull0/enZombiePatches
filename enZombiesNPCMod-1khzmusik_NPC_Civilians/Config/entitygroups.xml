@@ -1,0 +1,3898 @@
+<ErrorNull>
+
+<!-- 
+Each of the Khzmusik Civilians are assigned a specific biome based on their look / clothing style. All civilians have lower spawn prob during nights compared to days, because that's sleeping time. The npcFemaleScrubsKhz and npcMaleAgedScrubsKhz spawn in all biomes, but only in the city and downtown areas.
+
+BIOME		ENTITY			
+Forest 		npcTestFemaleKhz, npcTestMaleKhz, npcFemaleAgedKhz, npcFemaleYoung1Khz, npcFemaleYoung4Khz, npcFemaleYoung5Khz, npcMaleAged2Khz, npcMaleYoung2Khz
+Desert 		npcTestFemaleKhz, npcTestMaleKhz, npcFemaleAgedKhz, npcFemaleYoung1Khz, npcFemaleYoung4Khz, npcFemaleYoung5Khz, npcMaleAged2Khz, npcMaleCowboyKhz, npcMaleYoung2Khz, npcMaleYoung3Khz
+Snow 		npcFemaleAgedKhz, npcFemaleYoung2Khz, npcFemaleYoung3Khz, npcMaleAgedKhz, npcMaleCowboyKhz, npcMaleJKhz, npcMaleYoung1Khz
+Burnt 		npcTestFemaleKhz, npcTestMaleKhz, npcFemaleAgedKhz, npcFemaleYoung1Khz, npcFemaleYoung3Khz, npcMaleAgedKhz
+Wasteland 	npcTestFemaleKhz, npcTestMaleKhz, npcFemaleAgedKhz, npcFemaleYoung1Khz, npcFemaleYoung3Khz, npcMaleAgedKhz, npcMaleJKhz
+
+Also, civilans spawn within certain areas of a biome based on their weapon. Melee and weaker weapons tend to spawn in the wilderness, while those with higher powered firearms spawn in the downtown areas. Refer below:
+
+Wilderness: Club Bat Knife Spear Axe Machete LBow XBow
+
+City: Club Bat Knife Spear Axe Machete LBow XBow PipePistol PipeShotgun PipeRifle Pistol DPistol PipeMG HRifle SRifle PShotgun
+
+Downtown: PipePistol PipeShotgun PipeRifle Pistol DPistol PipeMG HRifle SRifle PShotgun AK47 TRifle SMG M60 AShotgun RocketL
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="npcTestFemaleKhzClub" prob="0.02"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.02"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.02"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.02"/>
+	<entity name="npcTestMaleKhzBat" prob="0.02"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung4KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung5KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleAged2KhzClub" prob="0.02"/>
+	<entity name="npcMaleAged2KhzBat" prob="0.02"/>
+	<entity name="npcMaleAged2KhzKnife" prob="0.02"/>
+	<entity name="npcMaleAged2KhzSpear" prob="0.02"/>
+	<entity name="npcMaleAged2KhzAxe" prob="0.02"/>
+	<entity name="npcMaleAged2KhzMachete" prob="0.02"/>
+	<entity name="npcMaleAged2KhzLBow" prob="0.02"/>
+	<entity name="npcMaleAged2KhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleYoung2KhzClub" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzBat" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzKnife" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzSpear" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzAxe" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzMachete" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzLBow" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzXBow" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="npcTestFemaleKhzClub" prob="0.02"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.02"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.02"/>
+	<entity name="npcTestMaleKhzBat" prob="0.02"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung4KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzXBow" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung5KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzXBow" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleAged2KhzClub" prob="0.02"/>
+	<entity name="npcMaleAged2KhzBat" prob="0.02"/>
+	<entity name="npcMaleAged2KhzKnife" prob="0.02"/>
+	<entity name="npcMaleAged2KhzSpear" prob="0.02"/>
+	<entity name="npcMaleAged2KhzAxe" prob="0.02"/>
+	<entity name="npcMaleAged2KhzMachete" prob="0.02"/>
+	<entity name="npcMaleAged2KhzLBow" prob="0.02"/>
+	<entity name="npcMaleAged2KhzXBow" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPistol" prob="0.02"/>
+	<entity name="npcMaleAged2KhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAged2KhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleYoung2KhzClub" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzBat" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzKnife" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzSpear" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzAxe" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzMachete" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzLBow" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzXBow" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPistol" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzDPistol" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzHRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzSRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleScrubsKhzClub" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzBat" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzKnife" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzSpear" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzAxe" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzMachete" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzLBow" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzXBow" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.01"/>
+	
+	<entity name="npcMaleAgedScrubsKhzClub" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzBat" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzKnife" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzSpear" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzAxe" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzMachete" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzLBow" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzXBow" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.01"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAK47" prob="0.02"/>
+	<entity name="npcTestFemaleKhzTRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSMG" prob="0.02"/>
+	<entity name="npcTestFemaleKhzM60" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcTestMaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzAK47" prob="0.02"/>
+	<entity name="npcTestMaleKhzTRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzSMG" prob="0.02"/>
+	<entity name="npcTestMaleKhzM60" prob="0.02"/>
+	<entity name="npcTestMaleKhzAShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAK47" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzM60" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAK47" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSMG" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzM60" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung4KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzAK47" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzSMG" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzM60" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung5KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzAK47" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzSMG" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzM60" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleAged2KhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPistol" prob="0.02"/>
+	<entity name="npcMaleAged2KhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAged2KhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleAged2KhzAK47" prob="0.02"/>
+	<entity name="npcMaleAged2KhzTRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzSMG" prob="0.02"/>
+	<entity name="npcMaleAged2KhzM60" prob="0.02"/>
+	<entity name="npcMaleAged2KhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleAged2KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleYoung2KhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPistol" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzDPistol" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzHRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzSRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzAK47" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzTRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzSMG" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzM60" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzAK47" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzSMG" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzM60" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzAK47" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzTRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzSMG" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzM60" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzRocketL" prob="0.02"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="npcTestFemaleKhzClub" prob="0.006"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.006"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.006"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.006"/>
+	<entity name="npcTestMaleKhzBat" prob="0.006"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung4KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung5KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleAged2KhzClub" prob="0.006"/>
+	<entity name="npcMaleAged2KhzBat" prob="0.006"/>
+	<entity name="npcMaleAged2KhzKnife" prob="0.006"/>
+	<entity name="npcMaleAged2KhzSpear" prob="0.006"/>
+	<entity name="npcMaleAged2KhzAxe" prob="0.006"/>
+	<entity name="npcMaleAged2KhzMachete" prob="0.006"/>
+	<entity name="npcMaleAged2KhzLBow" prob="0.006"/>
+	<entity name="npcMaleAged2KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleYoung2KhzClub" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzBat" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzKnife" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzSpear" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzAxe" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzMachete" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzLBow" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzXBow" prob="0.006"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="npcTestFemaleKhzClub" prob="0.006"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.006"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.006"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.006"/>
+	<entity name="npcTestMaleKhzBat" prob="0.006"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipePistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.006"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung4KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzXBow" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung5KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzXBow" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleAged2KhzClub" prob="0.006"/>
+	<entity name="npcMaleAged2KhzBat" prob="0.006"/>
+	<entity name="npcMaleAged2KhzKnife" prob="0.006"/>
+	<entity name="npcMaleAged2KhzSpear" prob="0.006"/>
+	<entity name="npcMaleAged2KhzAxe" prob="0.006"/>
+	<entity name="npcMaleAged2KhzMachete" prob="0.006"/>
+	<entity name="npcMaleAged2KhzLBow" prob="0.006"/>
+	<entity name="npcMaleAged2KhzXBow" prob="0.006"/>
+	<entity name="npcMaleAged2KhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAged2KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAged2KhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAged2KhzPistol" prob="0.006"/>
+	<entity name="npcMaleAged2KhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAged2KhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAged2KhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAged2KhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAged2KhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleYoung2KhzClub" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzBat" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzKnife" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzSpear" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzAxe" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzMachete" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzLBow" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzXBow" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzPistol" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzDPistol" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzHRifle" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzSRifle" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleScrubsKhzClub" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzBat" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzXBow" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleAgedScrubsKhzClub" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzBat" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzKnife" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSpear" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAxe" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzMachete" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzLBow" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzXBow" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.006"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.006"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAK47" prob="0.006"/>
+	<entity name="npcTestFemaleKhzTRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSMG" prob="0.006"/>
+	<entity name="npcTestFemaleKhzM60" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAShotgun" prob="0.006"/>
+	<entity name="npcTestFemaleKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcTestMaleKhzPipePistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.006"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.006"/>
+	<entity name="npcTestMaleKhzAK47" prob="0.006"/>
+	<entity name="npcTestMaleKhzTRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzSMG" prob="0.006"/>
+	<entity name="npcTestMaleKhzM60" prob="0.006"/>
+	<entity name="npcTestMaleKhzAShotgun" prob="0.006"/>
+	<entity name="npcTestMaleKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAK47" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSMG" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzM60" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAK47" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSMG" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzM60" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung4KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzAK47" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzSMG" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzM60" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung5KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzAK47" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzSMG" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzM60" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleAged2KhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAged2KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAged2KhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAged2KhzPistol" prob="0.006"/>
+	<entity name="npcMaleAged2KhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAged2KhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAged2KhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAged2KhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAged2KhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleAged2KhzAK47" prob="0.006"/>
+	<entity name="npcMaleAged2KhzTRifle" prob="0.006"/>
+	<entity name="npcMaleAged2KhzSMG" prob="0.006"/>
+	<entity name="npcMaleAged2KhzM60" prob="0.006"/>
+	<entity name="npcMaleAged2KhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleAged2KhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleYoung2KhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzPistol" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzDPistol" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzHRifle" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzSRifle" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzAK47" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzTRifle" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzSMG" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzM60" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAK47" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSMG" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzM60" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAK47" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzTRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSMG" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzM60" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzRocketL" prob="0.006"/>
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="npcTestFemaleKhzClub" prob="0.02"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.02"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.02"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.02"/>
+	<entity name="npcTestMaleKhzBat" prob="0.02"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung4KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung5KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleAged2KhzClub" prob="0.02"/>
+	<entity name="npcMaleAged2KhzBat" prob="0.02"/>
+	<entity name="npcMaleAged2KhzKnife" prob="0.02"/>
+	<entity name="npcMaleAged2KhzSpear" prob="0.02"/>
+	<entity name="npcMaleAged2KhzAxe" prob="0.02"/>
+	<entity name="npcMaleAged2KhzMachete" prob="0.02"/>
+	<entity name="npcMaleAged2KhzLBow" prob="0.02"/>
+	<entity name="npcMaleAged2KhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleYoung2KhzClub" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzBat" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzKnife" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzSpear" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzAxe" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzMachete" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzLBow" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleCowboyKhzClub" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzBat" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzKnife" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzSpear" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzAxe" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzMachete" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzLBow" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleYoung3KhzClub" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzBat" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzKnife" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzSpear" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzAxe" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzMachete" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzLBow" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzXBow" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="npcTestFemaleKhzClub" prob="0.02"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.02"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.02"/>
+	<entity name="npcTestMaleKhzBat" prob="0.02"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung4KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzXBow" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung5KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzXBow" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleAged2KhzClub" prob="0.02"/>
+	<entity name="npcMaleAged2KhzBat" prob="0.02"/>
+	<entity name="npcMaleAged2KhzKnife" prob="0.02"/>
+	<entity name="npcMaleAged2KhzSpear" prob="0.02"/>
+	<entity name="npcMaleAged2KhzAxe" prob="0.02"/>
+	<entity name="npcMaleAged2KhzMachete" prob="0.02"/>
+	<entity name="npcMaleAged2KhzLBow" prob="0.02"/>
+	<entity name="npcMaleAged2KhzXBow" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPistol" prob="0.02"/>
+	<entity name="npcMaleAged2KhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAged2KhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleYoung2KhzClub" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzBat" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzKnife" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzSpear" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzAxe" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzMachete" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzLBow" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzXBow" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPistol" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzDPistol" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzHRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzSRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleCowboyKhzClub" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzBat" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzKnife" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzSpear" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzAxe" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzMachete" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzLBow" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzXBow" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPistol" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleYoung3KhzClub" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzBat" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzKnife" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzSpear" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzAxe" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzMachete" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzLBow" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzXBow" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzPistol" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzDPistol" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzHRifle" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzSRifle" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleScrubsKhzClub" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzBat" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzKnife" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzSpear" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzAxe" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzMachete" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzLBow" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzXBow" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.01"/>
+	
+	<entity name="npcMaleAgedScrubsKhzClub" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzBat" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzKnife" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzSpear" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzAxe" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzMachete" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzLBow" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzXBow" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.01"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAK47" prob="0.02"/>
+	<entity name="npcTestFemaleKhzTRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSMG" prob="0.02"/>
+	<entity name="npcTestFemaleKhzM60" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcTestMaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzAK47" prob="0.02"/>
+	<entity name="npcTestMaleKhzTRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzSMG" prob="0.02"/>
+	<entity name="npcTestMaleKhzM60" prob="0.02"/>
+	<entity name="npcTestMaleKhzAShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAK47" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzM60" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAK47" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSMG" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzM60" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung4KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzAK47" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzSMG" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzM60" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung4KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung5KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzAK47" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzSMG" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzM60" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung5KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleAged2KhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPistol" prob="0.02"/>
+	<entity name="npcMaleAged2KhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAged2KhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleAged2KhzAK47" prob="0.02"/>
+	<entity name="npcMaleAged2KhzTRifle" prob="0.02"/>
+	<entity name="npcMaleAged2KhzSMG" prob="0.02"/>
+	<entity name="npcMaleAged2KhzM60" prob="0.02"/>
+	<entity name="npcMaleAged2KhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleAged2KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleYoung2KhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPistol" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzDPistol" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzHRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzSRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzAK47" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzTRifle" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzSMG" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzM60" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung2KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleCowboyKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPistol" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzAK47" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzTRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzSMG" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzM60" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleYoung3KhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzPistol" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzDPistol" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzHRifle" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzSRifle" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzAK47" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzTRifle" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzSMG" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzM60" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung3KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzAK47" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzSMG" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzM60" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzAK47" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzTRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzSMG" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzM60" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzRocketL" prob="0.02"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="npcTestFemaleKhzClub" prob="0.006"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.006"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.006"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.006"/>
+	<entity name="npcTestMaleKhzBat" prob="0.006"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung4KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung5KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleAged2KhzClub" prob="0.006"/>
+	<entity name="npcMaleAged2KhzBat" prob="0.006"/>
+	<entity name="npcMaleAged2KhzKnife" prob="0.006"/>
+	<entity name="npcMaleAged2KhzSpear" prob="0.006"/>
+	<entity name="npcMaleAged2KhzAxe" prob="0.006"/>
+	<entity name="npcMaleAged2KhzMachete" prob="0.006"/>
+	<entity name="npcMaleAged2KhzLBow" prob="0.006"/>
+	<entity name="npcMaleAged2KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleYoung2KhzClub" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzBat" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzKnife" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzSpear" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzAxe" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzMachete" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzLBow" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleCowboyKhzClub" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzBat" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzKnife" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzSpear" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzAxe" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzMachete" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzLBow" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleYoung3KhzClub" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzBat" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzKnife" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzSpear" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzAxe" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzMachete" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzLBow" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzXBow" prob="0.006"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="npcTestFemaleKhzClub" prob="0.006"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.006"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.006"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.006"/>
+	<entity name="npcTestMaleKhzBat" prob="0.006"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung4KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung5KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleAged2KhzClub" prob="0.006"/>
+	<entity name="npcMaleAged2KhzBat" prob="0.006"/>
+	<entity name="npcMaleAged2KhzKnife" prob="0.006"/>
+	<entity name="npcMaleAged2KhzSpear" prob="0.006"/>
+	<entity name="npcMaleAged2KhzAxe" prob="0.006"/>
+	<entity name="npcMaleAged2KhzMachete" prob="0.006"/>
+	<entity name="npcMaleAged2KhzLBow" prob="0.006"/>
+	<entity name="npcMaleAged2KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleYoung2KhzClub" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzBat" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzKnife" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzSpear" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzAxe" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzMachete" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzLBow" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleCowboyKhzClub" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzBat" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzKnife" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzSpear" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzAxe" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzMachete" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzLBow" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleYoung3KhzClub" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzBat" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzKnife" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzSpear" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzAxe" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzMachete" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzLBow" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleScrubsKhzClub" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzBat" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleAgedScrubsKhzClub" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzBat" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzKnife" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSpear" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAxe" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzMachete" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzLBow" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzXBow" prob="0.006"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="npcTestFemaleKhzClub" prob="0.006"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.006"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.006"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.006"/>
+	<entity name="npcTestMaleKhzBat" prob="0.006"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung4KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung4KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung5KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung5KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleAged2KhzClub" prob="0.006"/>
+	<entity name="npcMaleAged2KhzBat" prob="0.006"/>
+	<entity name="npcMaleAged2KhzKnife" prob="0.006"/>
+	<entity name="npcMaleAged2KhzSpear" prob="0.006"/>
+	<entity name="npcMaleAged2KhzAxe" prob="0.006"/>
+	<entity name="npcMaleAged2KhzMachete" prob="0.006"/>
+	<entity name="npcMaleAged2KhzLBow" prob="0.006"/>
+	<entity name="npcMaleAged2KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleYoung2KhzClub" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzBat" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzKnife" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzSpear" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzAxe" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzMachete" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzLBow" prob="0.006"/>
+	<entity name="npcMaleYoung2KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleCowboyKhzClub" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzBat" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzKnife" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzSpear" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzAxe" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzMachete" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzLBow" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleYoung3KhzClub" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzBat" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzKnife" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzSpear" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzAxe" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzMachete" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzLBow" prob="0.006"/>
+	<entity name="npcMaleYoung3KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleScrubsKhzClub" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzBat" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleAgedScrubsKhzClub" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzBat" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzKnife" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSpear" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAxe" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzMachete" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzLBow" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzXBow" prob="0.006"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="npcFemaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung2KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung3KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcMaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcMaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcMaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcMaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcMaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcMaleAgedKhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleCowboyKhzClub" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzBat" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzKnife" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzSpear" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzAxe" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzMachete" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzLBow" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleJKhzClub" prob="0.02"/>
+	<entity name="npcMaleJKhzBat" prob="0.02"/>
+	<entity name="npcMaleJKhzKnife" prob="0.02"/>
+	<entity name="npcMaleJKhzSpear" prob="0.02"/>
+	<entity name="npcMaleJKhzAxe" prob="0.02"/>
+	<entity name="npcMaleJKhzMachete" prob="0.02"/>
+	<entity name="npcMaleJKhzLBow" prob="0.02"/>
+	<entity name="npcMaleJKhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleYoung1KhzClub" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzBat" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzKnife" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzSpear" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzAxe" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzMachete" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzLBow" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzXBow" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="npcFemaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung2KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzXBow" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung3KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzXBow" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcMaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcMaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcMaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcMaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcMaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcMaleAgedKhzXBow" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleCowboyKhzClub" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzBat" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzKnife" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzSpear" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzAxe" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzMachete" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzLBow" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzXBow" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPistol" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleJKhzClub" prob="0.02"/>
+	<entity name="npcMaleJKhzBat" prob="0.02"/>
+	<entity name="npcMaleJKhzKnife" prob="0.02"/>
+	<entity name="npcMaleJKhzSpear" prob="0.02"/>
+	<entity name="npcMaleJKhzAxe" prob="0.02"/>
+	<entity name="npcMaleJKhzMachete" prob="0.02"/>
+	<entity name="npcMaleJKhzLBow" prob="0.02"/>
+	<entity name="npcMaleJKhzXBow" prob="0.02"/>
+	<entity name="npcMaleJKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleJKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleJKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzPistol" prob="0.02"/>
+	<entity name="npcMaleJKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleJKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleJKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleYoung1KhzClub" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzBat" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzKnife" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzSpear" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzAxe" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzMachete" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzLBow" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzXBow" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzPistol" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzDPistol" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzHRifle" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzSRifle" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleScrubsKhzClub" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzBat" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzKnife" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzSpear" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzAxe" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzMachete" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzLBow" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzXBow" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.01"/>
+	
+	<entity name="npcMaleAgedScrubsKhzClub" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzBat" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzKnife" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzSpear" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzAxe" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzMachete" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzLBow" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzXBow" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.01"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAK47" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzM60" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung2KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzAK47" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzSMG" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzM60" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung2KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung3KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzAK47" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSMG" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzM60" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedKhzAK47" prob="0.02"/>
+	<entity name="npcMaleAgedKhzTRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSMG" prob="0.02"/>
+	<entity name="npcMaleAgedKhzM60" prob="0.02"/>
+	<entity name="npcMaleAgedKhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleCowboyKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPistol" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzAK47" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzTRifle" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzSMG" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzM60" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleCowboyKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleJKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleJKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleJKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzPistol" prob="0.02"/>
+	<entity name="npcMaleJKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleJKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleJKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleJKhzAK47" prob="0.02"/>
+	<entity name="npcMaleJKhzTRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzSMG" prob="0.02"/>
+	<entity name="npcMaleJKhzM60" prob="0.02"/>
+	<entity name="npcMaleJKhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleJKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleYoung1KhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzPistol" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzDPistol" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzHRifle" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzSRifle" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzAK47" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzTRifle" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzSMG" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzM60" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleYoung1KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzAK47" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzSMG" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzM60" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzAK47" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzTRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzSMG" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzM60" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzRocketL" prob="0.02"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="npcFemaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung2KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung3KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcMaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcMaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcMaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcMaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcMaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcMaleAgedKhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleCowboyKhzClub" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzBat" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzKnife" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzSpear" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzAxe" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzMachete" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzLBow" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleJKhzClub" prob="0.006"/>
+	<entity name="npcMaleJKhzBat" prob="0.006"/>
+	<entity name="npcMaleJKhzKnife" prob="0.006"/>
+	<entity name="npcMaleJKhzSpear" prob="0.006"/>
+	<entity name="npcMaleJKhzAxe" prob="0.006"/>
+	<entity name="npcMaleJKhzMachete" prob="0.006"/>
+	<entity name="npcMaleJKhzLBow" prob="0.006"/>
+	<entity name="npcMaleJKhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleYoung1KhzClub" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzBat" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzKnife" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzSpear" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzAxe" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzMachete" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzLBow" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzXBow" prob="0.006"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="npcFemaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung2KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzXBow" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung3KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzXBow" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcMaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcMaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcMaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcMaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcMaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcMaleAgedKhzXBow" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleCowboyKhzClub" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzBat" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzKnife" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzSpear" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzAxe" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzMachete" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzLBow" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzXBow" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzPistol" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleJKhzClub" prob="0.006"/>
+	<entity name="npcMaleJKhzBat" prob="0.006"/>
+	<entity name="npcMaleJKhzKnife" prob="0.006"/>
+	<entity name="npcMaleJKhzSpear" prob="0.006"/>
+	<entity name="npcMaleJKhzAxe" prob="0.006"/>
+	<entity name="npcMaleJKhzMachete" prob="0.006"/>
+	<entity name="npcMaleJKhzLBow" prob="0.006"/>
+	<entity name="npcMaleJKhzXBow" prob="0.006"/>
+	<entity name="npcMaleJKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleJKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleJKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzPistol" prob="0.006"/>
+	<entity name="npcMaleJKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleJKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleJKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleYoung1KhzClub" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzBat" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzKnife" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzSpear" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzAxe" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzMachete" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzLBow" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzXBow" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzPistol" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzDPistol" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzHRifle" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzSRifle" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleScrubsKhzClub" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzBat" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzXBow" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleAgedScrubsKhzClub" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzBat" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzKnife" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSpear" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAxe" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzMachete" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzLBow" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzXBow" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.006"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAK47" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSMG" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzM60" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung2KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzAK47" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzSMG" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzM60" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung2KhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung3KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzAK47" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSMG" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzM60" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedKhzAK47" prob="0.006"/>
+	<entity name="npcMaleAgedKhzTRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSMG" prob="0.006"/>
+	<entity name="npcMaleAgedKhzM60" prob="0.006"/>
+	<entity name="npcMaleAgedKhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleCowboyKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzPistol" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzAK47" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzTRifle" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzSMG" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzM60" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleCowboyKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleJKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleJKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleJKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzPistol" prob="0.006"/>
+	<entity name="npcMaleJKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleJKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleJKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleJKhzAK47" prob="0.006"/>
+	<entity name="npcMaleJKhzTRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzSMG" prob="0.006"/>
+	<entity name="npcMaleJKhzM60" prob="0.006"/>
+	<entity name="npcMaleJKhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleJKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleYoung1KhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzPistol" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzDPistol" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzHRifle" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzSRifle" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzAK47" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzTRifle" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzSMG" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzM60" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleYoung1KhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAK47" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSMG" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzM60" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAK47" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzTRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSMG" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzM60" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzRocketL" prob="0.006"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="npcTestFemaleKhzClub" prob="0.02"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.02"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.02"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.02"/>
+	<entity name="npcTestMaleKhzBat" prob="0.02"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung3KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcMaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcMaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcMaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcMaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcMaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcMaleAgedKhzXBow" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="npcTestFemaleKhzClub" prob="0.02"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.02"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.02"/>
+	<entity name="npcTestMaleKhzBat" prob="0.02"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung3KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzXBow" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcMaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcMaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcMaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcMaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcMaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcMaleAgedKhzXBow" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleScrubsKhzClub" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzBat" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzKnife" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzSpear" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzAxe" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzMachete" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzLBow" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzXBow" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.01"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.01"/>
+	
+	<entity name="npcMaleAgedScrubsKhzClub" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzBat" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzKnife" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzSpear" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzAxe" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzMachete" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzLBow" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzXBow" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.01"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAK47" prob="0.02"/>
+	<entity name="npcTestFemaleKhzTRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSMG" prob="0.02"/>
+	<entity name="npcTestFemaleKhzM60" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcTestMaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzAK47" prob="0.02"/>
+	<entity name="npcTestMaleKhzTRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzSMG" prob="0.02"/>
+	<entity name="npcTestMaleKhzM60" prob="0.02"/>
+	<entity name="npcTestMaleKhzAShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAK47" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzM60" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAK47" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSMG" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzM60" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung3KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzAK47" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSMG" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzM60" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedKhzAK47" prob="0.02"/>
+	<entity name="npcMaleAgedKhzTRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSMG" prob="0.02"/>
+	<entity name="npcMaleAgedKhzM60" prob="0.02"/>
+	<entity name="npcMaleAgedKhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzAK47" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzSMG" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzM60" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzAK47" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzTRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzSMG" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzM60" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzRocketL" prob="0.02"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="npcTestFemaleKhzClub" prob="0.006"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.006"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.006"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.006"/>
+	<entity name="npcTestMaleKhzBat" prob="0.006"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung3KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcMaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcMaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcMaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcMaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcMaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcMaleAgedKhzXBow" prob="0.006"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="npcTestFemaleKhzClub" prob="0.006"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.006"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.006"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.006"/>
+	<entity name="npcTestMaleKhzBat" prob="0.006"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipePistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.006"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung3KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzXBow" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcMaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcMaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcMaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcMaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcMaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcMaleAgedKhzXBow" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleScrubsKhzClub" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzBat" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzXBow" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleAgedScrubsKhzClub" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzBat" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzKnife" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSpear" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAxe" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzMachete" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzLBow" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzXBow" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.006"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.006"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAK47" prob="0.006"/>
+	<entity name="npcTestFemaleKhzTRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSMG" prob="0.006"/>
+	<entity name="npcTestFemaleKhzM60" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAShotgun" prob="0.006"/>
+	<entity name="npcTestFemaleKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcTestMaleKhzPipePistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.006"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.006"/>
+	<entity name="npcTestMaleKhzAK47" prob="0.006"/>
+	<entity name="npcTestMaleKhzTRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzSMG" prob="0.006"/>
+	<entity name="npcTestMaleKhzM60" prob="0.006"/>
+	<entity name="npcTestMaleKhzAShotgun" prob="0.006"/>
+	<entity name="npcTestMaleKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAK47" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSMG" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzM60" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAK47" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSMG" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzM60" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung3KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzAK47" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSMG" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzM60" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedKhzAK47" prob="0.006"/>
+	<entity name="npcMaleAgedKhzTRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSMG" prob="0.006"/>
+	<entity name="npcMaleAgedKhzM60" prob="0.006"/>
+	<entity name="npcMaleAgedKhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAK47" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSMG" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzM60" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAK47" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzTRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSMG" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzM60" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzRocketL" prob="0.006"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="npcTestFemaleKhzClub" prob="0.02"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.02"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.02"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.02"/>
+	<entity name="npcTestMaleKhzBat" prob="0.02"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung3KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcMaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcMaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcMaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcMaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcMaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcMaleAgedKhzXBow" prob="0.02"/>
+	
+	<entity name="npcMaleJKhzClub" prob="0.02"/>
+	<entity name="npcMaleJKhzBat" prob="0.02"/>
+	<entity name="npcMaleJKhzKnife" prob="0.02"/>
+	<entity name="npcMaleJKhzSpear" prob="0.02"/>
+	<entity name="npcMaleJKhzAxe" prob="0.02"/>
+	<entity name="npcMaleJKhzMachete" prob="0.02"/>
+	<entity name="npcMaleJKhzLBow" prob="0.02"/>
+	<entity name="npcMaleJKhzXBow" prob="0.02"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="npcTestFemaleKhzClub" prob="0.02"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.02"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.02"/>
+	<entity name="npcTestMaleKhzBat" prob="0.02"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.02"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.02"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.02"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.02"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.02"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung3KhzClub" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzBat" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzKnife" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSpear" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzAxe" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzMachete" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzLBow" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzXBow" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleAgedKhzClub" prob="0.02"/>
+	<entity name="npcMaleAgedKhzBat" prob="0.02"/>
+	<entity name="npcMaleAgedKhzKnife" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSpear" prob="0.02"/>
+	<entity name="npcMaleAgedKhzAxe" prob="0.02"/>
+	<entity name="npcMaleAgedKhzMachete" prob="0.02"/>
+	<entity name="npcMaleAgedKhzLBow" prob="0.02"/>
+	<entity name="npcMaleAgedKhzXBow" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleJKhzClub" prob="0.02"/>
+	<entity name="npcMaleJKhzBat" prob="0.02"/>
+	<entity name="npcMaleJKhzKnife" prob="0.02"/>
+	<entity name="npcMaleJKhzSpear" prob="0.02"/>
+	<entity name="npcMaleJKhzAxe" prob="0.02"/>
+	<entity name="npcMaleJKhzMachete" prob="0.02"/>
+	<entity name="npcMaleJKhzLBow" prob="0.02"/>
+	<entity name="npcMaleJKhzXBow" prob="0.02"/>
+	<entity name="npcMaleJKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleJKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleJKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzPistol" prob="0.02"/>
+	<entity name="npcMaleJKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleJKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleJKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcFemaleScrubsKhzClub" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzBat" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzKnife" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzSpear" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzAxe" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzMachete" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzLBow" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzXBow" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.02"/>
+	
+	<entity name="npcMaleAgedScrubsKhzClub" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzBat" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzKnife" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzSpear" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzAxe" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzMachete" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzLBow" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzXBow" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.01"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.01"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAK47" prob="0.02"/>
+	<entity name="npcTestFemaleKhzTRifle" prob="0.02"/>
+	<entity name="npcTestFemaleKhzSMG" prob="0.02"/>
+	<entity name="npcTestFemaleKhzM60" prob="0.02"/>
+	<entity name="npcTestFemaleKhzAShotgun" prob="0.02"/>
+	<entity name="npcTestFemaleKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcTestMaleKhzPipePistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.02"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.02"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzAK47" prob="0.02"/>
+	<entity name="npcTestMaleKhzTRifle" prob="0.02"/>
+	<entity name="npcTestMaleKhzSMG" prob="0.02"/>
+	<entity name="npcTestMaleKhzM60" prob="0.02"/>
+	<entity name="npcTestMaleKhzAShotgun" prob="0.02"/>
+	<entity name="npcTestMaleKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAK47" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzSMG" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzM60" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleAgedKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAK47" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzSMG" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzM60" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung1KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleYoung3KhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzAK47" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzSMG" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzM60" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleYoung3KhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleAgedKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAgedKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedKhzAK47" prob="0.02"/>
+	<entity name="npcMaleAgedKhzTRifle" prob="0.02"/>
+	<entity name="npcMaleAgedKhzSMG" prob="0.02"/>
+	<entity name="npcMaleAgedKhzM60" prob="0.02"/>
+	<entity name="npcMaleAgedKhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleJKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleJKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleJKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzPistol" prob="0.02"/>
+	<entity name="npcMaleJKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleJKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleJKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleJKhzAK47" prob="0.02"/>
+	<entity name="npcMaleJKhzTRifle" prob="0.02"/>
+	<entity name="npcMaleJKhzSMG" prob="0.02"/>
+	<entity name="npcMaleJKhzM60" prob="0.02"/>
+	<entity name="npcMaleJKhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleJKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzAK47" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzTRifle" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzSMG" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzM60" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzAShotgun" prob="0.02"/>
+	<entity name="npcFemaleScrubsKhzRocketL" prob="0.02"/>
+	
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzAK47" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzTRifle" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzSMG" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzM60" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzAShotgun" prob="0.02"/>
+	<entity name="npcMaleAgedScrubsKhzRocketL" prob="0.02"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="npcTestFemaleKhzClub" prob="0.006"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.006"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.006"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.006"/>
+	<entity name="npcTestMaleKhzBat" prob="0.006"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung3KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcMaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcMaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcMaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcMaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcMaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcMaleAgedKhzXBow" prob="0.006"/>
+	
+	<entity name="npcMaleJKhzClub" prob="0.006"/>
+	<entity name="npcMaleJKhzBat" prob="0.006"/>
+	<entity name="npcMaleJKhzKnife" prob="0.006"/>
+	<entity name="npcMaleJKhzSpear" prob="0.006"/>
+	<entity name="npcMaleJKhzAxe" prob="0.006"/>
+	<entity name="npcMaleJKhzMachete" prob="0.006"/>
+	<entity name="npcMaleJKhzLBow" prob="0.006"/>
+	<entity name="npcMaleJKhzXBow" prob="0.006"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="npcTestFemaleKhzClub" prob="0.006"/>
+	<entity name="npcTestFemaleKhzBat" prob="0.006"/>
+	<entity name="npcTestFemaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestFemaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestFemaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestFemaleKhzXBow" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.006"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcTestMaleKhzClub" prob="0.006"/>
+	<entity name="npcTestMaleKhzBat" prob="0.006"/>
+	<entity name="npcTestMaleKhzKnife" prob="0.006"/>
+	<entity name="npcTestMaleKhzSpear" prob="0.006"/>
+	<entity name="npcTestMaleKhzAxe" prob="0.006"/>
+	<entity name="npcTestMaleKhzMachete" prob="0.006"/>
+	<entity name="npcTestMaleKhzLBow" prob="0.006"/>
+	<entity name="npcTestMaleKhzXBow" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipePistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.006"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzXBow" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung1KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzXBow" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung3KhzClub" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzBat" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzKnife" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSpear" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzAxe" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzMachete" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzLBow" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzXBow" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleAgedKhzClub" prob="0.006"/>
+	<entity name="npcMaleAgedKhzBat" prob="0.006"/>
+	<entity name="npcMaleAgedKhzKnife" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSpear" prob="0.006"/>
+	<entity name="npcMaleAgedKhzAxe" prob="0.006"/>
+	<entity name="npcMaleAgedKhzMachete" prob="0.006"/>
+	<entity name="npcMaleAgedKhzLBow" prob="0.006"/>
+	<entity name="npcMaleAgedKhzXBow" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleJKhzClub" prob="0.006"/>
+	<entity name="npcMaleJKhzBat" prob="0.006"/>
+	<entity name="npcMaleJKhzKnife" prob="0.006"/>
+	<entity name="npcMaleJKhzSpear" prob="0.006"/>
+	<entity name="npcMaleJKhzAxe" prob="0.006"/>
+	<entity name="npcMaleJKhzMachete" prob="0.006"/>
+	<entity name="npcMaleJKhzLBow" prob="0.006"/>
+	<entity name="npcMaleJKhzXBow" prob="0.006"/>
+	<entity name="npcMaleJKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleJKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleJKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzPistol" prob="0.006"/>
+	<entity name="npcMaleJKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleJKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleJKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcFemaleScrubsKhzClub" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzBat" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzKnife" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSpear" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAxe" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzMachete" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzLBow" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzXBow" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.006"/>
+	
+	<entity name="npcMaleAgedScrubsKhzClub" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzBat" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzKnife" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSpear" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAxe" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzMachete" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzLBow" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzXBow" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.006"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="npcTestFemaleKhzPipePistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzDPistol" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPipeMG" prob="0.006"/>
+	<entity name="npcTestFemaleKhzHRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzPShotgun" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAK47" prob="0.006"/>
+	<entity name="npcTestFemaleKhzTRifle" prob="0.006"/>
+	<entity name="npcTestFemaleKhzSMG" prob="0.006"/>
+	<entity name="npcTestFemaleKhzM60" prob="0.006"/>
+	<entity name="npcTestFemaleKhzAShotgun" prob="0.006"/>
+	<entity name="npcTestFemaleKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcTestMaleKhzPipePistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzPistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzDPistol" prob="0.006"/>
+	<entity name="npcTestMaleKhzPipeMG" prob="0.006"/>
+	<entity name="npcTestMaleKhzHRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzSRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzPShotgun" prob="0.006"/>
+	<entity name="npcTestMaleKhzAK47" prob="0.006"/>
+	<entity name="npcTestMaleKhzTRifle" prob="0.006"/>
+	<entity name="npcTestMaleKhzSMG" prob="0.006"/>
+	<entity name="npcTestMaleKhzM60" prob="0.006"/>
+	<entity name="npcTestMaleKhzAShotgun" prob="0.006"/>
+	<entity name="npcTestMaleKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAK47" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzSMG" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzM60" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleAgedKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung1KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAK47" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzSMG" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzM60" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung1KhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleYoung3KhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzAK47" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzSMG" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzM60" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleYoung3KhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleAgedKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedKhzAK47" prob="0.006"/>
+	<entity name="npcMaleAgedKhzTRifle" prob="0.006"/>
+	<entity name="npcMaleAgedKhzSMG" prob="0.006"/>
+	<entity name="npcMaleAgedKhzM60" prob="0.006"/>
+	<entity name="npcMaleAgedKhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleJKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleJKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleJKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzPistol" prob="0.006"/>
+	<entity name="npcMaleJKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleJKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleJKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleJKhzAK47" prob="0.006"/>
+	<entity name="npcMaleJKhzTRifle" prob="0.006"/>
+	<entity name="npcMaleJKhzSMG" prob="0.006"/>
+	<entity name="npcMaleJKhzM60" prob="0.006"/>
+	<entity name="npcMaleJKhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleJKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcFemaleScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzPShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAK47" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzTRifle" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzSMG" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzM60" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzAShotgun" prob="0.006"/>
+	<entity name="npcFemaleScrubsKhzRocketL" prob="0.006"/>
+	
+	<entity name="npcMaleAgedScrubsKhzPipePistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzDPistol" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPipeMG" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzHRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzPShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAK47" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzTRifle" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzSMG" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzM60" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzAShotgun" prob="0.006"/>
+	<entity name="npcMaleAgedScrubsKhzRocketL" prob="0.006"/>
+</append>
+
+
+</ErrorNull>

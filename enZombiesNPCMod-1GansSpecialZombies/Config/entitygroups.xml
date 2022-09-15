@@ -1,0 +1,233 @@
+<ErrorNull>
+
+<!-- 
+Each of the GansSpecial Zombies spawn in all biomes equally. However, the whtieClown only spawns in the city and downtown areas and only at night.
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.15"/>
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.15"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDay']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNight']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.15"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.15"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.15"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="zombieWarZombie" prob="0.10"/>
+	<entity name="zombieWarZombieV1" prob="0.10"/>
+	<entity name="zombieWhiteClown" prob="0.15"/>
+</append>
+
+
+</ErrorNull>

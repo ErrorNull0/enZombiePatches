@@ -1,0 +1,150 @@
+<ErrorNull>
+
+<!--
+By default, body harvesting for the Khzmusik Zombies are disabled. To TURN ON body harvesting for them, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is directly below (on line 8), and the 2nd one is near the end of this file (on line 140). Again, delete both lines.
+-->
+
+
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* 
+
+<append xpath="/entity_classes/entity_class[@name='zombieMaleKhz']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="1,10"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieFemaleKhz']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="1,10"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieCowgirlKhz']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="1,10"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieFemaleLumberjackKhz']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="1,10"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieBurntKhz']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="260"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCoal" 		count="1"/>
+	<drop event="Harvest" name="resourceCloth"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="1,10"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieBusinessmanKhz']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceCloth"		count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="10,30"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieBusinesswomanKhz']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="290"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceCloth"		count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="10,30"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieFemaleOfficeKhz']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceCloth"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="5,15"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieFirefighterKhz']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceScrapPolymers"	count="8" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"		count="3" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="10,30"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombiePolicewomanKhz']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceCloth"		count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="20,30"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieFemaleStripperKhz']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="290"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceCloth"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="30,50"/>
+</append>
+
+
+
+
+ ********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+
+
+<!-- DO NOT DELETE ANYTHING BELOW -->
+
+
+
+</ErrorNull>

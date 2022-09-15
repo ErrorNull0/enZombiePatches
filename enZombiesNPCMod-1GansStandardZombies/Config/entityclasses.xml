@@ -1,0 +1,70 @@
+<ErrorNull>
+
+<!--
+By default, body harvesting for the GansStandard Zombies entities are disabled. To TURN ON body harvesting for them, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is directly below (on line 8), and the 2nd one is near the end of this file (on line 60). Again, delete both lines.
+-->
+
+
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* 
+
+<append xpath="/entity_classes/entity_class[contains(@name,'zombieRekt')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="310"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="5"  tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="20,40"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'zombieHugh')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="320"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="4"  tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="20,40"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'zombieGirl')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="4"  tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="10,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'zombieCarl')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="290"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="4"  tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="20,40"/>
+</append>
+
+
+
+
+
+
+ ********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+
+
+<!-- DO NOT DELETE ANYTHING BELOW -->
+
+
+
+</ErrorNull>

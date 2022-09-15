@@ -1,0 +1,235 @@
+<ErrorNull>
+
+<!--
+By default, body harvesting for the Khzmusik Civilians are disabled. To TURN ON body harvesting for them, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is directly below (on line 8), and the 2nd one is near the end of this file (on line 225). Again, delete both lines.
+-->
+
+
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* 
+
+<append xpath="/entity_classes/entity_class[contains(@name,'npcTestFemaleKhz') or contains(@name,'npcFemaleYoung1Khz') or contains(@name,'npcFemaleYoung4Khz')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="10,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'npcFemaleAgedKhz') or contains(@name,'npcFemaleScrubsKhz') or contains(@name,'npcFemaleYoung2Khz') or contains(@name,'npcFemaleYoung5Khz')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="10,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'npcFemaleYoung3Khz')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="280"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="10,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'npcTestMaleKhz') or contains(@name,'npcMaleAged2Khz')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="10,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'npcMaleAgedKhz') or contains(@name,'npcMaleAgedScrubsKhz') or contains(@name,'npcMaleYoung1Khz')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="10,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'npcMaleCowboyKhz')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="310"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="10,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'npcMaleJKhz')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="310"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="6" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="10,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'npcMaleYoung2Khz')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="290"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="10,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'npcMaleYoung3Khz')]">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="10,20"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzClub')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzKnife')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzBat')]">
+	<drop event="Harvest" name="resourceWood"			count="5" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzMachete')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzAxe')]">
+	<drop event="Harvest" name="resourceForgedIron"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"			count="4" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzSpear')]">
+	<drop event="Harvest" name="resourceForgedIron"		count="3" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzPipePistol')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzPipeRifle')]">
+	<drop event="Harvest" name="resourceWood"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe"		count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzPipeMG')]">
+	<drop event="Harvest" name="resourceWood"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe"		count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzPipeShotgun')]">
+	<drop event="Harvest" name="resourceWood"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe"		count="2" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzSMG')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzM60')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzPistol')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzDPistol')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunHandgunT1PistolParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzAK47')]">
+	<drop event="Harvest" name="resourceForgedSteel"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"			count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzTRifle')]">
+	<drop event="Harvest" name="resourceForgedSteel"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunMGT1AK47Parts"		count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzHRifle')]">
+	<drop event="Harvest" name="resourceForgedSteel"			count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunRifleT1HuntingRifleParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzSRifle')]">
+	<drop event="Harvest" name="resourceForgedSteel"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunRifleT1HuntingRifleParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzPShotgun')]">
+	<drop event="Harvest" name="resourceForgedSteel"			count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunShotgunT1DoubleBarrelParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzAShotgun')]">
+	<drop event="Harvest" name="resourceForgedSteel"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunShotgunT1DoubleBarrelParts"	count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzLBow')]">
+	<drop event="Harvest" name="resourceWood"					count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunBowT1WoodenBowParts"			count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzXBow')]">
+	<drop event="Harvest" name="resourceWood"					count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunBowT1WoodenBowParts"			count="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[contains(@name,'KhzRocketL')]">
+	<drop event="Harvest" name="resourceForgedSteel"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunExplosivesT3RocketLauncherParts"		count="1" tag="butcherHarvest"/>
+</append>
+
+
+
+
+
+ ********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+
+
+<!-- DO NOT DELETE ANYTHING BELOW -->
+
+
+
+</ErrorNull>

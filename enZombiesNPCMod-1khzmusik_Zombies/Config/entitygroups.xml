@@ -1,0 +1,325 @@
+<ErrorNull>
+
+<!-- 
+Each of the Khzmusik Zombies are assigned a specific biome based on their look / clothing style.
+
+BIOME		ENTITY			
+Forest 		zombieMaleKhz, zombieFemaleKhz, zombieFemaleLumberjackKhz
+Desert 		zombieMaleKhz, zombieFemaleKhz, zombieCowgirlKhz
+Snow 		
+Burnt 		zombieBurntKhz
+Wasteland 	zombieMaleKhz, zombieFemaleKhz, zombieBurntKhz
+
+The following zombies spawn in all biomes, but only in the city and downtown areas: zombieBusinessmanKhz, zombieBusinesswomanKhz, zombieFemaleOfficeKhz, zombieFirefighterKhz, zombiePolicewomanKhz, zombieFemaleStripperKhz
+-->
+
+
+<!-- ********************************** -->
+<!-- ********** FOREST BIOME ********** -->
+<!-- ********************************** -->	
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDay']">
+	<entity name="zombieMaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleLumberjackKhz" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayCity']">
+	<entity name="zombieMaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleLumberjackKhz" prob="0.05"/>
+	<entity name="zombieBusinessmanKhz" prob="0.05"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.05"/>
+	<entity name="zombieFirefighterKhz" prob="0.05"/>
+	<entity name="zombiePolicewomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.05"/>	
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesDayDowntown']">
+	<entity name="zombieBusinessmanKhz" prob="0.10"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.10"/>
+	<entity name="zombieFirefighterKhz" prob="0.10"/>
+	<entity name="zombiePolicewomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.10"/>	
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNight']">
+	<entity name="zombieMaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleLumberjackKhz" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightCity']">
+	<entity name="zombieMaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleLumberjackKhz" prob="0.05"/>
+	<entity name="zombieBusinessmanKhz" prob="0.05"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.05"/>
+	<entity name="zombieFirefighterKhz" prob="0.05"/>
+	<entity name="zombiePolicewomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='PineforestZombiesNightDowntown']">
+	<entity name="zombieBusinessmanKhz" prob="0.10"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.10"/>
+	<entity name="zombieFirefighterKhz" prob="0.10"/>
+	<entity name="zombiePolicewomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.10"/>
+</append>
+
+
+
+
+<!-- ********************************** -->
+<!-- ********** DESERT BIOME ********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDay']">
+	<entity name="zombieMaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleKhz" prob="0.10"/>
+	<entity name="zombieCowgirlKhz" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayCity']">
+	<entity name="zombieMaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleKhz" prob="0.10"/>
+	<entity name="zombieCowgirlKhz" prob="0.05"/>
+	<entity name="zombieBusinessmanKhz" prob="0.05"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.05"/>
+	<entity name="zombieFirefighterKhz" prob="0.05"/>
+	<entity name="zombiePolicewomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesDayDowntown']">
+	<entity name="zombieBusinessmanKhz" prob="0.10"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.10"/>
+	<entity name="zombieFirefighterKhz" prob="0.10"/>
+	<entity name="zombiePolicewomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNight']">
+	<entity name="zombieMaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleKhz" prob="0.10"/>
+	<entity name="zombieCowgirlKhz" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightCity']">
+	<entity name="zombieMaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleKhz" prob="0.10"/>
+	<entity name="zombieCowgirlKhz" prob="0.05"/>
+	<entity name="zombieBusinessmanKhz" prob="0.05"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.05"/>
+	<entity name="zombieFirefighterKhz" prob="0.05"/>
+	<entity name="zombiePolicewomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='DesertZombiesNightDowntown']">
+	<entity name="zombieBusinessmanKhz" prob="0.10"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.10"/>
+	<entity name="zombieFirefighterKhz" prob="0.10"/>
+	<entity name="zombiePolicewomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.10"/>
+</append>
+
+
+
+<!-- ********************************** -->
+<!-- *********** SNOW BIOME *********** -->
+<!-- ********************************** -->
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayCity']">
+	<entity name="zombieFemaleLumberjackKhz" prob="0.05"/>
+	<entity name="zombieBusinessmanKhz" prob="0.05"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.05"/>
+	<entity name="zombieFirefighterKhz" prob="0.05"/>
+	<entity name="zombiePolicewomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.05"/>	
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesDayDowntown']">
+	<entity name="zombieBusinessmanKhz" prob="0.10"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.10"/>
+	<entity name="zombieFirefighterKhz" prob="0.10"/>
+	<entity name="zombiePolicewomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightCity']">
+	<entity name="zombieFemaleLumberjackKhz" prob="0.05"/>
+	<entity name="zombieBusinessmanKhz" prob="0.05"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.05"/>
+	<entity name="zombieFirefighterKhz" prob="0.05"/>
+	<entity name="zombiePolicewomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.05"/>	
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='SnowZombiesNightDowntown']">
+	<entity name="zombieBusinessmanKhz" prob="0.10"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.10"/>
+	<entity name="zombieFirefighterKhz" prob="0.10"/>
+	<entity name="zombiePolicewomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.10"/>
+</append>
+
+
+
+<!-- ****************************************** -->
+<!-- *********** BURNT FOREST BIOME *********** -->
+<!-- ****************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDay']">
+	<entity name="zombieBurntKhz" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayCity']">
+	<entity name="zombieBurntKhz" prob="0.10"/>
+	<entity name="zombieBusinessmanKhz" prob="0.05"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.05"/>
+	<entity name="zombieFirefighterKhz" prob="0.05"/>
+	<entity name="zombiePolicewomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.05"/>	
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesDayDowntown']">
+	<entity name="zombieBurntKhz" prob="0.10"/>
+	<entity name="zombieBusinessmanKhz" prob="0.10"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.10"/>
+	<entity name="zombieFirefighterKhz" prob="0.10"/>
+	<entity name="zombiePolicewomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNight']">
+	<entity name="zombieBurntKhz" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightCity']">
+	<entity name="zombieBurntKhz" prob="0.10"/>
+	<entity name="zombieBusinessmanKhz" prob="0.05"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.05"/>
+	<entity name="zombieFirefighterKhz" prob="0.05"/>
+	<entity name="zombiePolicewomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.05"/>	
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='BurntZombiesNightDowntown']">
+	<entity name="zombieBurntKhz" prob="0.10"/>
+	<entity name="zombieBusinessmanKhz" prob="0.10"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.10"/>
+	<entity name="zombieFirefighterKhz" prob="0.10"/>
+	<entity name="zombiePolicewomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.10"/>
+</append>
+
+
+
+<!-- *************************************** -->
+<!-- *********** WASTELAND BIOME *********** -->
+<!-- *************************************** -->
+
+<!-- DAY SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDay']">
+	<entity name="zombieMaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleKhz" prob="0.10"/>
+	<entity name="zombieBurntKhz" prob="0.10"/>
+</append>
+
+<!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayCity']">
+	<entity name="zombieMaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleKhz" prob="0.10"/>
+	<entity name="zombieBurntKhz" prob="0.10"/>
+	<entity name="zombieBusinessmanKhz" prob="0.05"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.05"/>
+	<entity name="zombieFirefighterKhz" prob="0.05"/>
+	<entity name="zombiePolicewomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.05"/>
+</append>
+
+<!-- DAY SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesDayDowntown']">
+	<entity name="zombieBurntKhz" prob="0.10"/>
+	<entity name="zombieBusinessmanKhz" prob="0.10"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.10"/>
+	<entity name="zombieFirefighterKhz" prob="0.10"/>
+	<entity name="zombiePolicewomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.10"/>	
+</append>
+
+<!-- NIGHT SPAWNING OUTSIDE WILDERNESS -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNight']">
+	<entity name="zombieMaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleKhz" prob="0.10"/>
+	<entity name="zombieBurntKhz" prob="0.10"/>
+</append>
+
+<!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightCity']">
+	<entity name="zombieMaleKhz" prob="0.10"/>
+	<entity name="zombieFemaleKhz" prob="0.10"/>
+	<entity name="zombieBurntKhz" prob="0.10"/>
+	<entity name="zombieBusinessmanKhz" prob="0.05"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.05"/>
+	<entity name="zombieFirefighterKhz" prob="0.05"/>
+	<entity name="zombiePolicewomanKhz" prob="0.05"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.05"/>
+</append>
+
+<!-- NIGHT SPAWNING DOWNTOWN -->
+<append xpath="/entitygroups/entitygroup[@name='WastelandZombiesNightDowntown']">
+	<entity name="zombieBurntKhz" prob="0.10"/>
+	<entity name="zombieBusinessmanKhz" prob="0.10"/>
+	<entity name="zombieBusinesswomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleOfficeKhz" prob="0.10"/>
+	<entity name="zombieFirefighterKhz" prob="0.10"/>
+	<entity name="zombiePolicewomanKhz" prob="0.10"/>
+	<entity name="zombieFemaleStripperKhz" prob="0.10"/>
+</append>
+
+
+</ErrorNull>

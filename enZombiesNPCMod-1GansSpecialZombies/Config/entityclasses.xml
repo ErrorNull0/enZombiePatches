@@ -1,0 +1,55 @@
+<ErrorNull>
+
+<!--
+By default, body harvesting for the GansSpecial Zombies entities are disabled. To TURN ON body harvesting for them, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is directly below (on line 8), and the 2nd one is near the end of this file (on line 45). Again, delete both lines.
+-->
+
+
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* 
+
+<append xpath="/entity_classes/entity_class[@name='zombieWhiteClown']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"		count="5"  tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="5,10"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieWarZombie']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"	count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="5"  tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="15,30"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieWarZombieV1']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceLeather"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceCloth"		count="5"  tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="20,30"/>
+</append>
+
+
+
+
+ ********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+
+
+<!-- DO NOT DELETE ANYTHING BELOW -->
+
+
+
+</ErrorNull>
