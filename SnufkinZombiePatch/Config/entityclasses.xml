@@ -1,13 +1,15 @@
 <configs>
 
 <!--
-By default, body harvesting for the Snufkin zombies are disabled. To TURN ON body harvesting, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is below, and the 2nd one is at the end of this file. Again, delete both lines.
+By default, body harvesting for the Snufkin zombies are disabled. To TURN ON body harvesting, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is below on line 8, and the 2nd one is at the end of this file on line 385. Again, delete both lines to enable.
 -->
 
-<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) *********
+
+ <!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* 
 
 <append xpath="/entity_classes/entity_class[@name='ZombieArchon']">
 	<property name="DeadBodyHitPoints" value="300"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="resourceCloth"			count="2"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="foodRottingFlesh"			count="6"	tag="butcherHarvest"/>
@@ -17,6 +19,7 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 
 <append xpath="/entity_classes/entity_class[@name='zombieBanshee']">
 	<property name="DeadBodyHitPoints" value="280"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="resourceCloth"			count="4"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="foodRottingFlesh"			count="2"	tag="butcherHarvest"/>
@@ -24,8 +27,31 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 	<drop event="Harvest"	name="resourceBone"				count="2"	tag="butcherHarvest"/>
 </append>
 
+<append xpath="/entity_classes/entity_class[@name='zombieBlueOni']">
+	<property name="DeadBodyHitPoints" value="340"/>
+	<property name="TimeStayAfterDeath" value="100"/>
+	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="meleeWpnClubT3SteelClubParts"	count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceCloth"				count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="foodRottingFlesh"				count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"					count="2"	tag="butcherHarvest"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieBogeyman']">
+	<property name="DeadBodyHitPoints" value="290"/>
+	<property name="TimeStayAfterDeath" value="100"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="cntBarrelOilSingle00"		count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceCloth"			count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceAnimalFat"		count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="foodRottingFlesh"			count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"				count="2"	tag="butcherHarvest"/>
+	<drop event="Destroy" 	name="oldCash" 					count="1,10"/>
+</append>
+
 <append xpath="/entity_classes/entity_class[@name='ZombieBomber']">
 	<property name="DeadBodyHitPoints" value="300"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="cntBarrelGasSingle00"		count="1"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceCloth"			count="9"	tag="butcherHarvest"/>
@@ -37,6 +63,7 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 
 <append xpath="/entity_classes/entity_class[@name='zombieCowhead']">
 	<property name="DeadBodyHitPoints" value="340"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="meleeToolAxeT3ChainsawParts"	count="3"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceCloth"				count="2"	tag="butcherHarvest"/>
@@ -47,8 +74,37 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 	<drop event="Destroy" 	name="oldCash" 						count="1,5"/>
 </append>
 
+<append xpath="/entity_classes/entity_class[@name='zombieCrispy']">
+	<property name="DeadBodyHitPoints" value="400"/>
+	<property name="TimeStayAfterDeath" value="100"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="foodRottingFlesh"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceWood"		count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron"	count="15" tag="butcherHarvest"/>
+	<drop event="Destroy" name="resourceCoal" 		count="5,8"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieDemolitionDerby']">
+	<property name="DeadBodyHitPoints" value="420"/>
+	<property name="TimeStayAfterDeath" value="100"/>
+	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="resourceCloth"			count="4"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceLeather"			count="5"	tag="butcherHarvest"/>
+	<drop event="Harvest" 	name="resourceForgedSteel"		count="2" 	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceScrapIron"		count="20"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceAnimalFat"		count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="foodRottingFlesh"			count="4"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"				count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceElectricParts"	count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="thrownGrenade"			count="5"	tag="butcherHarvest"/>
+	<drop event="Destroy" 	name="oldCash" 					count="30,50"/>
+</append>
+
 <append xpath="/entity_classes/entity_class[contains(@name,'zombieGeist')]">
 	<property name="DeadBodyHitPoints" value="100"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="resourceCloth"			count="2"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceLeather"			count="8"	tag="butcherHarvest"/>
@@ -57,6 +113,7 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 
 <append xpath="/entity_classes/entity_class[@name='zombieHammerSpammer']">
 	<property name="DeadBodyHitPoints" value="370"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="meleeWpnSledgeT3SteelSledgehammerParts"	count="2"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceCloth"			count="5"	tag="butcherHarvest"/>
@@ -69,6 +126,7 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 
 <append xpath="/entity_classes/entity_class[@name='ZombieJuggernaut']">
 	<property name="DeadBodyHitPoints" value="550"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="meleeToolAxeT3ChainsawParts"			count="3"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="gunExplosivesT3RocketLauncherParts"	count="2"	tag="butcherHarvest"/>
@@ -83,6 +141,7 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 
 <append xpath="/entity_classes/entity_class[@name='ZombieJuggernautGolden']">
 	<property name="DeadBodyHitPoints" value="550"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="meleeToolAxeT3ChainsawParts"			count="3"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceScrapIron"		count="320"	tag="butcherHarvest"/>
@@ -96,6 +155,7 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 
 <append xpath="/entity_classes/entity_class[@name='zombieMantis']">
 	<property name="DeadBodyHitPoints" value="300"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="meleeWpnBladeT3MacheteParts"	count="8"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceCloth"				count="2"	tag="butcherHarvest"/>
@@ -106,6 +166,7 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 
 <append xpath="/entity_classes/entity_class[@name='zombieMotorhead']">
 	<property name="DeadBodyHitPoints" value="480"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="meleeWpnClubT3SteelClubParts"	count="3"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="meleeToolAllSteelParts"		count="6"	tag="butcherHarvest"/>
@@ -119,8 +180,21 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 	<drop event="Destroy" 	name="oldCash" 						count="40,60"/>
 </append>
 
+<append xpath="/entity_classes/entity_class[@name='zombieNavezganeSlasher']">
+	<property name="DeadBodyHitPoints" value="320"/>
+	<property name="TimeStayAfterDeath" value="100"/>
+	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="meleeWpnBladeT3MacheteParts"	count="9"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="apparelPlantFiberHat"			count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceCloth"				count="5"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="foodRottingFlesh"				count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"					count="2"	tag="butcherHarvest"/>
+	<drop event="Destroy" 	name="oldCash" 						count="20,40"/>
+</append>
+
 <append xpath="/entity_classes/entity_class[@name='zombieParasite']">
 	<property name="DeadBodyHitPoints" value="280"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="resourceCloth"			count="3"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceAnimalFat"		count="1"	tag="butcherHarvest"/>
@@ -129,8 +203,22 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 	<drop event="Destroy" 	name="oldCash" 					count="1,10"/>
 </append>
 
+<append xpath="/entity_classes/entity_class[@name='zombiePogo']">
+	<property name="DeadBodyHitPoints" value="390"/>
+	<property name="TimeStayAfterDeath" value="100"/>
+	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="resourceElectricParts"	count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceScrapPolymers"	count="5"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceLeather"			count="9"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceCloth"			count="6"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="foodRottingFlesh"			count="6"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"				count="3"	tag="butcherHarvest"/>
+	<drop event="Destroy" 	name="oldCash" 					count="20,40"/>
+</append>
+
 <append xpath="/entity_classes/entity_class[@name='zombiePsycho']">
 	<property name="DeadBodyHitPoints" value="300"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="meleeWpnBladeT3MacheteParts"	count="50"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceScrapIron"			count="90"	tag="butcherHarvest"/>
@@ -141,8 +229,19 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 	<drop event="Destroy" 	name="oldCash" 						count="30,50"/>
 </append>
 
+<append xpath="/entity_classes/entity_class[@name='zombieRedOni']">
+	<property name="DeadBodyHitPoints" value="340"/>
+	<property name="TimeStayAfterDeath" value="100"/>
+	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="meleeWpnClubT3SteelClubParts"	count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceCloth"				count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="foodRottingFlesh"				count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"					count="2"	tag="butcherHarvest"/>
+</append>
+
 <append xpath="/entity_classes/entity_class[contains(@name,'zombieScarecrow')]">
 	<property name="DeadBodyHitPoints" value="300"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="resourceWood"				count="2"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceScrapIron"		count="100"	tag="butcherHarvest"/>
@@ -152,6 +251,7 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 
 <append xpath="/entity_classes/entity_class[@name='zombieScorcher']">
 	<property name="DeadBodyHitPoints" value="420"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="cntBarrelGasSingle00"		count="1"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="cntBarrelOilSingle00"		count="1"	tag="butcherHarvest"/>
@@ -170,6 +270,7 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 
 <append xpath="/entity_classes/entity_class[@name='zombieSiren']">
 	<property name="DeadBodyHitPoints" value="450"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="speaker"				count="2"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceWood"			count="3"	tag="butcherHarvest"/>
@@ -177,8 +278,26 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 	<drop event="Destroy"	name="resourceBone"			count="3"	tag="butcherHarvest"/>
 </append>
 
+<append xpath="/entity_classes/entity_class[@name='zombieSpiderFeralBomber']">
+	<property name="DeadBodyHitPoints" value="450"/>
+	<property name="TimeStayAfterDeath" value="100"/>
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" 			count="20"	tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" 			count="20"	tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" 		count="3"	tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers"		count="4"	tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts"		count="2"	tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts"	count="1"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceCloth"		count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="2" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="1,10"/>
+</append>
+
 <append xpath="/entity_classes/entity_class[contains(@name,'zombieTipsy')]">
 	<property name="DeadBodyHitPoints" value="390"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="drinkJarEmpty"		count="1"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceCloth"		count="2"	tag="butcherHarvest"/>
@@ -191,6 +310,7 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 
 <append xpath="/entity_classes/entity_class[@name='ZombieUndertaker']">
 	<property name="DeadBodyHitPoints" value="390"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="apparelPlantFiberHat"		count="1"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceCloth"			count="3"	tag="butcherHarvest"/>
@@ -204,6 +324,7 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 
 <append xpath="/entity_classes/entity_class[@name='zombieWendigo']">
 	<property name="DeadBodyHitPoints" value="420"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="resourceWood"				count="8"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceYuccaFibers"		count="12"	tag="butcherHarvest"/>
@@ -213,8 +334,17 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 	<drop event="Destroy" 	name="oldCash" 					count="10,30"/>
 </append>
 
+<append xpath="/entity_classes/entity_class[@name='zombieWightRadiationShower']">
+	<property name="DeadBodyHitPoints" value="360"/>
+	<property name="TimeStayAfterDeath" value="100"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest"	name="foodRottingFlesh"	count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest"	name="resourceBone"		count="2"	tag="butcherHarvest"/>
+</append>
+
 <append xpath="/entity_classes/entity_class[@name='zombieWrestler']">
 	<property name="DeadBodyHitPoints" value="450"/>
+	<property name="TimeStayAfterDeath" value="100"/>
 	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
 	<drop event="Harvest"	name="resourceCloth"			count="4"	tag="butcherHarvest"/>
 	<drop event="Harvest"	name="resourceScrapIron"		count="60"	tag="butcherHarvest"/>
@@ -224,75 +354,35 @@ By default, body harvesting for the Snufkin zombies are disabled. To TURN ON bod
 	<drop event="Destroy" 	name="oldCash" 					count="20,40"/>
 </append>
 
-<append xpath="/entity_classes/entity_class[@name='zombiePogo']">
-	<property name="DeadBodyHitPoints" value="390"/>
-	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest"	name="resourceElectricParts"	count="2"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceScrapPolymers"	count="5"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceLeather"			count="9"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceCloth"			count="6"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="foodRottingFlesh"			count="6"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceBone"				count="3"	tag="butcherHarvest"/>
-	<drop event="Destroy" 	name="oldCash" 					count="20,40"/>
+<append xpath="/entity_classes/entity_class[@name='HellFlyer']">
+	<property name="DeadBodyHitPoints" value="300"/>
+	<property name="TimeStayAfterDeath" value="100"/>
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" 			count="15"	tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" 			count="10"	tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" 		count="2"	tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers"		count="4"	tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts"		count="1"	tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts"	count="1"/>
 </append>
 
-<append xpath="/entity_classes/entity_class[@name='zombieRedOni']">
-	<property name="DeadBodyHitPoints" value="340"/>
-	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest"	name="meleeWpnClubT3SteelClubParts"	count="3"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceCloth"				count="2"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="foodRottingFlesh"				count="3"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceBone"					count="2"	tag="butcherHarvest"/>
-</append>
-
-<append xpath="/entity_classes/entity_class[@name='zombieBlueOni']">
-	<property name="DeadBodyHitPoints" value="340"/>
-	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest"	name="meleeWpnClubT3SteelClubParts"	count="3"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceCloth"				count="2"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="foodRottingFlesh"				count="3"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceBone"					count="2"	tag="butcherHarvest"/>
-</append>
-
-<append xpath="/entity_classes/entity_class[@name='zombieNavezganeSlasher']">
-	<property name="DeadBodyHitPoints" value="320"/>
-	<drop event="Harvest" 	name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest"	name="meleeWpnBladeT3MacheteParts"	count="9"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="apparelPlantFiberHat"			count="1"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceCloth"				count="5"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="foodRottingFlesh"				count="3"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceBone"					count="2"	tag="butcherHarvest"/>
-	<drop event="Destroy" 	name="oldCash" 						count="20,40"/>
-</append>
-
-<append xpath="/entity_classes/entity_class[@name='zombieWightRadiationShower']">
-	<property name="DeadBodyHitPoints" value="360"/>
-	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest"	name="foodRottingFlesh"	count="3"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceBone"		count="2"	tag="butcherHarvest"/>
-</append>
-
-<append xpath="/entity_classes/entity_class[@name='zombieHisser']">
-	<property name="DeadBodyHitPoints" value="200"/>
-	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest"	name="foodRawMeat"			count="35"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceAnimalFat"	count="2"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceLeather"		count="3"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceBone"			count="6"	tag="butcherHarvest"/>
-</append>
-
-<append xpath="/entity_classes/entity_class[@name='MotherClucker']">
-	<property name="DeadBodyHitPoints" value="400"/>
-	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
-	<drop event="Harvest"	name="resourceFeather"		count="50"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="foodRawMeat"			count="30"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceAnimalFat"	count="1"	tag="butcherHarvest"/>
-	<drop event="Harvest"	name="resourceBone"			count="5"	tag="butcherHarvest"/>
-	<drop event="Destroy" 	name="foodEgg" 				count="2,6"/>
+<append xpath="/entity_classes/entity_class[@name='HellShocker']">
+	<property name="DeadBodyHitPoints" value="300"/>
+	<property name="TimeStayAfterDeath" value="100"/>
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" 			count="15"	tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" 			count="10"	tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" 		count="2"	tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers"		count="4"	tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts"		count="1"	tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts"	count="1"/>
 </append>
 
 
-********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+ ********* DELETE THIS ENTIRE LINE!! ********* -->
 
 
 

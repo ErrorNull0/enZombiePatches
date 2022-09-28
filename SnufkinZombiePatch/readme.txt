@@ -1,4 +1,4 @@
-Snufin Zombie Patch for enZombies v1.1
+Snufin Zombie Patch for enZombies v1.2
 https://community.7daystodie.com/topic/22698-snufkins-custom-server-side-zombies-plus-a20/
 
 This patch does two things:
@@ -7,6 +7,11 @@ This patch does two things:
 
 2) Provides the option to enable zombie body harvesting for the Snufkin zombies. Go to the entityclassses.xml file to enable this.
 
+
+Version 1.2:
+- added latest zombies to enZombies biome spawning rules: zombieBogeyman, zombieCrispy, zombieDemolitionDerby, and zombieSpiderFeralBomber
+- enabled body harvseting for these newest zombies (use butchering tools)
+- enabled body harvesting for HellFlyer and HellShocker (use disassemble tools)
 
 Version 1.1:
 - removed reference to wasteland game animal spawning

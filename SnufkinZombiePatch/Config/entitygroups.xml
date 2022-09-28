@@ -28,6 +28,7 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellShocker" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
 	<entity name="zombieNavezganeSlasher" prob="0.10"/>
+	<entity name="zombieBogeyman" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING DOWNTOWN -->
@@ -36,6 +37,7 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellShocker" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
 	<entity name="zombieNavezganeSlasher" prob="0.10"/>
+	<entity name="zombieBogeyman" prob="0.10"/>
 	<entity name="zombieMotorhead" prob="0.10"/>
 	<entity name="zombieSiren" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
@@ -76,6 +78,7 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellShocker" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
 	<entity name="zombieNavezganeSlasher" prob="0.15"/>
+	<entity name="zombieBogeyman" prob="0.15"/>
 </append>
 
 <!-- NIGHT SPAWNING DOWNTOWN -->
@@ -84,6 +87,7 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellShocker" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
 	<entity name="zombieNavezganeSlasher" prob="0.15"/>
+	<entity name="zombieBogeyman" prob="0.15"/>
 	<entity name="zombieMotorhead" prob="0.15"/>
 	<entity name="zombieSiren" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
@@ -132,7 +136,9 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellFlyer" prob="0.10"/>
 	<entity name="HellShocker" prob="0.10"/>
 	<entity name="zombieNavezganeSlasher" prob="0.10"/>
+	<entity name="zombieBogeyman" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- DAY SPAWNING DOWNTOWN -->
@@ -140,12 +146,14 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellFlyer" prob="0.10"/>
 	<entity name="HellShocker" prob="0.10"/>
 	<entity name="zombieNavezganeSlasher" prob="0.10"/>
+	<entity name="zombieBogeyman" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
 	<entity name="zombieMotorhead" prob="0.10"/>
 	<entity name="zombieSiren" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
 	<entity name="zombieParasite" prob="0.10"/>
 	<entity name="zombieHammerSpammer" prob="0.05"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- DAY SPAWNING HOSTILE ANIMALS -->
@@ -179,7 +187,9 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellFlyer" prob="0.15"/>
 	<entity name="HellShocker" prob="0.15"/>
 	<entity name="zombieNavezganeSlasher" prob="0.15"/>
+	<entity name="zombieBogeyman" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- NIGHT SPAWNING DOWNTOWN -->
@@ -187,12 +197,14 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellFlyer" prob="0.15"/>
 	<entity name="HellShocker" prob="0.15"/>
 	<entity name="zombieNavezganeSlasher" prob="0.15"/>
+	<entity name="zombieBogeyman" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
 	<entity name="zombieMotorhead" prob="0.15"/>
 	<entity name="zombieSiren" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
 	<entity name="zombieParasite" prob="0.15"/>
 	<entity name="zombieHammerSpammer" prob="0.10"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- NIGHT SPAWNING HOSTILE ANIMALS -->
@@ -232,7 +244,9 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellFlyer" prob="0.10"/>
 	<entity name="HellShocker" prob="0.10"/>
 	<entity name="zombieNavezganeSlasher" prob="0.10"/>
+	<entity name="zombieBogeyman" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- DAY SPAWNING DOWNTOWN -->
@@ -240,12 +254,14 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellFlyer" prob="0.10"/>
 	<entity name="HellShocker" prob="0.10"/>
 	<entity name="zombieNavezganeSlasher" prob="0.10"/>
+	<entity name="zombieBogeyman" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
 	<entity name="zombieMotorhead" prob="0.10"/>
 	<entity name="zombieSiren" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
 	<entity name="zombieParasite" prob="0.10"/>
 	<entity name="zombieHammerSpammer" prob="0.05"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- DAY SPAWNING HOSTILE ANIMALS -->
@@ -280,7 +296,9 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellFlyer" prob="0.15"/>
 	<entity name="HellShocker" prob="0.15"/>
 	<entity name="zombieNavezganeSlasher" prob="0.15"/>
+	<entity name="zombieBogeyman" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- NIGHT SPAWNING DOWNTOWN -->
@@ -288,12 +306,14 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellFlyer" prob="0.15"/>
 	<entity name="HellShocker" prob="0.15"/>
 	<entity name="zombieNavezganeSlasher" prob="0.15"/>
+	<entity name="zombieBogeyman" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
 	<entity name="zombieMotorhead" prob="0.15"/>
 	<entity name="zombieSiren" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
 	<entity name="zombieParasite" prob="0.15"/>
 	<entity name="zombieHammerSpammer" prob="0.10"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- NIGHT SPAWNING HOSTILE ANIMALS -->
@@ -320,6 +340,7 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieRedOni" prob="0.10"/>
 	<entity name="zombieGeist" prob="0.10"/>
 	<entity name="ZombieUndertaker" prob="0.10"/>
+	<entity name="zombieCrispy" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
@@ -333,6 +354,8 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellShocker" prob="0.10"/>
 	<entity name="zombieNavezganeSlasher" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
+	<entity name="zombieCrispy" prob="0.10"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- DAY SPAWNING DOWNTOWN -->
@@ -346,6 +369,9 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombiePsycho" prob="0.10"/>
 	<entity name="zombieParasite" prob="0.10"/>
 	<entity name="zombieHammerSpammer" prob="0.05"/>
+	<entity name="zombieDemolitionDerby" prob="0.05"/>
+	<entity name="zombieCrispy" prob="0.10"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- DAY SPAWNING HOSTILE ANIMALS -->
@@ -370,6 +396,8 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieRedOni" prob="0.15"/>
 	<entity name="zombieGeist" prob="0.15"/>
 	<entity name="ZombieUndertaker" prob="0.15"/>
+	<entity name="zombieCrispy" prob="0.15"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
@@ -383,6 +411,8 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellShocker" prob="0.15"/>
 	<entity name="zombieNavezganeSlasher" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
+	<entity name="zombieCrispy" prob="0.15"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.10"/>
 </append>
 
 <!-- NIGHT SPAWNING DOWNTOWN -->
@@ -396,6 +426,9 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombiePsycho" prob="0.15"/>
 	<entity name="zombieParasite" prob="0.15"/>
 	<entity name="zombieHammerSpammer" prob="0.10"/>
+	<entity name="zombieDemolitionDerby" prob="0.10"/>
+	<entity name="zombieCrispy" prob="0.15"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.10"/>
 </append>
 
 <!-- NIGHT SPAWNING HOSTILE ANIMALS -->
@@ -426,6 +459,9 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieGeist" prob="0.10"/>
 	<entity name="zombieRedOni" prob="0.10"/>
 	<entity name="zombieWightRadiationShower" prob="0.10"/>
+	<entity name="zombieBogeyman" prob="0.10"/>
+	<entity name="zombieCrispy" prob="0.10"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- DAY SPAWNING COMMERCIAL / INDUSTRIAL -->
@@ -435,14 +471,18 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieGeist" prob="0.05"/>
 	<entity name="zombieRedOni" prob="0.05"/>
 	<entity name="zombieWightRadiationShower" prob="0.05"/>
+	<entity name="zombieBogeyman" prob="0.10"/>
+	<entity name="zombieCrispy" prob="0.10"/>
 	<entity name="ZombieJuggernaut" prob="0.05"/>
 	<entity name="ZombieJuggernautGolden" prob="0.05"/>
 	<entity name="HellFlyer" prob="0.10"/>
 	<entity name="HellShocker" prob="0.10"/>
 	<entity name="zombieNavezganeSlasher" prob="0.10"/>
+	<entity name="zombieDemolitionDerby" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
 	<entity name="ZombieJuggernaut" prob="0.05"/>
 	<entity name="ZombieJuggernautGolden" prob="0.05"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING DOWNTOWN -->
@@ -450,14 +490,18 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellFlyer" prob="0.10"/>
 	<entity name="HellShocker" prob="0.10"/>
 	<entity name="zombieNavezganeSlasher" prob="0.10"/>
+	<entity name="zombieBogeyman" prob="0.10"/>
+	<entity name="zombieCrispy" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
 	<entity name="zombieMotorhead" prob="0.10"/>
 	<entity name="zombieSiren" prob="0.10"/>
 	<entity name="zombiePsycho" prob="0.10"/>
 	<entity name="zombieParasite" prob="0.10"/>
 	<entity name="zombieHammerSpammer" prob="0.10"/>
+	<entity name="zombieDemolitionDerby" prob="0.10"/>
 	<entity name="ZombieJuggernaut" prob="0.05"/>
 	<entity name="ZombieJuggernautGolden" prob="0.05"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.10"/>
 </append>
 
 <!-- DAY SPAWNING HOSTILE ANIMALS -->
@@ -483,8 +527,11 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieGeist" prob="0.15"/>
 	<entity name="zombieRedOni" prob="0.15"/>
 	<entity name="zombieWightRadiationShower" prob="0.15"/>
+	<entity name="zombieBogeyman" prob="0.15"/>
+	<entity name="zombieCrispy" prob="0.15"/>
 	<entity name="ZombieJuggernaut" prob="0.15"/>
 	<entity name="ZombieJuggernautGolden" prob="0.15"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.05"/>
 </append>
 
 <!-- NIGHT SPAWNING COMMERCIAL / INDUSTRIAL -->
@@ -494,14 +541,18 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="zombieGeist" prob="0.10"/>
 	<entity name="zombieRedOni" prob="0.10"/>
 	<entity name="zombieWightRadiationShower" prob="0.10"/>
+	<entity name="zombieBogeyman" prob="0.15"/>
+	<entity name="zombieCrispy" prob="0.15"/>
 	<entity name="ZombieJuggernaut" prob="0.10"/>
 	<entity name="ZombieJuggernautGolden" prob="0.10"/>
 	<entity name="HellFlyer" prob="0.15"/>
 	<entity name="HellShocker" prob="0.15"/>
 	<entity name="zombieNavezganeSlasher" prob="0.15"/>
+	<entity name="zombieDemolitionDerby" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
 	<entity name="ZombieJuggernaut" prob="0.05"/>
 	<entity name="ZombieJuggernautGolden" prob="0.05"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.10"/>
 </append>
 
 <!-- NIGHT SPAWNING DOWNTOWN -->
@@ -509,14 +560,18 @@ These are the custom biome groups that enZombies use to spawn zombies to specifi
 	<entity name="HellFlyer" prob="0.15"/>
 	<entity name="HellShocker" prob="0.15"/>
 	<entity name="zombieNavezganeSlasher" prob="0.15"/>
+	<entity name="zombieBogeyman" prob="0.15"/>
+	<entity name="zombieCrispy" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
 	<entity name="zombieMotorhead" prob="0.15"/>
 	<entity name="zombieSiren" prob="0.15"/>
 	<entity name="zombiePsycho" prob="0.15"/>
 	<entity name="zombieParasite" prob="0.15"/>
 	<entity name="zombieHammerSpammer" prob="0.15"/>
+	<entity name="zombieDemolitionDerby" prob="0.15"/>
 	<entity name="ZombieJuggernaut" prob="0.10"/>
 	<entity name="ZombieJuggernautGolden" prob="0.10"/>
+	<entity name="zombieSpiderFeralBomber" prob="0.10"/>
 </append>
 
 <!-- NIGHT SPAWNING HOSTILE ANIMALS -->
