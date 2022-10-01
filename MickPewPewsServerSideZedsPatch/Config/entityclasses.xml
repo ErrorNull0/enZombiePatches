@@ -1,0 +1,169 @@
+<configs>
+
+<!-- fix outdated code from 2020 -->
+
+<set xpath="/entity_classes/entity_class/property[@name='LootDropProb']/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSnowFreezerBoss']/@extends">zombieLumberjack</set>
+<remove xpath="/entity_classes/entity_class[@name='zombieSnowFreezerBoss']/property[@name='ReplaceMaterial0']"/>
+<set xpath="/entity_classes/entity_class[@name='Zombie_Template']/property[@name='Mesh']/@value">#Entities/Zombies?Prefabs/ZBoe.prefab</set>
+<set xpath="/entity_classes/entity_class[@name='zombieWightSightStealerMutated']/property[@name='Mesh']/@value">#Entities/Zombies?Prefabs/ZWightFeral.prefab</set>
+<set xpath="/entity_classes/entity_class[@name='zombieWightSightStealerSkinned']/property[@name='Mesh']/@value">#Entities/Zombies?Prefabs/ZWightFeral.prefab</set>
+<set xpath="/entity_classes/entity_class[@name='zombieWightSightStealerSpectral']/property[@name='Mesh']/@value">#Entities/Zombies?Prefabs/ZWightFeral.prefab</set>
+<set xpath="/entity_classes/entity_class[@name='Pyromaniac']/property[@name='Mesh']/@value">#Entities/Zombies?Prefabs/ZDemolition.prefab</set>
+
+<!-- removed undefined items -->
+
+<remove xpath="/entity_classes/entity_class/drop[@name='ScorchingEssence']"/>
+<remove xpath="/entity_classes/entity_class/drop[@name='LightningEssence']"/>
+
+
+
+<!--
+By default, body harvesting for the MickPewPews zombies is disabled. To TURN ON body harvesting, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is below on line 25, and the 2nd one is near the end of this file at line 160. Again, delete both lines.
+-->
+
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* 
+
+<append xpath="/entity_classes/entity_class[@name='Lucifer']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="200"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="resourceCloth"			count="3"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"		count="9"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers"	count="5"	tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="80,100"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='Shinigami']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="400"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceCloth"			count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceYuccaFibers"	count="10" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="5" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="30,60"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieSnowFreezerBoss']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="670"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceCloth"		count="7" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="4" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="50,80"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='TantalusTheTaintedBoss']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="650"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceCloth"		count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceLeather"	count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="4" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="50,80"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieScreamerBanshee']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="400"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceCloth"		count="6" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="3" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="20,30"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieScreamerDrowned']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="400"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceCloth"		count="8" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="3" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="20,30"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='Pyromaniac']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="cntBarrelGasSingle00"		count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="cntBarrelOilSingle00"		count="1"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="gunBotRoboticsParts"		count="6"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts"		count="2"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron"			count="60"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" 		count="5"	tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" 		count="5"	tag="salvageHarvest"/>
+	<drop event="Harvest" name="ammoGasCan"					count="100"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"			count="4"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"				count="4"	tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceAnimalFat"			count="1"	tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 					count="50,100"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='DemonicImp']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="200"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceCloth"		count="1" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"	count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"		count="1" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 			count="15,25"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieWightSightStealerMutated']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="360"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceScrapPolymers" 	count="3" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="2" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="6" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="4" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="30,40"/>
+	<drop event="Destroy" name="decoPumpkinJackOLantern" count="1"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieWightSightStealerSkinned']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="360"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceScrapPolymers" 	count="6" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="9" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="6" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="30,40"/>
+	<drop event="Destroy" name="decoPumpkinJackOLantern" count="1"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieWightSightStealerSpectral']">
+	<property name="TimeStayAfterDeath" value="100"/>
+	<property name="DeadBodyHitPoints" value="360"/>
+	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>		
+	<drop event="Harvest" name="resourceScrapPolymers" 	count="6" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth"			count="3" tag="butcherHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh"		count="9" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone"			count="6" tag="butcherHarvest"/>
+	<drop event="Destroy" name="oldCash" 				count="30,40"/>
+	<drop event="Destroy" name="decoPumpkinJackOLantern" count="1"/>
+</append>
+
+
+
+ ********* DELETE THIS ENTIRE LINE!! ********* -->
+
+
+
+
+
+<!-- DO NOT DELETE ANYTHING BELOW -->
+	
+	
+</configs>
