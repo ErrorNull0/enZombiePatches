@@ -2,7 +2,6 @@
 
 <!-- fix outdated code from 2020 -->
 
-<set xpath="/entity_classes/entity_class/property[@name='LootDropProb']/@value">0</set>
 <set xpath="/entity_classes/entity_class[@name='zombieSnowFreezerBoss']/@extends">zombieLumberjack</set>
 <remove xpath="/entity_classes/entity_class[@name='zombieSnowFreezerBoss']/property[@name='ReplaceMaterial0']"/>
 <set xpath="/entity_classes/entity_class[@name='Zombie_Template']/property[@name='Mesh']/@value">#Entities/Zombies?Prefabs/ZBoe.prefab</set>
