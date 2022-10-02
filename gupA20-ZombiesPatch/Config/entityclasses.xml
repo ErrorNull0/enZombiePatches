@@ -1,10 +1,9 @@
 <configs>
 
-<!-- ********** ZOMBIE TWEAKS ********** -->
-<!-- The Guppy zombies were initially set to generic values for Health, Exp gain, physical damage resist, attack strength, etc. Below are some modifications to vary these charactertics to make more sense with their physical looks and follow enZombie patterns. Female zombies voices were also set to male, so now they use female voices.
--->
+<!-- tweaks to align with to existing enZombie patterns -->
 
 <!-- zombieGuppyAlma -->
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyAlma']"><property name="ExperienceGain" value="330"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyAlma']/property[@name='ExperienceGain']/@value">330</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyAlma']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyAlma']/property[@name='SizeScale']/@value">1.1</set>
@@ -12,6 +11,7 @@
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyAlma']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">120</set>
 <remove xpath="/entity_classes/entity_class[@name='zombieGuppyAlma']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
 <append xpath="/entity_classes/entity_class[@name='zombieGuppyAlma']">
+	<property name="ExperienceGain" value="330"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
 	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
@@ -22,7 +22,7 @@
 </append>
 
 <!-- zombieGuppyBelle -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyBelle']/property[@name='ExperienceGain']/@value">330</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyBelle']"><property name="ExperienceGain" value="330"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBelle']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBelle']/property[@name='SizeScale']/@value">1.2</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBelle']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
@@ -39,7 +39,7 @@
 </append>
 
 <!-- zombieGuppyCarmela -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyCarmela']/property[@name='ExperienceGain']/@value">344</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyCarmela']"><property name="ExperienceGain" value="344"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyCarmela']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyCarmela']/property[@name='SizeScale']/@value">1.15</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyCarmela']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
@@ -56,7 +56,7 @@
 </append>
 
 <!-- zombieGuppyCheerleader -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyCheerleader']/property[@name='ExperienceGain']/@value">344</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyCheerleader']"><property name="ExperienceGain" value="344"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyCheerleader']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyCheerleader']/property[@name='SizeScale']/@value">1.15</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyCheerleader']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
@@ -73,7 +73,7 @@
 </append>
 
 <!-- zombieGuppyLucy -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyLucy']/property[@name='ExperienceGain']/@value">330</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyLucy']"><property name="ExperienceGain" value="330"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyLucy']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyLucy']/property[@name='SizeScale']/@value">1.1</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyLucy']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
@@ -90,7 +90,7 @@
 </append>
 
 <!-- zombieGuppyNurse -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyNurse']/property[@name='ExperienceGain']/@value">344</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyNurse']"><property name="ExperienceGain" value="344"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyNurse']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyNurse']/property[@name='SizeScale']/@value">1.2</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyNurse']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
@@ -107,7 +107,7 @@
 </append>
 
 <!-- zombieGuppyStripper -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyStripper']/property[@name='ExperienceGain']/@value">344</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyStripper']"><property name="ExperienceGain" value="344"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyStripper']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyStripper']/property[@name='SizeScale']/@value">1.15</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyStripper']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
@@ -124,7 +124,7 @@
 </append>
 
 <!-- zombieGuppyBaldMan -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyBaldMan']/property[@name='ExperienceGain']/@value">440</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyBaldMan']"><property name="ExperienceGain" value="440"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBaldMan']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBaldMan']/property[@name='SizeScale']/@value">1.15</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBaldMan']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
@@ -132,7 +132,7 @@
 <remove xpath="/entity_classes/entity_class[@name='zombieGuppyBaldMan']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
 
 <!-- zombieGuppyBeatCop -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyBeatCop']/property[@name='ExperienceGain']/@value">440</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyBeatCop']"><property name="ExperienceGain" value="440"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBeatCop']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBeatCop']/property[@name='SizeScale']/@value">1.15</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBeatCop']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">10</set>
@@ -140,7 +140,7 @@
 <remove xpath="/entity_classes/entity_class[@name='zombieGuppyBeatCop']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
 
 <!-- zombieGuppyBilly -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyBilly']/property[@name='ExperienceGain']/@value">413</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyBilly']"><property name="ExperienceGain" value="413"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBilly']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBilly']/property[@name='SizeScale']/@value">1.1</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBilly']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
@@ -148,7 +148,7 @@
 <remove xpath="/entity_classes/entity_class[@name='zombieGuppyBilly']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
 
 <!-- zombieGuppyBob -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyBob']/property[@name='ExperienceGain']/@value">413</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyBob']"><property name="ExperienceGain" value="413"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBob']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBob']/property[@name='SizeScale']/@value">1.1</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBob']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
@@ -156,25 +156,15 @@
 <remove xpath="/entity_classes/entity_class[@name='zombieGuppyBob']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
 
 <!-- zombieGuppyThorton -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyThorton']/property[@name='ExperienceGain']/@value">413</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyThorton']"><property name="ExperienceGain" value="413"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyThorton']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyThorton']/property[@name='SizeScale']/@value">1.1</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyThorton']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyThorton']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">150</set>
 <remove xpath="/entity_classes/entity_class[@name='zombieGuppyThorton']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
 
-<!-- zombieGuppyClot -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/property[@name='ExperienceGain']/@value">750</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/property[@name='LootDropProb']/@value">0.02</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/property[@name='SizeScale']/@value">1.5</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/property[@name='HandItem']/@value">meleeHandZombieFeral</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/property[@name='Tags']/@value">zombieGuppyClot,entity,zombie,feral</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">10</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">280</set>
-<remove xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
-
 <!-- zombieGuppyGermanCosplay -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyGermanCosplay']/property[@name='ExperienceGain']/@value">413</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyGermanCosplay']"><property name="ExperienceGain" value="413"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyGermanCosplay']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyGermanCosplay']/property[@name='SizeScale']/@value">1.05</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyGermanCosplay']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">20</set>
@@ -182,7 +172,7 @@
 <remove xpath="/entity_classes/entity_class[@name='zombieGuppyGermanCosplay']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
 
 <!-- zombieGuppyHungryGeorge -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryGeorge']/property[@name='ExperienceGain']/@value">413</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyHungryGeorge']"><property name="ExperienceGain" value="413"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryGeorge']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryGeorge']/property[@name='SizeScale']/@value">1.15</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryGeorge']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
@@ -190,7 +180,7 @@
 <remove xpath="/entity_classes/entity_class[@name='zombieGuppyHungryGeorge']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
 
 <!-- zombieGuppyHungryJeff -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryJeff']/property[@name='ExperienceGain']/@value">413</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyHungryJeff']"><property name="ExperienceGain" value="413"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryJeff']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryJeff']/property[@name='SizeScale']/@value">1.15</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryJeff']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
@@ -198,20 +188,75 @@
 <remove xpath="/entity_classes/entity_class[@name='zombieGuppyHungryJeff']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
 
 <!-- zombieGuppyHungryScott -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryScott']/property[@name='ExperienceGain']/@value">413</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyHungryScott']"><property name="ExperienceGain" value="413"/></append>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryScott']/property[@name='LootDropProb']/@value">0.02</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryScott']/property[@name='SizeScale']/@value">1.15</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryScott']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyHungryScott']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">150</set>
 <remove xpath="/entity_classes/entity_class[@name='zombieGuppyHungryScott']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
 
+<!-- zombieGuppyOldManZombie -->
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyOldManZombie']"><property name="ExperienceGain" value="413"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyOldManZombie']/property[@name='LootDropProb']/@value">0.02</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyOldManZombie']/property[@name='SizeScale']/@value">1.12</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyOldManZombie']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyOldManZombie']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">150</set>
+<remove xpath="/entity_classes/entity_class[@name='zombieGuppyOldManZombie']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
+
+<!-- zombieGuppyPete -->
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyPete']"><property name="ExperienceGain" value="413"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyPete']/property[@name='LootDropProb']/@value">0.02</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyPete']/property[@name='SizeScale']/@value">1.2</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyPete']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyPete']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">150</set>
+<remove xpath="/entity_classes/entity_class[@name='zombieGuppyPete']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
+
+<!-- zombieGuppyPoliceRalph -->
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyPoliceRalph']"><property name="ExperienceGain" value="440"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyPoliceRalph']/property[@name='LootDropProb']/@value">0.02</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyPoliceRalph']/property[@name='SizeScale']/@value">1.23</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyPoliceRalph']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">10</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyPoliceRalph']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">160</set>
+<remove xpath="/entity_classes/entity_class[@name='zombieGuppyPoliceRalph']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
+
+<!-- zombieGuppyRoland -->
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyRoland']"><property name="ExperienceGain" value="413"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyRoland']/property[@name='LootDropProb']/@value">0.02</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyRoland']/property[@name='SizeScale']/@value">1.1</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyRoland']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyRoland']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">150</set>
+<remove xpath="/entity_classes/entity_class[@name='zombieGuppyRoland']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
+
+<!-- zombieGuppySecurityGuard -->
+<append xpath="/entity_classes/entity_class[@name='zombieGuppySecurityGuard']"><property name="ExperienceGain" value="440"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppySecurityGuard']/property[@name='LootDropProb']/@value">0.02</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppySecurityGuard']/property[@name='SizeScale']/@value">1.10</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppySecurityGuard']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">10</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppySecurityGuard']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">160</set>
+<remove xpath="/entity_classes/entity_class[@name='zombieGuppySecurityGuard']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
+
+<!-- zombieGuppySeth -->
+<append xpath="/entity_classes/entity_class[@name='zombieGuppySeth']"><property name="ExperienceGain" value="413"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppySeth']/property[@name='LootDropProb']/@value">0.02</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppySeth']/property[@name='SizeScale']/@value">1.15</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppySeth']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppySeth']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">150</set>
+<remove xpath="/entity_classes/entity_class[@name='zombieGuppySeth']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
+
+<!-- zombieGuppyClot -->
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyClot']"><property name="ExperienceGain" value="690"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/property[@name='LootDropProb']/@value">0.04</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/property[@name='SizeScale']/@value">1.5</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">10</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">280</set>
+<remove xpath="/entity_classes/entity_class[@name='zombieGuppyClot']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
+
 <!-- zombieGuppyKennethClown -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyKennethClown']/property[@name='ExperienceGain']/@value">700</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyKennethClown']/property[@name='LootDropProb']/@value">0.02</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyKennethClown']"><property name="ExperienceGain" value="700"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyKennethClown']/property[@name='LootDropProb']/@value">0.04</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyKennethClown']/property[@name='SizeScale']/@value">1.4</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyKennethClown']/property[@name='HandItem']/@value">meleeHandZombieFeral</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyKennethClown']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">10</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyKennethClown']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">280</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyKennethClown']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">300</set>
 <remove xpath="/entity_classes/entity_class[@name='zombieGuppyKennethClown']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
 <append xpath="/entity_classes/entity_class[@name='zombieGuppyKennethClown']">
 	<property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam"/>
@@ -222,62 +267,12 @@
 	<property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense"/>
 </append>
 
-<!-- zombieGuppyOldManZombie -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyOldManZombie']/property[@name='ExperienceGain']/@value">413</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyOldManZombie']/property[@name='LootDropProb']/@value">0.02</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyOldManZombie']/property[@name='SizeScale']/@value">1.12</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyOldManZombie']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyOldManZombie']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">150</set>
-<remove xpath="/entity_classes/entity_class[@name='zombieGuppyOldManZombie']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
-
-<!-- zombieGuppyPete -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyPete']/property[@name='ExperienceGain']/@value">413</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyPete']/property[@name='LootDropProb']/@value">0.02</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyPete']/property[@name='SizeScale']/@value">1.2</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyPete']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyPete']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">150</set>
-<remove xpath="/entity_classes/entity_class[@name='zombieGuppyPete']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
-
-<!-- zombieGuppyPoliceRalph -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyPoliceRalph']/property[@name='ExperienceGain']/@value">440</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyPoliceRalph']/property[@name='LootDropProb']/@value">0.02</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyPoliceRalph']/property[@name='SizeScale']/@value">1.23</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyPoliceRalph']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">10</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyPoliceRalph']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">160</set>
-<remove xpath="/entity_classes/entity_class[@name='zombieGuppyPoliceRalph']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
-
-<!-- zombieGuppyRoland -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyRoland']/property[@name='ExperienceGain']/@value">413</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyRoland']/property[@name='LootDropProb']/@value">0.02</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyRoland']/property[@name='SizeScale']/@value">1.1</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyRoland']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyRoland']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">150</set>
-<remove xpath="/entity_classes/entity_class[@name='zombieGuppyRoland']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
-
-<!-- zombieGuppySecurityGuard -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppySecurityGuard']/property[@name='ExperienceGain']/@value">440</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppySecurityGuard']/property[@name='LootDropProb']/@value">0.02</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppySecurityGuard']/property[@name='SizeScale']/@value">1.10</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppySecurityGuard']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">10</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppySecurityGuard']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">160</set>
-<remove xpath="/entity_classes/entity_class[@name='zombieGuppySecurityGuard']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
-
-<!-- zombieGuppySeth -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppySeth']/property[@name='ExperienceGain']/@value">413</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppySeth']/property[@name='LootDropProb']/@value">0.02</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppySeth']/property[@name='SizeScale']/@value">1.15</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppySeth']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">0</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppySeth']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">150</set>
-<remove xpath="/entity_classes/entity_class[@name='zombieGuppySeth']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
-
 <!-- zombieGuppyBiomechanicalWight -->
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyBiomechanicalWight']/property[@name='ExperienceGain']/@value">950</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyBiomechanicalWight']/property[@name='LootDropProb']/@value">0.03</set>
+<append xpath="/entity_classes/entity_class[@name='zombieGuppyBiomechanicalWight']"><property name="ExperienceGain" value="950"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyBiomechanicalWight']/property[@name='LootDropProb']/@value">0.04</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBiomechanicalWight']/property[@name='SizeScale']/@value">1.15</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyBiomechanicalWight']/property[@name='HandItem']/@value">meleeHandZombieFeral</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyBiomechanicalWight']/property[@name='Tags']/@value">zombieGuppyBiomechanicalWight,entity,zombie,feral</set>
 <set xpath="/entity_classes/entity_class[@name='zombieGuppyBiomechanicalWight']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">40</set>
-<set xpath="/entity_classes/entity_class[@name='zombieGuppyBiomechanicalWight']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">600</set>
+<set xpath="/entity_classes/entity_class[@name='zombieGuppyBiomechanicalWight']/effect_group/passive_effect[@name='HealthMax' and @operation='base_set']/@value">800</set>
 <remove xpath="/entity_classes/entity_class[@name='zombieGuppyBiomechanicalWight']/effect_group/passive_effect[@name='HealthMax' and @operation='perc_set']"/>
 <append xpath="/entity_classes/entity_class[@name='zombieGuppyBiomechanicalWight']">
 	<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
@@ -290,9 +285,9 @@
 
 
 <!-- ********** BODY HARVESTING ********** -->
-<!-- By default, body harvesting for the Guppy zombies is disabled. To TURN ON body harvesting, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is below on line 280, and the 2nd one is at the end of this file on line 470. Again, delete both lines. -->
+<!-- By default, body harvesting for the Guppy zombies is disabled. To TURN ON body harvesting, just delete the two lines labelled "DELETE THIS ENTIRE LINE". The first one is below on line 290, and the 2nd one is at the end of this file on line 480. Again, delete both lines. -->
 
-<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* -->
+<!-- ********* DELETE THIS ENTIRE LINE!! (also delete the one at the bottom) ********* 
 
 
 <append xpath="/entity_classes/entity_class[@name='zombieGuppyBilly' or @name='zombieGuppyBob' or @name='zombieGuppyThorton']">
@@ -482,9 +477,7 @@
 
 
 
-<!-- ********* DELETE THIS ENTIRE LINE!! ********* -->
-
-
+ ********* DELETE THIS ENTIRE LINE!! ********* -->
 
 
 
